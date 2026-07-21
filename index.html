@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>単語ドケット - SQE1 Vocabulary</title>
+<meta name="theme-color" content="#1C2733" />
+<link rel="manifest" href="./manifest.webmanifest" />
+<link rel="icon" href="./icon-192.png" />
+<link rel="apple-touch-icon" href="./icon-192.png" />
+<style>
+  html, body { margin: 0; padding: 0; background: #F7F5F0; }
+  #boot { font-family: sans-serif; color: #4A5563; padding: 40px 20px; text-align: center; }
+</style>
+<script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+<script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.5/babel.min.js"></script>
+</head>
+<body>
+<div id="root"><div id="boot">読み込み中…(初回はネット接続が必要です)</div></div>
+<script>
+// localStorage-backed shim compatible with the artifact storage API
+if (!window.storage) {
+  window.storage = {
+    async get(key) { const v = localStorage.getItem(key); if (v === null) throw new Error("not found"); return { key, value: v }; },
+    async set(key, value) { localStorage.setItem(key, value); return { key, value }; },
+    async delete(key) { localStorage.removeItem(key); return { key, deleted: true }; },
+    async list(prefix) { const keys = Object.keys(localStorage).filter(k => !prefix || k.startsWith(prefix)); return { keys }; }
+  };
+}
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => navigator.serviceWorker.register("./sw.js").catch(() => {}));
+}
+</script>
+<script type="text/babel" data-presets="react">
+const { useState, useEffect, useCallback, useRef } = React;
+
+// ---------- palette / tokens ----------
+const C = {
+  ink: "#1C2733",
+  inkSoft: "#4A5563",
+  paper: "#F7F5F0",
+  card: "#FFFFFF",
+  tape: "#C94F6D", // barrister's pink tape
+  tapeSoft: "#F5E3E8",
+  moss: "#3E7A5E",
+  mossSoft: "#E4EFE9",
+  amber: "#C98A2E",
+  amberSoft: "#F6EDDC",
+  line: "#E3DED4",
+};
+
+const serif = "'Spectral', Georgia, 'Times New Roman', serif";
+const sans = "-apple-system, 'Hiragino Sans', 'Noto Sans JP', sans-serif";
+
+// ---------- date helpers ----------
+const dayMs = 86400000;
+const todayStr = () => {
+  const d = new Date();
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+};
+const addDays = (dateStr, n) => {
+  const d = new Date(dateStr + "T00:00:00");
+  d.setDate(d.getDate() + n);
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+};
+const daysBetween = (a, b) =>
+  Math.round((new Date(b + "T00:00:00") - new Date(a + "T00:00:00")) / dayMs);
+
+// ---------- SRS ----------
+const gradeCard = (srs, grade) => {
+  const s = { ...srs };
+  const t = todayStr();
+  if (grade === "again") {
+    s.lapses = (s.lapses || 0) + 1;
+    s.reps = 0;
+    s.interval = 0;
+    s.ease = Math.max(1.3, (s.ease || 2.5) - 0.2);
+    s.due = t; // 当日中に再出題
+  } else if (grade === "good") {
+    s.reps = (s.reps || 0) + 1;
+    if (s.reps === 1) s.interval = 1;
+    else if (s.reps === 2) s.interval = 3;
+    else s.interval = Math.max(s.interval + 1, Math.round(s.interval * (s.ease || 2.5)));
+    s.due = addDays(t, s.interval);
+  } else {
+    // easy
+    s.reps = (s.reps || 0) + 1;
+    s.ease = Math.min(3.0, (s.ease || 2.5) + 0.1);
+    s.interval = s.reps === 1 ? 3 : Math.round(Math.max(s.interval, 1) * s.ease * 1.3);
+    s.due = addDays(t, s.interval);
+  }
+  s.last = grade;
+  return s;
+};
+
+const newSrs = () => ({ reps: 0, interval: 0, ease: 2.5, lapses: 0, due: null });
+
+// ---------- bulk parse ----------
+const parseBulk = (text) => {
+  const out = [];
+  let curTag = "";
+  text.split(/\r?\n/).forEach((line) => {
+    const l = line.trim();
+    if (!l) return;
+    if (l.startsWith("#")) {
+      const h = l.replace(/^#+\s*/, "");
+      const cm = h.match(/Ch\.?\s?(\d+)/i);
+      curTag = cm ? `Ch.${cm[1]}` : h.includes("巻末") ? "巻末" : h.slice(0, 12);
+      return;
+    }
+    let m = l.split("\t");
+    if (m.length < 2) m = l.split(/[：:]/);
+    if (m.length < 2) m = l.split(/,|、/);
+    if (m.length >= 2) {
+      const en = m[0].trim();
+      const ja = m.slice(1).join(" ").trim();
+      if (en && ja) out.push({ en, ja, tag: curTag });
+    }
+  });
+  return out;
+};
+
+const STORAGE_KEY = "sqe-vocab-v1";
+const uid = () => Date.now().toString(36) + Math.random().toString(36).slice(2, 7);
+const sortTags = (arr) =>
+  [...arr].sort((a, b) => {
+    const na = Number((a.match(/\d+/) || [999])[0]);
+    const nb = Number((b.match(/\d+/) || [999])[0]);
+    return na - nb || a.localeCompare(b);
+  });
+
+const loadVoices = () => {
+  if (typeof window === "undefined" || !window.speechSynthesis) return [];
+  return window.speechSynthesis.getVoices() || [];
+};
+if (typeof window !== "undefined" && window.speechSynthesis) {
+  window.speechSynthesis.onvoiceschanged = loadVoices;
+  loadVoices();
+}
+
+const speakEn = (text) => {
+  if (typeof window === "undefined" || !window.speechSynthesis || typeof SpeechSynthesisUtterance === "undefined") {
+    alert("この環境では音声合成が利用できないようです。ChromeやSafariなどのブラウザでこのアプリを開くと使えます。");
+    return;
+  }
+  const t = text.replace(/\([^)]*\)/g, " ").replace(/\//g, ", ").replace(/\s+/g, " ").trim();
+  if (!t) return;
+  const u = new SpeechSynthesisUtterance(t);
+  const voices = loadVoices();
+  const gb =
+    voices.find((v) => (v.lang || "").replace("_", "-") === "en-GB") ||
+    voices.find((v) => (v.lang || "").replace("_", "-").startsWith("en-GB")) ||
+    voices.find((v) => (v.lang || "").startsWith("en"));
+  if (gb) u.voice = gb;
+  u.lang = "en-GB";
+  u.rate = 0.95;
+  u.volume = 1;
+  window.speechSynthesis.cancel();
+  // Android Chrome/WebViewでcancel直後のspeakが無音になる問題への対策
+  setTimeout(() => {
+    window.speechSynthesis.resume();
+    window.speechSynthesis.speak(u);
+  }, 80);
+  // 再生が始まらない環境(WebView等)の検知
+  setTimeout(() => {
+    if (!window.speechSynthesis.speaking && !window.__ttsWarned) {
+      window.__ttsWarned = true;
+      alert(
+        `音声エンジンが応答しませんでした(検出された音声データ: ${loadVoices().length}件)。\nClaudeアプリ内のビューアーでは音声合成が動作しないことがあります。ChromeなどのブラウザでこのアプリのURLを開くと再生できる可能性が高いです。`
+      );
+    }
+  }, 1200);
+};
+
+function App() {
+  const [data, setData] = useState(null); // {settings, words, dailyLog}
+  const [tab, setTab] = useState("today");
+  const [session, setSession] = useState(null); // {queue, done, revealed}
+  const [toast, setToast] = useState(null);
+  const saveTimer = useRef(null);
+
+  // ---- load ----
+  useEffect(() => {
+    (async () => {
+      let loaded = null;
+      try {
+        const r = await window.storage.get(STORAGE_KEY);
+        if (r && r.value) loaded = JSON.parse(r.value);
+      } catch (e) {
+        /* first run */
+      }
+      setData(
+        loaded || {
+          settings: { examDate: "2027-01-18", buffer: 14 },
+          words: [],
+          dailyLog: {},
+          diary: {},
+        }
+      );
+    })();
+  }, []);
+
+  // ---- save (debounced) ----
+  const persist = useCallback((next) => {
+    setData(next);
+    if (saveTimer.current) clearTimeout(saveTimer.current);
+    saveTimer.current = setTimeout(async () => {
+      try {
+        await window.storage.set(STORAGE_KEY, JSON.stringify(next));
+      } catch (e) {
+        console.error("save failed", e);
+      }
+    }, 400);
+  }, []);
+
+  const showToast = (msg) => {
+    setToast(msg);
+    setTimeout(() => setToast(null), 2200);
+  };
+
+  if (!data)
+    return (
+      <div style={{ minHeight: "100vh", background: C.paper, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: sans, color: C.inkSoft }}>
+        読み込み中…
+      </div>
+    );
+
+  // ---- derived ----
+  const t = todayStr();
+  const words = data.words;
+  const learned = words.filter((w) => w.srs.due !== null);
+  const unlearned = words.filter((w) => w.srs.due === null);
+  const dueToday = learned.filter((w) => w.srs.due <= t);
+  const daysLeft = Math.max(0, daysBetween(t, data.settings.examDate));
+  const effectiveDays = Math.max(1, daysLeft - (data.settings.buffer || 0));
+  const quota = unlearned.length === 0 ? 0 : Math.ceil(unlearned.length / effectiveDays);
+  const log = data.dailyLog[t] || { newN: 0, revN: 0 };
+  const newRemaining = Math.max(0, quota - log.newN);
+
+  // ---- session ----
+  const startSession = () => {
+    const due = [...dueToday].sort(() => Math.random() - 0.5);
+    const fresh = unlearned.slice(0, newRemaining).map((w) => ({ ...w, isNew: true }));
+    const queue = [...due, ...fresh];
+    if (queue.length === 0) return;
+    setSession({ queue, doneN: 0, revealed: false });
+  };
+
+  const startCustom = (opt) => {
+    let pool = words;
+    if (opt.subject) pool = pool.filter((w) => (w.subject || "") === opt.subject);
+    if (opt.tags && opt.tags.length) pool = pool.filter((w) => opt.tags.includes(w.tag));
+    if (opt.bands && opt.bands.length)
+      pool = pool.filter(
+        (w) => (opt.bands.includes("new") && w.srs.due === null) || opt.bands.includes(w.srs.last)
+      );
+    pool = [...pool].sort(() => Math.random() - 0.5);
+    if (opt.count) pool = pool.slice(0, opt.count);
+    if (pool.length === 0) {
+      showToast("該当する語がありません");
+      return;
+    }
+    const bandNames = { again: "もう一度", good: "OK", easy: "楽勝", new: "未着手" };
+    const label =
+      [
+        opt.subject,
+        (opt.tags || []).join("・"),
+        (opt.bands || []).map((b) => bandNames[b]).join("+"),
+      ]
+        .filter(Boolean)
+        .join(" ") || "全体ランダム";
+    setSession({ queue: pool, doneN: 0, revealed: false, label });
+  };
+
+  const grade = (g) => {
+    const cur = session.queue[0];
+    const idx = words.findIndex((w) => w.id === cur.id);
+    const w = words[idx];
+    const wasNew = w.srs.due === null;
+    const nextSrs = gradeCard(wasNew ? { ...w.srs, due: t } : w.srs, g);
+    const nextWords = [...words];
+    nextWords[idx] = { ...w, srs: nextSrs };
+
+    const nextLog = { ...log };
+    if (wasNew) nextLog.newN += 1;
+    else nextLog.revN += 1;
+    const lbl = [w.subject, w.tag].filter(Boolean).join(" ");
+    if (lbl) {
+      const items = nextLog.items ? [...nextLog.items] : [];
+      if (!items.includes(lbl)) items.push(lbl);
+      nextLog.items = items;
+    }
+
+    let rest = session.queue.slice(1);
+    if (g === "again") {
+      const pos = Math.min(rest.length, 3);
+      rest = [...rest.slice(0, pos), { ...cur }, ...rest.slice(pos)];
+    }
+    persist({ ...data, words: nextWords, dailyLog: { ...data.dailyLog, [t]: nextLog } });
+    if (rest.length === 0) setSession(null);
+    else setSession({ queue: rest, doneN: session.doneN + 1, revealed: false });
+  };
+
+  // ---- add ----
+  const addWords = (list) => {
+    const idxMap = new Map(words.map((w, i) => [w.en.toLowerCase(), i]));
+    const nextWords = [...words];
+    let added = 0;
+    let updated = 0;
+    list.forEach((x) => {
+      const i = idxMap.get(x.en.toLowerCase());
+      if (i !== undefined) {
+        const w = nextWords[i];
+        const newTag = x.tag || w.tag || "";
+        const newSub = x.subject || w.subject || "";
+        if (newTag !== (w.tag || "") || newSub !== (w.subject || "") || x.ja !== w.ja) {
+          nextWords[i] = { ...w, ja: x.ja, tag: newTag, subject: newSub };
+          updated += 1;
+        }
+      } else {
+        nextWords.push({ id: uid(), en: x.en, ja: x.ja, tag: x.tag || "", subject: x.subject || "", addedAt: t, srs: newSrs() });
+        added += 1;
+      }
+    });
+    if (added === 0 && updated === 0) {
+      showToast("変更なし(すべて登録済み)");
+      return;
+    }
+    persist({ ...data, words: nextWords });
+    showToast(`追加 ${added}語 / 更新 ${updated}語`);
+  };
+
+  const removeWord = (id) => persist({ ...data, words: words.filter((w) => w.id !== id) });
+
+  // ---------- UI pieces ----------
+  const S = {
+    page: { minHeight: "100vh", background: C.paper, fontFamily: sans, color: C.ink, paddingBottom: 84 },
+    wrap: { maxWidth: 560, margin: "0 auto", padding: "20px 16px" },
+    h: { fontFamily: serif, fontWeight: 600, letterSpacing: "0.01em" },
+    card: { background: C.card, border: `1px solid ${C.line}`, borderRadius: 12, padding: 16 },
+    btn: (bg, col = "#fff") => ({
+      background: bg, color: col, border: "none", borderRadius: 10,
+      padding: "14px 18px", fontSize: 16, fontWeight: 600, cursor: "pointer",
+      fontFamily: sans, width: "100%",
+    }),
+    tag: (bg, col) => ({
+      background: bg, color: col, borderRadius: 6, padding: "2px 8px",
+      fontSize: 12, fontWeight: 600, display: "inline-block",
+    }),
+  };
+
+  const Ribbon = ({ value, max, color }) => (
+    <div style={{ height: 8, background: C.line, borderRadius: 4, overflow: "hidden" }}>
+      <div style={{ height: "100%", width: `${max ? Math.min(100, (value / max) * 100) : 0}%`, background: color, transition: "width .3s" }} />
+    </div>
+  );
+
+  // ---------- Study screen ----------
+  if (session) {
+    const cur = session.queue[0];
+    const total = session.doneN + session.queue.length;
+    return (
+      <div style={S.page}>
+        <style>{"@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@400;600&display=swap');"}</style>
+        <div style={S.wrap}>
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 12 }}>
+            <button onClick={() => setSession(null)} style={{ background: "none", border: "none", color: C.inkSoft, fontSize: 14, cursor: "pointer" }}>← 中断</button>
+            <span style={{ fontSize: 13, color: C.inkSoft }}>
+              {session.label ? `${session.label} ・ ` : ""}{session.doneN + 1} / {total}
+            </span>
+          </div>
+          <Ribbon value={session.doneN} max={total} color={C.tape} />
+
+          <div style={{ ...S.card, marginTop: 20, borderTop: `4px solid ${C.tape}`, minHeight: 260, display: "flex", flexDirection: "column", justifyContent: "center", textAlign: "center", padding: 24 }}>
+            {cur.srs && words.find((w) => w.id === cur.id)?.srs.due === null && (
+              <span style={{ ...S.tag(C.tapeSoft, C.tape), alignSelf: "center", marginBottom: 12 }}>NEW</span>
+            )}
+            <div style={{ ...S.h, fontSize: 30, lineHeight: 1.25 }}>{cur.en}</div>
+            <button
+              onClick={() => speakEn(cur.en)}
+              style={{ background: "none", border: `1px solid ${C.line}`, borderRadius: 999, padding: "6px 18px", fontSize: 14, color: C.inkSoft, cursor: "pointer", alignSelf: "center", marginTop: 14, fontFamily: sans }}>
+              🔊 UK発音
+            </button>
+            {session.revealed ? (
+              <div style={{ marginTop: 20, fontSize: 20, color: C.inkSoft, borderTop: `1px dashed ${C.line}`, paddingTop: 20 }}>{cur.ja}</div>
+            ) : (
+              <button onClick={() => setSession({ ...session, revealed: true })} style={{ ...S.btn(C.ink), marginTop: 28 }}>
+                答えを見る
+              </button>
+            )}
+          </div>
+
+          {session.revealed && (
+            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 10, marginTop: 16 }}>
+              <button onClick={() => grade("again")} style={S.btn(C.tape)}>もう一度<div style={{ fontSize: 11, fontWeight: 400, opacity: 0.85 }}>今日再出題</div></button>
+              <button onClick={() => grade("good")} style={S.btn(C.ink)}>OK<div style={{ fontSize: 11, fontWeight: 400, opacity: 0.85 }}>標準間隔</div></button>
+              <button onClick={() => grade("easy")} style={S.btn(C.moss)}>楽勝<div style={{ fontSize: 11, fontWeight: 400, opacity: 0.85 }}>間隔延長</div></button>
+            </div>
+          )}
+        </div>
+      </div>
+    );
+  }
+
+  // ---------- Tabs ----------
+  return (
+    <div style={S.page}>
+      <style>{"@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@400;600&display=swap');"}</style>
+      <div style={S.wrap}>
+        <div style={{ marginBottom: 18 }}>
+          <div style={{ fontSize: 12, letterSpacing: "0.12em", color: C.tape, fontWeight: 700 }}>SQE1 VOCABULARY</div>
+          <h1 style={{ ...S.h, fontSize: 26, margin: "4px 0 0" }}>単語ドケット</h1>
+        </div>
+
+        {tab === "today" && (
+          <TodayTab
+            S={S} C={C} Ribbon={Ribbon}
+            daysLeft={daysLeft} quota={quota} log={log}
+            dueN={dueToday.length} newRemaining={newRemaining}
+            totalN={words.length} learnedN={learned.length} unlearnedN={unlearned.length}
+            examDate={data.settings.examDate} buffer={data.settings.buffer}
+            onStart={startSession} words={words} onStartCustom={startCustom}
+          />
+        )}
+        {tab === "add" && <AddTab S={S} C={C} onAdd={addWords} />}
+        {tab === "list" && <ListTab S={S} C={C} words={words} onRemove={removeWord} today={t} />}
+        {tab === "record" && (
+          <RecordTab
+            S={S} C={C} today={t}
+            dailyLog={data.dailyLog}
+            diary={data.diary || {}}
+            onSave={(d, txt) => persist({ ...data, diary: { ...(data.diary || {}), [d]: txt } })}
+          />
+        )}
+        {tab === "settings" && (
+          <SettingsTab S={S} C={C} settings={data.settings}
+            onChange={(s) => persist({ ...data, settings: s })}
+            exportJson={() => JSON.stringify(data)}
+            onImport={(json) => {
+              try {
+                const d = JSON.parse(json);
+                if (!d || !Array.isArray(d.words)) throw new Error("bad");
+                persist({
+                  settings: d.settings || data.settings,
+                  words: d.words,
+                  dailyLog: d.dailyLog || {},
+                  diary: d.diary || {},
+                });
+                showToast(`インポート完了(${d.words.length}語)`);
+              } catch (e) {
+                showToast("JSONが不正です");
+              }
+            }}
+          />
+        )}
+      </div>
+
+      {toast && (
+        <div style={{ position: "fixed", bottom: 92, left: "50%", transform: "translateX(-50%)", background: C.ink, color: "#fff", padding: "10px 18px", borderRadius: 8, fontSize: 14, fontFamily: sans, zIndex: 20 }}>
+          {toast}
+        </div>
+      )}
+
+      <nav style={{ position: "fixed", bottom: 0, left: 0, right: 0, background: C.card, borderTop: `1px solid ${C.line}`, display: "flex", justifyContent: "space-around", padding: "10px 0 22px", zIndex: 10 }}>
+        {[
+          ["today", "今日"],
+          ["add", "追加"],
+          ["list", "単語帳"],
+          ["record", "記録"],
+          ["settings", "設定"],
+        ].map(([k, label]) => (
+          <button key={k} onClick={() => setTab(k)}
+            style={{ background: "none", border: "none", cursor: "pointer", fontFamily: sans, fontSize: 13, fontWeight: tab === k ? 700 : 500, color: tab === k ? C.tape : C.inkSoft, padding: "6px 14px", borderTop: tab === k ? `2px solid ${C.tape}` : "2px solid transparent" }}>
+            {label}
+          </button>
+        ))}
+      </nav>
+    </div>
+  );
+}
+
+// ---------- Today ----------
+function TodayTab({ S, C, Ribbon, daysLeft, quota, log, dueN, newRemaining, totalN, learnedN, unlearnedN, examDate, buffer, onStart, words, onStartCustom }) {
+  const todayTotal = dueN + newRemaining;
+  const [subj, setSubj] = useState("");
+  const [chaps, setChaps] = useState([]);
+  const [bands, setBands] = useState([]);
+  const [count, setCount] = useState("20");
+  const subjects = [...new Set(words.map((w) => w.subject).filter(Boolean))].sort();
+  const chTags = sortTags([...new Set(words.filter((w) => !subj || (w.subject || "") === subj).map((w) => w.tag).filter(Boolean))]);
+  const toggle = (arr, setArr, v) => setArr(arr.includes(v) ? arr.filter((x) => x !== v) : [...arr, v]);
+  let pool = words;
+  if (subj) pool = pool.filter((w) => (w.subject || "") === subj);
+  if (chaps.length) pool = pool.filter((w) => chaps.includes(w.tag));
+  if (bands.length) pool = pool.filter((w) => (bands.includes("new") && w.srs.due === null) || bands.includes(w.srs.last));
+  const poolN = pool.length;
+  const drawN = count === "all" ? poolN : Math.min(poolN, Number(count));
+  const sel = { padding: "10px 8px", fontSize: 14, border: `1px solid ${C.line}`, borderRadius: 10, fontFamily: sans, background: "#fff", color: C.ink, width: "100%", boxSizing: "border-box" };
+  const chip = (on) => ({ padding: "7px 12px", borderRadius: 999, fontSize: 13, fontWeight: 600, fontFamily: sans, cursor: "pointer", border: `1px solid ${on ? C.tape : C.line}`, background: on ? C.tapeSoft : "#fff", color: on ? C.tape : C.inkSoft });
+  return (
+    <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
+      <div style={{ ...S.card, borderTop: `4px solid ${C.tape}` }}>
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline" }}>
+          <span style={{ fontSize: 13, color: C.inkSoft }}>試験日 {examDate}</span>
+          <span style={{ ...S.h, fontSize: 28 }}>あと{daysLeft}<span style={{ fontSize: 14 }}>日</span></span>
+        </div>
+        <div style={{ fontSize: 12, color: C.inkSoft, marginTop: 4 }}>
+          逆算ノルマ: 新規 {quota} 語/日(直前{buffer}日は復習専念で計算)
+        </div>
+      </div>
+
+      <div style={S.card}>
+        <div style={{ fontSize: 14, fontWeight: 700, marginBottom: 10 }}>今日のメニュー</div>
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10, marginBottom: 12 }}>
+          <div style={{ background: C.amberSoft, borderRadius: 10, padding: 12 }}>
+            <div style={{ fontSize: 12, color: C.amber, fontWeight: 700 }}>復習(再テスト)</div>
+            <div style={{ ...S.h, fontSize: 24 }}>{dueN}<span style={{ fontSize: 13 }}> 語</span></div>
+          </div>
+          <div style={{ background: C.tapeSoft, borderRadius: 10, padding: 12 }}>
+            <div style={{ fontSize: 12, color: C.tape, fontWeight: 700 }}>新規</div>
+            <div style={{ ...S.h, fontSize: 24 }}>{newRemaining}<span style={{ fontSize: 13 }}> 語</span></div>
+          </div>
+        </div>
+        <div style={{ fontSize: 12, color: C.inkSoft, marginBottom: 6 }}>本日の実績: 新規 {log.newN} / 復習 {log.revN}</div>
+        <button onClick={onStart} disabled={todayTotal === 0} style={{ ...S.btn(todayTotal === 0 ? C.line : C.ink), opacity: todayTotal === 0 ? 0.7 : 1 }}>
+          {todayTotal === 0 ? "今日の分は完了 🎉" : `学習を始める(${todayTotal}語)`}
+        </button>
+      </div>
+
+      {words.length > 0 && (
+        <div style={S.card}>
+          <div style={{ fontSize: 14, fontWeight: 700, marginBottom: 4 }}>カスタム学習</div>
+          <div style={{ fontSize: 12, color: C.inkSoft, marginBottom: 10 }}>
+            科目・章・成績を組み合わせてランダム出題(未選択=すべて対象・成績は復習スケジュールに反映)
+          </div>
+
+          <select value={subj} onChange={(e) => { setSubj(e.target.value); setChaps([]); }} style={{ ...sel, marginBottom: 10 }}>
+            <option value="">科目: すべて</option>
+            {subjects.map((s) => (
+              <option key={s} value={s}>{s}</option>
+            ))}
+          </select>
+
+          {chTags.length > 0 && (
+            <div style={{ marginBottom: 10 }}>
+              <div style={{ fontSize: 12, fontWeight: 700, color: C.inkSoft, marginBottom: 6 }}>章(複数タップ可)</div>
+              <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
+                {chTags.map((tg) => (
+                  <button key={tg} onClick={() => toggle(chaps, setChaps, tg)} style={chip(chaps.includes(tg))}>
+                    {tg}
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
+
+          <div style={{ marginBottom: 10 }}>
+            <div style={{ fontSize: 12, fontWeight: 700, color: C.inkSoft, marginBottom: 6 }}>成績(複数タップ可)</div>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
+              {[
+                ["again", "もう一度"],
+                ["good", "OK"],
+                ["easy", "楽勝"],
+                ["new", "未着手"],
+              ].map(([v, lb]) => (
+                <button key={v} onClick={() => toggle(bands, setBands, v)} style={chip(bands.includes(v))}>
+                  {lb}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <div style={{ display: "flex", gap: 10 }}>
+            <select value={count} onChange={(e) => setCount(e.target.value)} style={{ ...sel, width: 110, flexShrink: 0 }}>
+              <option value="10">10問</option>
+              <option value="20">20問</option>
+              <option value="30">30問</option>
+              <option value="50">50問</option>
+              <option value="all">全部</option>
+            </select>
+            <button
+              onClick={() => onStartCustom({ subject: subj, tags: chaps, bands, count: count === "all" ? 0 : Number(count) })}
+              disabled={poolN === 0}
+              style={{ ...S.btn(poolN === 0 ? C.line : C.tape), opacity: poolN === 0 ? 0.7 : 1 }}>
+              {poolN === 0 ? "該当なし" : `開始(${drawN}問 / 該当${poolN}語)`}
+            </button>
+          </div>
+        </div>
+      )}
+
+      <div style={S.card}>
+        <div style={{ display: "flex", justifyContent: "space-between", fontSize: 13, color: C.inkSoft, marginBottom: 8 }}>
+          <span>学習済み {learnedN} / 全{totalN}語</span>
+          <span>未着手 {unlearnedN}</span>
+        </div>
+        <Ribbon value={learnedN} max={totalN} color={C.moss} />
+        {totalN === 0 && (
+          <div style={{ fontSize: 13, color: C.inkSoft, marginTop: 10 }}>
+            まだ単語がありません。「追加」タブから登録してください。Tort語彙集などの一括貼り付けに対応しています。
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
+// ---------- Add ----------
+function AddTab({ S, C, onAdd }) {
+  const [en, setEn] = useState("");
+  const [ja, setJa] = useState("");
+  const [bulk, setBulk] = useState("");
+  const [subject, setSubject] = useState("");
+  const preview = parseBulk(bulk);
+
+  const input = { width: "100%", boxSizing: "border-box", padding: "12px", fontSize: 16, border: `1px solid ${C.line}`, borderRadius: 8, fontFamily: sans, background: "#fff" };
+
+  return (
+    <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
+      <div style={{ ...S.card, borderTop: `4px solid ${C.tape}` }}>
+        <div style={{ fontSize: 14, fontWeight: 700, marginBottom: 4 }}>科目</div>
+        <div style={{ fontSize: 12, color: C.inkSoft, marginBottom: 8 }}>下の追加(単発・一括)すべてに適用されます</div>
+        <input list="subject-list" value={subject} onChange={(e) => setSubject(e.target.value)} placeholder="例 Tort / Contract / Ethics" style={input} />
+        <datalist id="subject-list">
+          <option value="Tort" />
+          <option value="Ethics" />
+          <option value="Contract" />
+          <option value="Dispute Resolution" />
+          <option value="Business Law" />
+          <option value="Legal System" />
+          <option value="Constitutional Law" />
+          <option value="Land Law" />
+          <option value="Property Practice" />
+          <option value="Trusts" />
+          <option value="Wills" />
+          <option value="Criminal Law" />
+          <option value="Criminal Practice" />
+          <option value="Solicitors' Accounts" />
+        </datalist>
+      </div>
+
+      <div style={S.card}>
+        <div style={{ fontSize: 14, fontWeight: 700, marginBottom: 10 }}>1語ずつ追加</div>
+        <input value={en} onChange={(e) => setEn(e.target.value)} placeholder="英語 (e.g. consideration)" style={{ ...input, marginBottom: 8 }} />
+        <input value={ja} onChange={(e) => setJa(e.target.value)} placeholder="日本語 (e.g. 約因)" style={{ ...input, marginBottom: 10 }} />
+        <button
+          onClick={() => { if (en.trim() && ja.trim()) { onAdd([{ en: en.trim(), ja: ja.trim(), subject: subject.trim() }]); setEn(""); setJa(""); } }}
+          style={S.btn(C.ink)}>追加する</button>
+      </div>
+
+      <div style={S.card}>
+        <div style={{ fontSize: 14, fontWeight: 700, marginBottom: 4 }}>一括貼り付け</div>
+        <div style={{ fontSize: 12, color: C.inkSoft, marginBottom: 10 }}>
+          1行1語。「英語(タブ / : / ,)日本語」の形式。例:<br />
+          <code>estoppel: 禁反言</code><br />
+          「# Ch1 …」の見出し行を入れると、それ以降の語に章タグが付きます。登録済みの語は再貼り付けで科目・章・訳だけ更新され、学習履歴は維持されます
+        </div>
+        <textarea value={bulk} onChange={(e) => setBulk(e.target.value)} rows={7} placeholder={"consideration: 約因\nbreach of contract: 契約違反"} style={{ ...input, resize: "vertical", marginBottom: 10 }} />
+        <button
+          onClick={() => { if (preview.length) { onAdd(preview.map((x) => ({ ...x, subject: subject.trim() }))); setBulk(""); } }}
+          disabled={preview.length === 0}
+          style={{ ...S.btn(preview.length ? C.tape : C.line) }}>
+          {preview.length ? `${preview.length}語を一括追加` : "貼り付け待ち"}
+        </button>
+      </div>
+    </div>
+  );
+}
+
+// ---------- List ----------
+function ListTab({ S, C, words, onRemove, today }) {
+  const [q, setQ] = useState("");
+  const filtered = words.filter(
+    (w) =>
+      w.en.toLowerCase().includes(q.toLowerCase()) ||
+      w.ja.includes(q) ||
+      (w.tag || "").toLowerCase().includes(q.toLowerCase()) ||
+      (w.subject || "").toLowerCase().includes(q.toLowerCase())
+  );
+  return (
+    <div>
+      <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="検索"
+        style={{ width: "100%", boxSizing: "border-box", padding: 12, fontSize: 16, border: `1px solid ${C.line}`, borderRadius: 8, marginBottom: 12, fontFamily: sans }} />
+      <div style={{ fontSize: 12, color: C.inkSoft, marginBottom: 8 }}>{filtered.length}語</div>
+      <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+        {filtered.map((w) => {
+          const st = w.srs.due === null ? ["未着手", C.line, C.inkSoft]
+            : w.srs.due <= today ? ["再テスト待ち", C.amberSoft, C.amber]
+            : [`次回 ${w.srs.due}`, C.mossSoft, C.moss];
+          return (
+            <div key={w.id} style={{ ...S.card, padding: "12px 14px", display: "flex", alignItems: "center", gap: 10 }}>
+              <div style={{ flex: 1, minWidth: 0 }}>
+                <div style={{ fontFamily: serif, fontWeight: 600, fontSize: 16 }}>
+                  {w.en}
+                  {(w.subject || w.tag) && (
+                    <span style={{ ...S.tag(C.paper, C.inkSoft), marginLeft: 6, fontFamily: sans, fontWeight: 500, border: `1px solid ${C.line}` }}>
+                      {[w.subject, w.tag].filter(Boolean).join(" ")}
+                    </span>
+                  )}
+                </div>
+                <div style={{ fontSize: 13, color: C.inkSoft }}>{w.ja}</div>
+              </div>
+              <button onClick={() => speakEn(w.en)} style={{ background: "none", border: "none", fontSize: 17, cursor: "pointer", padding: 4 }}>🔊</button>
+              <span style={S.tag(st[1], st[2])}>{st[0]}</span>
+              <button onClick={() => onRemove(w.id)} style={{ background: "none", border: "none", color: C.inkSoft, fontSize: 18, cursor: "pointer", padding: 4 }}>×</button>
+            </div>
+          );
+        })}
+        {filtered.length === 0 && <div style={{ fontSize: 13, color: C.inkSoft, textAlign: "center", padding: 20 }}>該当なし</div>}
+      </div>
+    </div>
+  );
+}
+
+// ---------- Record (calendar + diary) ----------
+function RecordTab({ S, C, today, dailyLog, diary, onSave }) {
+  const [ym, setYm] = useState(today.slice(0, 7));
+  const [selDate, setSelDate] = useState(today);
+  const getEntry = (dateStr) => {
+    const e = diary[dateStr];
+    if (!e) return { text: "", items: [] };
+    if (typeof e === "string") return { text: e, items: [] };
+    return { text: e.text || "", items: e.items || [] };
+  };
+  const [draft, setDraft] = useState(getEntry(today).text);
+  const [mSub, setMSub] = useState("");
+  const [mCh, setMCh] = useState("");
+  const [y, m] = ym.split("-").map(Number);
+  const startDow = new Date(y, m - 1, 1).getDay();
+  const daysInMonth = new Date(y, m, 0).getDate();
+  const cells = [...Array(startDow).fill(null), ...Array.from({ length: daysInMonth }, (_, i) => i + 1)];
+  const ds = (d) => `${ym}-${String(d).padStart(2, "0")}`;
+  const shift = (delta) => {
+    const nd = new Date(y, m - 1 + delta, 1);
+    setYm(`${nd.getFullYear()}-${String(nd.getMonth() + 1).padStart(2, "0")}`);
+  };
+  const pick = (dateStr) => {
+    setSelDate(dateStr);
+    setDraft(getEntry(dateStr).text);
+  };
+  const abbrevSub = (s) =>
+    ({
+      Tort: "Tort", Contract: "Cont", Ethics: "Eth", "Dispute Resolution": "DR",
+      "Business Law": "BL", "Legal System": "LS", "Constitutional Law": "Const",
+      "Land Law": "Land", "Property Practice": "PP", Trusts: "Tru", Wills: "Wil",
+      "Criminal Law": "CrL", "Criminal Practice": "CrP", "Solicitors' Accounts": "SA",
+    }[s] || (s || "").slice(0, 4));
+  const daySummary = (dateStr) => {
+    const lg = dailyLog[dateStr] || {};
+    const total = (lg.newN || 0) + (lg.revN || 0);
+    const manual = getEntry(dateStr).items;
+    const allItems = [...(lg.items || []), ...manual.filter((x) => !(lg.items || []).includes(x))];
+    if (total === 0 && allItems.length === 0) return null;
+    const bySub = new Map();
+    allItems.forEach((it) => {
+      let sub = it;
+      let ch = "";
+      const m = it.match(/^(.*?)\s*Ch\.(\d+)$/);
+      if (m) {
+        sub = m[1];
+        ch = m[2];
+      } else if (/巻末$/.test(it)) {
+        sub = it.replace(/\s*巻末$/, "");
+        ch = "巻";
+      }
+      sub = sub || "他";
+      if (!bySub.has(sub)) bySub.set(sub, []);
+      if (ch && !bySub.get(sub).includes(ch)) bySub.get(sub).push(ch);
+    });
+    const lines = [...bySub.entries()].map(([s, chs]) => {
+      const sorted = [...chs].sort((a, b) => (a === "巻" ? 1 : b === "巻" ? -1 : Number(a) - Number(b)));
+      return `${abbrevSub(s)}${sorted.length ? " " + sorted.join("·") : ""}`;
+    });
+    return { total, lines };
+  };
+  const selLog = dailyLog[selDate] || { newN: 0, revN: 0, items: [] };
+  const entry = getEntry(selDate);
+  const autoItems = selLog.items || [];
+  const dirty = draft !== entry.text;
+  const saveEntry = (text, items) => onSave(selDate, { text, items });
+  const addManual = () => {
+    const s = mSub.trim();
+    if (!s) return;
+    const label = mCh.trim() ? `${s} Ch.${mCh.trim()}` : s;
+    if (entry.items.includes(label) || autoItems.includes(label)) {
+      setMCh("");
+      return;
+    }
+    saveEntry(draft, [...entry.items, label]);
+    setMCh("");
+  };
+  const removeManual = (label) => saveEntry(draft, entry.items.filter((x) => x !== label));
+
+  return (
+    <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
+      <div style={S.card}>
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 10 }}>
+          <button onClick={() => shift(-1)} style={{ background: "none", border: "none", fontSize: 18, cursor: "pointer", color: C.inkSoft, padding: "4px 10px" }}>◀</button>
+          <span style={{ ...S.h, fontSize: 17 }}>{y}年{m}月</span>
+          <button onClick={() => shift(1)} style={{ background: "none", border: "none", fontSize: 18, cursor: "pointer", color: C.inkSoft, padding: "4px 10px" }}>▶</button>
+        </div>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(7, 1fr)", gap: 2, textAlign: "center" }}>
+          {["日", "月", "火", "水", "木", "金", "土"].map((d, i) => (
+            <div key={d} style={{ fontSize: 11, fontWeight: 700, color: i === 0 ? C.tape : C.inkSoft, padding: "4px 0" }}>{d}</div>
+          ))}
+          {cells.map((d, i) => {
+            if (d === null) return <div key={`e${i}`} />;
+            const dateStr = ds(d);
+            const isSel = dateStr === selDate;
+            const isToday = dateStr === today;
+            const sum = daySummary(dateStr);
+            const hasMemo = !!getEntry(dateStr).text.trim();
+            const subColor = isSel ? "rgba(255,255,255,0.9)" : C.tape;
+            return (
+              <button
+                key={dateStr}
+                onClick={() => pick(dateStr)}
+                style={{
+                  border: isToday ? `1.5px solid ${C.tape}` : `1px solid ${sum ? C.line : "transparent"}`,
+                  background: isSel ? C.ink : sum ? "#fff" : "transparent",
+                  color: isSel ? "#fff" : C.ink,
+                  borderRadius: 8, padding: "3px 1px", cursor: "pointer",
+                  fontFamily: sans, minHeight: 56, overflow: "hidden",
+                  display: "flex", flexDirection: "column", alignItems: "center", gap: 1,
+                }}>
+                <span style={{ fontSize: 12, fontWeight: isSel || isToday ? 700 : 500, lineHeight: 1.2 }}>
+                  {d}{hasMemo ? "✎" : ""}
+                </span>
+                {sum && (
+                  <>
+                    {sum.lines.slice(0, 2).map((ln) => (
+                      <span key={ln} style={{ fontSize: 8, lineHeight: 1.25, color: subColor, fontWeight: 700, whiteSpace: "nowrap", maxWidth: "100%", overflow: "hidden" }}>
+                        {ln}
+                      </span>
+                    ))}
+                    {sum.lines.length > 2 && (
+                      <span style={{ fontSize: 8, lineHeight: 1.2, color: subColor }}>+{sum.lines.length - 2}</span>
+                    )}
+                    {sum.total > 0 && (
+                      <span style={{ fontSize: 8, lineHeight: 1.2, color: isSel ? "rgba(255,255,255,0.75)" : C.inkSoft }}>
+                        {sum.total}語
+                      </span>
+                    )}
+                  </>
+                )}
+              </button>
+            );
+          })}
+        </div>
+      </div>
+
+      <div style={{ ...S.card, borderTop: `4px solid ${C.tape}` }}>
+        <div style={{ ...S.h, fontSize: 16, marginBottom: 8 }}>{selDate}</div>
+        <div style={{ fontSize: 13, color: C.inkSoft, marginBottom: 8 }}>
+          実績: 新規 {selLog.newN || 0} 語 / 復習 {selLog.revN || 0} 語
+        </div>
+        {(autoItems.length > 0 || entry.items.length > 0) && (
+          <div style={{ display: "flex", flexWrap: "wrap", gap: 6, marginBottom: 10 }}>
+            {autoItems.map((it) => (
+              <span key={`a-${it}`} style={S.tag(C.tapeSoft, C.tape)}>{it}</span>
+            ))}
+            {entry.items.map((it) => (
+              <span key={`m-${it}`} style={{ ...S.tag(C.mossSoft, C.moss), display: "inline-flex", alignItems: "center", gap: 5 }}>
+                {it}
+                <span onClick={() => removeManual(it)} style={{ cursor: "pointer", fontWeight: 700 }}>×</span>
+              </span>
+            ))}
+          </div>
+        )}
+        <div style={{ fontSize: 12, color: C.inkSoft, marginBottom: 6 }}>
+          学習記録を手動で追加(講義ノートなどアプリ外の学習用・カレンダーに表示されます)
+        </div>
+        <div style={{ display: "flex", gap: 6, marginBottom: 12 }}>
+          <input
+            list="subject-list-rec" value={mSub} onChange={(e) => setMSub(e.target.value)}
+            placeholder="科目 (例 Tort)"
+            style={{ flex: 1, minWidth: 0, padding: 10, fontSize: 14, border: `1px solid ${C.line}`, borderRadius: 8, fontFamily: sans, boxSizing: "border-box" }}
+          />
+          <datalist id="subject-list-rec">
+            <option value="Tort" /><option value="Ethics" /><option value="Contract" />
+            <option value="Dispute Resolution" /><option value="Business Law" /><option value="Legal System" />
+            <option value="Constitutional Law" /><option value="Land Law" /><option value="Property Practice" />
+            <option value="Trusts" /><option value="Wills" /><option value="Criminal Law" />
+            <option value="Criminal Practice" /><option value="Solicitors' Accounts" />
+          </datalist>
+          <input
+            value={mCh} onChange={(e) => setMCh(e.target.value)} placeholder="章" inputMode="numeric"
+            style={{ width: 56, padding: "10px 6px", fontSize: 14, border: `1px solid ${C.line}`, borderRadius: 8, fontFamily: sans, boxSizing: "border-box", textAlign: "center" }}
+          />
+          <button onClick={addManual} disabled={!mSub.trim()} style={{ ...S.btn(mSub.trim() ? C.moss : C.line), width: "auto", padding: "10px 14px", fontSize: 14 }}>
+            追加
+          </button>
+        </div>
+        <textarea
+          value={draft}
+          onChange={(e) => setDraft(e.target.value)}
+          rows={4}
+          placeholder="この日の学習メモ(例: Contract Ch.6 苦手。misrepresentationの分類を明日再確認)"
+          style={{ width: "100%", boxSizing: "border-box", padding: 12, fontSize: 15, border: `1px solid ${C.line}`, borderRadius: 8, fontFamily: sans, resize: "vertical", marginBottom: 10 }}
+        />
+        <button onClick={() => saveEntry(draft, entry.items)} disabled={!dirty} style={{ ...S.btn(dirty ? C.ink : C.line), opacity: dirty ? 1 : 0.7 }}>
+          {dirty ? "メモを保存" : "保存済み"}
+        </button>
+      </div>
+    </div>
+  );
+}
+
+// ---------- Settings ----------
+function SettingsTab({ S, C, settings, onChange, exportJson, onImport }) {
+  const [showExport, setShowExport] = useState(false);
+  const [importText, setImportText] = useState("");
+  const input = { width: "100%", boxSizing: "border-box", padding: 12, fontSize: 16, border: `1px solid ${C.line}`, borderRadius: 8, fontFamily: sans, background: "#fff" };
+  return (
+    <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
+      <div style={S.card}>
+        <label style={{ fontSize: 13, fontWeight: 700, display: "block", marginBottom: 6 }}>試験日</label>
+        <input type="date" value={settings.examDate}
+          onChange={(e) => onChange({ ...settings, examDate: e.target.value })} style={input} />
+      </div>
+      <div style={S.card}>
+        <label style={{ fontSize: 13, fontWeight: 700, display: "block", marginBottom: 6 }}>
+          直前バッファ(日)
+        </label>
+        <div style={{ fontSize: 12, color: C.inkSoft, marginBottom: 8 }}>
+          試験直前のこの日数は新規語ゼロ・復習専念として逆算します
+        </div>
+        <input type="number" min="0" max="60" value={settings.buffer}
+          onChange={(e) => onChange({ ...settings, buffer: Math.max(0, Number(e.target.value) || 0) })} style={input} />
+      </div>
+
+      <div style={S.card}>
+        <div style={{ fontSize: 13, fontWeight: 700, marginBottom: 6 }}>データのエクスポート</div>
+        <div style={{ fontSize: 12, color: C.inkSoft, marginBottom: 10 }}>
+          全データ(単語・学習履歴・記録)をJSONとして表示します。全選択してコピーし、移行先のインポート欄に貼り付けてください
+        </div>
+        <button onClick={() => setShowExport(!showExport)} style={S.btn(C.ink)}>
+          {showExport ? "閉じる" : "エクスポートJSONを表示"}
+        </button>
+        {showExport && (
+          <textarea readOnly value={exportJson()} rows={6} onFocus={(e) => e.target.select()}
+            style={{ ...input, marginTop: 10, fontSize: 11, fontFamily: "monospace", resize: "vertical" }} />
+        )}
+      </div>
+
+      <div style={S.card}>
+        <div style={{ fontSize: 13, fontWeight: 700, marginBottom: 6 }}>データのインポート</div>
+        <div style={{ fontSize: 12, color: C.inkSoft, marginBottom: 10 }}>
+          エクスポートしたJSONを貼り付けて復元します(現在のデータは上書きされます)
+        </div>
+        <textarea value={importText} onChange={(e) => setImportText(e.target.value)} rows={4}
+          placeholder='{"settings":...}' style={{ ...input, fontSize: 11, fontFamily: "monospace", resize: "vertical", marginBottom: 10 }} />
+        <button onClick={() => { if (importText.trim()) { onImport(importText.trim()); setImportText(""); } }}
+          disabled={!importText.trim()}
+          style={{ ...S.btn(importText.trim() ? C.tape : C.line) }}>
+          インポート実行
+        </button>
+      </div>
+
+      <div style={{ fontSize: 12, color: C.inkSoft, lineHeight: 1.7 }}>
+        復習間隔: OK→1日→3日→7日→…(習熟度で自動延長)。「もう一度」で間隔リセット+当日再出題。データはこの端末に自動保存されます。
+      </div>
+    </div>
+  );
+}
+
+
+ReactDOM.createRoot(document.getElementById("root")).render(React.createElement(App));
+</script>
+</body>
+</html>

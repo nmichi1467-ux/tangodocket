@@ -1,6 +1,6 @@
 {
-  "name": "単語ドケット - SQE1 Vocabulary",
-  "short_name": "単語ドケット",
+  "name": "LexDeck - SQE1 Vocabulary",
+  "short_name": "LexDeck",
   "description": "SQE1向け英単語SRSトレーナー(逆算ノルマ+忘却曲線)",
   "start_url": "./",
   "scope": "./",

@@ -1,4 +1,4 @@
-const CACHE = "tango-docket-v1";
+const CACHE = "tango-docket-v2";
 const ASSETS = ["./", "./index.html", "./manifest.webmanifest", "./icon-192.png", "./icon-512.png"];
 
 self.addEventListener("install", (e) => {
@@ -13,9 +13,25 @@ self.addEventListener("activate", (e) => {
   );
 });
 
-// cache-first with network fill (CDN scripts get cached after first successful load)
 self.addEventListener("fetch", (e) => {
   if (e.request.method !== "GET") return;
+  const isNav = e.request.mode === "navigate" || e.request.url.endsWith("/index.html");
+
+  if (isNav) {
+    // network-first: 常に最新のindex.htmlを取りに行き、オフライン時のみキャッシュ
+    e.respondWith(
+      fetch(e.request)
+        .then((res) => {
+          const copy = res.clone();
+          caches.open(CACHE).then((c) => c.put("./index.html", copy)).catch(() => {});
+          return res;
+        })
+        .catch(() => caches.match("./index.html"))
+    );
+    return;
+  }
+
+  // その他(CDN・アイコン等)はキャッシュ優先
   e.respondWith(
     caches.match(e.request).then(
       (hit) =>
@@ -26,7 +42,7 @@ self.addEventListener("fetch", (e) => {
             caches.open(CACHE).then((c) => c.put(e.request, copy)).catch(() => {});
             return res;
           })
-          .catch(() => (e.request.mode === "navigate" ? caches.match("./index.html") : undefined))
+          .catch(() => undefined)
     )
   );
 });

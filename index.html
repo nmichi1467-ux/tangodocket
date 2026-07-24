@@ -360,9 +360,9 @@ function App() {
     nextLog.mcqOK = (nextLog.mcqOK || 0) + (isCorrect ? 1 : 0);
     const lbl = [cur.subject, cur.tag].filter(Boolean).join(" ");
     if (lbl) {
-      const items = nextLog.items ? [...nextLog.items] : [];
+      const items = nextLog.qItems ? [...nextLog.qItems] : [];
       if (!items.includes(lbl)) items.push(lbl);
-      nextLog.items = items;
+      nextLog.qItems = items;
     }
     persist({ ...data, mcqs: nextMcqs, dailyLog: { ...data.dailyLog, [t]: nextLog } });
     setMcqSession({ ...mcqSession, selected: letter, correctN: mcqSession.correctN + (isCorrect ? 1 : 0) });
@@ -445,9 +445,9 @@ function App() {
     else nextLog.revN += 1;
     const lbl = [w.subject, w.tag].filter(Boolean).join(" ");
     if (lbl) {
-      const items = nextLog.items ? [...nextLog.items] : [];
+      const items = nextLog.vItems ? [...nextLog.vItems] : [];
       if (!items.includes(lbl)) items.push(lbl);
-      nextLog.items = items;
+      nextLog.vItems = items;
     }
 
     let rest = session.queue.slice(1);
@@ -1271,15 +1271,9 @@ function RecordTab({ S, C, today, dailyLog, diary, onSave }) {
       "Land Law": "Land", "Property Practice": "PP", Trusts: "Tru", Wills: "Wil",
       "Criminal Law": "CrL", "Criminal Practice": "CrP", "Solicitors' Accounts": "SA",
     }[s] || (s || "").slice(0, 4));
-  const daySummary = (dateStr) => {
-    const lg = dailyLog[dateStr] || {};
-    const total = (lg.newN || 0) + (lg.revN || 0);
-    const mcqN = lg.mcqN || 0;
-    const manual = getEntry(dateStr).items;
-    const allItems = [...(lg.items || []), ...manual.filter((x) => !(lg.items || []).includes(x))];
-    if (total === 0 && mcqN === 0 && allItems.length === 0) return null;
+  const linesFrom = (items) => {
     const bySub = new Map();
-    allItems.forEach((it) => {
+    (items || []).forEach((it) => {
       let sub = it;
       let ch = "";
       const m = it.match(/^(.*?)\s*Ch\.(\d+)$/);
@@ -1294,14 +1288,25 @@ function RecordTab({ S, C, today, dailyLog, diary, onSave }) {
       if (!bySub.has(sub)) bySub.set(sub, []);
       if (ch && !bySub.get(sub).includes(ch)) bySub.get(sub).push(ch);
     });
-    const lines = [...bySub.entries()].map(([s, chs]) => {
+    return [...bySub.entries()].map(([s, chs]) => {
       const sorted = [...chs].sort((a, b) => (a === "巻" ? 1 : b === "巻" ? -1 : Number(a) - Number(b)));
       return `${abbrevSub(s)}${sorted.length ? " " + sorted.join("·") : ""}`;
     });
-    return { total, mcqN, lines };
+  };
+  const daySummary = (dateStr) => {
+    const lg = dailyLog[dateStr] || {};
+    const total = (lg.newN || 0) + (lg.revN || 0);
+    const mcqN = lg.mcqN || 0;
+    const lec = linesFrom(getEntry(dateStr).items);
+    const voc = linesFrom([...(lg.vItems || []), ...(lg.items || [])]);
+    const drill = linesFrom(lg.qItems || []);
+    if (total === 0 && mcqN === 0 && lec.length === 0 && voc.length === 0 && drill.length === 0) return null;
+    return { total, mcqN, lec, voc, drill };
   };
   const selLog = dailyLog[selDate] || { newN: 0, revN: 0, items: [] };
   const entry = getEntry(selDate);
+  const vocItems = [...(selLog.vItems || []), ...(selLog.items || [])];
+  const drillItems = selLog.qItems || [];
   const autoItems = selLog.items || [];
   const dirty = draft !== entry.text;
   const saveEntry = (text, items) => onSave(selDate, { text, items });
@@ -1347,7 +1352,7 @@ function RecordTab({ S, C, today, dailyLog, diary, onSave }) {
                   background: isSel ? C.ink : sum ? "#fff" : "transparent",
                   color: isSel ? "#fff" : C.ink,
                   borderRadius: 8, padding: "3px 1px", cursor: "pointer",
-                  fontFamily: sans, minHeight: 56, overflow: "hidden",
+                  fontFamily: sans, minHeight: 66, overflow: "hidden",
                   display: "flex", flexDirection: "column", alignItems: "center", gap: 1,
                 }}>
                 <span style={{ fontSize: 12, fontWeight: isSel || isToday ? 700 : 500, lineHeight: 1.2 }}>
@@ -1355,13 +1360,16 @@ function RecordTab({ S, C, today, dailyLog, diary, onSave }) {
                 </span>
                 {sum && (
                   <>
-                    {sum.lines.slice(0, 2).map((ln) => (
-                      <span key={ln} style={{ fontSize: 8, lineHeight: 1.25, color: subColor, fontWeight: 700, whiteSpace: "nowrap", maxWidth: "100%", overflow: "hidden" }}>
-                        {ln}
-                      </span>
-                    ))}
-                    {sum.lines.length > 2 && (
-                      <span style={{ fontSize: 8, lineHeight: 1.2, color: subColor }}>+{sum.lines.length - 2}</span>
+                    {[
+                      [sum.lec, isSel ? "#B9E4C9" : C.moss, "講"],
+                      [sum.voc, isSel ? "#F5B8C8" : C.tape, "単"],
+                      [sum.drill, isSel ? "#F0D49B" : C.amber, "演"],
+                    ].map(([lines, col, pre]) =>
+                      lines.length > 0 ? (
+                        <span key={pre} style={{ fontSize: 8, lineHeight: 1.3, color: col, fontWeight: 700, whiteSpace: "nowrap", maxWidth: "100%", overflow: "hidden" }}>
+                          {pre} {lines.join(" ")}
+                        </span>
+                      ) : null
                     )}
                     {(sum.total > 0 || sum.mcqN > 0) && (
                       <span style={{ fontSize: 8, lineHeight: 1.2, color: isSel ? "rgba(255,255,255,0.75)" : C.inkSoft }}>
@@ -1377,57 +1385,100 @@ function RecordTab({ S, C, today, dailyLog, diary, onSave }) {
       </div>
 
       <div style={{ ...S.card, borderTop: `4px solid ${C.tape}` }}>
-        <div style={{ ...S.h, fontSize: 16, marginBottom: 8 }}>{selDate}</div>
-        <div style={{ fontSize: 13, color: C.inkSoft, marginBottom: 8 }}>
-          実績: 新規 {selLog.newN || 0} 語 / 復習 {selLog.revN || 0} 語 / 演習 {selLog.mcqN || 0} 問{selLog.mcqN ? `(正解${selLog.mcqOK || 0})` : ""}
-        </div>
-        {(autoItems.length > 0 || entry.items.length > 0) && (
-          <div style={{ display: "flex", flexWrap: "wrap", gap: 6, marginBottom: 10 }}>
-            {autoItems.map((it) => (
-              <span key={`a-${it}`} style={S.tag(C.tapeSoft, C.tape)}>{it}</span>
-            ))}
-            {entry.items.map((it) => (
-              <span key={`m-${it}`} style={{ ...S.tag(C.mossSoft, C.moss), display: "inline-flex", alignItems: "center", gap: 5 }}>
-                {it}
-                <span onClick={() => removeManual(it)} style={{ cursor: "pointer", fontWeight: 700 }}>×</span>
-              </span>
-            ))}
+        <div style={{ ...S.h, fontSize: 16, marginBottom: 12 }}>{selDate}</div>
+
+        {/* ① 講義ノート(手動記録) */}
+        <div style={{ marginBottom: 14 }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 8 }}>
+            <span style={{ width: 4, height: 15, background: C.moss, borderRadius: 2 }} />
+            <span style={{ fontSize: 13, fontWeight: 700 }}>講義ノート</span>
+            <span style={{ fontSize: 11, color: C.inkSoft }}>手動記録</span>
           </div>
-        )}
-        <div style={{ fontSize: 12, color: C.inkSoft, marginBottom: 6 }}>
-          学習記録を手動で追加(講義ノートなどアプリ外の学習用・カレンダーに表示されます)
+          {entry.items.length > 0 && (
+            <div style={{ display: "flex", flexWrap: "wrap", gap: 6, marginBottom: 8 }}>
+              {entry.items.map((it) => (
+                <span key={`m-${it}`} style={{ ...S.tag(C.mossSoft, C.moss), display: "inline-flex", alignItems: "center", gap: 5 }}>
+                  {it}
+                  <span onClick={() => removeManual(it)} style={{ cursor: "pointer", fontWeight: 700 }}>×</span>
+                </span>
+              ))}
+            </div>
+          )}
+          <div style={{ display: "flex", gap: 6 }}>
+            <input
+              list="subject-list-rec" value={mSub} onChange={(e) => setMSub(e.target.value)}
+              placeholder="科目 (例 Tort)"
+              style={{ flex: 1, minWidth: 0, padding: 10, fontSize: 14, border: `1px solid ${C.line}`, borderRadius: 8, fontFamily: sans, boxSizing: "border-box" }}
+            />
+            <datalist id="subject-list-rec">
+              <option value="Tort" /><option value="Ethics" /><option value="Contract" />
+              <option value="Dispute Resolution" /><option value="Business Law" /><option value="Legal System" />
+              <option value="Constitutional Law" /><option value="Land Law" /><option value="Property Practice" />
+              <option value="Trusts" /><option value="Wills" /><option value="Criminal Law" />
+              <option value="Criminal Practice" /><option value="Solicitors' Accounts" />
+            </datalist>
+            <input
+              value={mCh} onChange={(e) => setMCh(e.target.value)} placeholder="章" inputMode="numeric"
+              style={{ width: 52, padding: "10px 6px", fontSize: 14, border: `1px solid ${C.line}`, borderRadius: 8, fontFamily: sans, boxSizing: "border-box", textAlign: "center" }}
+            />
+            <button onClick={addManual} disabled={!mSub.trim()} style={{ ...S.btn(mSub.trim() ? C.moss : C.line), width: "auto", padding: "10px 14px", fontSize: 14 }}>
+              追加
+            </button>
+          </div>
         </div>
-        <div style={{ display: "flex", gap: 6, marginBottom: 12 }}>
-          <input
-            list="subject-list-rec" value={mSub} onChange={(e) => setMSub(e.target.value)}
-            placeholder="科目 (例 Tort)"
-            style={{ flex: 1, minWidth: 0, padding: 10, fontSize: 14, border: `1px solid ${C.line}`, borderRadius: 8, fontFamily: sans, boxSizing: "border-box" }}
+
+        {/* ② 単語学習(自動記録) */}
+        <div style={{ marginBottom: 14 }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 8 }}>
+            <span style={{ width: 4, height: 15, background: C.tape, borderRadius: 2 }} />
+            <span style={{ fontSize: 13, fontWeight: 700 }}>単語学習</span>
+            <span style={{ fontSize: 12, color: C.inkSoft }}>
+              新規 {selLog.newN || 0} 語 ・ 復習 {selLog.revN || 0} 語
+            </span>
+          </div>
+          {vocItems.length > 0 ? (
+            <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
+              {vocItems.map((it) => (
+                <span key={`v-${it}`} style={S.tag(C.tapeSoft, C.tape)}>{it}</span>
+              ))}
+            </div>
+          ) : (
+            <div style={{ fontSize: 12, color: C.inkSoft }}>記録なし</div>
+          )}
+        </div>
+
+        {/* ③ 問題演習(自動記録) */}
+        <div style={{ marginBottom: 14 }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 8 }}>
+            <span style={{ width: 4, height: 15, background: C.amber, borderRadius: 2 }} />
+            <span style={{ fontSize: 13, fontWeight: 700 }}>問題演習</span>
+            <span style={{ fontSize: 12, color: C.inkSoft }}>
+              {selLog.mcqN || 0} 問{selLog.mcqN ? ` ・ 正解 ${selLog.mcqOK || 0}(${Math.round(((selLog.mcqOK || 0) / selLog.mcqN) * 100)}%)` : ""}
+            </span>
+          </div>
+          {drillItems.length > 0 ? (
+            <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
+              {drillItems.map((it) => (
+                <span key={`q-${it}`} style={S.tag(C.amberSoft, C.amber)}>{it}</span>
+              ))}
+            </div>
+          ) : (
+            <div style={{ fontSize: 12, color: C.inkSoft }}>記録なし</div>
+          )}
+        </div>
+
+        <div style={{ borderTop: `1px dashed ${C.line}`, paddingTop: 12 }}>
+          <textarea
+            value={draft}
+            onChange={(e) => setDraft(e.target.value)}
+            rows={4}
+            placeholder="この日の学習メモ(例: Contract Ch.6 苦手。misrepresentationの分類を明日再確認)"
+            style={{ width: "100%", boxSizing: "border-box", padding: 12, fontSize: 15, border: `1px solid ${C.line}`, borderRadius: 8, fontFamily: sans, resize: "vertical", marginBottom: 10 }}
           />
-          <datalist id="subject-list-rec">
-            <option value="Tort" /><option value="Ethics" /><option value="Contract" />
-            <option value="Dispute Resolution" /><option value="Business Law" /><option value="Legal System" />
-            <option value="Constitutional Law" /><option value="Land Law" /><option value="Property Practice" />
-            <option value="Trusts" /><option value="Wills" /><option value="Criminal Law" />
-            <option value="Criminal Practice" /><option value="Solicitors' Accounts" />
-          </datalist>
-          <input
-            value={mCh} onChange={(e) => setMCh(e.target.value)} placeholder="章" inputMode="numeric"
-            style={{ width: 56, padding: "10px 6px", fontSize: 14, border: `1px solid ${C.line}`, borderRadius: 8, fontFamily: sans, boxSizing: "border-box", textAlign: "center" }}
-          />
-          <button onClick={addManual} disabled={!mSub.trim()} style={{ ...S.btn(mSub.trim() ? C.moss : C.line), width: "auto", padding: "10px 14px", fontSize: 14 }}>
-            追加
+          <button onClick={() => saveEntry(draft, entry.items)} disabled={!dirty} style={{ ...S.btn(dirty ? C.ink : C.line), opacity: dirty ? 1 : 0.7 }}>
+            {dirty ? "メモを保存" : "保存済み"}
           </button>
         </div>
-        <textarea
-          value={draft}
-          onChange={(e) => setDraft(e.target.value)}
-          rows={4}
-          placeholder="この日の学習メモ(例: Contract Ch.6 苦手。misrepresentationの分類を明日再確認)"
-          style={{ width: "100%", boxSizing: "border-box", padding: 12, fontSize: 15, border: `1px solid ${C.line}`, borderRadius: 8, fontFamily: sans, resize: "vertical", marginBottom: 10 }}
-        />
-        <button onClick={() => saveEntry(draft, entry.items)} disabled={!dirty} style={{ ...S.btn(dirty ? C.ink : C.line), opacity: dirty ? 1 : 0.7 }}>
-          {dirty ? "メモを保存" : "保存済み"}
-        </button>
       </div>
     </div>
   );

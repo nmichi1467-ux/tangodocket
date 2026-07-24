@@ -1,0 +1,1267 @@
+[
+ {
+  "qid": "T-01",
+  "subject": "Tort",
+  "tag": "Ch.1",
+  "stem": "A cyclist is riding along a busy high street while glancing down at a mobile phone mounted on the handlebars. Distracted, he rides through a red light at a pedestrian crossing and collides with a pedestrian who is crossing the road. The pedestrian suffers a fractured wrist and wishes to bring a claim in negligence against the cyclist. Before advising on breach, causation and loss, the pedestrian's solicitor considers the first element of the claim, namely whether the cyclist owed the pedestrian a duty of care. Which of the following best describes how the court will approach the question of whether a duty of care was owed?",
+  "options": {
+   "A": "The court will apply the Caparo three-stage test, because foreseeability, proximity and fairness must be established in every claim in negligence.",
+   "B": "The court will find that a duty of care arises only if the pedestrian proves a relationship of proximity on the particular facts of the accident.",
+   "C": "The court will find that a duty of care is owed because road users owe an established duty of care to other road users, so there is no need to consider the three-stage test.",
+   "D": "The court will find that no duty of care is owed, because the established duty owed by road users applies only to drivers of motor vehicles.",
+   "E": "The court does not need to consider duty of care as a separate element, because it is enough that the cyclist was careless and that the pedestrian suffered injury."
+  },
+  "answer": "C",
+  "expl": "正解C。道路利⽤者(motorists, cyclists 等)同⼠は教科書 Table 1.1 の established duty(確⽴済み義務)類型。既存類型に該 当する事案では Caparo 三段階テストに進む必要はない――これが英国法の判断順序の核⼼。Caparo は「新しいカテゴリーの義務 を認めるべきか」を問う少数の事案でのみ使う道具であり、⽇常事故の⼤半は類型該当で即座に duty が肯定される。",
+  "trans": "⾃転⾞利⽤者が、ハンドルに取り付けた携帯電話に視線を落としながら交通量の多い⼤通りを⾛⾏している。注意散漫のまま、pedestrian crossing(横断歩道)の⾚信号を無視して進み、道路を横断中の歩⾏者に衝突した。歩⾏者は⼿⾸を⾻折し、⾃転⾞利⽤者に対して negligence(過 失不法⾏為)に基づく請求を⾏いたいと考えている。breach(義務違反)‧causation(因果関係)‧loss(損害)について助⾔する前に、歩⾏者の solicitor は請求の第⼀要素、すなわち⾃転⾞利⽤者が歩⾏者に対して duty of care(注意義務)を負っていたか否かを検討している。",
+  "analysis": {
+   "A": "× T3 原則すり替え型。Caparo 三段階テストは「すべての請求」で使うものではない。既存類型‧先例‧類推先例がない新規事案での み登場する補充的な道具である。",
+   "B": "× T2 要件⼊替え型。proximity は Caparo の三要素の⼀つにすぎず、しかも本件では Caparo ⾃体が不要。三要素の⼀つを切り出して 独⽴の成⽴要件のように⾒せるワナ。",
+   "C": "○ road user → road user は established duty の典型例。既存類型該当なら三段階テスト不要、という判断順序まで正しく述べてい る唯⼀の肢。",
+   "D": "× T6 当事者すり替え型。教科書の類型は 'Road user (motorists, cyclists etc)' と明⽰しており、⾃転⾞利⽤者も含まれる。義務者の範 囲を不当に狭めるワナ。",
+   "E": "× T7 ⽇本法感覚型。⺠法709条の⼀般条項の感覚では「過失+損害」で⾜りるが、英国法は duty → breach → causation → remoteness の段階審査を採る。duty の検討を省略することはできない。 シーン語彙表 handlebars (⾃転⾞の)ハンドル distracted 注意散漫で ride through a red light ⾚信号を無視して進む pedestrian crossing 横断歩道 collide with 〜 〜に衝突する fractured wrist ⼿⾸の⾻折 advise on 〜 〜について助⾔する first element of the claim 請求の第⼀要素 典拠 Donoghue v Stevenson [1932] AC 562(neighbour principle)/Caparo Industries plc v Dickman [1990] 2 AC 605/教科書 Ch.1(Table 1.1 established duty situations‧Figure 1.2)※判例名の知識は SQE1 スペック上不要(理解補助) 正誤記録:1周⽬ □正 □誤( / ) 2周⽬ □正 □誤( / ) 3周⽬ □正 □誤( / )"
+  }
+ },
+ {
+  "qid": "T-02",
+  "subject": "Tort",
+  "tag": "Ch.1",
+  "stem": "A private weather-forecasting company provides a free storm-warning service for a small coastal town, funded by advertising. One evening the company negligently fails to issue a warning of an approaching storm. A local fisherman, who checks the service before every voyage, puts to sea and his boat is badly damaged when the storm strikes. He brings a claim in negligence against the company. There is no previous decision, and no closely analogous decision, on whether a forecasting service owes a duty of care to an individual fisherman in these circumstances. Which of the following best describes the approach the court will take in deciding whether the company owed the fisherman a duty of care?",
+  "options": {
+   "A": "The court will first look for an existing or analogous precedent and, finding none, will ask whether harm was reasonably foreseeable, whether there was a relationship of proximity, and whether it is fair, just and reasonable to impose a duty.",
+   "B": "The court must apply the three-stage test in full, because the test governs every claim in negligence whether or not a duty of care is already established.",
+   "C": "The court will impose a duty of care if damage to the fisherman was reasonably foreseeable, because foreseeability alone is sufficient where the situation is novel.",
+   "D": "The court will refuse to recognise a duty of care, because the categories of relationships giving rise to a duty of care are now closed.",
+   "E": "The court will impose a duty of care, because every person owes a duty to compensate anyone who is in fact harmed by their careless conduct."
+  },
+  "answer": "A",
+  "expl": "正解A。新類型事案の処理は⼆段構え:①既存先例‧類推先例(incrementally and by analogy)→②なければ Caparo 三段階 (foreseeability‧proximity‧fair, just and reasonable)。Caparo は「⼩数の新類型事案でのみ使う」「三要素はすべて必要(and 結 合)」の2点がワナの定番。",
+  "trans": "⺠間の気象予報会社が、広告収⼊により、⼩さな沿岸の町向けに無料の storm-warning(暴⾵警報)サービスを提供している。ある晩、同社は過 失により接近中の暴⾵の警報を発するのを怠った。毎回の出漁前にこのサービスを確認している地元の漁師が海に出たところ、暴⾵の直撃によ り漁船が⼤きく損傷した。漁師は同社に対し negligence に基づく請求を⾏う。このような状況で気象予報サービスが個々の漁師に duty of care を負うか否かについては、先例も、密接に類似する先例も存在しない。",
+  "analysis": {
+   "A": "○ incremental approach → Caparo の順序と、三要素の内容をいずれも正確に述べている。",
+   "B": "× T3 原則すり替え型。既存類型該当なら三段階テストは不要(T-01参照)。「すべての請求で必須」は Caparo の位置づけの誤り。",
+   "C": "× T2 要件⼊替え型。foreseeability は三要素の⼀つにすぎない。proximity と fair, just and reasonable を⽋けば新類型の duty は認め られない。",
+   "D": "× T5 結論逆転型。義務類型は閉じていない。裁判所は先例からの漸進的発展(incrementally)により新類型を認め得る。",
+   "E": "× T7 ⽇本法感覚型。709条の⼀般条項なら「過失で損害を与えれば賠償」に直結するが、英国法は新類型では政策考慮(floodgates 防 ⽌)を含む三段階の絞りをかける。 シーン語彙表 weather-forecasting 気象予報の funded by advertising 広告収⼊で運営される issue a warning 警報を発する approaching storm 接近中の暴⾵ put to sea 出港する‧海に出る voyage 航海‧出漁 badly damaged ⼤きく損傷した analogous decision 類推可能な判例 典拠 Caparo Industries plc v Dickman [1990] 2 AC 605(三段階+incremental approach)/Bourhill v Young [1943] AC 92(foreseeability)/McFarlane v Tayside Health Board [2000] 2 AC 59(fair, just and reasonable)/教科書 Ch.1(Table 1.2‧Figure 1.2)※判例名の知識は SQE1 スペック上不要 正誤記録:1周⽬ □正 □誤( / ) 2周⽬ □正 □誤( / ) 3周⽬ □正 □誤( / )"
+  }
+ },
+ {
+  "qid": "T-03",
+  "subject": "Tort",
+  "tag": "Ch.1",
+  "stem": "While walking home, an off-duty paramedic sees a man collapse on the opposite side of the street. Several members of the public gather around him. The paramedic, who is late for a personal appointment, briefly looks over at the scene but walks on without offering any assistance and without speaking to anyone. The man suffers lasting brain damage which prompt first aid would probably have prevented. Having later discovered the paramedic's identity, the man brings a claim in negligence against her, arguing that she should have come to his aid. Is the claim likely to succeed?",
+  "options": {
+   "A": "Yes, because it was reasonably foreseeable that the man would suffer serious harm if he did not receive prompt assistance.",
+   "B": "Yes, because the paramedic's professional training placed her under a positive duty to use her skills to assist a person in medical danger.",
+   "C": "Yes, because by looking over at the scene the paramedic assumed responsibility for the man's safety.",
+   "D": "No, because the man cannot prove that the paramedic's failure to act caused his brain damage.",
+   "E": "No, because the law imposes no positive duty to act to protect others from harm in the absence of a special relationship, and no such relationship existed here."
+  },
+  "answer": "E",
+  "expl": "正解E。英国法には「溺れる他⼈を救う義務はない」――不作為(omission)については、不法⾏為上‧契約上の関係の外で は積極的作為義務が存在しないのが⼤原則。例外は control(教師/⽣徒型)、assumption of responsibility(責任の引受け)、危険の創 出‧引受けなどの確⽴された関係に限られ、⼀瞥して通り過ぎただけでは引受けは⽣じない。予⾒可能性があっても duty は発⽣し ない点が最重要。",
+  "trans": "帰宅途中、⾮番の paramedic(救急救命⼠)が、通りの反対側で男性が倒れるのを⽬撃した。数名の通⾏⼈が男性の周りに集まっている。私的な 約束に遅れていた paramedic は、現場を⼀瞥したものの、何の援助も申し出ず、誰とも⾔葉を交わさずに歩き去った。男性には、迅速な応急処 置があればおそらく防げたであろう永続的な脳損傷が残った。後に paramedic の⾝元を突き⽌めた男性は、彼⼥は⾃分を助けるべきであったと 主張して、negligence に基づく請求を⾏う。",
+  "analysis": {
+   "A": "× T3 原則すり替え型。omission 事案では foreseeability があっても duty は⽣じない。予⾒可能性は duty を基礎づける⼗分条件では ない。",
+   "B": "× T7 ⽇本法感覚型。医師の応召義務や保護責任者遺棄罪の発想を持ち込むワナ。英国の negligence では、資格‧技能の保有⾃体は⾒ 知らぬ他⼈への積極的救助義務を⽣まない。",
+   "C": "× T4 事実捏造型。assumption of responsibility は救助に着⼿する等の引受け⾏為を要する。「⼀瞥した」という事実を「責任の引受 け」に⽔増ししている。",
+   "D": "× T1 結論正‧理由誤り型。結論(No)は正しいが、本件では「応急処置があればおそらく防げた」とあり因果は認められ得る。請求が 落ちる真の理由は duty の不存在である。",
+   "E": "○ 原則(積極的作為義務なし)と例外の不該当(特別な関係なし)の両⽅を正しく述べている。 シーン語彙表 off-duty ⾮番の collapse 倒れる‧卒倒する members of the public 通⾏⼈‧⼀般市⺠ offer assistance 援助を申し出る lasting brain damage 永続的な脳損傷 prompt first aid 迅速な応急処置 come to one's aid 〜の救助に向かう walk on (⽴ち⽌まらず)歩き続ける 典拠 Stovin v Wise [1996] AC 923(不作為の原則)/Barrett v Ministry of Defence [1995] 1 WLR 1217(assumption of responsibility)/Carmarthenshire CC v Lewis [1955] AC 549(control)/教科書 Ch.1(Omissions‧Table 1.3)※判例名の知識は SQE1 スペック上不要 正誤記録:1周⽬ □正 □誤( / ) 2周⽬ □正 □誤( / ) 3周⽬ □正 □誤( / )"
+  }
+ },
+ {
+  "qid": "T-04",
+  "subject": "Tort",
+  "tag": "Ch.1",
+  "stem": "A local authority operates a residential centre for young offenders. One evening, the two members of staff on duty, who are responsible for supervising the offenders, leave the centre entirely unattended for several hours, contrary to express instructions. During that time several offenders abscond, break into a neighbouring farm and cause extensive damage to buildings and machinery before being recaptured. The farmer brings a claim in negligence against the local authority. The authority argues that it cannot owe a duty of care in respect of damage deliberately caused by third parties. Which of the following best describes the position?",
+  "options": {
+   "A": "The authority is not liable, because a defendant can never owe a duty of care in respect of harm caused by the deliberate acts of a third party.",
+   "B": "The authority is likely to be liable, because a duty of care can arise where there is a special relationship of control or supervision between the defendant and the third party who causes the harm.",
+   "C": "The authority is liable simply because damage of this kind was reasonably foreseeable, and foreseeability alone is sufficient where harm is caused by a third party.",
+   "D": "The authority is liable only if it had expressly assumed responsibility for the safety of the farmer's property before the incident occurred.",
+   "E": "The authority is not liable, because the staff acted contrary to express instructions, which relieves their employer of any responsibility for the consequences."
+  },
+  "answer": "B",
+  "expl": "正解B。第三者の⾏為については duty なしが原則だが、①原告との特別関係、②defendant と第三者との特別関係(⽀配‧ 監督)、③危険源の創出、④第三者が作った危険の放置――の各例外がある。少年犯罪者を監督する当局はその典型例(②)であり、 監督懈怠により脱⾛した者が近隣に与えた損害につき duty が認められ得る。公的機関でも、この監督関係ルートなら責任を問え る。",
+  "trans": "地⽅公共団体が young offenders(少年犯罪者)のための⼊所施設を運営している。ある晩、犯罪者らの監督を職責とする当直職員2名が、明⽰の 指⽰に反して、施設を数時間にわたり完全に無⼈のまま放置した。その間に複数の犯罪者が脱⾛し、隣接する農場に侵⼊して、再収容されるま でに建物と機械に甚⼤な損害を与えた。農場主は地⽅公共団体に対し negligence に基づく請求を⾏う。同団体は、第三者が故意に引き起こした 損害について duty of care を負うことはあり得ないと主張している。",
+  "analysis": {
+   "A": "× T5 結論逆転型。「決してない(never)」が誤り。原則には確⽴した例外群があり、本件はまさに監督関係の例外に該当する。",
+   "B": "○ defendant と加害第三者の間の control/supervision 関係という例外を正確に指摘している。",
+   "C": "× T3 原則すり替え型。第三者事案で foreseeability のみで duty を認めれば原則が空洞化する。例外類型(特別関係等)への該当が必 要。",
+   "D": "× T2 要件⼊替え型。assumption of responsibility は例外の⼀つにすぎず、監督関係の例外に「原告への明⽰の引受け」という要件は ない。",
+   "E": "× T6 法域‧論点すり替え型。「指⽰違反なら使⽤者免責」は vicarious liability の prohibited acts 論点の誤った持込み。ここは団体⾃ ⾝の監督義務違反(職員の懈怠を通じた)の問題であり、指⽰違反は免責事由にならない。 シーン語彙表 residential centre ⼊所施設 on duty 当直の‧勤務中の unattended 無⼈の‧監視のない contrary to express instructions 明⽰の指⽰に反して abscond 脱⾛する break into 〜 〜に侵⼊する extensive damage 甚⼤な損害 recapture 再収容する‧捕まえ直す 典拠 Smith v Littlewoods [1987] AC 241(Lord Goff の4例外)/Mitchell v Glasgow City Council [2009] UKHL 11(監督義務 Dorset Yacht 型の整理)/教科書 Ch.1(Third parties‧Table 1.4)※判例名の知識は SQE1 スペック上不要 正誤記録:1周⽬ □正 □誤( / ) 2周⽬ □正 □誤( / ) 3周⽬ □正 □誤( / )"
+  }
+ },
+ {
+  "qid": "T-05",
+  "subject": "Tort",
+  "tag": "Ch.1",
+  "stem": "A learner driver is taking her third driving lesson, supervised by a qualified driving instructor sitting in the passenger seat. The instructor knows that she has very little experience. While attempting to turn a corner at low speed, she panics, fails to straighten the steering wheel and mounts the pavement, striking a lamp post. The instructor's knee is injured in the collision. He brings a claim in negligence against her. It is accepted by both parties that she was doing her incompetent best throughout the lesson. Which of the following best describes the standard of care against which the learner driver will be judged?",
+  "options": {
+   "A": "She will be judged by the standard of a driver with her own limited skill and experience, because she cannot be expected to drive better than she is able.",
+   "B": "She will not be liable, because the instructor knew of her inexperience and therefore willingly accepted the risk of injury.",
+   "C": "She will be judged by a lower standard reflecting her status as a learner, so she is unlikely to have fallen below the standard required.",
+   "D": "She will be judged by the objective standard of a reasonably competent driver, so she is likely to be liable despite her inexperience.",
+   "E": "She will be liable whatever standard is applied, because drivers are strictly liable for injuries caused to their passengers."
+  },
+  "answer": "D",
+  "expl": "正解D。standard of care は客観的(objective)であり、defendant の個⼈的な経験‧技能の不⾜は考慮されない。learner driver も reasonably competent driver の⽔準で判断される。専⾨職の⽂脈でも同じ思想が貫かれ、経験の浅さは抗弁にならない (junior でも同⼀⽔準)。「精⼀杯やった」は法的には無意味である。",
+  "trans": "learner driver(仮免許練習中の運転者)が、助⼿席に座る有資格の教習指導員の監督の下、3回⽬の運転講習を受けている。指導員は彼⼥の経験が 極めて浅いことを知っている。低速で⾓を曲がろうとした際、彼⼥はパニックに陥り、ハンドルを戻し損ねて歩道に乗り上げ、街灯柱に衝突し た。この衝突で指導員は膝を負傷し、彼⼥に対して negligence に基づく請求を⾏う。彼⼥が講習を通じて「未熟なりに精⼀杯」運転していたこ とは、両当事者間で争いがない。",
+  "analysis": {
+   "A": "× T7 ⽇本法感覚型。過失を⾏為者の主観的な注意能⼒で測る発想(具体的過失論)を持ち込むワナ。英国法の基準は徹頭徹尾、客観的な 合理⼈基準である。",
+   "B": "× T6 論点すり替え型。volenti(危険引受け)は Ch.4 の抗弁論点であり、しかも未熟さの認識だけでは危険の任意の引受けは認められな い。standard を問う設問への防御肢の混⼊。",
+   "C": "× T2 要件⼊替え型。「学習者向けの緩和された基準」は存在しない。基準の引下げは children 等の限られた special situations のみで ある。",
+   "D": "○ 客観的な reasonably competent driver 基準と、その帰結(未熟でも責任肯定)を正しく述べる。",
+   "E": "× T3 原則すり替え型。negligence は過失責任であり、運転者の厳格責任という原則は存在しない。基準論を放棄させる乱暴な⼀般 化。 シーン語彙表 driving lesson 運転講習 qualified instructor 有資格の指導員 passenger seat 助⼿席 straighten the steering wheel ハンドルをまっすぐに戻す mount the pavement 歩道に乗り上げる lamp post 街灯柱 incompetent best 未熟なりの精⼀杯 inexperience 経験不⾜ 典拠 Nettleship v Weston [1971] 2 QB 691(learner driver)/Wilsher v Essex AHA [1988] AC 1074(経験不⾜は抗弁にならない)/教科書 Ch.1(Table 1.6 Unskilled defendant)※判例名の知識は SQE1 スペック上不要 正誤記録:1周⽬ □正 □誤( / ) 2周⽬ □正 □誤( / ) 3周⽬ □正 □誤( / )"
+  }
+ },
+ {
+  "qid": "T-06",
+  "subject": "Tort",
+  "tag": "Ch.1",
+  "stem": "A consultant surgeon performs a knee operation using a surgical technique favoured by a substantial number of specialist knee surgeons in the United Kingdom. A different group of specialists prefers an alternative technique carrying a lower risk of nerve damage. The operation is carried out competently, but the patient suffers nerve damage, a recognised complication of the technique used. Expert evidence confirms that the technique chosen is supported by a responsible body of surgical opinion, and that this body of opinion withstands logical analysis. The patient brings a claim in negligence against the surgeon. Is the surgeon likely to have breached his duty of care?",
+  "options": {
+   "A": "No, because he acted in accordance with a practice accepted as proper by a responsible body of surgeons skilled in that particular field.",
+   "B": "Yes, because another responsible body of specialist surgeons would have used the alternative technique, which carried a lower risk.",
+   "C": "Yes, because the patient in fact suffered harm, which shows that the required standard of care was not met.",
+   "D": "No, because he honestly did his best for the patient and an honest choice of technique cannot be criticised.",
+   "E": "Yes, unless he can show that a majority of the surgical profession supports the technique he used."
+  },
+  "answer": "A",
+  "expl": "正解A。Bolam テスト:医師(専⾨家)は、当該分野に熟練した responsible body of opinion に適切と認められた実務に従っ て⾏動していれば、duty 違反とならない。複数の⾒解が対⽴していても、⾃らの依拠した⾒解が「責任ある集団」のものであれば ⾜り、多数派である必要はない。Bolitho はこれに「その⾒解が論理的精査に耐えること」という司法審査を加えたが、本問ではそ れも充⾜済みと明⽰されている。",
+  "trans": "consultant surgeon(顧問外科医)が、英国の相当数の膝専⾨外科医に⽀持されている術式を⽤いて膝の⼿術を⾏った。別の専⾨医グループは、 神経損傷のリスクがより低い代替術式を選好している。⼿術⾃体は適切に実施されたが、患者は、使⽤された術式の既知の合併症である神経損 傷を負った。専⾨家証拠により、選択された術式が responsible body(責任ある専⾨家集団)の外科的⾒解に⽀持されていること、およびその⾒ 解が logical analysis(論理的精査)に耐えることが確認されている。患者は外科医に対し negligence に基づく請求を⾏う。",
+  "analysis": {
+   "A": "○ Bolam の定式そのもの。責任ある集団の実務への準拠=⾮違反。",
+   "B": "× T5 結論逆転型。対⽴する⾒解の存在は Bolam の下では違反を基礎づけない。裁判所は複数の責任ある⾒解の優劣を裁定しない。",
+   "C": "× T3 原則すり替え型。損害の発⽣⾃体は違反の証明にならない(結果責任の否定)。既知の合併症の実現は過失なしでも起こり得る。",
+   "D": "× T1 結論正‧理由誤り型。結論(⾮違反)は正しいが、基準は「誠実な最善」ではなく「責任ある専⾨家集団の実務への準拠」という客 観的基準である。",
+   "E": "× T2 要件⼊替え型。「多数派(majority)」の⽀持は不要。responsible body であれば少数派の⾒解でも⾜りる。 シーン語彙表 consultant surgeon 顧問外科医(上級専⾨医) surgical technique 術式 nerve damage 神経損傷 recognised complication 既知の合併症 expert evidence 専⾨家証拠 carry a lower risk より低いリスクを伴う competently 適切に‧有能に withstand logical analysis 論理的精査に耐える 典拠 Bolam v Friern Hospital Management Committee [1957] 1 WLR 582/Bolitho v City and Hackney HA [1998] AC 232/教科書 Ch.1(Standard of care: professional)※判例名の知識は SQE1 スペック上不要 正誤記録:1周⽬ □正 □誤( / ) 2周⽬ □正 □誤( / ) 3周⽬ □正 □誤( / )"
+  }
+ },
+ {
+  "qid": "T-07",
+  "subject": "Tort",
+  "tag": "Ch.1",
+  "stem": "A patient with a degenerative spinal condition is offered an operation which carries a 2% risk of permanent paralysis. The surgeon does not mention this risk: he considers it too small to trouble the patient with, and he knows that patients who are warned often become anxious. Expert evidence shows that a responsible body of spinal surgeons would similarly not have warned of the risk. The patient does not ask any questions about the risks of surgery. The operation is performed without negligence, but the risk materialises and the patient is permanently paralysed. She would have declined the operation had she known of the risk. Is the surgeon likely to be liable in negligence for the failure to warn?",
+  "options": {
+   "A": "No, because a responsible body of surgical opinion would equally have chosen not to warn the patient of the risk.",
+   "B": "No, because a 2% risk is too small to amount to a material risk requiring disclosure.",
+   "C": "Yes, because a doctor must take reasonable care to disclose material risks, and a risk is material if a reasonable person in the patient's position would be likely to attach significance to it.",
+   "D": "Yes, because a doctor must disclose every risk associated with a proposed treatment, however small or remote.",
+   "E": "No, because the duty to warn of risks arises only where the patient asks questions about the risks of the proposed treatment."
+  },
+  "answer": "C",
+  "expl": "正解C。治療前の情報開⽰は Bolam の射程外。医師は material risks を開⽰する義務を負い、materiality は「合理的な患 者がそのリスクに意味を⾒出すか(患者の⽴場にある合理⼈基準)」で判断される――臨床判断の問題ではなく、患者の⾃⼰決定の問 題である。2%でも⿇痺という重⼤結果+患者が拒否したであろう事情があれば material たり得る。責任ある集団が警告しない実務 でも免責されない。",
+  "trans": "変性性の脊椎疾患を有する患者が、恒久的⿇痺の 2% のリスクを伴う⼿術を提案された。外科医はこのリスクに⾔及しなかった。患者を煩わせ るには⼩さすぎると考え、また、警告を受けた患者がしばしば不安に陥ることを知っていたからである。専⾨家証拠によれば、responsible body に属する脊椎外科医らも同様にこのリスクを警告しなかったであろうとされる。患者は⼿術のリスクについて何も質問しなかった。⼿術 ⾃体は過失なく実施されたが、リスクが現実化し、患者は恒久的な⿇痺状態となった。リスクを知っていれば、彼⼥は⼿術を拒否していたであ ろう。",
+  "analysis": {
+   "A": "× T3 原則すり替え型。Bolam を開⽰場⾯に誤適⽤するワナ。開⽰義務の有無は専⾨家集団の実務ではなく患者中⼼の基準で決まる。",
+   "B": "× T2 数字型。materiality は百分率の⼤⼩だけでは決まらない。結果の重⼤性と当該患者にとっての意味を含めて判断される。",
+   "C": "○ 開⽰義務と material risk の判定基準(患者の⽴場にある合理⼈)を正確に述べる。",
+   "D": "× T5 結論逆転型(過⼤化)。開⽰義務は material なリスクに限られ、「あらゆるリスク」の開⽰義務は存在しない。",
+   "E": "× T3 原則すり替え型。「質問されたら答える」は旧来の発想。現在の基準では、質問の有無にかかわらず material risks の開⽰義務が ⽣じる。 シーン語彙表 degenerative 変性性の spinal condition 脊椎疾患 permanent paralysis 恒久的⿇痺 trouble A with B BでAを煩わせる materialise (リスクが)現実化する decline the operation ⼿術を拒否する failure to warn 警告の懈怠 attach significance to 〜 〜を重視する 典拠 Montgomery v Lanarkshire Health Board [2015] UKSC 11(material risk 基準)/Bolam(治療⾏為との対⽐)/教科書 Ch.1(Practice example 1.6)※判例名の 知識は SQE1 スペック上不要 正誤記録:1周⽬ □正 □誤( / ) 2周⽬ □正 □誤( / ) 3周⽬ □正 □誤( / )"
+  }
+ },
+ {
+  "qid": "T-08",
+  "subject": "Tort",
+  "tag": "Ch.1",
+  "stem": "During a school lunch break, a 14-year-old pupil and his friend, also aged 14, are play-fighting with plastic rulers taken from their classroom. One of the rulers suddenly snaps, and a fragment of plastic strikes the friend in the eye, permanently damaging his sight. The injured boy brings a claim in negligence against the pupil. Expert evidence suggests that games of this kind are common among schoolchildren and that an ordinary 14-year-old would have regarded the game as harmless fun, without foreseeing any risk of injury. Which of the following best describes how the court will assess whether the pupil breached a duty of care?",
+  "options": {
+   "A": "The pupil will be judged by the standard of a reasonable adult, because the objective standard of care does not vary with the characteristics of the defendant.",
+   "B": "The pupil will not be liable, but his parents will be liable in negligence for failing to supervise him properly while he was at school.",
+   "C": "The claim must fail at the outset, because children cannot be sued in negligence.",
+   "D": "The pupil will be judged by the standard of an exceptionally careful and mature child of the same age.",
+   "E": "The pupil will be judged by the standard of an ordinary child of the same age, so he is unlikely to be in breach if an ordinary 14-year-old would not have foreseen the risk of injury."
+  },
+  "answer": "E",
+  "expl": "正解E。児童は special situations の代表例で、「同年齢の通常の児童」を基準に判断される(客観基準の年齢修正)。通常の 同年齢児が危険を予⾒しない遊びであれば breach は否定される。児童が被告になれること、親が当然に代わって責任を負う制度が ないことも、⽇本法との重要な対⽐点。",
+  "trans": "学校の昼休み中、14歳の⽣徒とその友⼈(同じく14歳)が、教室から持ち出したプラスチック定規でチャンバラ遊びをしていた。定規の⼀本が突 然折れ、プラスチック⽚が友⼈の眼に当たり、視⼒に恒久的な損傷が⽣じた。負傷した少年は当該⽣徒に対し negligence に基づく請求を⾏う。 専⾨家証拠によれば、この種の遊びは学童の間でありふれたものであり、通常の14歳児であればこの遊びを無害な楽しみとみなし、負傷の危険 を予⾒しなかったであろうとされる。",
+  "analysis": {
+   "A": "× T3 原則すり替え型。客観基準の⼤枠は正しいが、children は確⽴された修正類型であり、成⼈基準は適⽤されない。",
+   "B": "× T7 ⽇本法感覚型。714条の監督義務者責任の発想。英国法では親が児童の tort について当然に責任を負う制度はなく、しかも在校中 の監督は親の⼿を離れている。",
+   "C": "× T5 結論逆転型。児童に対する negligence 訴訟は可能である。基準が修正されるだけで、訴権⾃体は否定されない。",
+   "D": "× T2 要件⼊替え型。基準は「通常の(ordinary)」同年齢児であり、「並外れて慎重な」児童ではない。形容詞のすり替えに注意。",
+   "E": "○ 同年齢児基準と、その適⽤結果(通常児が予⾒しないなら⾮違反)を正しく述べる。 シーン語彙表 lunch break 昼休み play-fighting チャンバラ遊び‧じゃれ合い ruler 定規 snap ポキッと折れる fragment 破⽚ permanently damage one's sight 視⼒に恒久的損傷を与える harmless fun 無害な楽しみ at the outset 冒頭から‧当初から 典拠 Mullin v Richards [1998] 1 WLR 1304(同年齢児基準)/教科書 Ch.1(Table 1.6 Children)※判例名の知識は SQE1 スペック上不要 正誤記録:1周⽬ □正 □誤( / ) 2周⽬ □正 □誤( / ) 3周⽬ □正 □誤( / )"
+  }
+ },
+ {
+  "qid": "T-09",
+  "subject": "Tort",
+  "tag": "Ch.1",
+  "stem": "An employer operates a vehicle repair workshop. One of its mechanics is blind in his left eye, a fact known to the employer. While the mechanic is using a hammer to strike rusted metal underneath a vehicle, a metal chip flies into his right eye, leaving him completely blind. Safety goggles were inexpensive and readily available, but the employer did not provide goggles to any of its mechanics, because the likelihood of an eye injury arising from this kind of work was known to be small. The mechanic brings a claim in negligence against the employer. Which of the following best describes whether the employer breached its duty of care to the mechanic?",
+  "options": {
+   "A": "There is no breach, because the likelihood of an eye injury was small and was no greater for this mechanic than for any other worker.",
+   "B": "There is likely to be a breach, because the potential consequences of an eye injury were far more serious for this mechanic, and that gravity outweighed the small likelihood of harm and the minimal cost of providing goggles.",
+   "C": "There is no breach, because the employer treated all of its mechanics in exactly the same way and did not single this mechanic out.",
+   "D": "There is a breach, because an employer is automatically liable whenever an employee is injured in the course of their work.",
+   "E": "There is no breach, because the mechanic, knowing of his own condition, must be taken to have accepted the ordinary risks of his trade."
+  },
+  "answer": "B",
+  "expl": "正解B。breach の判断では likelihood of harm(蓋然性)‧seriousness of injury(重⼤性)‧cost of precautions(予防費⽤)‧ social value(社会的効⽤)を衡量する。隻眼の労働者にとって残る眼の負傷は「全盲」を意味し、結果の重⼤性が跳ね上がる。重⼤ 性が⼤きく予防費⽤が僅少なら、蓋然性が⼩さくても違反が認められる。要求⽔準は「この原告に対して」個別化される点が核⼼。",
+  "trans": "使⽤者が⾃動⾞修理⼯場を営んでいる。整備⼠の⼀⼈は左眼を失明しており、使⽤者はその事実を知っている。この整備⼠が⾞両の下でハンマ ーを使って錆びた⾦属を叩いていたところ、⾦属⽚が右眼に⾶び込み、彼は完全に失明した。safety goggles(保護ゴーグル)は安価で容易に⼊⼿ できたが、この種の作業から眼の負傷が⽣じる蓋然性は⼩さいことが知られていたため、使⽤者はいずれの整備⼠にもゴーグルを⽀給していな かった。整備⼠は使⽤者に対し negligence に基づく請求を⾏う。",
+  "analysis": {
+   "A": "× T2 要素⼊替え型。蓋然性のみで判断させるワナ。発⽣確率が同じでも、結果の重⼤性がこの原告については質的に異なる(⽚眼→全 盲)。",
+   "B": "○ 重⼤性×費⽤×蓋然性の衡量を正しく⾏い、既知の個別事情による義務⽔準の引上げを捉えている。",
+   "C": "× T3 原則すり替え型。「平等取扱いなら免責」という原則は存在しない。義務の⽔準は個々の従業員の既知のリスクに応じて調整さ れる。",
+   "D": "× T6 論点すり替え型。使⽤者の責任は⾃動(厳格)ではない。employers' liability(Ch.5)でも過失責任が原則であり、業務中の負傷=当然 責任という規範はない。",
+   "E": "× T7 ⽇本法感覚型+抗弁の先取り。素因‧⾃⼰責任で減免する発想。危険の引受け(volenti)は明確な任意の同意を要し、⽣計のため働 き続けたことは同意ではない。 シーン語彙表 vehicle repair workshop ⾃動⾞修理⼯場 mechanic 整備⼠ rusted metal 錆びた⾦属 metal chip ⾦属⽚ safety goggles 保護ゴーグル readily available 容易に⼊⼿できる single 〜 out 〜を特別扱い(名指し)する in the course of one's work 業務中に 典拠 Paris v Stepney Borough Council [1951] AC 367(重⼤性)/Bolton v Stone [1951] 1 All ER 1078(蓋然性)/Latimer v AEC [1952] 2 QB 701(費⽤)/教科書 Ch.1(Table 1.7)※判例名の知識は SQE1 スペック上不要 正誤記録:1周⽬ □正 □誤( / ) 2周⽬ □正 □誤( / ) 3周⽬ □正 □誤( / )"
+  }
+ },
+ {
+  "qid": "T-10",
+  "subject": "Tort",
+  "tag": "Ch.1",
+  "stem": "A pedestrian is crossing a road at a marked pedestrian crossing when she is struck by the defendant's car and seriously injured. She has no memory of the accident, there were no independent witnesses, and the precise cause of the collision cannot be established. It is accepted that the car was under the defendant's sole control, and that cars do not ordinarily collide with pedestrians on a marked crossing unless the driver has failed to take proper care. The defendant has not been prosecuted for any driving offence arising from the accident. Which of the following best describes how the pedestrian may seek to establish breach of duty?",
+  "options": {
+   "A": "She may rely on res ipsa loquitur, which reverses the burden of proof so that the defendant must disprove negligence on the balance of probabilities.",
+   "B": "She cannot establish breach, because a claimant must always identify and prove the specific negligent act or omission which caused the accident.",
+   "C": "She may rely on res ipsa loquitur, but only if the cause of the accident is known and fully documented.",
+   "D": "She may rely on res ipsa loquitur, so that the incident itself is evidence of negligence and it is then for the defendant to show that the accident could have occurred without negligence; the legal burden of proof remains on her.",
+   "E": "She cannot succeed unless the defendant is first convicted of a driving offence arising from the accident."
+  },
+  "answer": "D",
+  "expl": "正解D。res ipsa loquitur の3要件=①損害原因が defendant(またはその責任下の者)の⽀配下にあった、②通常は過失なし に起こらない事故態様、③事故原因が不明。効果は「事故の発⽣⾃体が過失の証拠になる」ことであり、⽴証責任は転換しない。 defendant は「過失なしでも起こり得た」ことを⽰して推認を崩す。なお刑事有罪判決があれば⺠事で援⽤でき、その場合は defendant が「⾃⼰の過失は原因でない」ことを⽴証する側に回るが、有罪判決は請求の前提条件ではない。",
+  "trans": "歩⾏者が marked pedestrian crossing(標⽰のある横断歩道)で道路を横断中、defendant の⾃動⾞にはねられ重傷を負った。彼⼥には事故の記 憶がなく、独⽴の⽬撃者もおらず、衝突の正確な原因は特定できない。⾃動⾞が defendant の単独の⽀配下にあったこと、および、運転者が適 切な注意を怠らない限り、⾃動⾞が標⽰のある横断歩道上で歩⾏者と衝突することは通常ないことは、争いがない。defendant は本件事故に関 していかなる交通犯罪でも訴追されていない。",
+  "analysis": {
+   "A": "× T3 効果すり替え型。res ipsa は⽴証責任を転換しない。defendant の負担は「過失なしでも起こり得た」と⽰す証拠上の応答であ り、無過失の本証ではない。",
+   "B": "× T5 結論逆転型。具体的過失⾏為の特定が常に必要なら res ipsa の存在意義がない。まさに原因を特定できない claimant を救う法理 である。",
+   "C": "× T2 要件逆転型。「原因不明」が要件であるのに「原因判明」を要件とすり替えている。",
+   "D": "○ 3要件充⾜を前提に、効果(事故⾃体が証拠‧defendant の応答‧legal burden の残存)を正確に述べる。",
+   "E": "× T6 制度すり替え型。刑事有罪判決の援⽤(⺠事証拠法上の制度)は「あれば有利」なだけで、訴追‧有罪は⺠事請求の前提条件ではな い。 シーン語彙表 marked pedestrian crossing 標⽰のある横断歩道 independent witness 独⽴の(利害関係のない)⽬撃者 sole control 単独の⽀配 prosecute 訴追する driving offence 交通犯罪‧運転違反 disprove 不存在を⽴証する‧反証する fully documented 完全に⽂書化された arise from 〜 〜から⽣じる 典拠 res ipsa loquitur 3要件(control/通常は過失なしに起こらない/原因不明)/Civil Evidence Act 1968(刑事有罪判決の⺠事援⽤)/教科書 Ch.1(Establishing breach of duty) 正誤記録:1周⽬ □正 □誤( / ) 2周⽬ □正 □誤( / ) 3周⽬ □正 □誤( / )"
+  }
+ },
+ {
+  "qid": "T-11",
+  "subject": "Tort",
+  "tag": "Ch.2",
+  "stem": "A man attends a hospital emergency department at 2 am complaining of severe abdominal pain. The triage nurse, in breach of the hospital's protocol, sends him home without arranging for him to be examined by a doctor, telling him to see his GP in the morning. Three hours later he dies at home from a ruptured aortic aneurysm. The hospital admits that the nurse's conduct amounted to a breach of its duty of care. However, unchallenged expert evidence establishes that, even if the man had been examined and operated on immediately, he would inevitably have died from the rupture. What is the likely outcome of a claim in negligence brought by the man's estate against the hospital?",
+  "options": {
+   "A": "The claim will succeed, because the hospital has admitted breach of duty, and breach of duty is the essential element of a claim in negligence.",
+   "B": "The claim will fail, because it cannot be shown that, but for the breach of duty, the man would have avoided death, so the breach was not the factual cause of the harm.",
+   "C": "The claim will succeed, because by accepting the man at the emergency department the hospital assumed responsibility for his survival.",
+   "D": "The claim will fail, because a hospital owes no duty of care to patients until a doctor has actually begun to examine them.",
+   "E": "The claim will succeed, but damages will be reduced to reflect the chance that the man would have died in any event."
+  },
+  "answer": "B",
+  "expl": "正解B。negligence の各要素は独⽴に審査される。breach が認められても(⾃⽩があっても)、but for テスト――「義務違 反がなければ損害は⽣じなかったといえるか」――を通過しなければ請求は成⽴しない。直ちに治療しても死は不可避だった以上、 違反は死亡の事実的原因ではない。「違反の⾃⽩=敗訴」という直感を切断できるかが本問の全て。",
+  "trans": "男性が午前2時、激しい腹痛を訴えて病院の救急部⾨を受診した。トリアージ担当の看護師は、病院のプロトコルに違反して、医師の診察を⼿配 せずに男性を帰宅させ、朝になったら GP(かかりつけ医)を受診するよう告げた。3時間後、男性は⾃宅で⼤動脈瘤破裂により死亡した。病院 は、看護師の⾏為が duty of care の違反にあたることを認めている。しかし、争いのない専⾨家証拠により、仮に男性が直ちに診察を受け⼿術 されていたとしても、破裂により死亡することは不可避であったことが⽴証されている。",
+  "analysis": {
+   "A": "× T3 原則すり替え型。breach は4要素の⼀つにすぎない。duty‧breach‧causation‧remoteness のすべてが揃って初めて責任が成 ⽴する。",
+   "B": "○ but for テストの正確な適⽤。違反がなくても結果が⽣じた以上、事実的因果関係は否定される。",
+   "C": "× T6 論点すり替え型。assumption of responsibility は duty(特に不作為)の⽂脈の概念。本問では duty‧breach は争いがなく、引受 け構成でも因果の⽋缺は埋められない。",
+   "D": "× T4 事実捏造型(規範の捏造)。救急部⾨に受け⼊れられた患者への duty は当然に観念でき、本問でも病院⾃⾝が違反を認めている。 存在しない免責準則をでっち上げる肢。",
+   "E": "× T2 要件すり替え型。因果は on balance of probabilities で全か無か(all or nothing)で判断される。「死亡した可能性に応じた減額」 という⽐例的処理は原則として存在しない(lost chance 構成も本件では不可)。 シーン語彙表 emergency department 救急部⾨ triage nurse トリアージ担当看護師 abdominal pain 腹痛 ruptured aortic aneurysm ⼤動脈瘤破裂 inevitably 不可避的に in any event いずれにせよ unchallenged operate on 〜 争いのない‧反対尋問で崩され ていない 〜を⼿術する 典拠 Barnett v Chelsea and Kensington Hospital Management Committee [1969] 1 QB 428(but for テスト)/教科書 Ch.2(Factual causation)※判例名の知識 は SQE1 スペック上不要 正誤記録:1周⽬ □正 □誤( / ) 2周⽬ □正 □誤( / ) 3周⽬ □正 □誤( / )"
+  }
+ },
+ {
+  "qid": "T-12",
+  "subject": "Tort",
+  "tag": "Ch.2",
+  "stem": "A stonemason develops pneumoconiosis, a cumulative lung disease caused by the gradual build-up of inhaled silica dust. Throughout his employment he was exposed to two sources of dust at his employer's works: dust from the cutting process itself, which no precautions could have eliminated, and additional dust which escaped from extraction equipment that the employer negligently failed to maintain. Medical evidence establishes that the disease resulted from the total accumulation of dust, but it is impossible to prove that the dust from the defective equipment would, by itself, have caused the disease. Which of the following best describes whether the stonemason can establish factual causation against his employer?",
+  "options": {
+   "A": "He cannot, because he is unable to show that, but for the negligently produced dust, he would not have developed the disease.",
+   "B": "He can, but only if he proves that the negligently produced dust accounted for more than half of the total dust he inhaled.",
+   "C": "He cannot, because an employer is not liable where some of the dust arose from a process that could not be made safe.",
+   "D": "He can, but he will recover only nominal damages reflecting the uncertainty about which dust caused the disease.",
+   "E": "He can, because where harm is caused cumulatively by a combination of innocent and negligent sources, it is enough that the negligent source materially contributed to the harm."
+  },
+  "answer": "E",
+  "expl": "正解E。but for テストの例外①:累積性の損害において無過失原因と過失原因が競合する場合、claimant は過失原因が損害 に「重要な寄与」をしたことを⽰せば factual causation を⽴証できる。寄与割合の精密な証明や過半の⽴証は不要。認められれば 損害全体について賠償が命じられるのが原則的な帰結である。",
+  "trans": "⽯⼯が pneumoconiosis(じん肺)を発症した。これは吸⼊したシリカ粉じんの漸進的な蓄積によって⽣じる累積性の肺疾患である。雇⽤期間を 通じて、彼は使⽤者の作業場で2つの粉じん源に曝露していた。ひとつは切削⼯程⾃体から⽣じる粉じんで、いかなる予防措置でも除去できなか ったもの、もうひとつは、使⽤者が過失により整備を怠った集塵装置から漏出した追加的な粉じんである。医学的証拠により、疾患は粉じんの 総蓄積から⽣じたことが⽴証されているが、⽋陥のある装置からの粉じんが単独で疾患を引き起こしたであろうことを証明することは不可能で ある。",
+  "analysis": {
+   "A": "× T3 原則すり替え型。but for は単⼀原因型の原則であり、累積型の複数原因事案では material contribution の例外が適⽤される。原 則を例外領域に持ち込むワナ。",
+   "B": "× T2 数字型。「過半(50%超)」という要件は存在しない。寄与が de minimis(僅少)を超えて重要であれば⾜りる。",
+   "C": "× T4 規範捏造型。「⼯程の⼀部が不可避なら全体免責」という準則はない。不可避な粉じんの存在は、過失粉じんの寄与責任を消さ ない。",
+   "D": "× T5 効果逆転型。material contribution が認められた場合の帰結は実損の賠償であり、名⽬的賠償への切下げではない。",
+   "E": "○ 累積型+innocent/guilty 競合という適⽤場⾯と、material contribution 基準の内容を正確に述べる。 シーン語彙表 stonemason ⽯⼯ cumulative 累積的な build-up 蓄積 inhale 吸⼊する extraction equipment 集塵装置 fail to maintain 整備を怠る accumulation 蓄積‧堆積 nominal damages 名⽬的損害賠償 典拠 Bonnington Castings Ltd v Wardlaw [1956] AC 613(material contribution)/McGhee v National Coal Board(重要なリスク増加への展開)/教科書 Ch.2(Multiple potential causes‧Table 2.1‧2.2)※判例名の知識は SQE1 スペック上不要 正誤記録:1周⽬ □正 □誤( / ) 2周⽬ □正 □誤( / ) 3周⽬ □正 □誤( / )"
+  }
+ },
+ {
+  "qid": "T-13",
+  "subject": "Tort",
+  "tag": "Ch.2",
+  "stem": "A retired boilermaker is diagnosed with mesothelioma, a cancer caused by exposure to asbestos. During his career he worked successively for three different employers, each of which, in breach of duty, exposed him to substantial quantities of asbestos dust: the first for twelve years, the second for six years and the third for two years. Because of the nature of the disease, it is scientifically impossible to establish during which employment the fatal exposure occurred. The first employer is now insolvent. The boilermaker sues the second employer alone for the full extent of his loss. Which of the following best describes the second employer's liability?",
+  "options": {
+   "A": "The second employer is liable in full, because each employer in breach who exposed him to asbestos is jointly and severally liable for the mesothelioma, and he may recover the whole of his damages from any of them.",
+   "B": "The second employer is liable only for one third of the damages, apportioned equally between the three employers in breach.",
+   "C": "The second employer is not liable, because the boilermaker cannot prove on the balance of probabilities during which employment the disease was caused.",
+   "D": "The second employer is liable only for six twentieths of the damages, apportioned according to the duration of the exposure for which it was responsible.",
+   "E": "The second employer is not liable, because the boilermaker's only remedy is a claim against the government compensation fund for mesothelioma sufferers."
+  },
+  "answer": "A",
+  "expl": "正解A。中⽪腫では、①どの曝露が発症させたか⽴証不能でも、義務違反の曝露が発症リスクを重要に増加させたことで因 果が認められ(Fairchild 型の例外)、②制定法(Compensation Act 2006, s 3)により、責任ある者全員が jointly and severally 責任を 負う。被害者はどの⼀社からでも全額を回収でき、⽀払った者の間の調整は加害者側の問題。期間按分は中⽪腫では適⽤されない (按分が妥当するのはアスベスト起因の肺がん型)。",
+  "trans": "引退したボイラー製造⼯が mesothelioma(中⽪腫)――アスベスト曝露により⽣じる癌――と診断された。彼は職業⼈⽣の間に3つの異なる使⽤ 者の下で順次働き、いずれの使⽤者も義務違反により相当量のアスベスト粉じんに彼を曝露させた。第1の使⽤者の下では12年、第2の下では6 年、第3の下では2年である。疾患の性質上、致命的な曝露がどの雇⽤期間中に⽣じたかを科学的に⽴証することは不可能である。第1の使⽤者 は現在 insolvent(⽀払不能)である。ボイラー製造⼯は第2の使⽤者のみを相⼿に、損害全額の賠償を求めて提訴した。",
+  "analysis": {
+   "A": "○ 中⽪腫の連帯責任ルール(全責任者連帯‧任意の⼀社から全額回収可)を正確に述べる。倒産会社の取り分も他の責任者が負担する 結果となる。",
+   "B": "× T2 数字型。頭割り按分という処理は存在しない。中⽪腫は按分ではなく連帯。",
+   "C": "× T3 原則すり替え型。通常の but for/蓋然性の優越を貫けば救済不能になる場⾯のために、重要なリスク増加による例外が確⽴されて いる。",
+   "D": "× T6 疾病すり替え型。曝露期間按分は、アスベスト起因の肺がんの場合の処理。中⽪腫では制定法により連帯責任に統⼀されてい る。病名の読み分けが決定打。",
+   "E": "× T4 制度すり替え型。政府基⾦は使⽤者の追跡が困難な場合等のための補完的制度であり、責任ある使⽤者への⺠事請求を排除する 「唯⼀の救済」ではない。 シーン語彙表 boilermaker ボイラー製造⼯ successively 順次‧相次いで substantial quantities 相当量 fatal exposure 致命的な曝露 insolvent ⽀払不能の‧倒産した sue A alone Aのみを提訴する apportion 按分する compensation fund 補償基⾦ 典拠 Fairchild v Glenhaven Funeral Services [2002](重要なリスク増加)/Barker v Corus(按分)→Compensation Act 2006, s 3(中⽪腫は連帯に復 帰)/Sienkiewicz v Greif(単独被告でも適⽤)/Mesothelioma Act 2014(政府基⾦)/教科書 Ch.2 ※スペック上要求される名称は制定法名。判例名は理解補助 正誤記録:1周⽬ □正 □誤( / ) 2周⽬ □正 □誤( / ) 3周⽬ □正 □誤( / )"
+  }
+ },
+ {
+  "qid": "T-14",
+  "subject": "Tort",
+  "tag": "Ch.2",
+  "stem": "A twelve-year-old boy falls from a climbing frame and is taken to hospital with a hip injury. The doctor who examines him negligently fails to identify damage to the blood vessels supplying the hip joint, and the boy is sent home. He returns a week later, when the correct diagnosis is made, but by then a permanent deformity of the hip is unavoidable. Medical evidence establishes that, even with a correct diagnosis on the first visit, there was only a 30 per cent chance that the deformity could have been prevented; there was a 70 per cent chance that it would have developed in any event. Which of the following best describes the outcome of a claim in negligence against the hospital in respect of the deformity?",
+  "options": {
+   "A": "The claim will succeed in part, and the boy will recover 30 per cent of the full damages to reflect the size of the lost chance.",
+   "B": "The claim will succeed, because the doctor's negligence materially increased the risk of the deformity developing.",
+   "C": "The claim will fail, because a doctor owes no duty of care in respect of errors of diagnosis, as opposed to errors of treatment.",
+   "D": "The claim will fail, because on the balance of probabilities the deformity would have developed even without the negligence, and in clinical negligence the loss of a chance of recovery cannot itself found the claim.",
+   "E": "The claim will succeed, because the loss of any chance of recovery, however small, is actionable damage."
+  },
+  "answer": "D",
+  "expl": "正解D。①因果は全か無か:防げた可能性30%<50%では、but for を蓋然性の優越で⽴証できず請求は倒れる。②臨床過誤 では「機会の喪失」⾃体を独⽴の損害として請求する構成が認められていない。30%の⽐例賠償という中間解も、重要なリスク増 加の例外(アスベスト型の特殊領域)の流⽤も、ここでは使えない。数字(50%基準)と領域(臨床過誤)の2つのゲートで切る。",
+  "trans": "12歳の少年がジャングルジムから落下し、股関節の負傷で病院に搬送された。診察した医師は過失により股関節に⾎液を供給する⾎管の損傷を ⾒落とし、少年は帰宅させられた。1週間後に再受診し、正しい診断がなされたが、その時点では股関節の恒久的な変形は不可避となっていた。 医学的証拠により、初診時に正しい診断がなされていたとしても変形を防げた可能性は30%にすぎず、いずれにせよ変形が⽣じた可能性が70% であったことが⽴証されている。",
+  "analysis": {
+   "A": "× T2 数字型(⽐例賠償)。⼈⾝の臨床過誤で機会割合に応じた按分賠償は認められていない。全か無かで判断される。",
+   "B": "× T3 原則すり替え型。「重要なリスク増加」による因果の緩和は中⽪腫等の特殊領域の例外であり、通常の臨床過誤には拡張されな い。",
+   "C": "× T4 規範捏造型。診断も医療⾏為であり、専⾨家⽔準の duty の対象である。診断/治療で義務の有無を分ける準則は存在しない。",
+   "D": "○ 50%基準(70%はいずれにせよ発症)と、臨床過誤における lost chance 構成の否定の両⽅を正しく述べる。",
+   "E": "× T5 結論逆転型。「どんな⼩さな機会でも賠償可能」は現⾏法の正反対。50%未満の機会喪失は臨床過誤では救済されない。 シーン語彙表 climbing frame ジャングルジム hip joint 股関節 blood vessels ⾎管 deformity 変形 unavoidable 不可避の error of diagnosis 診断の過誤 actionable damage 訴訟原因となる損害 found the claim 請求の基礎となる 典拠 Hotson v East Berkshire HA [1987] AC 750(25%の機会‧請求棄却)/Gregg v Scott(臨床過誤での lost chance 否定)/教科書 Ch.2(Lost chance)※判例名の 知識は SQE1 スペック上不要 正誤記録:1周⽬ □正 □誤( / ) 2周⽬ □正 □誤( / ) 3周⽬ □正 □誤( / )"
+  }
+ },
+ {
+  "qid": "T-15",
+  "subject": "Tort",
+  "tag": "Ch.2",
+  "stem": "A garage negligently leaves an open drum of petrol-soaked rags in the corner of its workshop, close to a portable heater. It is accepted that a reasonable garage owner would have foreseen that the rags might catch fire and cause some fire damage to the workshop. During the night the rags ignite. Because of an unusual combination of draughts and the layout of the building, the fire spreads with extraordinary speed and intensity, destroying not only the workshop but the entire building, including a showroom of vintage cars. The scale of the destruction is far greater than anyone would have predicted. Which of the following best describes the garage's liability in negligence for the fire damage?",
+  "options": {
+   "A": "The garage is not liable, because the extent of the destruction was not reasonably foreseeable.",
+   "B": "The garage is liable for all direct physical consequences of its negligence, whether or not any damage was foreseeable.",
+   "C": "The garage is liable for the whole of the damage, because fire damage was a reasonably foreseeable kind of damage, and it does not matter that its extent was unforeseeable.",
+   "D": "The garage is liable only for the limited fire damage that a reasonable person would have predicted, and damages will be capped accordingly.",
+   "E": "The garage is not liable, because the precise sequence of events by which the fire spread could not have been foreseen."
+  },
+  "answer": "C",
+  "expl": "正解C。remoteness テスト=「違反時に、損害の種類(type/kind)が合理的に予⾒可能だったか」。種類が予⾒可能なら、 ①程度(1台燃えるか100台燃えるか)も、②発⽣の正確な経過も、予⾒不能でよい。本問は「⽕災損害」という種類の予⾒可能性が争 いなく認められている以上、規模の想定外は抗弁にならない。直接結果説(予⾒不要)は過去のルール。",
+  "trans": "ある⾃動⾞整備⼯場が、過失により、ガソリンの染みたウエス(ぼろ布)の⼊った蓋のないドラム⽸を、作業場の隅、可搬式ヒーターの近くに放 置した。合理的な⼯場主であれば、ウエスが発⽕して作業場に何らかの⽕災損害が⽣じ得ることを予⾒したであろうことは争いがない。夜間、 ウエスが発⽕した。すきま⾵の異常な組合せと建物の構造のため、⽕は並外れた速度と激しさで燃え広がり、作業場のみならず、ヴィンテージ カーのショールームを含む建物全体を焼失させた。破壊の規模は誰の予測をもはるかに超えるものであった。",
+  "analysis": {
+   "A": "× T5 結論逆転型。extent の予⾒不能を理由に全部免責とするのは基準の取り違え。種類が予⾒可能なら程度は問わない。",
+   "B": "× T3 原則すり替え型(旧ルール)。「直接結果はすべて賠償」という考え⽅は、種類の予⾒可能性基準に取って代わられた過去の⽴場。",
+   "C": "○ type/kind 基準と「程度不問」の帰結を正しく適⽤している。",
+   "D": "× T2 数額型。予⾒された規模で賠償をキャップする中間的処理は存在しない。種類が通れば全額、通らなければゼロ。",
+   "E": "× T3 原則すり替え型。予⾒の対象は損害の種類であって、発⽣に⾄る正確な連鎖ではない。経過の意外性は責任を妨げない。 シーン語彙表 petrol-soaked rags ガソリンの染みたウエス(ぼろ布) portable heater 可搬式ヒーター ignite 発⽕する draught すきま⾵ layout (建物の)配置‧構造 intensity 激しさ showroom ショールーム cap damages 賠償額に上限を設ける 典拠 The Wagon Mound (No 1) [1961] AC 388(種類の予⾒可能性)/Hughes v Lord Advocate(経過の予⾒不要)/教科書 Ch.2(Remoteness:type/extent の区別)※ 判例名の知識は SQE1 スペック上不要 正誤記録:1周⽬ □正 □誤( / ) 2周⽬ □正 □誤( / ) 3周⽬ □正 □誤( / )"
+  }
+ },
+ {
+  "qid": "T-16",
+  "subject": "Tort",
+  "tag": "Ch.2",
+  "stem": "During a routine stock delivery, a warehouse employee's hand is grazed by a metal trolley that a colleague, employed by the same company, negligently pushes into him. For an ordinary person the graze would have healed within days. However, the employee suffers from a rare blood-clotting disorder, unknown to everyone present, which prevents the wound from healing. Infection sets in and, despite treatment, his hand ultimately has to be amputated. It is accepted that some minor physical injury from the collision was reasonably foreseeable, but an amputation was not. The employee claims against the employer, which accepts responsibility for the colleague's negligence. Which of the following best describes the extent of the employer's liability for the employee's injury?",
+  "options": {
+   "A": "The employer is liable only for the minor graze that an ordinary person would have suffered, because the amputation resulted from the employee's own condition.",
+   "B": "The employer is not liable at all, because the true cause of the amputation was the blood-clotting disorder rather than the collision.",
+   "C": "The employer is liable, but damages will be reduced to reflect the contribution made by the employee's pre-existing condition.",
+   "D": "The employer is liable for the amputation only if it knew, or ought to have known, of the employee's condition.",
+   "E": "The employer is liable for the full extent of the injury, including the amputation, because a defendant must take the victim as it finds him."
+  },
+  "answer": "E",
+  "expl": "正解E。eggshell skull(あるがままの被害者)原則:⾝体的傷害の種類が予⾒可能である限り、被害者の既存の状態(素因)によ って損害が予⾒不能な程度にまで拡⼤しても、defendant は全損害について責任を負う。素因を理由とする免責も減額も、認識の 有無による限定も認められない。remoteness の「程度不問」ルールと表裏⼀体で機能する。",
+  "trans": "定例の在庫搬⼊の際、倉庫従業員の⼿が、同じ会社に雇⽤されている同僚が過失により彼にぶつけた⾦属製台⾞で擦過傷を負った。通常⼈であ ればこの擦過傷は数⽇で治癒していたであろう。しかし、この従業員は、その場の誰も知らなかった稀な⾎液凝固異常を患っており、傷が治癒 しなかった。感染症を発症し、治療にもかかわらず、最終的に⼿の切断を余儀なくされた。衝突から何らかの軽微な⾝体的傷害が⽣じることは 合理的に予⾒可能であったが、切断は予⾒可能でなかったことに争いはない。従業員は使⽤者に対して請求を⾏い、使⽤者は同僚の過失につい ての責任を認めている。",
+  "analysis": {
+   "A": "× T7 ⽇本法感覚型。素因減額(通常⼈なら⽣じた損害までに限定する発想)のワナ。英国法は素因による拡⼤分も全額 defendant に負わ せる。",
+   "B": "× T3 原則すり替え型。素因は「真の原因」として因果を切る事由にならない。過失の接触が引き⾦となった以上、因果は維持され る。",
+   "C": "× T2 数額型。素因の寄与度に応じた減額という処理は存在しない。contributory negligence(被害者の過失)とは別物であり、疾患は過 失ではない。",
+   "D": "× T4 要件捏造型。素因の認識‧認識可能性は要件ではない。誰も知らなかった稀な疾患でも結論は変わらない。",
+   "E": "○ take the victim as you find him――eggshell skull の定式と全額責任の帰結を正しく述べる。 シーン語彙表 stock delivery 在庫搬⼊ graze 擦過傷(を負わせる) trolley 台⾞ blood-clotting disorder ⾎液凝固異常 set in (感染症などが)始まる‧定着する amputate pre-existing condition 既存の疾患‧素因 take the victim as one finds him 切断する 被害者をあるがままに受け⼊れ る 典拠 Smith v Leech Brain & Co Ltd [1962] 2 QB 405(eggshell skull)/Lagden v O'Connor(資⼒への拡張)/教科書 Ch.2(Eggshell skull)※判例名の知識は SQE1 スペック上不要 正誤記録:1周⽬ □正 □誤( / ) 2周⽬ □正 □誤( / ) 3周⽬ □正 □誤( / )"
+  }
+ },
+ {
+  "qid": "T-17",
+  "subject": "Tort",
+  "tag": "Ch.2",
+  "stem": "A scaffolder suffers a serious knee injury through his employer's admitted negligence. He is told by his doctors that his leg may give way without warning and that he must avoid steep stairs and ladders unless assisted. Two months later, while still using a crutch, he decides to climb down a steep, narrow external staircase with no handrail, alone and carrying a heavy toolbox, although a colleague had offered to help him and an internal lift was available. His knee gives way and he falls, fracturing his skull. He claims against his employer for both the knee injury and the head injury. Which of the following best describes the employer's liability?",
+  "options": {
+   "A": "The employer is liable for both injuries, because its original negligence set in motion the chain of events that led to the fall.",
+   "B": "The employer is liable for the knee injury only, because the scaffolder's decision to descend the staircase in that manner was so unreasonable that it broke the chain of causation.",
+   "C": "The employer is liable for neither injury, because the scaffolder's conduct amounted to contributory negligence, which extinguishes the claim entirely.",
+   "D": "The employer is liable for both injuries, but damages for the head injury will be reduced under the Law Reform (Contributory Negligence) Act 1945.",
+   "E": "The employer is liable for both injuries, because falling on stairs is a reasonably foreseeable consequence of a weakened leg."
+  },
+  "answer": "B",
+  "expl": "正解B。被害者⾃⾝の介⼊⾏為が「全く不合理(entirely unreasonable)」といえる場合、novus actus interveniens として 因果の鎖を断ち切り、defendant は介⼊後の損害について責任を負わない。医師の警告‧介助の申出‧安全な代替⼿段をすべて無 視した本件の降下は典型例。第1傷害の責任は残り、第2傷害だけが切断される点、および CN(裁判所の裁量減額‧部分的)との効果 の違いが得点ポイント。",
+  "trans": "⾜場職⼈が、使⽤者の争いのない過失により膝に重傷を負った。医師からは、脚が前触れなく崩れることがあるため、介助がない限り急な階段 やはしごを避けるよう告げられていた。2か⽉後、まだ松葉杖を使⽤していた彼は、同僚が介助を申し出ており、屋内にエレベーターも利⽤可能 であったにもかかわらず、⼿すりのない急で狭い屋外階段を、⼀⼈で、重い⼯具箱を抱えて降りることを決めた。膝が崩れて転落し、頭蓋⾻を ⾻折した。彼は膝の傷害と頭部の傷害の両⽅について使⽤者に請求を⾏う。",
+  "analysis": {
+   "A": "× T5 結論逆転型。「発端を作れば以後すべて責任」ではない。介⼊⾏為の合理性審査を⾶ばしている。",
+   "B": "○ 全く不合理な⾃⼰の⾏為による切断と、第1傷害への責任残存を正しく区別している。",
+   "C": "× T2 効果すり替え型。contributory negligence は部分的抗弁であり、請求を全部消滅させない。しかも本件の頭部傷害は減額ではな く切断の問題。",
+   "D": "× T6 制度すり替え型。1945年法の減額は、defendant の責任が及ぶ損害の内部での調整。全く不合理な⾏為が鎖を切る場⾯では、頭 部傷害はそもそも責任範囲外となる。",
+   "E": "× T4 事実の⽔増し型。抽象的には転倒は予⾒可能でも、本件の具体的⾏為(警告違反+介助拒否+代替⼿段無視+重量物)は合理的⾏動の 範囲を超えており、予⾒可能性の⼀般論で救えない。 シーン語彙表 scaffolder ⾜場職⼈ give way (脚などが)崩れる‧抜ける crutch 松葉杖 handrail ⼿すり toolbox ⼯具箱 fracture one's skull 頭蓋⾻を⾻折する set in motion 〜を発動させる‧動き出させる descend 降りる 典拠 McKew v Holland & Hannen & Cubitts [1969] 3 All ER 1621(被害者の不合理⾏為)/Knightley v Johns(第三者)/Carslogie(⾃然事象)/教科書 Ch.2(Intervening acts‧Table 2.3)※判例名の知識は SQE1 スペック上不要 正誤記録:1周⽬ □正 □誤( / ) 2周⽬ □正 □誤( / ) 3周⽬ □正 □誤( / )"
+  }
+ },
+ {
+  "qid": "T-18",
+  "subject": "Tort",
+  "tag": "Ch.3",
+  "stem": "A self-employed electrician is seriously injured in a road traffic accident caused by the defendant's admitted negligence. By the date of trial, two years after the accident, he has lost £40,000 in earnings and spent £3,000 on physiotherapy and £500 replacing clothing destroyed in the accident. He continues to suffer constant pain and can no longer play amateur football, which was his main leisure activity. Medical evidence confirms that he will be unable to return to full-time work for at least five more years and will need further treatment during that period. Which of the following correctly classifies the heads of damage in his claim?",
+  "options": {
+   "A": "The pre-trial loss of earnings, physiotherapy costs and clothing are special damages; the pain and loss of amenity are general damages for non-pecuniary loss; the future loss of earnings and future treatment costs are general damages for future pecuniary loss.",
+   "B": "The damages for pain and suffering are special damages, because they compensate a loss that can be precisely calculated by the court.",
+   "C": "The future loss of earnings is a head of special damages, because it is a financial loss capable of arithmetical calculation.",
+   "D": "All of the damages are general damages, because in a personal injury claim no loss can be calculated precisely before trial.",
+   "E": "The cost of the destroyed clothing is not recoverable in the personal injury claim, because damage to property must always be pursued in separate proceedings."
+  },
+  "answer": "A",
+  "expl": "正解A。分類の軸は2本:①時間(裁判時まで/裁判後)と②⾦銭性(pecuniary/non-pecuniary)。special damages=裁判までに 現実化した⾦銭的損失(過去の逸失収⼊‧治療費‧損壊⾐類等)。general damages=(a)non-pecuniary(pain, suffering and loss of amenity)+(b)future pecuniary(将来の逸失収⼊‧将来の介護治療費‧年⾦喪失等)。「将来分は⾦銭的でも general」が最頻出の引 っかけ。",
+  "trans": "⾃営業の電気⼯事⼠が、defendant の争いのない過失による交通事故で重傷を負った。事故から2年後の裁判の時点までに、彼は40,000ポンド の収⼊を失い、理学療法に3,000ポンド、事故で損壊した⾐類の買替えに500ポンドを⽀出した。彼は絶え間ない痛みに苦しみ続けており、主要 な余暇活動であったアマチュアサッカーをもはやプレーできない。医学的証拠により、少なくともあと5年間はフルタイムの仕事に復帰できず、 その期間中さらなる治療を要することが確認されている。",
+  "analysis": {
+   "A": "○ 3区分への振り分けがすべて正確。⾐類等の財物損害も⼈⾝請求の special damages に含めてよい。",
+   "B": "× T2 分類すり替え型。PSLA は⾦銭換算に馴染まない non-pecuniary loss の典型で、general damages に属する。",
+   "C": "× T2 分類すり替え型。将来の逸失収⼊は「将来の」⾦銭的損失なので general damages(future pecuniary loss)。計算可能性ではなく 時間軸で切る。",
+   "D": "× T5 結論逆転型。裁判までの現実⽀出‧逸失収⼊は精密に計算でき、special damages として明細⽴てで請求される。",
+   "E": "× T4 規範捏造型。事故で損壊した⾐類‧所持品の費⽤は、同⼀の⼈⾝請求内で special damages として回復できる。別訴強制の準則 は存在しない。 シーン語彙表 self-employed ⾃営業の electrician 電気⼯事⼠ physiotherapy 理学療法 leisure activity 余暇活動 loss of amenity ⽣活享受の喪失 full-time work フルタイムの仕事 arithmetical calculation 算術的計算 separate proceedings 別訴 典拠 教科書 Ch.3(Table 3.1 Heads of damage‧Figure 3.1)/⼀般原則:restitutio in integrum(原状回復的填補) 正誤記録:1周⽬ □正 □誤( / ) 2周⽬ □正 □誤( / ) 3周⽬ □正 □誤( / )"
+  }
+ },
+ {
+  "qid": "T-19",
+  "subject": "Tort",
+  "tag": "Ch.3",
+  "stem": "A crane operator suffers catastrophic injuries in a workplace accident caused by his employer's negligence and dies from those injuries three months later, before any trial takes place. He is survived by his wife and two young children, who were financially dependent on his earnings. In the three months between the accident and his death he endured considerable pain, was unable to work, and incurred care costs. His widow now consults a solicitor about the claims that can be brought against the employer. Which of the following best describes the claims available?",
+  "options": {
+   "A": "No claim is possible, because a claim in negligence does not survive the death of the injured person.",
+   "B": "The dependants may continue the deceased's own claim under the Law Reform (Miscellaneous Provisions) Act 1934, and the estate may bring a dependency claim under the Fatal Accidents Act 1976.",
+   "C": "A dependency claim may be brought under the Fatal Accidents Act 1976 even if the deceased himself would have had no valid claim against the employer, because the dependants' rights are independent.",
+   "D": "The estate may continue the deceased's own claim under the Law Reform (Miscellaneous Provisions) Act 1934 for his losses up to death, and the dependants may bring a separate claim under the Fatal Accidents Act 1976, provided the deceased could have sued successfully himself.",
+   "E": "Under the Law Reform (Miscellaneous Provisions) Act 1934 the estate may recover the earnings the deceased would have received over the rest of his working life."
+  },
+  "answer": "D",
+  "expl": "正解D。死亡事案は⼆本⽴て:①LR(MP)A 1934――死者の請求が estate のために存続(承継)。対象は死亡時までの PSLA‧ 逸失収⼊‧介護費‧財物損害‧葬儀費。死者に請求権がなければ estate にもなく、defendant は死者に対する抗弁をそのまま使 え、死者の CN で減額される。②FAA 1976――dependants の固有の別訴(扶養喪失‧bereavement‧葬儀費)。ただし死者が⽣きて いれば勝訴できたことが前提条件。主体(estate/dependants)と法律(1934/1976)の対応を絶対に⼊れ替えないこと。",
+  "trans": "クレーン運転⼠が、使⽤者の過失による労働災害で壊滅的な傷害を負い、その傷害により3か⽉後、裁判が⾏われる前に死亡した。遺族として、 彼の収⼊に経済的に依存していた妻と2⼈の幼い⼦が残された。事故から死亡までの3か⽉間、彼は相当な苦痛に耐え、就労できず、介護費⽤を 負担した。未亡⼈は現在、使⽤者に対して提起できる請求について solicitor に相談している。",
+  "analysis": {
+   "A": "× T5 結論逆転型。請求は死亡で消滅しない。1934年法が estate による存続を、FAA 1976 が遺族固有の請求を、それぞれ明⽂で認め ている。",
+   "B": "× T6 主体すり替え型。1934年法の承継主体は estate、FAA の請求主体は dependants。両者を⼊れ替えた鏡像肢。",
+   "C": "× T2 要件⽋落型。FAA の請求は「死者⾃⾝が提訴して勝てたはず」であることが前提。死者に有効な請求がなければ dependency claim も⽴たない。",
+   "D": "○ 承継(死亡時まで)と固有請求(前提条件付き)の構造を正確に述べる。",
+   "E": "× T3 原則すり替え型。1934年法で承継されるのは死亡時までの損害。死亡後の逸失収⼊(lost years)を estate が取る構成ではなく、遺 族の将来の扶養利益は FAA の dependency claim で填補される。 シーン語彙表 crane operator クレーン運転⼠ catastrophic injuries 壊滅的な傷害 be survived by 〜 遺族として〜を残す financially dependent 経済的に依存している endure 耐える incur costs 費⽤を負担する widow 未亡⼈ working life 就労可能期間 典拠 Law Reform (Miscellaneous Provisions) Act 1934/Fatal Accidents Act 1976/教科書 Ch.3(Figure 3.2‧Table 3.3)※制定法名はスペック上の理解必須事項 正誤記録:1周⽬ □正 □誤( / ) 2周⽬ □正 □誤( / ) 3周⽬ □正 □誤( / )"
+  }
+ },
+ {
+  "qid": "T-20",
+  "subject": "Tort",
+  "tag": "Ch.3",
+  "stem": "A software engineer is killed in an accident for which the defendant has admitted liability in negligence. He was not married and had no civil partner. For the four years before his death he lived with his partner in the same household, as if they were husband and wife, and she was largely supported by his income. He is also survived by an adult brother, who lived independently in another city, was financially self-sufficient, and received no support from the deceased. Both the partner and the brother wish to bring dependency claims under the Fatal Accidents Act 1976. Which of the following best describes their positions?",
+  "options": {
+   "A": "Neither can claim, because dependency claims under the Act are confined to a spouse or civil partner of the deceased.",
+   "B": "Both can claim, because each falls within the statutory list of dependants, and nothing further is required.",
+   "C": "The partner can claim, because she lived with the deceased as his wife in the same household for at least two years before his death and had a reasonable expectation of financial benefit from him; the brother cannot, because he had no such expectation.",
+   "D": "The partner cannot claim, because an unmarried partner qualifies as a dependant only after five years of cohabitation.",
+   "E": "Neither can claim in their own right, because a dependency claim may only be brought by the deceased's estate on behalf of the dependants."
+  },
+  "answer": "C",
+  "expl": "正解C。FAA の dependency claim は⼆重の関⾨:①法定 dependant リストへの該当(配偶者‧元配偶者‧civil partner‧ 「死亡直前に同⼀世帯で同居+その前から少なくとも2年間同⼀世帯で同居+全期間を夫婦/civil partner として⽣活」した者‧⼦孫‧ 兄弟姉妹やおじおば⼜はその⼦等)、②死者からの経済的利益への合理的期待。パートナーは4年同居で2年要件を超え、扶養も受け ていた(①②充⾜)。兄はリストには載る(①)が、経済的期待ゼロで②を⽋く。リスト該当=請求可能ではない。",
+  "trans": "ソフトウェアエンジニアが事故で死亡し、defendant は negligence の責任を認めている。彼は未婚で civil partner(⺠事パートナー)もいなかっ た。死亡前の4年間、彼はパートナーと同⼀世帯で夫婦同然に⽣活しており、彼⼥の⽣計は主に彼の収⼊によって⽀えられていた。遺族には成⼈ の兄もいるが、兄は別の都市で独⽴して⽣活し、経済的に⾃⽴しており、死者から何の⽀援も受けていなかった。パートナーと兄はいずれも、 Fatal Accidents Act 1976 に基づく dependency claim の提起を望んでいる。",
+  "analysis": {
+   "A": "× T6 主体範囲の切り縮め型。法定リストは配偶者‧civil partner に限られず、2年同居パートナーや親族類型を広く含む。",
+   "B": "× T3 原則すり替え型。リスト該当は必要条件にすぎない。経済的利益への合理的期待という第2の関⾨を消してしまっている。",
+   "C": "○ 2年同居要件の充⾜と、兄における経済的期待の⽋如を正しく振り分けている。",
+   "D": "× T2 数字型。同居要件は「少なくとも2年」であり、5年ではない。期間の⽔増しに注意。",
+   "E": "× T5 主体逆転型。dependency claim は dependants のための固有の請求。estate による承継(1934年法)との構造混同を誘う肢。 シーン語彙表 software engineer ソフトウェアエンジニア civil partner ⺠事パートナー(登録パートナー) in the same household 同⼀世帯で largely supported by 〜 主に〜によって扶養されて self-sufficient ⾃活している‧⾃⽴している cohabitation 同棲‧同居 in one's own right ⾃⼰固有の資格で reasonable expectation 合理的期待 典拠 Fatal Accidents Act 1976(dependant の法定定義‧dependency claim)/教科書 Ch.3(Table 3.2 Statutory meaning of dependant) 正誤記録:1周⽬ □正 □誤( / ) 2周⽬ □正 □誤( / ) 3周⽬ □正 □誤( / )"
+  }
+ },
+ {
+  "qid": "T-21",
+  "subject": "Tort",
+  "tag": "Ch.3",
+  "stem": "A contractor excavating a road negligently severs an underground electricity cable, cutting off the power supply to a commercial bakery for ten hours while repairs are carried out. When the power fails, a batch of dough already in the bakery's ovens is ruined and has to be thrown away. The bakery claims damages for: (i) the value of the ruined batch; (ii) the profit it would have made on selling that batch; and (iii) the profit it would have made on four further batches which it could not bake at all during the ten-hour power cut. Which of the following best describes what the bakery can recover from the contractor in negligence?",
+  "options": {
+   "A": "All three heads of loss, because each of them was caused by the contractor's negligence and was reasonably foreseeable.",
+   "B": "None of the heads of loss, because all three are forms of economic loss and economic loss is never recoverable in tort.",
+   "C": "Head (i) only, because loss of profit of any kind is pure economic loss and is irrecoverable.",
+   "D": "Heads (i) and (ii), because they represent physical damage to property and economic loss consequential upon that damage, but not head (iii), which is pure economic loss.",
+   "E": "All three heads of loss, provided the bakery can prove the amount of the lost profits with arithmetical precision."
+  },
+  "answer": "D",
+  "expl": "正解D。tort における経済損失の処理:①物損‧⼈⾝損害そのもの=賠償可、②その物損‧⼈⾝に随伴する経済損失 (consequential economic loss)=賠償可、③物損‧⼈⾝から切り離された純粋経済損失(pure economic loss)=原則不賠償。停電型で は「損壊した物+その物の逸失利益」までが賠償ラインで、稼働停⽌による将来分の逸失利益は因果‧予⾒があっても落ちる。線引 きは因果の強弱ではなく「物損への随伴性」。",
+  "trans": "道路を掘削していた請負業者が、過失により地下の電⼒ケーブルを切断し、修理が⾏われる10時間にわたり商業ベーカリーへの電⼒供給が遮断 された。停電の際、既にオーブンに⼊っていた⼀窯分の⽣地が台無しになり、廃棄せざるを得なかった。ベーカリーは次の損害の賠償を請求す る:(i)台無しになった⼀窯分の価額、(ii)その⼀窯分を販売して得られたはずの利益、(iii)10時間の停電中に全く焼くことができなかったさらに4 窯分について得られたはずの利益。",
+  "analysis": {
+   "A": "× T7 ⽇本法感覚型。709条の包括的保護なら因果+予⾒で(iii)も拾えそうだが、英国法は pure economic loss を duty の段階で原則遮断 する。因果‧予⾒の充⾜は救済を保証しない。",
+   "B": "× T5 結論逆転型(過⼩)。物損随伴の経済損失は回復可能。「経済損失は決して不可」は原則の過剰拡張。",
+   "C": "× T2 分類すり替え型。損壊した物についての逸失利益は consequential であり回復できる。「利益=すべて pure」ではなく、物損と の紐付きで判定する。",
+   "D": "○ 3費⽬を物損/随伴/純粋に正しく振り分けている。",
+   "E": "× T4 基準捏造型。⽴証の精密さは pure economic loss の遮断を解除しない。回復可否は計算可能性ではなく損失の性質で決まる。 シーン語彙表 excavate 掘削する sever 切断する power supply 電⼒供給 batch of dough ⼀窯分(1ロット)の⽣地 ruined 台無しになった throw away 廃棄する power cut 停電 head of loss 損害費⽬ 典拠 Spartan Steel & Alloys Ltd v Martin & Co [1973] 1 QB 27(3費⽬の切り分け)/Murphy v Brentwood DC(⽋陥建物=pure economic loss)/教科書 Ch.3(Claims for economic loss)※判例名の知識は SQE1 スペック上不要 正誤記録:1周⽬ □正 □誤( / ) 2周⽬ □正 □誤( / ) 3周⽬ □正 □誤( / )"
+  }
+ },
+ {
+  "qid": "T-22",
+  "subject": "Tort",
+  "tag": "Ch.3",
+  "stem": "A brewery owns a chain of public houses which it lets to tenants. A prospective tenant, who has no experience of the licensed trade, is considering taking a tenancy of one of the pubs. During negotiations, the brewery's regional manager, who has many years' experience and access to the pub's trading records, tells the prospective tenant that the pub's weekly takings are around £12,000, knowing that the tenant will rely on this figure in deciding whether to proceed. The figure is negligently overstated: true takings are barely half that amount. The tenant takes the tenancy, relies on the figure, and suffers substantial financial losses. Which of the following best describes whether the brewery owed the tenant a duty of care in respect of the statement?",
+  "options": {
+   "A": "No duty was owed, because the tenant's loss is purely financial, and pure economic loss is not recoverable in negligence.",
+   "B": "No duty was owed, because the parties were negotiating a commercial agreement at arm's length, and the tenant's remedies lie in contract alone.",
+   "C": "A duty of care was owed, because there was a special relationship in which the manager, with special skill and knowledge, voluntarily gave information knowing the tenant would rely on it, and the tenant's reliance was reasonable.",
+   "D": "A duty of care was owed only if the takings figure was provided to the tenant in writing.",
+   "E": "A duty of care was owed, because any person who makes a statement that causes another financial loss is liable in negligence."
+  },
+  "answer": "C",
+  "expl": "正解C。negligent misstatement は pure economic loss 原則の確⽴された例外。要素は①当事者間の特別な信頼関係、② ⾔明者による任意の責任引受け(明⽰‧黙⽰)、③⾔明への現実の依拠、④その依拠が状況下で合理的であること。専⾨的知識を持つ 側が、依拠を認識しつつ取引判断の基礎となる数字を提供する場⾯はその典型。書⾯性の要件はなく、⼝頭の⾔明でも成⽴する。",
+  "trans": "ある醸造会社が、テナントに賃貸するパブのチェーンを所有している。酒類営業の経験が全くない賃借希望者が、そのうちの⼀軒のパブの賃借 を検討している。交渉の過程で、⻑年の経験を有し当該パブの営業記録にアクセスできる同社の地域マネージャーは、賃借希望者がこの数字に 依拠して契約締結の可否を判断することを知りながら、パブの週間売上が約12,000ポンドであると告げた。この数字は過失により過⼤に述べら れており、実際の売上はその半分程度にすぎなかった。賃借希望者は賃借契約を締結し、数字に依拠し、多額の経済的損失を被った。",
+  "analysis": {
+   "A": "× T3 原則すり替え型。原則は正しいが、misstatement はまさにその例外領域。原則を貼り付けて例外の検討を放棄している。",
+   "B": "× T6 法域すり替え型。契約交渉過程でも tort 上の duty は並⽴し得る。契約締結前の⾔明について tort の救済を閉ざす準則はない。",
+   "C": "○ 4要素(特別関係‧任意の引受け‧依拠‧合理性)を事実に即して充⾜させている。",
+   "D": "× T4 要件捏造型。書⾯性の要件は存在しない。⼝頭の助⾔‧数字の提⽰でも duty は成⽴する。",
+   "E": "× T5 結論逆転型(過⼤)。あらゆる⾔明に責任が及ぶわけではない。特別関係と合理的依拠の絞りがあるからこそ例外として機能する。 シーン語彙表 brewery 醸造会社(ビール会社) public house / pub パブ prospective tenant 賃借希望者 licensed trade 酒類営業 weekly takings 週間売上 overstate 過⼤に述べる at arm's length 対等の⽴場で‧独⽴当事者間で proceed (取引を)進める 典拠 Hedley Byrne & Co Ltd v Heller & Partners [1964] AC 465(4要素)/Esso Petroleum v Mardon(売上⾒積り‧特別関係)/教科書 Ch.3(Negligent misstatements‧Table 3.4)※判例名の知識は SQE1 スペック上不要 正誤記録:1周⽬ □正 □誤( / ) 2周⽬ □正 □誤( / ) 3周⽬ □正 □誤( / )"
+  }
+ },
+ {
+  "qid": "T-23",
+  "subject": "Tort",
+  "tag": "Ch.3",
+  "stem": "A private investor is considering buying a large block of shares in a listed manufacturing company. Before investing, he studies the company's most recent annual accounts, which have been audited by a firm of accountants as required by companies legislation. The audited accounts, through the auditors' negligence, substantially overstate the company's financial health. Relying on the accounts, the investor buys the shares. The company collapses within a year and the shares become worthless. The investor sues the auditors in negligence for his investment losses. The auditors had no knowledge of the investor or of his intended purchase. Which of the following best describes the likely outcome?",
+  "options": {
+   "A": "The claim will succeed, because auditors know that investors commonly read audited accounts, so loss to investors is reasonably foreseeable.",
+   "B": "The claim will fail, because the accounts were prepared and audited for statutory purposes, not to guide investment decisions, so the investor's reliance on them for that purpose was not reasonable.",
+   "C": "The claim will succeed, because by signing the audit report the auditors assumed responsibility to every person who might read the accounts.",
+   "D": "The claim will fail, because pure economic loss caused by a statement can never be recovered in negligence.",
+   "E": "The claim will fail, because the investor had no contract with the auditors, and only a contracting party may complain of a negligent statement."
+  },
+  "answer": "B",
+  "expl": "正解B。Hedley 例外は4要素すべての充⾜を要し、本問は第4要素「依拠の合理性」で切れる。法定監査済計算書類の作成 ⽬的は制定法上の要請の充⾜であり、潜在的投資家の投資判断の指針ではない。⽬的外の依拠は合理的でなく、監査⼈は不特定の読 者への責任を引き受けていない。予⾒可能性(投資家が読むだろうこと)だけでは duty は⽴たない。",
+  "trans": "個⼈投資家が、上場製造会社の株式を⼤量に購⼊することを検討している。投資に先⽴ち、彼は同社の直近の年次計算書類を精査した。この計 算書類は、会社法制の要求に従い会計事務所によって監査されたものである。監査済計算書類は、監査⼈の過失により、会社の財務の健全性を ⼤幅に過⼤に表⽰していた。計算書類に依拠して、投資家は株式を購⼊した。会社は1年以内に破綻し、株式は無価値となった。投資家は投資損 失について監査⼈を negligence で提訴した。監査⼈は、この投資家についても、その購⼊予定についても、何ら認識していなかった。",
+  "analysis": {
+   "A": "× T3 原則すり替え型。予⾒可能性は duty の⼗分条件ではない。特別関係‧引受け‧依拠の合理性という絞りを⾶ばしている。",
+   "B": "○ 作成⽬的(法定)と依拠⽬的(投資判断)のズレ=依拠の不合理性を正確に突いている。",
+   "C": "× T4 引受けの⽔増し型。監査報告への署名は法定義務の履⾏であり、「読む可能性のある全員」への任意の責任引受けを意味しな い。",
+   "D": "× T5 結論逆転型(過剰⼀般化)。misstatement 例外が存在する以上、「決して不可」は誤り。本件が落ちるのは要素不充⾜のためであ って、類型的な全⾯遮断のためではない。",
+   "E": "× T1 結論正‧理由誤り型。結論(請求棄却)は正しいが、契約の不存在⾃体は障害ではない(調査報告に契約なく依拠した買主が保護さ れる例もある)。真の理由は依拠の合理性の⽋如。 シーン語彙表 listed company 上場会社 block of shares 株式のまとまった持分 annual accounts 年次計算書類 audit 監査(する) financial health 財務の健全性 collapse 破綻する worthless 無価値の statutory purposes 法定の⽬的 典拠 Caparo Industries plc v Dickman [1990] 2 AC 605(法定計算書類への依拠は不合理)/Smith v Eric S Bush(対照:調査報告への買主の依拠は合理的)/教科書 Ch.3(Table 3.4)※判例名の知識は SQE1 スペック上不要 正誤記録:1周⽬ □正 □誤( / ) 2周⽬ □正 □誤( / ) 3周⽬ □正 □誤( / )"
+  }
+ },
+ {
+  "qid": "T-24",
+  "subject": "Tort",
+  "tag": "Ch.3",
+  "stem": "A woman is standing at a bus stop when she sees a lorry, negligently driven, mount the pavement on the opposite side of the road and strike a pedestrian, who dies at the scene. The woman was never herself in any danger and did not know the pedestrian. In the months that follow she experiences deep sadness, poor sleep and repeated distressing memories of the scene. Her doctor describes her condition as an understandable reaction of grief and distress, but does not diagnose any psychiatric illness. She brings a claim in negligence against the lorry driver for the psychological effect of what she witnessed. Which of the following best describes the position?",
+  "options": {
+   "A": "Her claim will succeed, because it was reasonably foreseeable that witnessing such an accident would cause distress to bystanders.",
+   "B": "Her claim will succeed if she can establish a close tie of love and affection with the victim.",
+   "C": "Her claim will fail because she was not within the zone of physical danger created by the lorry.",
+   "D": "Her claim will succeed provided her symptoms of grief have lasted for more than six months.",
+   "E": "Her claim will fail, because a claim for psychiatric harm requires a medically recognised psychiatric illness, and grief and distress, however deep, are not enough."
+  },
+  "answer": "E",
+  "expl": "正解E。精神的損害の請求の第⼀関⾨は「医学的に診断され、承認された精神疾患」であること(PTSD‧病的悲嘆反応‧慢 性疲労症候群等)。単なる悲嘆‧悲しみ‧恐怖‧動揺は、深刻でも法的な psychiatric harm ではない。primary/secondary の振分け や Alcock 統制要件は、この閾値を超えた者だけが進む第⼆段階である。審査の順序を固定すること。",
+  "trans": "⼥性がバス停に⽴っていたところ、過失により運転されたローリー(⼤型トラック)が道路の反対側の歩道に乗り上げ、歩⾏者をはねるのを⽬撃 した。歩⾏者はその場で死亡した。⼥性⾃⾝は⼀度も危険にさらされておらず、歩⾏者と⾯識もなかった。その後の数か⽉間、彼⼥は深い悲し み、不眠、現場の記憶の繰り返しのフラッシュバックに苦しんだ。彼⼥の医師は、その状態を悲嘆と動揺による理解可能な反応と説明したが、 いかなる精神疾患の診断もしなかった。彼⼥は⽬撃したことの⼼理的影響について、ローリーの運転者に対し negligence に基づく請求を⾏う。",
+  "analysis": {
+   "A": "× T3 原則すり替え型。動揺の予⾒可能性では請求は⽴たない。保護対象は「承認された精神疾患」に限られる。",
+   "B": "× T2 要件先取り型。close tie は secondary victim の Alcock 要件の⼀つで、閾値(疾患診断)を超えた後の話。順序を⼊れ替えても⼊⼝ の⽋缺は治らない。",
+   "C": "× T1 結論正‧理由誤り型。結論(棄却)は正しいが、危険圏外でも secondary victim ルートは理論上開いている。本件が落ちる真の理 由は疾患診断の不存在。",
+   "D": "× T4 基準捏造型。症状の継続期間による救済基準は存在しない。期間の⻑短ではなく、医学的に承認された疾患か否かで切る。",
+   "E": "○ 閾値要件(医学的承認+診断)と、悲嘆‧動揺の不⼗分性を正しく述べる。 シーン語彙表 bus stop バス停 lorry ローリー(⼤型トラック) at the scene その場で‧現場で bystander 居合わせた⼈‧傍観者 distressing memories つらい記憶 understandable reaction 理解可能な(⾃然な)反応 diagnose 診断する psychological effect ⼼理的影響 典拠 Alcock v Chief Constable of South Yorkshire Police [1992](枠組み)/教科書 Ch.3(Key term: psychiatric harm‧Figure 3.4:medically recognised/not recognised の対照表)※判例名の知識は SQE1 スペック上不要 正誤記録:1周⽬ □正 □誤( / ) 2周⽬ □正 □誤( / ) 3周⽬ □正 □誤( / )"
+  }
+ },
+ {
+  "qid": "T-25",
+  "subject": "Tort",
+  "tag": "Ch.3",
+  "stem": "A cyclist is riding lawfully through a junction when a van, negligently driven at speed, shoots across his path and misses him by centimetres before crashing into railings. The cyclist is physically untouched. However, the near miss triggers a relapse of a serious depressive disorder from which he had been in remission for several years, and the relapse is medically diagnosed. Psychiatric evidence accepts that a person of ordinary fortitude would probably not have developed any psychiatric illness from the incident. The cyclist claims in negligence against the van driver for his psychiatric injury. Which of the following best describes the position?",
+  "options": {
+   "A": "The driver is liable, because the cyclist was within the zone of physical danger, physical injury to him was reasonably foreseeable, and it does not matter that psychiatric injury or his particular vulnerability was not foreseeable.",
+   "B": "The driver is not liable, because a person of ordinary fortitude would not have suffered psychiatric illness, which is fatal to the claim.",
+   "C": "The driver is not liable, because the cyclist suffered no actual physical injury in the incident.",
+   "D": "The driver is not liable, because the cyclist's pre-existing disorder makes the relapse too remote a consequence of the driving.",
+   "E": "The driver is liable, because anyone who is frightened or distressed by a road accident may recover damages for the experience."
+  },
+  "answer": "A",
+  "expl": "正解A。primary victim=物理的危険の圏内にいた(または危険にあると合理的に信じた)者。要件は「⼈⾝損害の予⾒可能 性」のみで、①精神的損害それ⾃体の予⾒可能性は不要、②通常の強靱さを持つ者が発症したか(reasonable fortitude)は secondary victim ⽤の基準であり primary には不適⽤、③素因による罹りやすさは eggshell skull により defendant の負担。医学 的診断がある本件では請求が⽴つ。",
+  "trans": "⾃転⾞利⽤者が交差点を適法に⾛⾏していたところ、過失により⾼速で運転されたバンが彼の進路を横切り、数センチの差で彼をかすめた後、 柵に衝突した。⾃転⾞利⽤者は⾝体には全く触れられていない。しかし、この間⼀髪の出来事が、数年間寛解していた重度のうつ病性障害の再 発の引き⾦となり、再発は医学的に診断されている。精神医学の証拠は、通常の精神的強靱さを持つ者であれば、この出来事から精神疾患を発 症することはおそらくなかったであろうことを認めている。⾃転⾞利⽤者は精神的傷害について、バンの運転者に対し negligence に基づく請求 を⾏う。",
+  "analysis": {
+   "A": "○ 危険圏内+⼈⾝の予⾒可能性+精神的損害の予⾒不要+素因無関係、という primary victim の構造を完全に述べる。",
+   "B": "× T6 被害者区分すり替え型。reasonable fortitude 基準は secondary victim の審査に属する。primary に持ち込むのは区分の混線。",
+   "C": "× T2 要件捏造型。現実の⾝体的傷害は不要。危険圏内にいて医学的に承認された精神疾患を負えば⾜りる。",
+   "D": "× T7 ⽇本法感覚型(素因減額‧相当因果の切り縮め)。既往症による拡⼤‧発症は eggshell skull により遮断事由にならない。",
+   "E": "× T5 結論逆転型(過⼤)。恐怖‧動揺だけでは閾値(承認された精神疾患)を超えない。本件が⽴つのは診断された再発があるから。 シーン語彙表 junction 交差点 shoot across one's path 進路を⾼速で横切る miss 〜 by centimetres 数センチの差で〜をかすめる railings 柵‧⼿すり near miss 間⼀髪の出来事‧ニアミス relapse 再発 in remission 寛解中で ordinary fortitude 通常の精神的強靱さ 典拠 Page v Smith [1996] AC 155(危険圏内‧⼈⾝の予⾒で⾜りる‧eggshell 適⽤)/教科書 Ch.3(Primary victims‧Practice example 3.4)※判例名の知識は SQE1 スペック上不要 正誤記録:1周⽬ □正 □誤( / ) 2周⽬ □正 □誤( / ) 3周⽬ □正 □誤( / )"
+  }
+ },
+ {
+  "qid": "T-26",
+  "subject": "Tort",
+  "tag": "Ch.3",
+  "stem": "A man's adult son attends a music festival. During the festival, a temporary viewing platform, negligently erected by the organisers, collapses. The man watches live television coverage of the disaster at home, knowing his son is at the festival but unable to see him in the footage. Nine hours later he is asked to attend a mortuary, where he identifies his son's body. He subsequently develops post-traumatic stress disorder, which is medically diagnosed. Psychiatric evidence accepts that a person of ordinary fortitude might well have developed psychiatric illness in his position. He sues the organisers as a secondary victim. Which of the following best describes the likely outcome?",
+  "options": {
+   "A": "The claim will succeed, because as the victim's father he benefits from a presumed close tie of love and affection, and nothing more is required.",
+   "B": "The claim will succeed, because his post-traumatic stress disorder is a medically recognised psychiatric illness caused by the disaster.",
+   "C": "The claim will fail, because although a close tie is presumed between father and son, he did not perceive the event or its immediate aftermath with his own unaided senses, and identifying the body nine hours later was not part of the immediate aftermath.",
+   "D": "The claim will fail, because the law never allows a person to recover for psychiatric illness caused by harm to somebody else.",
+   "E": "The claim will succeed, because it was reasonably foreseeable that a parent watching the disaster unfold on television would suffer psychiatric harm."
+  },
+  "answer": "C",
+  "expl": "正解C。secondary victim は、閾値(承認された精神疾患)+reasonable fortitude の予⾒可能性に加え、Alcock の3統制要件 をすべて満たす必要がある:①class(愛情による緊密な結びつき――親‧⼦‧配偶者は推定、他は⽴証)、②proximity(事件または直 後の現場への時間的‧場所的近接)、③means(⾃⼰の感覚による直接知覚――テレビ‧伝聞は不可)。⽗⼦の推定(①)だけでは⾜り ず、テレビ視聴(③✕)と9時間後の遺体確認(②✕:数時間後の確認は直後の状況にあたらない)で請求は落ちる。",
+  "trans": "男性の成⼈した息⼦が⾳楽フェスティバルに参加した。フェスティバルの最中、主催者が過失により設営した仮設の観覧台が崩落した。男性は ⾃宅で、息⼦がフェスティバルにいることを知りながら、映像の中に息⼦の姿を⾒つけられないまま、この惨事のテレビ⽣中継を視聴した。9時 間後、彼は遺体安置所への出頭を求められ、そこで息⼦の遺体を確認した。彼はその後、⼼的外傷後ストレス障害(PTSD)を発症し、医学的に診 断されている。精神医学の証拠は、彼の⽴場にある通常の精神的強靱さの者でも精神疾患を発症した可能性が⼗分あることを認めている。彼は secondary victim として主催者を提訴する。",
+  "analysis": {
+   "A": "× T2 要件切出し型。①の推定は3要件の⼀つが⽴つだけ。②③を独⽴に充⾜しなければ duty は⽣じない。",
+   "B": "× T3 段階すり替え型。診断された疾患は⼊⼝の閾値にすぎない。secondary では閾値通過後に Alcock 3要件の審査が待っている。",
+   "C": "○ 3要件の構造と、テレビ視聴‧9時間後の遺体確認がそれぞれ③②を満たさないことを正確に当てはめている。",
+   "D": "× T5 結論逆転型(過剰⼀般化)。secondary victim 類型は要件付きで承認されている。「決して不可」ではない。",
+   "E": "× T3 原則すり替え型。予⾒可能性は統制要件を代替しない。まさに予⾒可能な悲劇の拡散(テレビ視聴者全員)を絞るために3要件が置 かれている。 シーン語彙表 music festival ⾳楽フェスティバル viewing platform 観覧台 erect 設営する‧建てる collapse 崩落(する) live television coverage テレビ⽣中継 footage 映像 mortuary 遺体安置所 identify a body 遺体の⾝元を確認する 典拠 Alcock v Chief Constable of South Yorkshire Police [1992] 1 AC 310(3統制要件‧8〜9時間後の遺体確認は aftermath にあたらず‧テレビ視聴は直接知 覚でない)/教科書 Ch.3(Table 3.5)※判例名の知識は SQE1 スペック上不要 正誤記録:1周⽬ □正 □誤( / ) 2周⽬ □正 □誤( / ) 3周⽬ □正 □誤( / )"
+  }
+ },
+ {
+  "qid": "T-27",
+  "subject": "Tort",
+  "tag": "Ch.4",
+  "stem": "Two friends spend an afternoon drinking heavily at a lakeside bar. One of them owns a powerful motorboat moored nearby. Although he is obviously very drunk, slurring his speech and stumbling, his friend enthusiastically agrees to his suggestion that they take the boat out at high speed across the darkening lake. Witnesses confirm that the friend was merry but still clearly able to appreciate what was going on. Minutes later the owner loses control and the boat hits a buoy; the friend is seriously injured. He sues the owner in negligence, and the owner pleads the defence of consent (volenti non fit injuria). Which of the following best describes the likely outcome?",
+  "options": {
+   "A": "The defence will fail, because a claimant can never validly consent to another person's negligent conduct.",
+   "B": "The defence is likely to succeed, because the friend had full knowledge of the nature and extent of the risk of going out with an obviously drunk driver of the boat, and freely and voluntarily accepted that risk, so the claim fails entirely.",
+   "C": "The defence will fail, because the friend was himself too drunk to be capable of appreciating the risk.",
+   "D": "The defence will succeed, with the result that the friend's damages will be reduced to reflect his share of responsibility.",
+   "E": "The defence will fail, because statute excludes the defence of consent where a passenger accepts a ride from a drunk driver."
+  },
+  "answer": "B",
+  "expl": "正解B。volenti の2要件:①claimant が危険の性質と程度を完全に認識していたこと(主観的基準――知っているだけでなく 引き受けたこと)、②危険を任意‧⾃由に引き受けたこと。明⽩な泥酔操縦と知りながら熱⼼に同乗した本件は両要件を満たす典 型。効果は complete defence――減額(CN)ではなく請求の全部消滅。なお制定法による volenti 排除は道路上の⾃動⾞同乗の場⾯ の規律であり、ボートには及ばない。",
+  "trans": "2⼈の友⼈が湖畔のバーで午後から⼤量に飲酒した。1⼈は近くに係留された強⼒なモーターボートを所有している。彼は呂律が回らずよろめく ほど明⽩に泥酔していたが、友⼈は、暗くなりつつある湖を⾼速で⾛ろうという彼の提案に熱⼼に同意した。⽬撃者らは、友⼈はほろ酔いでは あったが、状況を理解する能⼒はなお明確に保っていたと証⾔している。数分後、所有者は操縦を誤り、ボートはブイに衝突した。友⼈は重傷 を負い、所有者を negligence で提訴した。所有者は consent の抗弁(volenti non fit injuria)を主張する。",
+  "analysis": {
+   "A": "× T5 結論逆転型。過失⾏為の危険への同意は類型的に排除されていない。危険な酔余の冒険への参加はまさに volenti が機能する場 ⾯。",
+   "B": "○ 2要件の充⾜と、完全抗弁としての効果(全部棄却)を正しく述べる。",
+   "C": "× T4 事実捏造型。問題⽂は「状況を理解する能⼒は保っていた」と明⽰。事実を書き換えて能⼒⽋如を作り出す肢。",
+   "D": "× T2 効果すり替え型。減額は contributory negligence の効果。volenti が⽴てば賠償はゼロになる。抗弁の効果差こそ本章最⼤の得 点源。",
+   "E": "× T6 法域すり替え型。制定法の consent 排除は道路交通上の⾃動⾞同乗者の規律。湖上のモーターボートには適⽤がない。 シーン語彙表 lakeside 湖畔の motorboat モーターボート moor 係留する slur one's speech 呂律が回らない stumble よろめく merry ほろ酔いの buoy ブイ‧浮標 plead a defence 抗弁を主張する 典拠 Morris v Murray [1991] 2 QB 6(泥酔パイロット同乗‧volenti 成⽴)/教科書 Ch.4(Consent:Knowledge‧Voluntary acceptance‧Figure 4.2)※判例名の知 識は SQE1 スペック上不要 正誤記録:1周⽬ □正 □誤( / ) 2周⽬ □正 □誤( / ) 3周⽬ □正 □誤( / )"
+  }
+ },
+ {
+  "qid": "T-28",
+  "subject": "Tort",
+  "tag": "Ch.4",
+  "stem": "After an evening in a pub, a woman accepts a lift home in a car driven by an acquaintance. She has watched him drink at least six pints of beer during the evening and he is visibly unsteady on his feet as they walk to the car, but she gets in nonetheless because it is raining heavily. On the way home the driver, badly affected by alcohol, misjudges a bend and crashes into a wall. The woman is seriously injured and sues the driver in negligence. The driver argues that, by knowingly accepting a lift from an obviously drunk driver, she voluntarily accepted the risk and cannot recover. Which of the following best describes the position?",
+  "options": {
+   "A": "The defence of consent succeeds as a complete defence, and the woman recovers nothing.",
+   "B": "The defence of consent succeeds, because she had full knowledge of the risk and voluntarily accepted it by getting into the car.",
+   "C": "Neither consent nor contributory negligence is available, because the woman did nothing wrong in accepting a lift home in bad weather.",
+   "D": "The defence of consent is excluded by statute in respect of passengers in motor vehicles, so it cannot defeat her claim, but the court may reduce her damages for contributory negligence in knowingly travelling with a drunk driver.",
+   "E": "Her claim fails altogether under the defence of illegality, because travelling with a drunk driver is participation in a criminal enterprise."
+  },
+  "answer": "D",
+  "expl": "正解D。道路上の⾃動⾞の同乗者に対しては、制定法(Road Traffic Act 1988, s 149)が negligence 請求における consent の 抗弁を排除する。泥酔を知っての同乗でも volenti で請求を全部消すことはできない。ただし、⾃⼰の安全への合理的注意を⽋いた 同乗として contributory negligence による減額はあり得る。「volenti ✕(制定法)/CN ○(減額)」の組合せが解答の型。ボート‧軽 ⾶⾏機など道路交通法制の外の乗り物では volenti が⽣きる(T-27対⽐)。",
+  "trans": "パブで夜を過ごした後、⼥性は知⼈が運転する⾞で⾃宅まで送ってもらうことにした。彼⼥はその晩、彼が少なくともビール6パイントを飲むの を⾒ており、⾞へ歩く際に彼の⾜取りが⽬に⾒えて覚束なかったにもかかわらず、激しい⾬のため⾞に乗り込んだ。帰路、アルコールの影響を 強く受けた運転者はカーブを⾒誤り、壁に衝突した。⼥性は重傷を負い、運転者を negligence で提訴した。運転者は、明⽩に泥酔した運転者か らの送迎を知りながら受け⼊れたことにより、彼⼥は危険を任意に引き受けたのであり回復できない、と主張する。",
+  "analysis": {
+   "A": "× T5 結論逆転型。完全抗弁ルートは制定法で閉じられている。ゼロ回復の結論は取れない。",
+   "B": "× T3 原則すり替え型。コモンロー上の2要件を満たすように⾒えても、制定法が優先して抗弁⾃体を排除する。制定法チェックを⾶ば すワナ。",
+   "C": "× T4 事実の粉飾型。⾬は同乗の動機ではあるが、明⽩な泥酔の認識がある以上、⾃⼰の安全への注意⽋如の評価は免れない。CN の可 能性まで消すのは⾏き過ぎ。",
+   "D": "○ 制定法による volenti 排除と、CN 減額の残存という⼆段構造を正確に述べる。",
+   "E": "× T6 抗弁すり替え型。illegality は claimant ⾃⾝が違法な共同事業に参加している場合の抗弁。泥酔運転者の⾞に乗ること⾃体は claimant の犯罪ではない。 シーン語彙表 accept a lift 送迎を受け⼊れる‧⾞に乗せて もらう acquaintance 知⼈ pint パイント(ビールの単位) unsteady on one's feet ⾜取りが覚束ない misjudge a bend カーブを⾒誤る nonetheless それにもかかわらず knowingly 知りながら criminal enterprise 犯罪的事業 典拠 Road Traffic Act 1988, s 149(⾃動⾞同乗者への consent 抗弁の排除)/教科書 Ch.4(Table 4.1 Passengers:抗弁排除+CN 減額の可能性)※制定法名はスペッ ク上の理解必須事項 正誤記録:1周⽬ □正 □誤( / ) 2周⽬ □正 □誤( / ) 3周⽬ □正 □誤( / )"
+  }
+ },
+ {
+  "qid": "T-29",
+  "subject": "Tort",
+  "tag": "Ch.4",
+  "stem": "A car driven negligently by the defendant collides with a car in which the claimant is a front-seat passenger. The claimant played no part whatever in causing the collision. However, she was not wearing her seatbelt at the time. She suffers serious facial and chest injuries. Unchallenged medical evidence establishes that, if she had been wearing her seatbelt, she would still have been injured, but her injuries would have been significantly less severe. She sues the defendant, who admits negligent driving but raises her failure to wear a seatbelt. Which of the following best describes how the court is likely to deal with her claim?",
+  "options": {
+   "A": "Her claim will succeed, but her damages will be reduced under the Law Reform (Contributory Negligence) Act 1945 to reflect her share of responsibility for the damage, a reduction in the region of 15 per cent being appropriate where a seatbelt would have made the injuries less severe.",
+   "B": "Her claim will fail entirely, because by travelling unbelted she voluntarily accepted the risk of injury.",
+   "C": "No reduction can be made, because contributory negligence requires the claimant to have contributed to the accident itself, and she played no part in causing the collision.",
+   "D": "Her damages will automatically be reduced by 50 per cent, because that is the standard reduction whenever contributory negligence is established.",
+   "E": "No reduction can be made, because the defendant's negligence was the sole cause of the collision, and apportionment of responsibility is possible only between two or more tortfeasors."
+  },
+  "answer": "A",
+  "expl": "正解A。CN の審査:①claimant が⾃⼰の安全への合理的注意を⽋いたか(ベルト不着⽤)、②その⽋如が「損害」に寄与した か――事故の惹起への寄与は不要で、傷害の拡⼤への寄与で⾜りる、③衡平な減額割合。シートベルト事案には確⽴したスライド基 準がある:着⽤で傷害を完全に防げた=25%減/軽減できた=15%減/差なし=0%。本件は「著しく軽度で済んだ」型なので15%程度。 部分的抗弁であり請求⾃体は⽣きる。",
+  "trans": "defendant が過失により運転する⾞が、claimant が助⼿席に同乗する⾞に衝突した。claimant は衝突の惹起には全く関与していない。しか し、彼⼥は当時シートベルトを着⽤していなかった。彼⼥は顔⾯と胸部に重傷を負った。争いのない医学的証拠により、シートベルトを着⽤し ていれば、負傷はしたであろうが、傷害は著しく軽度で済んだであろうことが⽴証されている。彼⼥は defendant を提訴し、defendant は過失 運転を認めつつ、彼⼥のシートベルト不着⽤を主張する。",
+  "analysis": {
+   "A": "○ 損害への寄与という照準と、軽減型15%のスライド基準を正しく適⽤している。",
+   "B": "× T6 抗弁すり替え型。ベルト不着⽤は危険の「任意の引受け」ではなく、⾃⼰の安全への注意⽋如。volenti(全部消滅)ではなく CN(減 額)の領域。",
+   "C": "× T3 原則すり替え型。CN の対象は事故への寄与ではなく損害への寄与。衝突に無関係でも、傷害を重くした落ち度は減額事由にな る。",
+   "D": "× T2 数字型。固定50%という標準率は存在しない。割合は裁判所の裁量で、シートベルト型には25/15/0の⽬安がある。",
+   "E": "× T7 ⽇本法感覚型(共同不法⾏為者間の求償‧分担の発想への引き寄せ)。1945年法の按分は加害者間ではなく、defendant と claimant の間で損害への責任を分ける制度である。 シーン語彙表 front-seat passenger 助⼿席の同乗者 play no part in 〜 〜に全く関与しない seatbelt シートベルト facial and chest injuries 顔⾯と胸部の傷害 significantly less severe 著しく軽度の raise (a defence) (抗弁を)主張する in the region of 〜 〜程度の‧約〜 tortfeasor 不法⾏為者 典拠 Law Reform (Contributory Negligence) Act 1945/Froom v Butcher [1976] QB 286(シートベルトのスライド基準 25%/15%/0%)/Jones v Livox Quarries(⾃⼰の安全への注意)/教科書 Ch.4(Table 4.2)※制定法名はスペック上の理解必須事項 正誤記録:1周⽬ □正 □誤( / ) 2周⽬ □正 □誤( / ) 3周⽬ □正 □誤( / )"
+  }
+ },
+ {
+  "qid": "T-30",
+  "subject": "Tort",
+  "tag": "Ch.4",
+  "stem": "An eight-year-old girl runs out from between two parked vans to cross a residential street, without looking, and is struck by the defendant's car. The defendant was driving significantly above the speed limit and admits negligence, but argues that the girl's damages should be reduced for contributory negligence because she failed to check the road before crossing, and alternatively because her mother, who was walking some distance behind her, failed to supervise her properly. Which of the following best describes how the court is likely to approach the arguments for reducing the girl's damages?",
+  "options": {
+   "A": "Her damages will be reduced in the same way as an adult pedestrian's would be, because the standard of care in contributory negligence is objective and uniform.",
+   "B": "Her claim will fail entirely, because her sudden emergence into the road was a new intervening act breaking the chain of causation.",
+   "C": "No reduction can ever be made against a child of any age, because contributory negligence does not apply to children.",
+   "D": "Her damages will be reduced because of her mother's failure to supervise her, since a parent's carelessness is attributed to the child.",
+   "E": "A finding of contributory negligence is unlikely, because a court will only make such a finding against a child who is of an age at which they can be expected to take precautions for their own safety and who is blameworthy, and children of around eight are generally not held contributorily negligent."
+  },
+  "answer": "E",
+  "expl": "正解E。児童の CN は⼆重の絞り:①その年齢の児童に⾃⼰の安全への予防措置を期待できるか(実務上、おおむね10歳未満 には認定されない)、②当該児童が blameworthy といえるか。8歳の⾶び出しは通常この絞りを超えない。年⻑児では認定があり得 る(13歳に10%の例)。また、親の監督上の落ち度は児童本⼈の請求の減額事由として児童に帰属させられない。切断(novus actus) や成⼈基準の⼀律適⽤は別問題の混⼊である。",
+  "trans": "8歳の少⼥が、住宅街の道路を横断しようとして、駐⾞中の2台のバンの間から確認をせずに⾶び出し、defendant の⾞にはねられた。 defendant は制限速度を⼤幅に超過して運転しており、negligence を認めているが、少⼥が横断前に道路を確認しなかったことを理由に、また 予備的に、少し後ろを歩いていた⺟親が適切に監督しなかったことを理由に、少⼥の賠償額は contributory negligence により減額されるべき だと主張する。",
+  "analysis": {
+   "A": "× T3 原則すり替え型。CN の判断でも児童は年齢を考慮した基準で扱われる。成⼈同⼀の客観‧⼀律基準は児童には適⽤されない。",
+   "B": "× T6 制度すり替え型。novus actus は因果切断の法理で、被害者の落ち度の評価はまず CN の枠で⾏う。幼児の⾶び出しで請求全部を 消す構成は取られない。",
+   "C": "× T5 結論逆転型(過剰⼀般化)。児童への CN が「決してない」わけではない。年⻑の児童には減額例がある。年齢と⾮難可能性次第。",
+   "D": "× T7 ⽇本法感覚型(監督義務者の過失を被害者側の過失として斟酌する発想)。英国法では親の監督懈怠を児童本⼈の damages の減額 事由に転嫁しない。",
+   "E": "○ 年齢基準+blameworthy の⼆重の絞りと、8歳前後には認定されないという運⽤を正しく述べる。 シーン語彙表 parked vans 駐⾞中のバン residential street 住宅街の道路 speed limit 制限速度 alternatively 予備的に supervise 監督する emergence (急な)出現‧⾶び出し attribute A to B AをBに帰属させる blameworthy ⾮難可能な 典拠 Gough v Thorne [1966] 1 WLR 1387(年齢+blameworthy の指針)/Gul v McDonagh(13歳‧10%減額例)/Law Reform (Contributory Negligence) Act 1945/ 教科書 Ch.4(Table 4.3 Children)※判例名の知識は SQE1 スペック上不要 正誤記録:1周⽬ □正 □誤( / ) 2周⽬ □正 □誤( / ) 3周⽬ □正 □誤( / )"
+  }
+ },
+ {
+  "qid": "T-31",
+  "subject": "Tort",
+  "tag": "Ch.4",
+  "stem": "Late one night, a man burgles a warehouse and steals several boxes of electronic goods. Having hidden the goods, he begins to walk home. Half a mile from the warehouse, while he is crossing a road at a pelican crossing with the lights in his favour, he is struck and seriously injured by a car negligently driven at excessive speed by the defendant. The defendant later discovers what the man had been doing that night and argues that the claim should be defeated by the defence of illegality (ex turpi causa non oritur actio), since the man was injured in the course of a criminal escapade. Which of the following best describes the likely outcome?",
+  "options": {
+   "A": "The defence will fail, because there is no real connection between the burglary and the road accident: the criminal activity did not cause the injuries, which arose from an ordinary road crossing.",
+   "B": "The defence will succeed, because the man was engaged in criminal activity that evening and public policy prevents criminals from recovering damages.",
+   "C": "The defence will succeed, because a person who commits a crime forfeits all civil claims arising during the same night.",
+   "D": "The defence will fail, because illegality is only a partial defence which reduces damages rather than defeating the claim.",
+   "E": "The defence will fail, because illegality applies only where the claimant and the defendant were participating together in a joint criminal enterprise."
+  },
+  "answer": "A",
+  "expl": "正解A。illegality(ex turpi causa)は完全抗弁だが、発動には claimant の違法⾏為と損害との間の実質的な関連(違法⾏為が 損害を⽣んだといえる関係)が必要。侵⼊盗の最中に敷地内の⽋陥階段で転倒したなら抗弁が⽴ち得るが、犯罪完了後の帰路での通 常の交通事故は窃盗が原因ではなく、抗弁は失敗する。時間的な近さや「犯罪者である」という属性だけでは⾜りない。",
+  "trans": "ある深夜、男が倉庫に侵⼊して電⼦機器の⼊った箱を複数窃取した。盗品を隠した後、彼は歩いて帰宅し始めた。倉庫から半マイルの地点で、 押しボタン式信号のある横断歩道を⻘信号で横断中、defendant が過失により制限速度を⼤幅に超えて運転する⾞にはねられ、重傷を負った。 defendant は後にその夜の男の⾏動を知り、男は犯罪的な冒険の途中で負傷したのだから、請求は illegality の抗弁(ex turpi causa non oritur actio)により破られるべきだと主張する。",
+  "analysis": {
+   "A": "○ 関連性要件の不充⾜(窃盗は事故の原因でない)を正確に指摘している。",
+   "B": "× T3 原則すり替え型。公序による遮断は無限定ではなく、違法⾏為と損害の関連がある場合に限る。「その晩犯罪をした」という時 間的接着では発動しない。",
+   "C": "× T5 結論逆転型(過剰⼀般化)。犯罪者の⺠事上の権利の包括的喪失という準則は存在しない。関連しない損害についての請求権は保持 される。",
+   "D": "× T2 効果すり替え型。illegality は成⽴すれば賠償ゼロの complete defence。減額は contributory negligence の効果である。",
+   "E": "× T1 結論正‧理由誤り型。結論(抗弁不成⽴)は正しいが、illegality は共同犯罪企図の場⾯に限られない。claimant 単独の違法⾏為(逃 ⾛中の⾃傷等)でも⽴ち得る。真の理由は関連性の⽋如。 シーン語彙表 burgle (建物に)侵⼊して盗む warehouse 倉庫 electronic goods 電⼦機器 pelican crossing 押しボタン式信号の横断歩道 with the lights in one's favour ⻘信号で excessive speed 速度超過 escapade 冒険‧無謀な⾏動 forfeit 喪失する‧没収される 典拠 教科書 Ch.4(Illegality:関連性の設例――階段転倒と帰路の交通事故の対⽐)/Pitts v Hunt(共同違法企図)/Vellino v CC Greater Manchester(単独の違法⾏ 為でも成⽴)/Revill v Newberry(過剰反撃には不成⽴)※判例名の知識は SQE1 スペック上不要 正誤記録:1周⽬ □正 □誤( / ) 2周⽬ □正 □誤( / ) 3周⽬ □正 □誤( / )"
+  }
+ },
+ {
+  "qid": "T-32",
+  "subject": "Tort",
+  "tag": "Ch.5",
+  "stem": "A customer in a hardware shop is injured when a wall-mounted display shelf suddenly collapses on her. The shelf had been installed two weeks earlier by one of the shop's employees, acting in the course of his employment. It is established by expert evidence that the employee installed the shelf entirely competently, precisely following the manufacturer's fitting instructions, and that the collapse was caused by a hidden manufacturing defect in the shelf's internal bracket which no reasonable installer could have detected. The customer sues the shop owner on the basis that he is vicariously liable for his employee's actions. Which of the following best describes the position on vicarious liability?",
+  "options": {
+   "A": "The shop owner is vicariously liable, because an employment relationship existed and the shelf was installed in the course of that employment.",
+   "B": "The shop owner is vicariously liable, because a shopkeeper is strictly responsible for any accident that befalls customers on the premises.",
+   "C": "The shop owner is not vicariously liable, because installing shelves fell outside the course of the employee's employment.",
+   "D": "The shop owner is not vicariously liable, because vicarious liability requires proof of personal fault on the part of the employer himself.",
+   "E": "The shop owner is not vicariously liable, because the employee committed no tort: without primary liability on the employee's part there can be no secondary liability on the employer's part."
+  },
+  "answer": "E",
+  "expl": "正解E。VL の3要件=①雇⽤関係、②従業員が tort を犯したこと、③その tort が職務遂⾏中(in the course of employment) に⾏われたこと。VL は従業員の⼀次的責任に接ぎ⽊される⼆次的責任なので、従業員が無過失なら(②⽋缺)、①③がそろっていて も使⽤者責任は成⽴しない。使⽤者⾃⾝の過失は不要(その意味で無過失責任)だが、それは②を免除する趣旨ではない。",
+  "trans": "⾦物店の客が、壁付けの陳列棚が突然崩落して負傷した。棚は2週間前に、同店の従業員が職務の遂⾏として設置したものである。専⾨家証拠に より、従業員はメーカーの取付説明書に正確に従い、完全に適切に棚を設置したこと、および崩落の原因は棚の内部ブラケットの隠れた製造上 の⽋陥であって、合理的な設置者には発⾒不可能であったことが⽴証されている。客は、従業員の⾏為について vicariously liable(使⽤者責任を 負う)であるとして店主を提訴した。",
+  "analysis": {
+   "A": "× T2 要件⽋落型。①③だけを数えて②(従業員の tort)を落としている。3要件は全部そろって初めて機能する。",
+   "B": "× T3 原則すり替え型。店舗内の事故についての店主の厳格責任という⼀般準則は存在しない。VL も occupiers' liability も過失構造を 前提とする。",
+   "C": "× T4 事実捏造型。店の陳列棚の設置は店員の職務の範囲内の⾏為として問題なく評価できる。事実を書き換えて③を否定する肢。",
+   "D": "× T1 結論正‧理由誤り型。結論(VL不成⽴)は正しいが、理由が誤り。VL に使⽤者⾃⾝の過失は不要である。本件で落ちるのは従業員 の tort の不存在ゆえ。",
+   "E": "○ 「⼀次的責任なくして⼆次的責任なし」という VL の構造から②の⽋缺を正しく突いている。 シーン語彙表 hardware shop ⾦物店 wall-mounted 壁付けの display shelf 陳列棚 fitting instructions 取付説明書 bracket ブラケット‧取付⾦具 manufacturing defect 製造上の⽋陥 befall (事故などが)降りかかる secondary liability ⼆次的責任 典拠 教科書 Ch.5(Figure 5.1 の3段階‧Employee must have committed a tort)/Century Insurance ほか(職務遂⾏中の枠組み)※判例名の知識は SQE1 スペッ ク上不要 正誤記録:1周⽬ □正 □誤( / ) 2周⽬ □正 □誤( / ) 3周⽬ □正 □誤( / )"
+  }
+ },
+ {
+  "qid": "T-33",
+  "subject": "Tort",
+  "tag": "Ch.5",
+  "stem": "A firm of solicitors engages a self-employed IT technician to upgrade the computers in its offices. The technician invoices the firm a fixed fee for the job, uses his own tools and van, arranges his own tax and national insurance, is free to work for other clients, and decides for himself the order in which he carries out the work and the hours he attends. While moving a monitor through the reception area, he negligently drops it on a visiting client's foot, fracturing several bones. The client sues the firm of solicitors on the basis that it is vicariously liable for the technician's negligence. Which of the following best describes the position?",
+  "options": {
+   "A": "The firm is not vicariously liable, because the technician is an independent contractor working under a contract for services, as shown by his control over his own work, his separate business arrangements and his freedom to work for others.",
+   "B": "The firm is vicariously liable, because the technician's work was being carried out for the firm's benefit at the time of the accident.",
+   "C": "The firm is vicariously liable, because it was paying the technician for the work he was doing.",
+   "D": "The firm is vicariously liable, because vicarious liability extends to anyone working on a business's behalf, whether employee or independent contractor.",
+   "E": "The firm is not vicariously liable, because vicarious liability applies only to torts committed on an employer's own premises, and the reception area belonged to the landlord."
+  },
+  "answer": "A",
+  "expl": "正解A。VL は employee(contract of services)の tort にのみ及び、independent contractor(contract for services)には及 ばない。判定は control テスト(指揮監督の権利)、integral テスト(事業への統合か付属か)、economic reality テスト(賃⾦と労務‧ ⽀配への服従‧契約全体の整合)で⾏い、実務指標として報酬形態(定期給与か⼀括請求か)、税‧国⺠保険料の処理主体、労働時間 への⽀配が効く。本件の技術者は全指標が contractor 側で⼀致する。",
+  "trans": "solicitor 事務所が、⾃営業のIT技術者に事務所のコンピュータの更新作業を依頼した。技術者は作業⼀式について固定報酬を請求書で請求し、 ⾃前の⼯具とバンを使⽤し、⾃⼰の税⾦と国⺠保険料を⾃分で処理し、他の顧客のために働く⾃由を有し、作業の順序と作業に来る時間を⾃分 で決めている。受付エリアでモニターを運搬中、彼は過失によりそれを来訪中の依頼者の⾜の上に落とし、数本の⾻を⾻折させた。依頼者は、 技術者の過失について事務所が vicariously liable であるとして事務所を提訴した。",
+  "analysis": {
+   "A": "○ contract for services の指標群(⾃律‧⾃前の設備‧税務の独⽴‧顧客の複数性)から contractor 該当を正しく導く。",
+   "B": "× T3 原則すり替え型。「事業の利益になる作業」は雇⽤関係の判定基準ではない。contractor の仕事も常に発注者の利益になる。",
+   "C": "× T2 要素切出し型。報酬の⽀払は当然の前提であり判定を分けない。給与形態か請求書ベースかという「形」が指標になる。",
+   "D": "× T5 結論逆転型(範囲の過⼤化)。VL の射程を contractor に広げる準則はない。employee/contractor の線引きこそが第1要件の核 ⼼。",
+   "E": "× T4 要件捏造型。VL に「使⽤者の敷地内」という場所的限定はない。職務遂⾏中であれば場所を問わず及ぶ。 シーン語彙表 engage (業務を)依頼する‧起⽤する self-employed ⾃営業の invoice 請求書で請求する fixed fee 固定報酬 national insurance 国⺠保険(料) reception area 受付エリア monitor モニター on a business's behalf 事業のために 典拠 Performing Right Society v Mitchell & Booker(control)/Stevenson Jordan v MacDonald & Evans(integral)/Ready Mixed Concrete v Minister of Pensions(economic reality の3条件)/教科書 Ch.5(Table 5.1+実務指標)※判例名の知識は SQE1 スペック上不要 正誤記録:1周⽬ □正 □誤( / ) 2周⽬ □正 □誤( / ) 3周⽬ □正 □誤( / )"
+  }
+ },
+ {
+  "qid": "T-34",
+  "subject": "Tort",
+  "tag": "Ch.5",
+  "stem": "A furniture retailer employs a delivery driver to deliver sofas to customers' homes. Drivers are expressly and repeatedly instructed in writing never to allow any member of the public to ride in the delivery van or to help with deliveries. To finish his round more quickly, the driver nonetheless recruits a nineteen-year-old passer-by, agreeing to pay him a few pounds to help carry sofas into houses, and lets him ride in the van between drops. Owing to the driver's negligent driving, the van hits a bollard and the helper, riding in the back, is badly injured. The helper sues the retailer as vicariously liable for the driver's negligence. Which of the following best describes the position?",
+  "options": {
+   "A": "The retailer is not vicariously liable, because the driver acted in breach of an express prohibition, which automatically takes his conduct outside the course of his employment.",
+   "B": "The retailer is not vicariously liable, because giving lifts to members of the public can never form part of a delivery driver's job.",
+   "C": "The retailer is vicariously liable only if it knew that its drivers commonly recruited helpers in this way.",
+   "D": "The retailer is likely to be vicariously liable, because the prohibition governed the manner in which the driver did his job rather than limiting its scope, and recruiting the helper was done to further the employer's business of delivering furniture.",
+   "E": "The retailer is not vicariously liable, because by recruiting the helper the driver embarked on a frolic of his own."
+  },
+  "answer": "D",
+  "expl": "正解D。明⽰の禁⽌への違反は、それだけでは職務外を意味しない。裁判所は禁⽌が「やり⽅(manner/conduct)」を規律 するのか「職務の範囲(scope)」を画するのかを区別し、禁⽌違反⾏為が使⽤者の事業を推進するものであれば course of employment 内と判断する傾向にある。助⼿を使った配達は「配達」という職務そのものを(禁⽌された態様で)遂⾏する⾏為であ り、⾃分の⽬的のための逸脱(frolic)の正反対である。",
+  "trans": "家具⼩売業者が、顧客宅へソファを配達する配達運転⼿を雇⽤している。運転⼿らは、⼀般⼈を配達バンに乗せること、および配達を⼿伝わせ ることを決してしないよう、書⾯で明⽰的かつ繰り返し指⽰されている。それにもかかわらず、担当区域の配達を早く終えるため、運転⼿は通 りがかりの19歳を勧誘し、ソファを家に運び込むのを⼿伝う対価として数ポンドを⽀払うことに合意し、配達先の間はバンに乗せた。運転⼿の 過失運転により、バンは⾞⽌めポールに衝突し、荷台に乗っていた助⼿は重傷を負った。助⼿は、運転⼿の過失について使⽤者責任を負うとし て⼩売業者を提訴した。",
+  "analysis": {
+   "A": "× T5 結論逆転型。「禁⽌違反=⾃動的に職務外」という機械的処理は否定されている。禁⽌の性質(manner か scope か)の分析が必 要。",
+   "B": "× T4 過剰⼀般化‧事実の切り捨て型。本件の同乗は単なる厚意の同乗ではなく、配達業務の遂⾏⼿段として組み込まれていた。",
+   "C": "× T2 要件捏造型。使⽤者の認識‧黙認は VL の要件ではない。職務遂⾏中か否かは⾏為の客観的性質で決まる。",
+   "D": "○ manner/scope の区別と事業推進性という判断枠組を正確に適⽤している。",
+   "E": "× T3 概念の誤適⽤型。frolic は従業員が⾃分の⽬的のために職務から逸脱する場⾯(勤務中の私⽤の遠出等)。事業を早く終えるための ⾏為はその対極にある。 シーン語彙表 furniture retailer 家具⼩売業者 round 担当区域の配達‧巡回 recruit 勧誘する‧雇い⼊れる passer-by 通⾏⼈ between drops 配達先の間(の移動中) bollard ⾞⽌めポール embark on 〜 〜に乗り出す frolic of one's own ⾃分だけの道草(職務からの私的 逸脱) 典拠 Rose v Plenty [1976] 1 WLR 141(禁⽌は conduct を規律し scope を画さず‧事業推進)/Century Insurance(許可された⾏為の無許可の態様)/教科書 Ch.5(Prohibited acts)※判例名の知識は SQE1 スペック上不要 正誤記録:1周⽬ □正 □誤( / ) 2周⽬ □正 □誤( / ) 3周⽬ □正 □誤( / )"
+  }
+ },
+ {
+  "qid": "T-35",
+  "subject": "Tort",
+  "tag": "Ch.5",
+  "stem": "A car-hire company employs a desk assistant whose duties are to deal with customers, handle bookings and resolve complaints at the branch counter. A customer returns a car and disputes a fuel charge. The assistant responds with escalating rudeness and orders the customer to leave. As the customer walks to his own car in the branch car park, the assistant follows him, continues the argument, and then punches him repeatedly, causing a fractured jaw. The whole incident, from counter to car park, lasts under two minutes. The customer sues the company as vicariously liable for the assault. Which of the following best describes the position?",
+  "options": {
+   "A": "The company cannot be vicariously liable, because an employer is never answerable for an employee's deliberate criminal act.",
+   "B": "The company is vicariously liable simply because the assault occurred at its premises during the assistant's working hours.",
+   "C": "The company is likely to be vicariously liable, because dealing with customers was within the assistant's field of activities, and the assault formed part of a seamless sequence of events closely connected with that role.",
+   "D": "The company is not vicariously liable, because by resorting to violence the assistant was pursuing a purely personal quarrel unconnected with his duties.",
+   "E": "The company is not vicariously liable unless it authorised or subsequently ratified the assistant's use of force."
+  },
+  "answer": "C",
+  "expl": "正解C。故意の違法⾏為(暴⾏‧性的虐待等)への VL は close connection test で判断する:①従業員に委ねられた職務活動の 領域(field of activities)を確定し、②違法⾏為とその職務との間に、使⽤者に責任を負わせるのが正当といえる⼗分な関連があるか を⾒る。顧客対応を職務とする者が、顧客とのやり取りに端を発し、切れ⽬のない⼀連の流れの中で加えた暴⾏は密接関連が認めら れやすい。場所‧時間は結論を左右する独⽴の基準ではない。",
+  "trans": "レンタカー会社が、⽀店カウンターで顧客対応‧予約処理‧苦情解決を職務とするカウンター係を雇⽤している。ある顧客が⾞を返却し、燃料 代の請求について争った。係はエスカレートする無礼な態度で応じ、顧客に退去を命じた。顧客が⽀店駐⾞場の⾃分の⾞へ歩いて⾏くと、係は 後を追い、⼝論を続け、そして繰り返し殴打して顎の⾻折を負わせた。カウンターから駐⾞場までの⼀部始終は2分⾜らずの出来事であった。顧 客は、この暴⾏について使⽤者責任を負うとして会社を提訴した。",
+  "analysis": {
+   "A": "× T5 結論逆転型。故意犯‧犯罪⾏為でも VL は成⽴し得る(施設内虐待の判例群)。「故意なら常に免責」は close connection test 以前 の発想。",
+   "B": "× T2 基準すり替え型。敷地内‧勤務時間中という場所的‧時間的要素だけでは⾜りない。問われるのは職務内容との関連の質であ る。",
+   "C": "○ field of activities の確定と seamless episode(切れ⽬のない⼀連性)による密接関連の認定を正しく述べる。",
+   "D": "× T7 ⽇本法感覚型。「職務と無関係な私的暴⼒」として外形から切る事業執⾏性(715条)の感覚。英国法は⾏為の私的性格ではなく、 職務との関連の密接さで判断し、顧客対応から発した本件は職務側に引き寄せられる。",
+   "E": "× T3 旧基準持込み型。使⽤者の許可‧追認は VL の要件ではない。許可なき違法⾏為をどこまで負わせるかを決めるのが close connection test である。 シーン語彙表 car-hire company レンタカー会社 desk assistant カウンター係 fuel charge 燃料代の請求 escalating rudeness エスカレートする無礼な態度 fractured jaw 顎の⾻折 seamless 切れ⽬のない quarrel 喧嘩‧⼝論 ratify 追認する 典拠 Lister v Hesley Hall [2002](close connection)/Mohamud v WM Morrison [2016] UKSC 11(field of activities‧seamless episode)/教科書 Ch.5(Unlawful acts)※判例名の知識は SQE1 スペック上不要。なお使⽤者が賠償した場合の従業員への求償(Civil Liability (Contribution) Act 1978)は解説末尾の補⾜論 点 正誤記録:1周⽬ □正 □誤( / ) 2周⽬ □正 □誤( / ) 3周⽬ □正 □誤( / )"
+  }
+ },
+ {
+  "qid": "T-36",
+  "subject": "Tort",
+  "tag": "Ch.5",
+  "stem": "A maintenance company sends one of its engineers to service air-conditioning units at an office building operated by one of its clients. While working there, the engineer is injured. His solicitor is considering a claim against the maintenance company based on the employer's own common law duty of care, as distinct from any claim in vicarious liability. The solicitor wants to advise the engineer accurately about the nature and content of that duty. Which of the following most accurately states the employer's common law duty of care?",
+  "options": {
+   "A": "The employer is under an absolute duty to prevent any injury to its employees occurring in the course of their work.",
+   "B": "The employer owes each employee a personal, non-delegable duty to take reasonable care for their health and safety, which requires it to provide competent staff, adequate plant and equipment, a safe system of work and safe premises, including premises of third parties where employees are sent to work.",
+   "C": "The employer discharges its duty entirely by entrusting health and safety arrangements to a reputable independent contractor.",
+   "D": "The employer's duty extends only to premises which the employer itself owns or occupies, and not to a client's building.",
+   "E": "The employer owes no relevant duty at common law, because employees' safety at work is governed exclusively by statute and regulations."
+  },
+  "answer": "B",
+  "expl": "正解B。使⽤者は各従業員に対し、健康と安全について合理的な注意を尽くす固有の義務を負う。内容は4本 柱:①competent staff(有能な同僚――危険な悪癖を知り得た同僚を放置すれば違反)、②adequate plant and equipment(設備‧機 器の提供と保守)、③safe system of work(作業⼿順‧警告‧遵守確保まで含む広い義務)、④safe premises(第三者の敷地で働かせる 場合を含む)。義務は「合理的注意」であって絶対‧厳格ではなく、⼈的‧⾮委譲的(non-delegable)なので委託によっては免れな い。",
+  "trans": "メンテナンス会社が、顧客の⼀社が運営するオフィスビルの空調設備の保守のため、エンジニアの⼀⼈を派遣した。そこで作業中、エンジニア が負傷した。彼の solicitor は、vicarious liability に基づく請求とは区別される、使⽤者⾃⾝のコモンロー上の duty of care に基づく同社への請 求を検討しており、その義務の性質と内容についてエンジニアに正確に助⾔したいと考えている。",
+  "analysis": {
+   "A": "× T5 結論逆転型(過⼤)。義務は結果保証ではない。合理的注意を尽くしたのに⽣じた事故(例:床の浸⽔に合理的対応をした事案)では責 任を負わない。",
+   "B": "○ 4本柱+合理的注意基準+⾮委譲性+第三者敷地への拡張をすべて正確に含む。",
+   "C": "× T3 原則すり替え型。義務は non-delegable。業者への委託は履⾏の⼿段にはなっても、義務それ⾃体の移転‧免責事由にはならな い。",
+   "D": "× T2 範囲切り縮め型。safe premises の義務は、従業員が働くことを予定される第三者の敷地にも及ぶ(⽀配の程度等を考慮しつつ)。",
+   "E": "× T4 規範捏造型。制定法‧規則はコモンロー上の義務を補完するのであって、置き換えるのではない。コモンロー上の固有義務は現 に存在する。 シーン語彙表 maintenance company メンテナンス会社 service (v.) 保守点検する air-conditioning unit 空調設備 as distinct from 〜 〜とは区別されるものとして entrust A to B AをBに委ねる reputable 評判の良い discharge a duty 義務を履⾏する exclusively 排他的に‧もっぱら 典拠 Wilsons & Clyde Coal Co v English(4本柱の淵源)/Hudson v Ridge(competent staff)/Knowles v Liverpool CC(equipment)/Latimer v AEC(premises‧合 理性)/教科書 Ch.5(Table 5.2)※判例名の知識は SQE1 スペック上不要 正誤記録:1周⽬ □正 □誤( / ) 2周⽬ □正 □誤( / ) 3周⽬ □正 □誤( / )"
+  }
+ },
+ {
+  "qid": "T-37",
+  "subject": "Tort",
+  "tag": "Ch.5",
+  "stem": "A roofing company has a written safety procedure requiring every operative working at height to clip on to a fixed anchor point using a harness, which the company supplies. Site supervisors know that, to save time, operatives routinely work unclipped, and for over a year the company has taken no steps to enforce the procedure: there are no checks, no reminders and no disciplinary consequences. An experienced roofer, working unclipped in the way the supervisors habitually tolerated, slips and falls six metres, suffering spinal injuries. The evidence indicates that proper enforcement of the procedure would probably have secured his compliance on the day. Which of the following best describes whether the company breached its duty to provide a safe system of work?",
+  "options": {
+   "A": "There is no breach, because the company had devised and documented a proper safety procedure and supplied the necessary harnesses.",
+   "B": "There is no breach, because the roofer, knowing the risks, chose for himself to work unclipped and must bear the consequences of that choice.",
+   "C": "There is a breach, and the company is strictly liable for any injury suffered by an employee working at height.",
+   "D": "There is likely to be a breach, because the duty to provide a safe system of work includes taking reasonable steps to ensure that the system is actually followed, and the company knowingly tolerated routine non-compliance for over a year.",
+   "E": "There is no breach, because enforcing the use of harnesses is a matter for statutory health and safety regulators rather than for the employer."
+  },
+  "answer": "D",
+  "expl": "正解D。safe system of work の義務は広い:作業の物理的レイアウト‧⼿順の設計に加え、警告‧特別の指⽰の提供、そし てシステムと安全措置が実際に遵守されることの確保(監督‧徹底)まで含む。⼿順を策定し器具を⽀給しただけで、常態的な不遵守 を知りながら放置すれば違反となる。なお、たとえ違反があっても「⽀給しても装着しなかったであろう」場合には因果で切れるた め、本問は徹底により遵守が確保されたであろう証拠を明⽰している。",
+  "trans": "屋根⼯事会社には、⾼所で作業するすべての作業員に、会社が⽀給するハーネスを⽤いて固定アンカーポイントに命綱を掛けることを義務付け る書⾯の安全⼿順がある。現場監督者らは、時間節約のため作業員が常態的に命綱なしで作業していることを知っており、会社は1年以上にわた り⼿順を徹底させる措置を何も講じてこなかった。点検もなく、注意喚起もなく、懲戒上の帰結もない。経験豊富な屋根職⼈が、監督者らが 常々黙認してきたやり⽅どおり命綱なしで作業中、⾜を滑らせて6メートル転落し、脊椎を損傷した。証拠によれば、⼿順が適切に徹底されてい れば、当⽇の彼の遵守はおそらく確保されていたであろうとされる。",
+  "analysis": {
+   "A": "× T3 原則すり替え型。「紙の上の制度」で義務は尽きない。遵守確保までが義務の内容であり、設計の適切さは出発点にすぎない。",
+   "B": "× T7 ⽇本法感覚型(⾃⼰責任‧危険への同意の先取り)。危険を知りつつ就労を続けたこと⾃体は consent にならず、労働者の慣れや近 道こそシステムで統制すべき対象である。CN による減額の余地は別論。",
+   "C": "× T5 結論逆転型(過⼤)。義務は合理的注意義務であって厳格責任ではない。「⾼所作業中の負傷=常に責任」ではない。",
+   "D": "○ 遵守確保義務と、1年以上の意図的な黙認という違反事実、因果の橋渡しまで正しく押さえている。",
+   "E": "× T6 制度すり替え型。規制当局の存在はコモンロー上の使⽤者の義務を代替しない。制定法‧規則はコモンローを補完する関係にあ る。 シーン語彙表 roofing company 屋根⼯事会社 operative 作業員 clip on to 〜 〜に(命綱を)掛ける anchor point アンカーポイント(固定⽀点) harness ハーネス‧安全帯 disciplinary consequences 懲戒上の帰結 habitually tolerate 常々黙認する spinal injuries 脊椎の損傷 典拠 Speed v Thomas Swift(状況に応じたシステムの修正)/McWilliams v Sir William Arrol(装着しなかったであろう場合の因果切断――対⽐)/Smith v Charles Baker(危険を知る就労継続≠consent)/教科書 Ch.5(Table 5.2 A safe system of work)※判例名の知識は SQE1 スペック上不要 正誤記録:1周⽬ □正 □誤( / ) 2周⽬ □正 □誤( / ) 3周⽬ □正 □誤( / )"
+  }
+ },
+ {
+  "qid": "T-38",
+  "subject": "Tort",
+  "tag": "Ch.6",
+  "stem": "A brewery owns a public house which it entrusts to a manager under a service agreement. The manager and his wife live in the upper floors and run the business day to day, while the brewery retains rights under the agreement to direct repairs and to inspect the building. A paying overnight guest of the manager falls on a poorly lit and defective staircase in the private upper part of the building and is seriously injured. He wishes to bring a claim under the Occupiers' Liability Act 1957 and needs to identify the correct defendant or defendants as 'occupier'. Which of the following best describes the position on who is an occupier?",
+  "options": {
+   "A": "Only the brewery is the occupier, because ownership of the premises determines occupation.",
+   "B": "Only the manager is the occupier, because an occupier must be in day-to-day physical possession of the premises.",
+   "C": "Neither is the occupier, because the defect in the staircase was created by the builders who constructed it.",
+   "D": "The guest cannot rely on the OLA 1957 at all, because he entered under a contract and his rights lie exclusively in contract law.",
+   "E": "Both the brewery and the manager may be occupiers, because occupation depends on a sufficient element of control over the premises, ownership is not required, and there may be more than one occupier of the same premises."
+  },
+  "answer": "E",
+  "expl": "正解E。occupier とは敷地を⽀配する法的権利‧⼗分な⽀配の要素を持つ者。①所有権は不要、②現地にいなくても法的⽀ 配があれば⾜り、③同⼀敷地に複数の occupier があり得る(醸造会社と⽀配⼈の双⽅が occupier とされた例が定義の出発点)。 premises は「固定‧可動の構造物(船舶‧⾞両‧航空機を含む)」と広く、visitor には明⽰‧黙⽰の許可を受けた者、契約に基づく 者、⽴⼊権を有する者が含まれる。有償宿泊客は契約に基づく lawful visitor である。",
+  "trans": "醸造会社がパブを所有し、業務委託契約に基づき⽀配⼈に運営を委ねている。⽀配⼈夫妻は上階に居住して⽇々の営業を⾏う⼀⽅、醸造会社は 契約上、修繕を指⽰し建物を検査する権利を保持している。⽀配⼈の有償宿泊客が、建物の私的な上階部分にある照明の乏しい⽋陥のある階段 で転落し、重傷を負った。彼は Occupiers' Liability Act 1957 に基づく請求を望んでおり、「occupier」としての正しい被告を特定する必要が ある。",
+  "analysis": {
+   "A": "× T3 原則すり替え型。基準は所有ではなく⽀配。所有者でも⽀配を⼿放していれば occupier でないことがあり、逆に⾮所有者が occupier になる。",
+   "B": "× T2 要件切り縮め型。⽇常の物理的占有は⽀配の⼀態様にすぎない。契約上の修繕‧検査権のような法的⽀配でも occupier たり得 る。",
+   "C": "× T4 論点そらし型。危険の作出者が別にいることは、occupier 該当性を否定しない。occupier の義務は敷地の状態に起因する危険か ら訪問者を守ること。",
+   "D": "× T6 法域すり替え型。契約に基づき⽴ち⼊る者は visitor の類型の⼀つとして 1957 年法の保護を受ける。契約の存在は法の適⽤を排 除しない。",
+   "E": "○ ⽀配基準‧所有不要‧複数占有の3点を正確に述べる。 シーン語彙表 entrust A to B AをBに委ねる service agreement 業務委託契約 day to day ⽇々の‧⽇常の overnight guest 宿泊客 poorly lit 照明の乏しい staircase 階段 identify the defendant 被告を特定する element of control ⽀配の要素 典拠 OLA 1957, s 1(2)‧s 1(3)(a)/Wheat v E Lacon & Co [1966] AC 552(醸造会社と⽀配⼈の⼆重占有)/Harris v Birkenhead Corp(現実占有なき法的⽀配)/教科 書 Ch.6(Table 6.1)※制定法はスペック必須‧判例名は理解補助 正誤記録:1周⽬ □正 □誤( / ) 2周⽬ □正 □誤( / ) 3周⽬ □正 □誤( / )"
+  }
+ },
+ {
+  "qid": "T-39",
+  "subject": "Tort",
+  "tag": "Ch.6",
+  "stem": "A historic village hall, run by a charity, is hired out for community events. Its floor is made of old flagstones which are slightly uneven in places, a feature typical of buildings of its age. The unevenness is visible, the hall is well lit, and notices at each entrance state: 'Historic uneven floor - please mind your step.' During a craft fair, an adult visitor catches her heel on a slightly raised flagstone, falls, and breaks her wrist. She sues the charity under the Occupiers' Liability Act 1957, arguing that the very fact of her fall shows the hall was not safe. Which of the following best describes the duty owed to her under the Act?",
+  "options": {
+   "A": "The charity's duty was to ensure that the premises themselves were safe, so the existence of an uneven floor is itself a breach.",
+   "B": "The charity's duty was to take such care as was reasonable in all the circumstances to see that the visitor was reasonably safe in using the hall for the purposes for which she was permitted to be there, and clear lighting and warnings may be enough to discharge it.",
+   "C": "The charity's duty was strict, so it is in breach whenever a visitor is in fact injured on the premises.",
+   "D": "The charity owed her no duty, because it did not itself create the unevenness in the floor.",
+   "E": "The charity owed her the same duty that it would owe to a trespasser who entered the hall without permission."
+  },
+  "answer": "B",
+  "expl": "正解B。s 2(2) の common duty of care=「すべての事情の下で合理的な注意を尽くし、訪問者が、招かれまたは許された ⽬的のために敷地を使⽤するにつき合理的に安全であるようにする」義務。①安全にする対象は訪問者であって敷地ではない(歴史 的な不陸をゼロにする義務はない)、②基準は合理性(negligence と同様に、危険の性質‧蓋然性‧訪問者の類型‧費⽤‧警告の有無 を衡量)、③警告‧区画‧照明で義務を履⾏できる。転倒の事実は違反を推定しない。",
+  "trans": "慈善団体が運営する歴史的な村の集会所が、地域イベント向けに貸し出されている。床は古い敷⽯(flagstone)造りで、ところどころわずかに不 陸(でこぼこ)があるが、これはこの年代の建物に典型的な特徴である。不陸は⽬視可能で、集会所は⼗分に照明され、各⼊⼝には「歴史的建造 物につき床に不陸あり――⾜元にご注意ください」との掲⽰がある。クラフトフェアの開催中、成⼈の来場者がわずかに持ち上がった敷⽯に踵 を引っ掛けて転倒し、⼿⾸を⾻折した。彼⼥は、転倒したという事実⾃体が集会所の不安全を⽰すと主張して、Occupiers' Liability Act 1957 に 基づき慈善団体を提訴した。",
+  "analysis": {
+   "A": "× T2 対象すり替え型。定番の誤解。「premises を安全に」ではなく「visitor を合理的に安全に」。⽂⾔の主語のすり替えに注意。",
+   "B": "○ s 2(2) の定式と、照明‧警告による履⾏可能性を正しく述べる。",
+   "C": "× T5 結論逆転型(過⼤)。義務は厳格責任ではない。負傷の発⽣は合理的注意の⽋如を意味しない。",
+   "D": "× T4 要件捏造型。義務は「敷地の状態に起因する危険」に及び、occupier ⾃⾝が危険を作出したことは要件でない。",
+   "E": "× T6 法域すり替え型。訪問者への義務(1957年法)と⾮訪問者への義務(1984年法)は要件‧範囲が異なる別制度である。 シーン語彙表 village hall 村の集会所 hire out 貸し出す flagstone 敷⽯ uneven 不陸のある‧でこぼこの mind your step ⾜元にご注意ください craft fair クラフトフェア‧⼿⼯芸市 catch one's heel 踵を引っ掛ける discharge (a duty) (義務を)履⾏する 典拠 OLA 1957, s 2(2)(common duty of care の⽂⾔)/Pollock v Cahill(既知の脆弱な訪問者には加重――対⽐)/教科書 Ch.6(Duty of care under OLA 1957‧ Revision tip)※制定法はスペック必須 正誤記録:1周⽬ □正 □誤( / ) 2周⽬ □正 □誤( / ) 3周⽬ □正 □誤( / )"
+  }
+ },
+ {
+  "qid": "T-40",
+  "subject": "Tort",
+  "tag": "Ch.6",
+  "stem": "A district council owns an area of open ground next to a housing estate, which local children use daily as a play area with the council's knowledge. For over a year the council has left on the land a derelict fairground trailer, its panels rusted and its supporting props unstable. The trailer is exactly the kind of object that attracts children, and children have repeatedly been seen climbing on it. A nine-year-old boy from the estate climbs onto the trailer to play; a corroded panel gives way and part of the structure falls on him, crushing his leg. His parents sue the council under the Occupiers' Liability Act 1957. Which of the following best describes how the council's duty to the boy will be assessed?",
+  "options": {
+   "A": "The boy will be treated in the same way as an adult visitor, because the common duty of care does not vary with the visitor's age.",
+   "B": "The council will not be liable, because the supervision of children playing outdoors is always the responsibility of their parents rather than the occupier.",
+   "C": "The council must be prepared for children to be less careful than adults, and because the derelict trailer was an allurement to children left on the land for a long period, a court is likely to find the council in breach of its duty.",
+   "D": "The council owes the boy no duty under the Act unless it expressly invited him onto the land.",
+   "E": "The council will not be liable, because a nine-year-old must be taken to appreciate obvious dangers in the same way as a teenager walking on a railway line."
+  },
+  "answer": "C",
+  "expl": "正解C。s 2(3)(a):occupier は「児童が⼤⼈より不注意であること」に備えなければならない。敷地上に⼦どもを引き寄せる 危険物(allurement――放置ボート‧廃遊具等)があれば、要求される注意は⼀層⾼まる。⻑期放置+⼦どもが登る実態の認識+黙⽰の 許可(遊び場としての利⽤容認)がそろう本件は違反⽅向。なお極めて幼い⼦については親の監督への合理的な期待が考慮される場⾯ もあるが(⼯事現場に幼児、の型)、9歳児と⻑期放置の誘引物という組合せでは occupier 側の責任が中⼼となる。",
+  "trans": "district council(地区⾃治体)が住宅団地に隣接する空き地を所有しており、地元の⼦どもたちは council の認識の下、そこを毎⽇遊び場として使 っている。council は1年以上にわたり、パネルが錆び、⽀持脚が不安定になった移動遊園地の廃トレーラーをこの⼟地に放置してきた。このト レーラーはまさに⼦どもを引き寄せる類の物体であり、⼦どもたちがそれに登っているのが繰り返し⽬撃されている。団地の9歳の少年が遊ぼう とトレーラーに登ったところ、腐⾷したパネルが崩れ、構造物の⼀部が落下して脚を圧潰した。両親は Occupiers' Liability Act 1957 に基づき council を提訴した。",
+  "analysis": {
+   "A": "× T3 原則すり替え型。1957年法は児童‧熟練者について基準の明⽂の調整(s 2(3))を置く。年齢中⽴の⼀律基準ではない。",
+   "B": "× T7 ⽇本法感覚型(監督義務者への転嫁)。親の監督への期待は、ごく幼い⼦+明⽩な危険という限られた場⾯の考慮要素にとどまり、 「常に親の責任」という免責準則ではない。",
+   "C": "○ s 2(3)(a) の備えの義務と allurement による加重、⻑期放置‧認識という違反事実を正しく結合している。",
+   "D": "× T2 要件切り縮め型。visitor には黙⽰の許可を受けた者を含む。⽇常的な利⽤を知りつつ容認してきた本件では明⽰の招待は不要。",
+   "E": "× T4 事実のすり替え型。年⻑の少年が線路という周知の危険を理解できるとされた場⾯と、9歳児と崩壊する誘引物という本件は事案 が異なる。年齢と危険の性質はセットで評価する。 シーン語彙表 district council 地区⾃治体 housing estate 住宅団地 derelict 放置された‧廃棄状態の fairground trailer 移動遊園地のトレーラー supporting props ⽀持脚‧⽀柱 corroded 腐⾷した give way 崩れる‧壊れる crush 圧潰する‧押し潰す 典拠 OLA 1957, s 2(3)(a)/Jolley v Sutton LBC(放置ボート=allurement‧premises の広さ)/Phipps v Rochester(幼児と親の監督への期待――対⽐)/Titchener v BRB(年⻑少年と周知の危険――対⽐)/教科書 Ch.6(Table 6.2)※制定法はスペック必須‧判例名は理解補助 正誤記録:1周⽬ □正 □誤( / ) 2周⽬ □正 □誤( / ) 3周⽬ □正 □誤( / )"
+  }
+ },
+ {
+  "qid": "T-41",
+  "subject": "Tort",
+  "tag": "Ch.6",
+  "stem": "A homeowner smells gas near her ageing boiler and calls out a registered gas engineer, telling him on the telephone that she suspects a leaking flue and that the boiler room becomes stuffy when the boiler runs. The engineer arrives, props the boiler room door shut behind him to keep out draughts, and works on the running boiler for over an hour without ventilating the room or using the gas detector he carries in his van. He is overcome by carbon monoxide escaping from the defective flue and suffers lasting injury. He sues the homeowner under the Occupiers' Liability Act 1957. Which of the following best describes the likely outcome?",
+  "options": {
+   "A": "The homeowner is liable, because the common duty of care is owed to all lawful visitors in identical terms regardless of their skills.",
+   "B": "The homeowner is liable, because an occupier must eliminate a known danger before allowing any specialist to begin work on it.",
+   "C": "The engineer's claim fails at the outset, because skilled workers are owed no duty of any kind under the 1957 Act.",
+   "D": "The homeowner is unlikely to be liable, because an occupier may expect a person, in the exercise of his calling, to appreciate and guard against special risks ordinarily incident to it, and the risk of escaping gas is precisely such a risk for a gas engineer called to a suspected leak.",
+   "E": "The homeowner is liable unless she displayed a written warning notice about the flue at the entrance to the boiler room."
+  },
+  "answer": "D",
+  "expl": "正解D。s 2(3)(b):occupier は「職業⼈が、その職業(calling)の遂⾏において、それに通常伴う特別な危険を認識し、これに 対して⾃衛すること」を期待してよい。煙道からの⼀酸化炭素は、漏れの疑いに対処するために呼ばれたガス技師にとって職業リス クの中核であり、換気‧検知器という⾃衛⼿段を⾃ら省略した本件で occupier の責任は原則として否定される。義務が消えるので はなく、専⾨家に対する義務内容が縮減されるという構造も押さえる。",
+  "trans": "住宅所有者が、⽼朽化したボイラーの近くでガスの臭いに気づき、登録ガス技師を呼んだ。電話で、排気管(flue)の漏れが疑われること、ボイラ ー稼働時にボイラー室がこもった空気になることを伝えている。技師は到着すると、すきま⾵を防ぐためボイラー室のドアを閉め切り、室内を 換気せず、バンに積んでいるガス検知器も使わないまま、稼働中のボイラーで1時間以上作業した。彼は⽋陥のある排気管から漏れた⼀酸化炭素 に倒れ、後遺症の残る傷害を負った。彼は Occupiers' Liability Act 1957 に基づき住宅所有者を提訴する。",
+  "analysis": {
+   "A": "× T3 原則すり替え型。1957年法は児童(s 2(3)(a))と熟練者(s 2(3)(b))について義務内容の明⽂の調整を置く。⼀律ではない。",
+   "B": "× T2 要件捏造型。危険の事前除去義務はない。危険への対処こそ専⾨家を呼ぶ⽬的であり、その危険は専⾨家の⾃衛に委ねられる。",
+   "C": "× T5 結論逆転型(過剰)。熟練者にも common duty は負われる。職業リスク以外の危険(例:腐った床板)については通常どおり保護され る。",
+   "D": "○ s 2(3)(b) の定式と、本件危険が職業に通常伴う危険そのものであることの当てはめが正確。",
+   "E": "× T4 要件捏造型。職業に通常伴う危険については、専⾨家の認識‧⾃衛への期待で⾜り、書⾯警告の掲⽰は責任の分⽔嶺ではない(し かも危険は電話で伝達済み)。 シーン語彙表 call out (an engineer) (技師を)呼ぶ‧出張依頼する flue 排気管‧煙道 stuffy 空気のこもった prop 〜 shut ventilate 換気する gas detector ガス検知器 be overcome by 〜 〜に倒れる‧意識を失う in the exercise of one's calling 職業の遂⾏において 〜を閉め切る‧つっかえで閉じ る 典拠 OLA 1957, s 2(3)(b)/Roles v Nathan(煙突掃除⼈と⼀酸化炭素――職業に通常伴う危険)/教科書 Ch.6(Figure 6.1‧Table 6.2 Skilled visitors)※制定法はス ペック必須‧判例名は理解補助 正誤記録:1周⽬ □正 □誤( / ) 2周⽬ □正 □誤( / ) 3周⽬ □正 □誤( / )"
+  }
+ },
+ {
+  "qid": "T-42",
+  "subject": "Tort",
+  "tag": "Ch.6",
+  "stem": "A hotel engages a well-known lift engineering firm to maintain its guest lift, having checked the firm's accreditation and references. Owing to the firm's negligent servicing of the winding gear - a technical matter the hotel could not itself be expected to check - the lift drops half a floor and a guest inside is injured. On the same morning, another guest ignores a barrier placed across the bottom of a side staircase and a large sign reading 'Staircase closed - freshly polished and slippery. Please use the main stairs', climbs past the barrier, slips and is injured. Both guests sue the hotel under the Occupiers' Liability Act 1957. Which of the following best describes the hotel's position?",
+  "options": {
+   "A": "The hotel is unlikely to be liable to either guest: as to the first, it entrusted technical maintenance to a competent contractor, took reasonable steps to check the contractor's competence and could not reasonably check the technical work itself; as to the second, the barrier and sign were in the circumstances enough to enable a visitor to be reasonably safe.",
+   "B": "The hotel is liable to the first guest, because the common duty of care cannot be discharged by delegating work to an independent contractor.",
+   "C": "The hotel is liable to the second guest, because a warning notice can never discharge the duty unless the danger itself has been removed.",
+   "D": "The hotel is liable to both guests, because an occupier is strictly liable for any injury suffered by paying guests on its premises.",
+   "E": "The hotel escapes liability to the first guest only if it personally inspected the winding gear after each service visit."
+  },
+  "answer": "A",
+  "expl": "正解A。免責2ルート:①independent contractor(s 2(4)(b))――⼯事‧保守‧修繕を(a)有能な業者に委託し、(b)業者の適格 性を確認する合理的措置を講じ、(c)仕事が適切に⾏われたことを確認する合理的注意を払えば免責。作業が技術的であるほど(リフ ト保守の典型)、素⼈の occupier に点検は期待されず(c)は緩やかになる。②警告(s 2(4)(a))――警告は「すべての事情の下で訪問者 を合理的に安全にするに⾜りる」ものであれば義務を履⾏する。バリケード+内容の明確な掲⽰+安全な代替経路の指⽰はその典 型。",
+  "trans": "ホテルが、認証と照会先を確認したうえで、著名なリフト(エレベーター)エンジニアリング会社に客⽤リフトの保守を委託した。同社の巻上装 置の保守における過失――ホテル⾃⾝が点検することを期待できない技術的事項――により、リフトが半階分落下し、乗っていた宿泊客が負傷 した。同じ朝、別の宿泊客が、脇階段の下り⼝に置かれたバリケードと、「階段閉鎖中――磨き⽴てで滑りやすいため、メインの階段をご利⽤ ください」と書かれた⼤きな掲⽰を無視し、バリケードを乗り越えて滑り、負傷した。両宿泊客は Occupiers' Liability Act 1957 に基づきホテル を提訴する。",
+  "analysis": {
+   "A": "○ s 2(4)(b) 3要件と s 2(4)(a) の⼗分性基準を、それぞれの事故に正しく適⽤している。",
+   "B": "× T3 原則すり替え型。使⽤者の対従業員義務(⾮委譲)との混線。occupiers' liability では s 2(4)(b) が業者委託による履⾏を明⽂で認め る。",
+   "C": "× T2 要件すり替え型。基準は危険の除去ではなく「訪問者を合理的に安全にするに⾜りるか」。⼗分な警告はそれ⾃体で義務を履⾏ する。",
+   "D": "× T5 結論逆転型。義務は合理的注意であり厳格責任ではない。対価の⽀払は基準を引き上げない。",
+   "E": "× T4 要件捏造型。技術的作業ほど occupier ⾃⾝の検査は期待されない。素⼈の「検査」を免責の条件にするのは基準の逆転。 シーン語彙表 engage (a firm) (会社に)委託する accreditation 認証‧認定 references 照会先‧推薦情報 winding gear 巻上装置 drop half a floor 半階分落下する barrier バリケード‧柵 freshly polished 磨き⽴ての climb past 〜 〜を乗り越えて進む 典拠 OLA 1957, s 2(4)(a)(警告の⼗分性)‧s 2(4)(b)(業者委託‧3要件)/Haseldine v Daw(リフト保守=技術的で点検を期待されず)/Woodward v Mayor of Hastings(単純作業は点検を期待――対⽐)/Darby v National Trust(明⽩な危険と警告)/教科書 Ch.6(Warnings‧Independent contractors‧Figure 6.2) 正誤記録:1周⽬ □正 □誤( / ) 2周⽬ □正 □誤( / ) 3周⽬ □正 □誤( / )"
+  }
+ },
+ {
+  "qid": "T-43",
+  "subject": "Tort",
+  "tag": "Ch.6",
+  "stem": "A demolition company's fenced yard backs onto a housing estate. For months, residents have used a well-trodden gap in the fence as a short cut, and the company's site manager has seen people doing so and mentioned it in an internal report. Close to the path worn across the yard is a deep inspection pit, its edges concealed by overgrown weeds and left completely unfenced and unlit. One evening a resident taking the short cut falls into the pit, breaking his hip; his mobile phone is also destroyed in the fall. He claims against the company under the Occupiers' Liability Act 1984 for his injury and for the phone. Which of the following best describes the position?",
+  "options": {
+   "A": "No claim is possible, because an occupier owes no duty of any kind to a trespasser.",
+   "B": "The company owes him the same common duty of care as it would owe to a lawful visitor under the 1957 Act.",
+   "C": "A duty arises automatically under the 1984 Act whenever a trespasser is injured on the premises.",
+   "D": "A duty is likely to arise because the company was aware of the concealed pit, knew that people habitually crossed the yard in its vicinity, and a hidden hazard of this kind is one against which it could reasonably be expected to offer some protection; but he can recover for his hip injury only, not for the phone, as the 1984 Act does not cover property damage.",
+   "E": "The claim will fail, because the risk of falling into the pit was an obvious risk against which the occupier need offer no protection."
+  },
+  "answer": "D",
+  "expl": "正解D。OLA 1984 の義務は⾃動発⽣しない。s 1(3) の3条件:(a)occupier が危険を認識しまたは認識すべき合理的根拠があ る、(b)⾮訪問者が危険の付近にいる(来る)ことを知りまたは知るべき合理的根拠がある、(c)すべての事情の下で、その危険が保護 の提供を合理的に期待できるものである。管理者の⽬撃‧内部報告と、雑草で隠れた無柵のピットという「隠れた危険」は3条件を 満たす⽅向。救済は⼈⾝損害(死亡含む)のみで、財産損害は同法の対象外――携帯電話は落ちる。明⽩な危険(開⽔⾯への⾶込み等) なら(c)で切れるが、本件は隠れた危険でありその類型ではない。",
+  "trans": "解体業者のフェンスで囲まれた資材置場が住宅団地に背中合わせに接している。数か⽉にわたり、住⺠らはフェンスの踏み固められた隙間を近 道として使っており、同社の現場管理者はその様⼦を⽬撃し、内部報告書にも記載していた。置場を横切る踏み分け道のすぐ近くには深い点検 ピットがあり、縁は伸びた雑草に隠れ、柵も照明も全くないまま放置されていた。ある晩、近道を通っていた住⺠がピットに転落して股関節を ⾻折し、転落の際に携帯電話も壊れた。彼は傷害と電話について、Occupiers' Liability Act 1984 に基づき同社に請求する。",
+  "analysis": {
+   "A": "× T5 結論逆転型。1984年法はまさに⾮訪問者への義務を条件付きで創設する制定法である。「trespasser に義務なし」は同法以前の 発想。",
+   "B": "× T6 法域すり替え型。1957年法の common duty と1984年法の条件付き義務は、発⽣要件も救済範囲も異なる別制度。",
+   "C": "× T2 要件⽋落型。s 1(3) の3条件の充⾜が先。負傷の発⽣だけで義務は⽣じない。",
+   "D": "○ 3条件の当てはめと、⼈⾝限定(電話は不可)という範囲の切り分けの両⽅が正確。",
+   "E": "× T4 事実すり替え型。「明⽩な危険には保護不要」の準則は、縁が雑草で隠れた無灯のピットという隠れた危険には適⽤の前提を⽋ く。 シーン語彙表 demolition company 解体業者 back onto 〜 〜に背中合わせに接する well-trodden 踏み固められた short cut 近道 inspection pit 点検ピット overgrown weeds 伸び放題の雑草 habitually 常習的に unlit 照明のない 典拠 OLA 1984, s 1(3)(3条件)‧⼈⾝損害限定/Tomlinson v Congleton(明⽩な危険‧premises の状態か⾏為か――対⽐)/Rhind v Astbury(危険の不知)/Swain v Puri(付近にいることの不知)/教科書 Ch.6(Table 6.3)※制定法はスペック必須 正誤記録:1周⽬ □正 □誤( / ) 2周⽬ □正 □誤( / ) 3周⽬ □正 □誤( / )"
+  }
+ },
+ {
+  "qid": "T-44",
+  "subject": "Tort",
+  "tag": "Ch.6",
+  "stem": "A large garden centre, operated as a business, displays a prominent sign at its only entrance: 'The management accepts no liability whatsoever for death, personal injury, or loss of or damage to property, howsoever caused.' A customer walking down an aisle is struck by shelving that collapses because of the centre's negligent assembly. She suffers a broken shoulder, and her expensive camera, carried in her bag, is crushed. She sues under the Occupiers' Liability Act 1957, and the garden centre relies on its notice. Which of the following best describes the effect of the notice?",
+  "options": {
+   "A": "The notice is fully effective as to all heads of loss, because it was prominently displayed at the entrance and she entered with the opportunity to read it.",
+   "B": "The notice is wholly ineffective, because an occupier can never exclude or restrict any of its liability by a notice.",
+   "C": "The notice defeats the whole claim through the defence of consent, because by entering past the sign she accepted the precise risks of the premises.",
+   "D": "The notice also protects the centre against claims by trespassers, because the Occupiers' Liability Act 1984 contains the same regime for exclusion notices.",
+   "E": "The notice cannot exclude liability for her personal injury, because a business occupier is prevented by the Unfair Contract Terms Act 1977 and, as against a consumer, the Consumer Rights Act 2015 from excluding liability for death or personal injury; but liability for the damage to her camera may in principle be excluded by a notice of this kind properly brought to visitors' attention."
+  },
+  "answer": "E",
+  "expl": "正解E。事業者 occupier の排除通知の効⼒は費⽬で分かれる:①死亡‧⼈⾝傷害――排除不可。UCTA 1977 が(対事業者関係 で)、CRA 2015 が(事業者対消費者関係で)排除を禁⽌する。②財産損害――訪問者の注意に適切に供された明確な通知(⼊場条件の設 定)により排除‧制限可能。掲⽰の⽬⽴ちやすさは②の有効性要件であって①の禁⽌を覆さない。なお通知による排除と volenti は 別制度であり、1984年法は排除規定を置いていない(沈黙)。私⼈の occupier については同様の制定法上の禁⽌がない点も対⽐とし て重要。",
+  "trans": "事業として運営される⼤型ガーデンセンターが、唯⼀の⼊⼝に⽬⽴つ掲⽰を出している:「経営者は、原因のいかんを問わず、死亡、⼈⾝傷害、 または財産の滅失‧損傷について⼀切の責任を負いません。」通路を歩いていた客が、センターの過失ある組⽴てにより崩落した陳列棚の直撃 を受けた。彼⼥は肩を⾻折し、バッグに⼊れていた⾼価なカメラも押し潰された。彼⼥は Occupiers' Liability Act 1957 に基づき提訴し、ガーデ ンセンターは掲⽰を援⽤する。",
+  "analysis": {
+   "A": "× T5 結論逆転型(過⼤)。掲⽰の明瞭性‧⼊場前の周知は財物排除の有効要件にすぎない。⼈⾝の排除禁⽌は掲⽰の出来では突破できな い。",
+   "B": "× T2 結論逆転型(過⼩)。排除の全⾯否定も誤り。財産損害については条件を満たす掲⽰による排除‧制限が可能である。",
+   "C": "× T6 制度すり替え型。掲⽰の通過は「正確な危険の認識+任意の引受け」(volenti の要件)を意味しない。責任排除と consent は別ルー ト。",
+   "D": "× T4 規範捏造型。1984年法は責任排除について明⽂の規定を置いていない(沈黙)。1957年法の排除枠組みを⾃動移植する準則はな い。",
+   "E": "○ UCTA/CRA による⼈⾝排除の禁⽌と、財物排除の可能性という⼆分処理を正確に述べる。 シーン語彙表 garden centre ガーデンセンター(園芸⽤品店) prominent sign ⽬⽴つ掲⽰ howsoever caused 原因のいかんを問わず aisle 通路 shelving 陳列棚 assembly 組⽴て crush 押し潰す rely on (a notice) (掲⽰を)援⽤する 典拠 Unfair Contract Terms Act 1977(死亡‧⼈⾝の排除禁⽌:事業関係)/Consumer Rights Act 2015(同:対消費者)/OLA 1957(⼊場条件による制限‧排除の枠組 み)/OLA 1984(排除について沈黙)/教科書 Ch.6(Exclusion of liability‧Table 6.4)※制定法はスペック必須 正誤記録:1周⽬ □正 □誤( / ) 2周⽬ □正 □誤( / ) 3周⽬ □正 □誤( / )"
+  }
+ },
+ {
+  "qid": "T-45",
+  "subject": "Tort",
+  "tag": "Ch.7",
+  "stem": "A second-hand car dealer sells a fifteen-year-old car. A competent pre-sale inspection by a mechanic would have revealed that the steering linkage was dangerously worn, but the dealer carries out no inspection at all before supplying the car. A week after the sale, the steering fails on a bend. The car leaves the road and the person injured is not the buyer but her adult brother, who was travelling as a front-seat passenger. The brother sues the dealer in negligence, relying on the narrow rule concerning defective products. Which of the following best describes the position?",
+  "options": {
+   "A": "The dealer cannot be liable under the narrow rule, because that rule applies only to the original manufacturer of the finished vehicle.",
+   "B": "The dealer may be liable, because 'manufacturer' is widely defined to include suppliers and others who work on or supply a product and who ought to inspect it, and 'ultimate consumer' extends to anyone foreseeably affected by the product, including a passenger who never bought it.",
+   "C": "The brother cannot claim, because he had no contract with the dealer, and only a purchaser may sue in respect of a defective product.",
+   "D": "The dealer cannot be liable, because a second-hand car is not a 'product' for the purposes of the narrow rule.",
+   "E": "The dealer is liable without proof of fault, because liability for defective products at common law is strict."
+  },
+  "answer": "B",
+  "expl": "正解B。narrow rule の3概念はすべて広義:①manufacturer――製品が消費者に届く前にそれに関与した者を広く含む(供給 者‧組⽴者‧⼩売業者‧設置者‧修理者)。検査により発⾒可能な⽋陥を持つ中古⾞を無検査で供給したディーラーはその典型(操舵 不能という結果の重⼤性が注意義務を⾼める)。②product――損害を⽣じさせ得るあらゆる物(付属の包装‧表⽰‧説明書も含む)。 ③ultimate consumer――製品により影響を受けることが予⾒可能なすべての者(neighbour principle)。同乗者は当然に含まれ、契 約(privity)の⽋如は障害にならない。なお CL ルートは過失責任であり、厳格責任は CPA 1987 の領分。",
+  "trans": "中古⾞ディーラーが15年落ちの⾞を販売した。整備⼠による適切な販売前検査を⾏えば、ステアリングリンケージが危険なほど摩耗しているこ とが判明したはずだが、ディーラーは供給前に⼀切の検査を⾏わなかった。販売の1週間後、カーブで操舵装置が故障した。⾞は道路を逸脱し、 負傷したのは買主ではなく、助⼿席に同乗していた買主の成⼈の兄であった。兄は、⽋陥製品に関する narrow rule に依拠して、ディーラーを negligence で提訴する。",
+  "analysis": {
+   "A": "× T2 定義切り縮め型。「manufacturer」は⽂字どおりの製造者に限られない。検査すべき供給者‧修理者等を含む広義概念である。",
+   "B": "○ manufacturer と ultimate consumer の広義定義を正しく適⽤し、同乗者の請求適格を導く。",
+   "C": "× T7 ⽇本法感覚型というより契約中⼼の直感(privity の壁)。narrow rule はまさに契約関係なき最終消費者の保護のために⽣まれた法 理であり、購⼊者限定は正反対。",
+   "D": "× T4 定義捏造型。product は「損害を⽣じさせ得るあらゆる物」。中古であることは該当性を失わせない。",
+   "E": "× T6 制度すり替え型。無過失(厳格)責任は CPA 1987。コモンローでは duty‧breach‧causation‧damage の⽴証(過失責任)が必 要。 シーン語彙表 second-hand car dealer steering linkage leave the road rely on 〜 中古⾞ディーラー ステアリングリンケージ(操舵連 結機構) 道路を逸脱する 〜に依拠する pre-sale inspection 販売前検査 worn 摩耗した front-seat passenger finished vehicle 助⼿席の同乗者 完成⾞両 典拠 Donoghue v Stevenson(narrow rule の淵源)/Andrews v Hopkinson(操舵⽋陥⾞の供給者=検査すべき者)/Vacwell v BDH Chemicals(product の広さ‧警 告表⽰)/教科書 Ch.7(Figure 7.1‧Table 7.1)※判例名の知識は SQE1 スペック上不要 正誤記録:1周⽬ □正 □誤( / ) 2周⽬ □正 □誤( / ) 3周⽬ □正 □誤( / )"
+  }
+ },
+ {
+  "qid": "T-46",
+  "subject": "Tort",
+  "tag": "Ch.7",
+  "stem": "A chemical manufacturer sells industrial cleaning powder in bulk to a distributor. The manufacturer's invoice and the accompanying data sheet state clearly that each consignment must be tested by the distributor before resale, because occasional batches can become chemically unstable in storage. The distributor carries out no tests and resells a batch, relabelled, to a secondary school for use in cleaning laboratory benches. The batch is unstable; when a pupil uses the powder as directed, it reacts violently and burns her hands. Testing by the distributor would have revealed the instability. The pupil sues both the manufacturer and the distributor in negligence. Which of the following best describes the likely outcome?",
+  "options": {
+   "A": "The manufacturer is liable, because a manufacturer who creates a defect remains liable to the ultimate consumer whatever happens to the product afterwards.",
+   "B": "The manufacturer and the distributor are equally liable, because the instruction to test makes no difference to the analysis.",
+   "C": "The manufacturer is unlikely to be liable, because it reasonably expected an intermediate examination which would have revealed the defect, breaking the chain of causation; the distributor, having failed to test as instructed, is likely to be liable to the pupil.",
+   "D": "The distributor cannot be liable, because a mere reseller of another's product owes no duty of care to the end user.",
+   "E": "The manufacturer escapes liability only if it proves that no examination of any kind could have discovered the instability."
+  },
+  "answer": "C",
+  "expl": "正解C。製品が最終消費者に届く前に、中間者による検査が合理的に期待され、その検査により⽋陥が発⾒されたであろう 場合、chain of causation は切断され製造者は責任を負わない。明⽰の検査指⽰(請求書‧データシート)+検査による発⾒可能性はそ の典型。責任は消滅するのではなく、検査を怠った中間者に移る――中間者も narrow rule 上の広義の「manufacturer」(供給者)と して最終利⽤者に義務を負うからである。",
+  "trans": "化学品製造者が、⼯業⽤洗浄粉末を卸売業者(distributor)に⼤⼝で販売している。製造者の請求書と添付のデータシートには、保管中にまれに 化学的に不安定化するバッチがあるため、各出荷分は再販前に卸売業者が検査しなければならない旨が明確に記載されている。卸売業者は何の 検査も⾏わず、あるバッチをラベルを貼り替えて中等学校に転売した。⽤途は実験室の作業台の清掃である。当該バッチは不安定であり、⽣徒 が指⽰どおりに粉末を使⽤したところ、激しく反応して両⼿に⽕傷を負った。卸売業者が検査していれば不安定性は判明していた。⽣徒は製造 者と卸売業者の双⽅を negligence で提訴する。",
+  "analysis": {
+   "A": "× T5 結論逆転型。「作出者は永久に責任」ではない。中間検査への合理的期待は、製造者の責任を切る確⽴した法理である。",
+   "B": "× T4 事実消去型。検査指⽰の存在こそ「合理的期待」を基礎づける中⼼的事実。これを無意味とするのは事案の書き換え。",
+   "C": "○ 因果切断の要件(合理的期待+発⾒可能性)と、責任の中間者への移転を正確に述べる。",
+   "D": "× T3 原則すり替え型。narrow rule の「manufacturer」は供給者‧転売者を含む広義概念。検査すべき⽴場の転売者は最終利⽤者に 義務を負う。",
+   "E": "× T2 要件逆転型。切断の前提は「検査すれば発⾒できた」こと。発⾒不可能なら中間検査の期待は因果を切らず、むしろ製造者の責 任が残る⽅向に働く。 シーン語彙表 in bulk ⼤⼝で‧バラで consignment 出荷分‧委託貨物 data sheet データシート(製品安全資料) chemically unstable 化学的に不安定な relabel ラベルを貼り替える laboratory bench 実験室の作業台 react violently 激しく反応する end user 最終利⽤者 典拠 Kubach v Hollands(検査指⽰を無視した中間者が責任‧製造者免責)/Evans v Triplex(検査機会‧時の経過‧他原因)/教科書 Ch.7(Table 7.1 Intermediate examination)※判例名の知識は SQE1 スペック上不要 正誤記録:1周⽬ □正 □誤( / ) 2周⽬ □正 □誤( / ) 3周⽬ □正 □誤( / )"
+  }
+ },
+ {
+  "qid": "T-47",
+  "subject": "Tort",
+  "tag": "Ch.7",
+  "stem": "A homeowner buys a domestic boiler, manufactured by the defendant, from a plumbers' merchant. Fourteen months later, a defective internal valve - present since manufacture - causes the boiler to overheat and burn out its own heat exchanger. The boiler is ruined and must be replaced at a cost of £2,100. The failure causes no fire, no damage to any other part of the house and no injury to anyone. The manufacturer's negligence in producing the valve can be proved. The homeowner has no worthwhile contractual remedy and sues the manufacturer in negligence for the cost of replacing the boiler. Which of the following best describes the position at common law?",
+  "options": {
+   "A": "The claim succeeds, because the manufacturer's proven negligence caused the loss and it is fair that it should pay for the boiler.",
+   "B": "The claim fails, because where the only loss is the defect in, or destruction of, the product itself, the cost of repairing or replacing it is pure economic loss, which is not recoverable in negligence.",
+   "C": "The claim succeeds, because the replacement cost is consequential economic loss flowing from physical damage to the boiler.",
+   "D": "The claim fails, because the homeowner should have arranged an expert examination of the boiler before using it.",
+   "E": "The claim succeeds at common law, because although the Consumer Protection Act 1987 excludes damage to the product itself, the common law does not."
+  },
+  "answer": "B",
+  "expl": "正解B。⽋陥製品による損害の切り分け:①製品が「他の」⼈‧財産に与えた損害=negligence で賠償可、②損害が製品それ ⾃体にとどまる場合(⽋陥‧⾃壊‧修理費‧交換費‧価値減少)=品質の悪い物を取得したという純粋経済損失であり、コモンローで は回復不能(⽋陥建物の売却損と同じ構造)。救済は本来、契約(売主に対する品質担保)の領分。CPA 1987 も製品⾃体の損害を明⽂で 除外するため、どちらのルートでも拾えない。",
+  "trans": "住宅所有者が、defendant が製造した家庭⽤ボイラーを配管資材商から購⼊した。14か⽉後、製造時から存在した内部バルブの⽋陥により、ボ イラーが過熱して⾃らの熱交換器を焼損した。ボイラーは使⽤不能となり、交換費⽤は2,100ポンドである。この故障は⽕災を⽣じさせず、住宅 の他のいかなる部分にも損害を与えず、誰にも傷害を負わせていない。バルブ製造における製造者の過失は⽴証可能である。住宅所有者には実 効的な契約上の救済がなく、ボイラーの交換費⽤について製造者を negligence で提訴する。",
+  "analysis": {
+   "A": "× T7 ⽇本法感覚型。過失+因果+公平感で709条的に拾う直感。英国法は損害の「性質」で⼊⼝を切り、製品⾃体の損失は tort の保護範 囲外に置く。",
+   "B": "○ 「製品それ⾃体の損害=純粋経済損失=CL で不賠償」という準則を正確に適⽤している。",
+   "C": "× T2 分類すり替え型。consequential economic loss は「他の財産‧⼈⾝への損害」に随伴する損失。⾃らを壊しただけの製品には随 伴の起点となる別個の物損がない。",
+   "D": "× T4 法理の誤⽤型。中間検査の法理は製造者と消費者の間の中間者の検査期待の話であり、消費者本⼈に隠れた内部⽋陥の事前検査 義務を課すものではない。",
+   "E": "× T6 制度すり替え型(逆)。CL でも製品⾃体の損害は純粋経済損失として不賠償。CPA の除外と平仄が合っており、CL が受け⽫になる という関係にはない。 シーン語彙表 plumbers' merchant 配管資材商 valve バルブ‧弁 overheat 過熱する heat exchanger 熱交換器 burn out 焼損する worthwhile 実効的な‧価値のある contractual remedy 契約上の救済 flow from 〜 〜から流出する‧⽣じる 典拠 教科書 Ch.7(Exam warning:製品⾃体‧修理交換費=経済損失で不賠償)/Murphy v Brentwood(⽋陥それ⾃体の損失=純粋経済損失)/Spartan Steel(随伴/純 粋の区別:Ch.3 横断)※判例名の知識は SQE1 スペック上不要 正誤記録:1周⽬ □正 □誤( / ) 2周⽬ □正 □誤( / ) 3周⽬ □正 □誤( / )"
+  }
+ },
+ {
+  "qid": "T-48",
+  "subject": "Tort",
+  "tag": "Ch.7",
+  "stem": "A consumer buys an electric kettle from a large supermarket. The kettle is sold under the supermarket's own brand name, although it was made for the supermarket by an overseas manufacturer. Because of a fault in the heating element present when the kettle left the production line, the kettle boils over violently the first time it is used, scalding the consumer's hand and ruining her fitted kitchen worktop, which costs £430 to repair. She cannot conveniently identify or pursue the overseas manufacturer and claims against the supermarket under the Consumer Protection Act 1987. Which of the following best describes her claim?",
+  "options": {
+   "A": "She has a good claim against the supermarket: by putting its own brand name on the kettle it holds itself out as the producer and is a liable defendant; liability is strict, so she need not prove negligence; the kettle is defective because its safety is not such as persons generally are entitled to expect; and she can recover for her personal injury and for the worktop, which exceeds the £275 property threshold.",
+   "B": "Her claim fails, because the supermarket did not manufacture the kettle and only actual manufacturers can be liable under the Act.",
+   "C": "Her claim succeeds only if she proves that the supermarket failed to take reasonable care in selecting the kettle.",
+   "D": "She can recover for her scalded hand, but damage to property can never be recovered under the Act.",
+   "E": "Her claim fails unless she first sues the overseas manufacturer and shows that it cannot pay."
+  },
+  "answer": "A",
+  "expl": "正解A。CPA 1987 の4点セット:①被告(s 2(2))――producer、⾃⼰の名‧標章を付して producer を装う者(own-brander)、 輸⼊者、(供給網を特定できない場合の)供給者。⾃社ブランド販売のスーパーは own-brander として直接の被告。②厳格責任 ――claimant は defect‧damage‧因果を⽰せば⾜り、過失の⽴証は不要。③defect(s 3)――「⼀般に⼈々が期待して然るべき安 全性」を⽋くこと(マーケティング‧想定される使⽤‧供給時期を考慮)。④damage(s 5)――死亡‧⼈⾝は無制限、⾮事業⽤財産は £275超が要件(製品⾃体は対象外)。責任は連帯であり、被告の選択は claimant の⾃由。",
+  "trans": "消費者が⼤⼿スーパーマーケットで電気ケトルを購⼊した。ケトルはスーパーの⾃社ブランド名で販売されているが、実際にはスーパーのため に海外の製造者が製造したものである。製造ラインを離れた時点で存在した発熱体の⽋陥により、ケトルは初回使⽤時に激しく吹きこぼれ、消 費者の⼿に熱傷を負わせ、造り付けのキッチンワークトップを損傷させた。ワークトップの修理費は430ポンドである。彼⼥は海外の製造者を 容易に特定‧追及できず、Consumer Protection Act 1987 に基づきスーパーマーケットに請求する。",
+  "analysis": {
+   "A": "○ own-brander 該当‧厳格責任‧安全性期待基準‧£275閾値のすべてを正確に束ねている。",
+   "B": "× T2 被告範囲の切り縮め型。s 2(2) は実製造者以外に own-brander‧輸⼊者等を明⽂で被告に含める。",
+   "C": "× T6 制度すり替え型。合理的注意の⽴証はコモンロー(過失)ルートの話。CPA は無過失の厳格責任である。",
+   "D": "× T5 結論逆転型(過剰否定)。⾮事業⽤の財産損害は£275を超えれば回復可能(s 5(4))。除外されるのは事業⽤財産と製品⾃体。",
+   "E": "× T4 ⼿続捏造型。責任は joint and several であり、claimant は責任を負う被告の任意の⼀者(または全員)を直接訴えられる。先訴‧ 無資⼒の証明という前提条件はない。 シーン語彙表 own brand ⾃社ブランド‧プライベートブ ランド heating element 発熱体 吹きこぼれる production line 製造ライン boil over scald 熱傷を負わせる(湯‧蒸気で) fitted kitchen worktop ⾃らを〜として表⽰する threshold hold oneself out as 〜 造り付けのキッチンワークトッ プ(調理台) 閾値‧下限 典拠 CPA 1987, s 2(2)(被告:producer‧own-brander‧輸⼊者‧特定不能時の供給者)‧s 3(defect=安全性期待基準)‧s 5(⼈⾝無制限/財産£275超/事業⽤財 産‧製品⾃体は除外)/Bogle v McDonald's(期待基準の運⽤)/教科書 Ch.7(Table 7.2)※制定法はスペック必須 正誤記録:1周⽬ □正 □誤( / ) 2周⽬ □正 □誤( / ) 3周⽬ □正 □誤( / )"
+  }
+ },
+ {
+  "qid": "T-49",
+  "subject": "Tort",
+  "tag": "Ch.7",
+  "stem": "A sports equipment manufacturer develops a cycling helmet using a newly formulated resin. Two years after the helmets go on sale, it is discovered that the resin can develop invisible micro-cracks after prolonged exposure to strong sunlight, seriously weakening the shell. Expert evidence establishes that, at the time the helmets were put into circulation, the state of scientific and technical knowledge was such that this phenomenon was unknown and could not have been discovered by any testing then available. A cyclist whose helmet failed in a crash because of micro-cracking sues the manufacturer under the Consumer Protection Act 1987. Which of the following best describes the manufacturer's position?",
+  "options": {
+   "A": "The manufacturer has no possible defence, because liability under the Act is strict and admits of no exceptions.",
+   "B": "The manufacturer can rely on the defence that the helmet complied with the general safety expectations of the market when sold.",
+   "C": "The manufacturer can rely on the 'development risks' defence, on the basis that the state of scientific and technical knowledge at the time the product was put into circulation was not such that the defect could have been known or discovered.",
+   "D": "The defence must fail, because once a defect is proved, strict liability cannot be avoided by showing the defect was undiscoverable.",
+   "E": "The claim fails in any event, because a claim for personal injury under the Act must exceed £275 in value."
+  },
+  "answer": "C",
+  "expl": "正解C。CPA 1987, s 4 の抗弁:(a)法令要求への準拠に起因する⽋陥、(b)当該製品を供給していない、(c)事業の過程での供給 でない、(d)供給時点で⽋陥が存在しなかった(誤使⽤‧消費期限)、(e)development risks――流通に置いた時点の科学的‧技術的知 識の⽔準では⽋陥を知り得ず発⾒できなかった、(f)部品製造者の抗弁(完成品の設計‧指⽰に起因)。本件の証拠は (e) の⽂⾔に正確 に対応し、厳格責任の下でも抗弁が⽴つ。なお請求期間は損害から3年、⻑期は流通から10年。",
+  "trans": "スポーツ⽤品製造者が、新開発の樹脂を⽤いたサイクリングヘルメットを開発した。ヘルメットの発売から2年後、この樹脂が強い⽇光への⻑期 曝露の後に不可視のマイクロクラック(微細⻲裂)を⽣じ、シェルを著しく脆弱化させ得ることが発⾒された。専⾨家証拠により、ヘルメットが 流通に置かれた時点では、科学的‧技術的知識の⽔準に照らしてこの現象は知られておらず、当時利⽤可能ないかなる試験によっても発⾒でき なかったことが⽴証されている。マイクロクラックによりヘルメットが衝突時に機能しなかったサイクリストが、Consumer Protection Act 1987 に基づき製造者を提訴する。",
+  "analysis": {
+   "A": "× T5 結論逆転型。厳格責任=無抗弁ではない。s 4 は6類型の抗弁を明⽂で⽤意している。",
+   "B": "× T2 論点すり替え型。「安全期待への合致」は defect(s 3)の否認であって抗弁ではなく、本件では⻲裂による脆弱化で defect は⽴っ ている。s 4(1)(a) の法令準拠抗弁とも別物。",
+   "C": "○ s 4(1)(e) の要件(流通時点の科学技術知識‧発⾒不可能性)への正確な当てはめ。",
+   "D": "× T3 原則すり替え型。development risks 抗弁は、まさに「発⾒不可能だった⽋陥」について厳格責任を免れさせるために置かれた明 ⽂の例外である。",
+   "E": "× T6 規定すり替え型。£275の閾値は財産損害にのみ適⽤される。死亡‧⼈⾝傷害の請求に下限はない。 シーン語彙表 newly formulated resin 新配合の樹脂 go on sale 発売される prolonged exposure ⻑期の曝露 micro-crack マイクロクラック‧微細⻲裂 shell シェル‧外殻 put into circulation 流通に置く phenomenon 現象 admit of no exceptions 例外を認めない 典拠 CPA 1987, s 4(1)(a)〜(f)(抗弁カタログ)‧とくに s 4(1)(e)(development risks)/限界期間:損害から3年‧流通から10年/教科書 Ch.7(Table 7.3)※制定法は スペック必須 正誤記録:1周⽬ □正 □誤( / ) 2周⽬ □正 □誤( / ) 3周⽬ □正 □誤( / )"
+  }
+ },
+ {
+  "qid": "T-50",
+  "subject": "Tort",
+  "tag": "Ch.8",
+  "stem": "A woman holds the tenancy of a terraced house, where she lives with her adult son; the son pays no rent and has no interest in the property. Six months ago, a metal fabrication workshop opened in the converted garage of the property behind theirs. Most evenings, from around 8 pm until well after midnight, the workshop runs grinding and hammering machinery, and acrid fumes drift into the house, making it impossible to keep windows open or sleep before the machinery stops. Both mother and son wish to sue the workshop owner in private nuisance for the interference with their enjoyment of the home. Which of the following best describes their positions?",
+  "options": {
+   "A": "Both can sue, because private nuisance protects everyone who is in fact affected by an interference in the place where they live.",
+   "B": "Neither can sue, because private nuisance requires physical damage to the land, and noise and fumes cause none.",
+   "C": "The son can sue, because he spends the most time at home and therefore suffers the greater interference.",
+   "D": "The mother cannot sue, because the freehold of the house belongs to her landlord, and only a freehold owner may sue in private nuisance.",
+   "E": "The mother can sue, because as the tenant in occupation she has exclusive possession of the land and the repeated night-time noise and fumes are capable of amounting to an unlawful interference with her use and enjoyment of it; the son cannot sue, because he has no right to exclusive possession."
+  },
+  "answer": "E",
+  "expl": "正解E。private nuisance の原告適格は⼟地への exclusive possession を有する者に限られる:所有者、占有する賃借⼈。単 なる同居家族‧宿泊客‧ホテルの客は、現に被害を受けていても請求できない。所有権(freehold)は不要で、占有賃借⼈で⾜りる。 ⼲渉は①隣地への侵⼊、②⼟地への直接の物理的損害、③使⽤‧享受への妨害の3類型があり、騒⾳‧煙霧は③型として物理的損害 なしに成⽴し得る。ほぼ毎晩‧深夜までの6か⽉の継続は、不合理性判断(次問)を⼲渉肯定に傾ける事情である。",
+  "trans": "⼥性がテラスハウスの賃借権(tenancy)を有し、成⼈の息⼦とともにそこに居住している。息⼦は賃料を払っておらず、物件に何の権利も有しな い。6か⽉前、彼らの裏⼿の物件の改装されたガレージで⾦属加⼯の作業場が開業した。ほとんどの晩、午後8時頃から深夜0時をかなり過ぎる まで、作業場は研削‧打撃の機械を稼働させ、刺激臭のある煙霧が家の中に流れ込み、機械が⽌まるまで窓を開けることも眠ることもできな い。⺟と息⼦はいずれも、住居の享受への⼲渉について、作業場の所有者を private nuisance で提訴したいと考えている。",
+  "analysis": {
+   "A": "× T7 ⽇本法感覚型。「事実上の被害者は誰でも」という709条的な広い⼊⼝の直感。private nuisance は⼟地権益の tort であり、⼈で はなく⼟地への権利で⼊⼝を切る。",
+   "B": "× T2 要件すり替え型。物理的損害は⼲渉3類型の⼀つにすぎない。騒⾳‧臭気による享受の妨害は独⽴の類型として賠償‧差⽌めの対 象になる。",
+   "C": "× T4 基準捏造型。滞在時間や被害の⼤きさは原告適格の基準ではない。exclusive possession の有無だけが⼊⼝を分ける。",
+   "D": "× T3 原則すり替え型。適格は freehold 所有に限られない。占有する賃借⼈は exclusive possession を有し、典型的な適格者である。",
+   "E": "○ 占有賃借⼈○/権利なき同居⼈✕という適格の切り分けと、享受妨害型の⼲渉該当性を正確に述べる。 シーン語彙表 terraced house テラスハウス(⻑屋式住宅) tenancy 賃借権 metal fabrication ⾦属加⼯ converted garage 改装されたガレージ grinding 研削 acrid fumes 刺激臭のある煙霧 drift into 〜 〜に流れ込む freehold ⾃由⼟地保有権 典拠 Hunter v Canary Wharf(exclusive possession 要件)/教科書 Ch.8(Table 8.1:ホテルの宿泊客の設例‧⼲渉3類型)※判例名の知識は SQE1 スペック上不要 正誤記録:1周⽬ □正 □誤( / ) 2周⽬ □正 □誤( / ) 3周⽬ □正 □誤( / )"
+  }
+ },
+ {
+  "qid": "T-51",
+  "subject": "Tort",
+  "tag": "Ch.8",
+  "stem": "A metal-plating works operates on a light industrial estate. For the past year, an acid mist from its plating tanks has drifted daily onto the neighbouring unit, which is leased and occupied by a joinery firm. The mist has visibly corroded the joinery firm's ordinary steel window frames and pitted the paintwork of its roller doors, and repairs will be needed. The plating works argues that, on an industrial estate, neighbouring businesses must tolerate the ordinary consequences of industrial activity, and that its process serves the local economy. The joinery firm sues in private nuisance. Which of the following best describes the position?",
+  "options": {
+   "A": "The claim fails, because on an industrial estate the character of the neighbourhood means occupiers must tolerate emissions of this kind.",
+   "B": "The claim is likely to succeed, because the acid mist has caused physical damage to the claimant's property, and where there is physical damage the interference is treated as unreasonable; the character of the neighbourhood cannot excuse it.",
+   "C": "The claim fails unless the joinery firm proves that the plating works acted with malice towards it.",
+   "D": "The claim fails, because the benefit of the plating works to the local economy is a complete answer to a claim in private nuisance.",
+   "E": "The claim fails, because the corrosion resulted from the abnormal sensitivity of the joinery firm's window frames."
+  },
+  "answer": "B",
+  "expl": "正解B。不合理性の要素の使い分け:①継続性‧頻度――常に考慮(1年間毎⽇は不合理⽅向)。②地域性(character of the neighbourhood)――享受妨害型(騒⾳‧臭気)の調整弁であり、物理的損害には適⽤されない:財産への physical damage が⽣じれば ⼲渉は不合理とされ、請求は成⽴する。③敏感性――通常の使⽤に耐える物への損害には無関係。④悪意――あれば不合理に傾く加 重要素で、要件ではない。⑤公共の利益――責任の成否ではまれにしか考慮されず、主に救済(差⽌の範囲‧賠償への切替え)の場⾯ で働く。",
+  "trans": "⾦属めっき⼯場が軽⼯業団地で操業している。この1年間、めっき槽からの酸性ミストが毎⽇、隣接ユニットに流れ込んでいる。隣接ユニットは 建具製造会社が賃借‧占有している。ミストは同社の通常の鋼製窓枠を⽬に⾒えて腐⾷させ、ローラードアの塗装に孔⾷を⽣じさせており、修 繕が必要である。めっき⼯場は、⼯業団地では近隣事業者は⼯業活動の通常の帰結を受忍しなければならず、⾃社の⼯程は地域経済に資すると 主張する。建具会社は private nuisance で提訴する。",
+  "analysis": {
+   "A": "× T3 原則すり替え型。locality は享受妨害型の受忍⽔準を調整する要素。物的損害の事案に流⽤すれば「⼯業地帯では隣⼈の財物を壊 してよい」ことになり、準則の正反対。",
+   "B": "○ 物的損害=不合理の準則と、地域性の抗弁的援⽤の遮断を正確に述べる。",
+   "C": "× T2 要件すり替え型。malice は成⽴要件ではない。悪意なき事業活動でも、物的損害を⽣じさせれば不合理な⼲渉となる。",
+   "D": "× T5 効果過⼤型。公共の利益は責任を消す「完全な回答」ではない。考慮されるとしても救済の設計(差⽌の限定‧賠償)においてであ る。",
+   "E": "× T4 事実捏造型。問題⽂は「通常の鋼製窓枠」と明⽰。敏感性の法理は、通常の物なら損害が⽣じなかった場合の抗弁であり、本件 には前提がない。 シーン語彙表 metal-plating works ⾦属めっき⼯場 light industrial estate 軽⼯業団地 acid mist 酸性ミスト joinery firm 建具製造会社 corrode 腐⾷させる pit (v.) 孔⾷を⽣じさせる roller door ローラードア(シャッター) tolerate 受忍する 典拠 教科書 Ch.8(Table 8.2 各要素‧物的損害があれば不合理との Revision 記述)/Hirose Electrical v Peak Ingredients(地域性:臭気型)/Robinson v Kilvert(敏 感性)/Christie v Davey(悪意)※判例名の知識は SQE1 スペック上不要 正誤記録:1周⽬ □正 □誤( / ) 2周⽬ □正 □誤( / ) 3周⽬ □正 □誤( / )"
+  }
+ },
+ {
+  "qid": "T-52",
+  "subject": "Tort",
+  "tag": "Ch.8",
+  "stem": "A golf driving range operates beside a busy main road. Its perimeter netting is too low, and for many months golf balls have regularly cleared the netting and landed on the road, striking cars and forcing drivers to swerve; local drivers and the parish council have complained repeatedly. One afternoon a cyclist riding lawfully along the road is struck on the head by a ball from the range and suffers a fractured skull, is off work for four months and loses earnings. He has no interest in any land near the range. He wishes to sue the operator of the range in public nuisance. Which of the following best describes his position?",
+  "options": {
+   "A": "His claim fails, because a claimant in nuisance must have a proprietary interest in land affected by the nuisance.",
+   "B": "His claim fails, because proceedings in public nuisance can be brought only by the Attorney-General on behalf of the public.",
+   "C": "His claim is likely to succeed, because the escaping balls materially affect the comfort and convenience of a class of people (users of the highway), and by suffering personal injury he has sustained special damage over and above the inconvenience suffered by that class.",
+   "D": "His claim fails, because a 'class of people' requires proof that a fixed minimum number of individuals was affected.",
+   "E": "His claim fails, because damages for personal injury can never be recovered in an action in nuisance."
+  },
+  "answer": "C",
+  "expl": "正解C。public nuisance=集団(class of people)の⽣活の快適‧便宜に実質的影響を与える作為‧不作為(tort であり犯罪で もある)。個⼈が tort として訴えるための2要件:①class への影響(道路利⽤者‧地域住⺠等。⼈数の固定基準はなく事案ごとに公衆 の横断⾯かを判断)+②claimant がその集団の不便を超える special damage(⼈⾝傷害はその典型)を被ったこと。private と異なり⼟ 地権益は不要で、財物‧⼈⾝‧経済損失を回復できる。A-G‧地⽅⾃治体の訴権は集団のための別ルートであり、個⼈訴権を排除し ない。",
+  "trans": "ゴルフ練習場が交通量の多い幹線道路の脇で営業している。外周ネットが低すぎるため、数か⽉にわたりゴルフボールが定期的にネットを越え て道路に落下し、⾞に当たり、運転者に急ハンドルを強いてきた。地元の運転者らと教区議会は繰り返し苦情を申し⽴てている。ある午後、道 路を適法に⾛⾏していたサイクリストが練習場からのボールに頭部を直撃され、頭蓋⾻を⾻折し、4か⽉間就労できず収⼊を失った。彼は練習場 付近のいかなる⼟地にも権益を有しない。彼は練習場の運営者を public nuisance で提訴したい。",
+  "analysis": {
+   "A": "× T6 制度すり替え型。⼟地権益(exclusive possession)は private nuisance の適格要件。public では「誰が影響を受けたか」で⼊⼝が 決まり、権益は不要。",
+   "B": "× T2 訴権の切り縮め型。A-G(および⾃治体)は集団のために訴えるルート。特別損害を被った個⼈には固有の tort 訴権が並存する。",
+   "C": "○ class(道路利⽤者)+special damage(集団の不便を超える⼈⾝傷害‧休業損害)の2要件を正確に当てはめている。",
+   "D": "× T4 基準捏造型。固定の最低⼈数基準は存在しない。裁判所は事実ごとに、公衆の横断⾯に影響したかを判断する。",
+   "E": "× T5 結論逆転型(過剰否定)。public nuisance では⼈⾝傷害も賠償可能。⼈⾝が排除されるのは Rylands v Fletcher の請求である(取り 違え注意)。 シーン語彙表 driving range ゴルフ練習場 perimeter netting 外周ネット clear (the netting) (ネットを)越える swerve 急ハンドルを切る parish council 教区議会(最⼩単位の地⽅議会) off work 就労できない‧休業中 cross-section of the public 公衆の横断⾯ over and above 〜 〜を超えて 典拠 AG v PYA Quarries(class の枠組み)/Castle v St Augustine's Links(道路への⾶球‧特別損害=負傷)/R v Rimmington(多数の個⼈≠class――対⽐)/教科書 Ch.8(Table 8.3‧8.4:個⼈訴権‧回復可能な損害に⼈⾝‧経済損失を含む)※判例名の知識は SQE1 スペック上不要 正誤記録:1周⽬ □正 □誤( / ) 2周⽬ □正 □誤( / ) 3周⽬ □正 □誤( / )"
+  }
+ },
+ {
+  "qid": "T-53",
+  "subject": "Tort",
+  "tag": "Ch.8",
+  "stem": "A motocross track has operated on the edge of a village for over twenty-five years. Two years ago, the claimant bought a cottage adjoining the track, attracted by its low price, and she now sues the track operator in private nuisance over the noise of weekend racing. The operator raises three arguments: first, that she 'came to the nuisance' by choosing to buy a house next to a long-established track; secondly, that the track brings substantial benefit to the village economy and to young riders; and thirdly, that its long history of operation gives it a prescriptive right to continue. Which of the following best describes the strength of these arguments?",
+  "options": {
+   "A": "The first argument is a complete defence: a claimant who voluntarily moves next to an existing activity cannot complain of it.",
+   "B": "The second argument is a complete defence, because the public benefit of an activity outweighs the private rights of a single householder.",
+   "C": "The third argument must fail at the outset, because prescription is a defence available only in public nuisance.",
+   "D": "All three arguments fail automatically, because no defences of any kind exist to a claim in nuisance.",
+   "E": "Neither coming to the nuisance nor public benefit will defeat the claim, although the public benefit may be reflected in the remedy the court orders; of the three arguments, only prescription is a defence capable of succeeding in private nuisance, if its conditions are established."
+  },
+  "answer": "E",
+  "expl": "正解E。抗弁の仕分け:【無効】①coming to the nuisance――活動の後から近隣に来た claimant にも請求は開かれている (完全抗弁にならない)。②public benefit――責任の成否は覆さないが、救済の設計(全⾯差⽌を避けた限定差⽌‧差⽌に代わる賠償) に反映され得る。【有効たり得る】prescription(private nuisance に固有)‧statutory authority‧act of God‧第三者の予⾒不能な ⾏為‧necessity。加えて Ch.4 の⼀般抗弁(consent‧contributory negligence)も適⽤可能。抗弁は「どれが⽴つか」より「どれが ⽴たないか」を先に切るのが実戦的。",
+  "trans": "モトクロス場が村はずれで25年以上営業している。2年前、claimant は低価格に惹かれて同場に隣接するコテージを購⼊し、現在、週末レース の騒⾳について運営者を private nuisance で提訴している。運営者は3つの主張を掲げる:第1に、彼⼥は⻑年確⽴した競技場の隣の家を選んで購 ⼊したことにより「nuisance の⽅へやって来た(came to the nuisance)」こと。第2に、競技場は村の経済と若いライダーたちに相当な便益を もたらしていること。第3に、⻑期にわたる営業の歴史により、継続する時効的権利(prescriptive right)を有すること。",
+  "analysis": {
+   "A": "× T5 結論逆転型。coming to the nuisance は完全抗弁として確⽴していない。後から来た住⼈の請求を認めた判例群がこの準則の核 である。",
+   "B": "× T3 原則すり替え型。公共的便益は責任を消さない。考慮の場所は救済であり、賠償への切替えや差⽌の限定という形で現れるにと どまる。",
+   "C": "× T6 法域すり替え型(逆貼り)。prescription は private nuisance にのみ利⽤可能。public 限定とするのは正反対の記述。",
+   "D": "× T4 規範捏造型。有効たり得る抗弁のカタログ(prescription‧statutory authority‧act of God‧第三者‧necessity+⼀般抗弁)は明確 に存在する。",
+   "E": "○ 無効2本の遮断‧public benefit の救済への反映‧prescription の private 固有性という三層の仕分けが正確。 シーン語彙表 motocross track モトクロス場 on the edge of 〜 〜のはずれで adjoining 隣接する long-established ⻑年確⽴した prescriptive right 時効による権利 householder 世帯主‧家の居住者 at the outset 当初から outweigh 〜に優越する‧上回る 典拠 Coventry v Lawrence [2014] UKSC 13(coming to the nuisance 無効‧public benefit は救済に反映)/Sturges v Bridgman 系(prescription:private 固有)/ 教科書 Ch.8(Table 8.5‧Figure 8.1:有効/無効の対照)※判例名の知識は SQE1 スペック上不要 正誤記録:1周⽬ □正 □誤( / ) 2周⽬ □正 □誤( / ) 3周⽬ □正 □誤( / )"
+  }
+ },
+ {
+  "qid": "T-54",
+  "subject": "Tort",
+  "tag": "Ch.8",
+  "stem": "The owner of a lakeside cottage establishes at trial that noise from a neighbouring water-sports club's weekend powerboat events amounts to a private nuisance. She asks the court for an injunction prohibiting all powerboat activity on the lake permanently. The club, which employs local staff and hosts events attended by many visitors, argues that a total ban would destroy its business, and invites the court either to limit its activities or to award damages instead of an injunction. Which of the following best describes the court's approach to the remedy?",
+  "options": {
+   "A": "The primary remedies are an injunction or damages: a prohibitory injunction is the most common remedy, but the court balances the parties' rights and may grant a limited injunction restricting the frequency and noise of events rather than a total ban, or may award damages instead of an injunction, particularly where the harm is small, quantifiable in money, adequately compensated by damages, and an injunction would be oppressive.",
+   "B": "Once a nuisance is established, the claimant is automatically entitled to a full prohibitory injunction in the terms she seeks.",
+   "C": "The appropriate remedy is a mandatory injunction, because that is the standard order in noise cases.",
+   "D": "The appropriate remedy is a quia timet injunction, which is granted where the activity complained of is already taking place.",
+   "E": "The court cannot award damages in a nuisance claim; the only available remedy is an injunction."
+  },
+  "answer": "A",
+  "expl": "正解A。救済の⾻格:①injunction の類型――prohibitory(活動の禁⽌‧最頻)/mandatory(是正の強制‧限定的場⾯)/quia timet(活動開始前の予防的差⽌:⾼い蓋然性等の要件)/interim(本案までの暫定)→final。②injunction は equitable remedy であり⾃ 動発令されない:迅速な⾏動‧黙認の不存在‧遵守可能性が前提。③裁判所は権利の衡量により「限定差⽌」(回数‧騒⾳レベルの制 限)を選べる。④差⽌を拒み damages を命じる裁量――損害が⼩‧⾦銭評価可‧賠償で填補可‧差⽌が抑圧的(全充⾜不要)、公共の 利益(雇⽤‧事業の存続)も考慮。damages は原則として裁判時までの損失につき、将来分には限定的権限。",
+  "trans": "湖畔のコテージの所有者が、隣接するウォータースポーツクラブの週末のパワーボート‧イベントの騒⾳が private nuisance にあたることを裁 判で⽴証した。彼⼥は、湖上のすべてのパワーボート活動を恒久的に禁⽌する injunction を裁判所に求めている。地元スタッフを雇⽤し多数の 来場者を集めるイベントを主催するクラブは、全⾯禁⽌は事業を破壊すると主張し、活動の制限か、injunction に代わる damages の⽀払を命 じるよう裁判所に求めている。",
+  "analysis": {
+   "A": "○ 類型の位置づけ‧限定差⽌という中間解‧damages 切替えの4考慮のすべてを正確に束ねている。",
+   "B": "× T5 結論逆転型。equitable remedy は権利ではなく裁量。求めた⽂⾔どおりの全⾯差⽌が⾃動的に出るわけではない。",
+   "C": "× T2 類型すり替え型。騒⾳の停⽌を求める標準は prohibitory。mandatory は⽣じた状態の是正を強制する例外的類型。",
+   "D": "× T3 類型の定義逆転型。quia timet は活動が始まる前の予防的差⽌。既に発⽣している nuisance には通常の(prohibitory)差⽌が対応 する。",
+   "E": "× T4 規範捏造型。damages は nuisance の主要救済の⼀⽅であり、差⽌に代わる damages の裁量も確⽴している。 シーン語彙表 lakeside cottage 湖畔のコテージ powerboat パワーボート total ban 全⾯禁⽌ host events イベントを主催する quantifiable 数量化可能な oppressive 抑圧的な contempt of court 法廷侮辱 in the terms sought 求めた⽂⾔どおりに 典拠 Kennaway v Thompson [1981] QB 88(限定差⽌による権利調整)/教科書 Ch.8(Table 8.6 差⽌4類型‧差⽌拒否の4考慮‧公共の利益‧abatement は補⾜ 的⾃⼒救済)※判例名の知識は SQE1 スペック上不要 正誤記録:1周⽬ □正 □誤( / ) 2周⽬ □正 □誤( / ) 3周⽬ □正 □誤( / )"
+  }
+ },
+ {
+  "qid": "T-55",
+  "subject": "Tort",
+  "tag": "Ch.8",
+  "stem": "An agricultural supplies business stores 40,000 litres of concentrated liquid fertiliser in bulk tanks in its yard, far more than any ordinary farm would keep. Without any negligence on the business's part, a tank ruptures overnight. The concentrate flows across the boundary into a neighbouring plant nursery, poisoning the soil and destroying the nursery's entire stock of young trees. The nursery owner, who was working late, also inhales fumes from the spill and suffers temporary lung irritation. He sues the business under the rule in Rylands v Fletcher for the destroyed stock and for his personal injury. Which of the following best describes the position?",
+  "options": {
+   "A": "The claim fails entirely, because the business was not negligent and fault must be proved.",
+   "B": "The claim fails, because liability could only arise if the tank itself had been defectively constructed or maintained.",
+   "C": "The claim succeeds in full, covering both the destroyed stock and the owner's lung irritation.",
+   "D": "The claim is likely to succeed for the destruction of the nursery stock, because the business brought and collected on its land, in the course of a non-natural use, a thing likely to do mischief if it escaped, the thing escaped onto the neighbour's land, and damage of that kind was reasonably foreseeable; liability does not require proof of fault, but nothing can be recovered for the owner's personal injury.",
+   "E": "The claim fails, because fertiliser is a useful agricultural product and is not inherently dangerous."
+  },
+  "answer": "D",
+  "expl": "正解D。Rylands v Fletcher(スペック指定判例)の4要件:①defendant が⼟地に持ち込み‧集積した物が、escape すれば mischief を⽣じ得ること(それ⾃体の危険性は不要)、②その集積が non-natural use にあたること(当時の⽔準に照らした⼟地の通 常の使⽤を超える――⼯業的規模の⼤量貯蔵が典型。⽔道管などの通常使⽤は該当しない)、③物が defendant の占有‧⽀配地から 外へ escape したこと(敷地内の爆発は escape でない)、④escape による損害が合理的に予⾒可能であること。効果は無過失の財産 損害責任。⼈⾝損害はこのルールでは請求できない。抗弁は consent‧CN‧statutory authority‧act of God‧第三者の予⾒不能な ⾏為。",
+  "trans": "農業資材業者が、通常の農場が保有する量をはるかに超える4万リットルの濃縮液体肥料を、資材置場のバルクタンクに貯蔵している。同業者に 何らの過失もないまま、夜間にタンクが破裂した。濃縮液は境界を越えて隣接する植⽊の苗圃(nursery)に流れ込み、⼟壌を汚染し、苗⽊の全在 庫を枯死させた。遅くまで作業していた苗圃の所有者は、流出物からの気体も吸⼊し、⼀時的な肺の刺激症状を負った。彼は、枯死した在庫と ⾃⾝の⼈⾝傷害について、the rule in Rylands v Fletcher に基づき業者を提訴する。",
+  "analysis": {
+   "A": "× T3 原則すり替え型。RvF は無過失責任。有能な業者に任せて過失がなくても、集積物の escape による損害には責任が及ぶ――それ がこのルールの存在理由である。",
+   "B": "× T7 ⽇本法感覚型。⼯作物責任(717条)の「設置‧保存の瑕疵」要件の持込み。RvF は設備の瑕疵ではなく、⾮⾃然的使⽤としての集 積と escape ⾃体を責任の基礎とする。",
+   "C": "× T5 範囲過⼤型。⼈⾝損害は RvF では回復できない(⼟地の権利義務に関するルールであるため)。肺の刺激症状は別の訴訟原因 (negligence 等)の検討対象。",
+   "D": "○ 4要件の当てはめ‧無過失‧⼈⾝の除外という三層構造を完全に述べる。",
+   "E": "× T2 要件すり替え型。集積物それ⾃体が危険物である必要はない。escape した場合に mischief を⽣じ得るもので⾜り、予⾒可能性は 「escape した場合の損害」について判断される。 シーン語彙表 agricultural supplies 農業資材 concentrated liquid fertiliser 濃縮液体肥料 bulk tank バルクタンク(⼤容量貯蔵槽) rupture 破裂する plant nursery 苗圃‧植⽊の育成場 poison the soil ⼟壌を汚染する inhale fumes 気体‧煙霧を吸⼊する lung irritation 肺の刺激症状 典拠 Rylands v Fletcher [1868] LR 3 HL 330(スペックが名称知識を要求する判例‧4要件)/Transco v Stockport(non-natural use:通常使⽤の除外)/Read v J Lyons(escape 要件)/Cambridge Water(予⾒可能性)/Stannard v Gore(集積物と⽕の区別)/教科書 Ch.8(Figure 8.2‧Table 8.7‧⼈⾝不可) 正誤記録:1周⽬ □正 □誤( / ) 2周⽬ □正 □誤( / ) 3周⽬ □正 □誤( / )"
+  }
+ }
+]

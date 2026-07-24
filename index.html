@@ -130,6 +130,39 @@ const sortTags = (arr) =>
     return na - nb || a.localeCompare(b);
   });
 
+const parseMcqJson = (text) => {
+  const raw = JSON.parse(text);
+  const arr = Array.isArray(raw) ? raw : raw.questions || raw.items || Object.values(raw);
+  const out = [];
+  arr.forEach((q) => {
+    if (!q || typeof q !== "object") return;
+    let options = {};
+    const src = q.options || q.choices || {};
+    if (Array.isArray(src)) {
+      "ABCDE".split("").forEach((L, i) => {
+        if (src[i] != null) options[L] = typeof src[i] === "string" ? src[i] : src[i].text || "";
+      });
+    } else {
+      Object.keys(src).forEach((k) => {
+        options[k.toUpperCase()] = String(src[k]);
+      });
+    }
+    const item = {
+      qid: String(q.qid || q.id || "").trim(),
+      subject: q.subject || "",
+      tag: q.tag || (q.chapter != null ? `Ch.${String(q.chapter).replace(/^Ch\.?\s*/i, "")}` : ""),
+      stem: q.stem || q.question || q.q || "",
+      options,
+      answer: String(q.answer || q.correct || "").trim().toUpperCase().slice(0, 1),
+      expl: q.expl || q.explanation || q.kaisetsu || "",
+      trans: q.trans || q.translation || "",
+      analysis: q.analysis || {},
+    };
+    if (item.stem && item.answer && Object.keys(options).length >= 2) out.push(item);
+  });
+  return out;
+};
+
 const loadVoices = () => {
   if (typeof window === "undefined" || !window.speechSynthesis) return [];
   return window.speechSynthesis.getVoices() || [];
@@ -174,9 +207,11 @@ const speakEn = (text) => {
 };
 
 function App() {
-  const [data, setData] = useState(null); // {settings, words, dailyLog}
+  const [data, setData] = useState(null); // {settings, words, mcqs, dailyLog, diary}
   const [tab, setTab] = useState("today");
-  const [session, setSession] = useState(null); // {queue, done, revealed}
+  const [session, setSession] = useState(null); // vocab session
+  const [mcqSession, setMcqSession] = useState(null); // MCQ session
+  const [mode, setMode] = useState("vocab"); // "vocab" | "mcq"
   const [toast, setToast] = useState(null);
   const saveTimer = useRef(null);
 
@@ -194,6 +229,8 @@ function App() {
         loaded || {
           settings: { examDate: "2027-01-18", buffer: 14 },
           words: [],
+          mcqs: [],
+          marks: [],
           dailyLog: {},
           diary: {},
         }
@@ -272,6 +309,127 @@ function App() {
         .join(" ") || "全体ランダム";
     setSession({ queue: pool, doneN: 0, revealed: false, label });
   };
+
+  // ---- MCQ ----
+  const mcqs = data.mcqs || [];
+
+  const startMcq = (opt) => {
+    let pool = mcqs;
+    if (opt.subject) pool = pool.filter((q) => (q.subject || "") === opt.subject);
+    if (opt.tags && opt.tags.length) pool = pool.filter((q) => opt.tags.includes(q.tag));
+    if (opt.bands && opt.bands.length)
+      pool = pool.filter(
+        (q) =>
+          (opt.bands.includes("new") && !(q.stats && q.stats.attempts > 0)) ||
+          (q.stats && opt.bands.includes(q.stats.last))
+      );
+    pool = [...pool].sort(() => Math.random() - 0.5);
+    if (opt.count) pool = pool.slice(0, opt.count);
+    if (pool.length === 0) {
+      showToast("該当する問題がありません");
+      return;
+    }
+    const bandNames = { wrong: "間違えた問題", right: "正解済み", new: "未回答" };
+    const label =
+      [opt.subject, (opt.tags || []).join("・"), (opt.bands || []).map((b) => bandNames[b]).join("+")]
+        .filter(Boolean)
+        .join(" ") || "全問ランダム";
+    setMcqSession({ queue: pool, idx: 0, selected: null, correctN: 0, label });
+  };
+
+  const answerMcq = (letter) => {
+    if (mcqSession.selected) return;
+    const cur = mcqSession.queue[mcqSession.idx];
+    const isCorrect = letter === cur.answer;
+    const idx = mcqs.findIndex((q) => q.id === cur.id);
+    const nextMcqs = [...mcqs];
+    if (idx >= 0) {
+      const st = nextMcqs[idx].stats || { attempts: 0, correct: 0, last: null };
+      nextMcqs[idx] = {
+        ...nextMcqs[idx],
+        stats: {
+          attempts: st.attempts + 1,
+          correct: st.correct + (isCorrect ? 1 : 0),
+          last: isCorrect ? "right" : "wrong",
+          lastAt: t,
+        },
+      };
+    }
+    const nextLog = { ...(data.dailyLog[t] || { newN: 0, revN: 0 }) };
+    nextLog.mcqN = (nextLog.mcqN || 0) + 1;
+    nextLog.mcqOK = (nextLog.mcqOK || 0) + (isCorrect ? 1 : 0);
+    const lbl = [cur.subject, cur.tag].filter(Boolean).join(" ");
+    if (lbl) {
+      const items = nextLog.items ? [...nextLog.items] : [];
+      if (!items.includes(lbl)) items.push(lbl);
+      nextLog.items = items;
+    }
+    persist({ ...data, mcqs: nextMcqs, dailyLog: { ...data.dailyLog, [t]: nextLog } });
+    setMcqSession({ ...mcqSession, selected: letter, correctN: mcqSession.correctN + (isCorrect ? 1 : 0) });
+  };
+
+  const nextMcq = () => {
+    if (mcqSession.idx + 1 >= mcqSession.queue.length) {
+      showToast(`演習終了: ${mcqSession.correctN} / ${mcqSession.queue.length} 正解`);
+      setMcqSession(null);
+    } else {
+      setMcqSession({ ...mcqSession, idx: mcqSession.idx + 1, selected: null, showTrans: false });
+    }
+  };
+
+  const addMcqs = (list, subjectOverride) => {
+    const keyOf = (q) => (q.qid ? `${q.subject}|${q.qid}` : q.stem.slice(0, 80)).toLowerCase();
+    const withSub = list.map((q) => ({ ...q, subject: subjectOverride || q.subject || "" }));
+    const idxMap = new Map(mcqs.map((q, i) => [keyOf(q), i]));
+    const next = [...mcqs];
+    let added = 0;
+    let updated = 0;
+    withSub.forEach((q) => {
+      const i = idxMap.get(keyOf(q));
+      if (i !== undefined) {
+        next[i] = { ...next[i], ...q, id: next[i].id, stats: next[i].stats };
+        updated += 1;
+      } else {
+        next.push({ ...q, id: uid(), stats: { attempts: 0, correct: 0, last: null, lastAt: null } });
+        added += 1;
+      }
+    });
+    if (added === 0 && updated === 0) {
+      showToast("追加できる問題がありません");
+      return;
+    }
+    persist({ ...data, mcqs: next });
+    showToast(`問題を追加 ${added}問 / 更新 ${updated}問`);
+  };
+
+  // ---- marks(マークアップ) ----
+  const marks = data.marks || [];
+
+  const addMark = () => {
+    const selText = (window.getSelection ? window.getSelection().toString() : "").trim();
+    if (!selText) {
+      showToast("マークしたい部分を長押しで選択してからタップしてください");
+      return;
+    }
+    const cur = mcqSession.queue[mcqSession.idx];
+    if (marks.some((m) => m.qid === cur.qid && m.text === selText)) {
+      showToast("すでにマーク済みです");
+      return;
+    }
+    persist({
+      ...data,
+      marks: [
+        ...marks,
+        { id: uid(), qid: cur.qid || "", subject: cur.subject || "", tag: cur.tag || "", text: selText.slice(0, 500), at: t },
+      ],
+    });
+    showToast("マークしました 🖍");
+    try {
+      window.getSelection().removeAllRanges();
+    } catch (e) {}
+  };
+
+  const removeMark = (id) => persist({ ...data, marks: marks.filter((m) => m.id !== id) });
 
   const grade = (g) => {
     const cur = session.queue[0];
@@ -403,6 +561,142 @@ function App() {
     );
   }
 
+  // ---------- MCQ screen ----------
+  if (mcqSession) {
+    const q = mcqSession.queue[mcqSession.idx];
+    const total = mcqSession.queue.length;
+    const sel = mcqSession.selected;
+    const letters = Object.keys(q.options).sort();
+    const isLast = mcqSession.idx + 1 >= total;
+    const qMarks = marks.filter((m) => m.qid === q.qid);
+    const hl = (text) => {
+      if (!text || qMarks.length === 0) return text;
+      let segs = [text];
+      qMarks.forEach((m) => {
+        const next = [];
+        segs.forEach((sg) => {
+          if (typeof sg !== "string") {
+            next.push(sg);
+            return;
+          }
+          let rest = sg;
+          let i;
+          while ((i = rest.indexOf(m.text)) !== -1) {
+            if (i > 0) next.push(rest.slice(0, i));
+            next.push({ __mark: true, text: m.text });
+            rest = rest.slice(i + m.text.length);
+          }
+          if (rest) next.push(rest);
+        });
+        segs = next;
+      });
+      return segs.map((sg, i) =>
+        typeof sg === "string" ? (
+          sg
+        ) : (
+          <span key={i} style={{ background: "#FFE590", borderRadius: 3, padding: "0 2px" }}>{sg.text}</span>
+        )
+      );
+    };
+    return (
+      <div style={S.page}>
+        <style>{"@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@400;600&display=swap');"}</style>
+        <div style={S.wrap}>
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 12 }}>
+            <button onClick={() => setMcqSession(null)} style={{ background: "none", border: "none", color: C.inkSoft, fontSize: 14, cursor: "pointer" }}>← 中断</button>
+            <span style={{ fontSize: 13, color: C.inkSoft }}>
+              {mcqSession.label ? `${mcqSession.label} ・ ` : ""}{mcqSession.idx + 1} / {total} ・ 正解{mcqSession.correctN}
+            </span>
+          </div>
+          <Ribbon value={mcqSession.idx} max={total} color={C.tape} />
+
+          <div style={{ ...S.card, marginTop: 16, borderTop: `4px solid ${C.tape}` }}>
+            <div style={{ display: "flex", gap: 6, marginBottom: 10, flexWrap: "wrap" }}>
+              {q.qid && <span style={S.tag(C.tapeSoft, C.tape)}>{q.qid}</span>}
+              {(q.subject || q.tag) && (
+                <span style={{ ...S.tag(C.paper, C.inkSoft), border: `1px solid ${C.line}` }}>
+                  {[q.subject, q.tag].filter(Boolean).join(" ")}
+                </span>
+              )}
+            </div>
+            <div style={{ fontSize: 15, lineHeight: 1.65 }}>{q.stem}</div>
+            {q.trans && (
+              <div style={{ marginTop: 10 }}>
+                <button
+                  onClick={() => setMcqSession({ ...mcqSession, showTrans: !mcqSession.showTrans })}
+                  style={{ background: "none", border: `1px solid ${C.line}`, borderRadius: 999, padding: "5px 14px", fontSize: 12, color: C.inkSoft, cursor: "pointer", fontFamily: sans }}>
+                  {mcqSession.showTrans ? "日本語訳を隠す" : "日本語訳を見る"}
+                </button>
+                {mcqSession.showTrans && (
+                  <div style={{ marginTop: 8, fontSize: 13, lineHeight: 1.7, color: C.inkSoft, borderTop: `1px dashed ${C.line}`, paddingTop: 8 }}>
+                    {hl(q.trans)}
+                  </div>
+                )}
+              </div>
+            )}
+          </div>
+
+          <div style={{ display: "flex", flexDirection: "column", gap: 8, marginTop: 12 }}>
+            {letters.map((L) => {
+              let bg = C.card;
+              let border = C.line;
+              let col = C.ink;
+              if (sel) {
+                if (L === q.answer) {
+                  bg = C.mossSoft; border = C.moss; col = C.moss;
+                } else if (L === sel) {
+                  bg = C.tapeSoft; border = C.tape; col = C.tape;
+                } else {
+                  col = C.inkSoft;
+                }
+              }
+              return (
+                <button key={L} onClick={() => answerMcq(L)}
+                  style={{ background: bg, border: `1.5px solid ${border}`, borderRadius: 10, padding: "12px 14px", textAlign: "left", cursor: sel ? "default" : "pointer", fontFamily: sans, fontSize: 14, lineHeight: 1.55, color: col, display: "flex", gap: 10 }}>
+                  <span style={{ fontWeight: 700, flexShrink: 0 }}>{L}{sel && L === q.answer ? " ✓" : sel && L === sel ? " ✗" : ""}</span>
+                  <span>{q.options[L]}</span>
+                </button>
+              );
+            })}
+          </div>
+
+          {sel && (
+            <>
+              <div style={{ ...S.card, marginTop: 12, background: sel === q.answer ? C.mossSoft : C.tapeSoft, border: "none" }}>
+                <div style={{ fontSize: 14, fontWeight: 700, color: sel === q.answer ? C.moss : C.tape, marginBottom: 6 }}>
+                  {sel === q.answer ? "正解!" : `不正解(正解は ${q.answer})`}
+                </div>
+                {q.expl && <div style={{ fontSize: 13, lineHeight: 1.7, color: C.ink }}>{hl(q.expl)}</div>}
+              </div>
+              {q.analysis && Object.keys(q.analysis).length > 0 && (
+                <div style={{ ...S.card, marginTop: 10 }}>
+                  <div style={{ fontSize: 13, fontWeight: 700, marginBottom: 8 }}>五肢完全分析</div>
+                  <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+                    {Object.keys(q.analysis).sort().map((L) => (
+                      <div key={L} style={{ fontSize: 12.5, lineHeight: 1.65, color: C.ink, paddingLeft: 10, borderLeft: `3px solid ${L === q.answer ? C.moss : L === sel ? C.tape : C.line}` }}>
+                        <span style={{ fontWeight: 700 }}>{L} </span>
+                        {hl(q.analysis[L])}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+              <button
+                onMouseDown={(e) => e.preventDefault()}
+                onClick={addMark}
+                style={{ ...S.btn(C.card, C.ink), border: `1.5px dashed ${C.amber}`, marginTop: 12, fontSize: 14 }}>
+                🖍 選択中のテキストをマーク(長押しで選択してからタップ)
+              </button>
+              <button onClick={nextMcq} style={{ ...S.btn(C.ink), marginTop: 12 }}>
+                {isLast ? `終了(${mcqSession.correctN + (sel === q.answer ? 0 : 0)} / ${total} 正解)` : "次の問題へ"}
+              </button>
+            </>
+          )}
+        </div>
+      </div>
+    );
+  }
+
   // ---------- Tabs ----------
   return (
     <div style={S.page}>
@@ -421,10 +715,14 @@ function App() {
             totalN={words.length} learnedN={learned.length} unlearnedN={unlearned.length}
             examDate={data.settings.examDate} buffer={data.settings.buffer}
             onStart={startSession} words={words} onStartCustom={startCustom}
+            mode={mode} setMode={setMode} mcqs={mcqs} onStartMcq={startMcq}
           />
         )}
-        {tab === "add" && <AddTab S={S} C={C} onAdd={addWords} />}
-        {tab === "list" && <ListTab S={S} C={C} words={words} onRemove={removeWord} today={t} />}
+        {tab === "add" && <AddTab S={S} C={C} onAdd={addWords} onAddMcq={addMcqs} />}
+        {tab === "list" && (
+          <ListTab S={S} C={C} words={words} onRemove={removeWord} today={t}
+            marks={marks} mcqs={mcqs} onRemoveMark={removeMark} />
+        )}
         {tab === "record" && (
           <RecordTab
             S={S} C={C} today={t}
@@ -444,10 +742,12 @@ function App() {
                 persist({
                   settings: d.settings || data.settings,
                   words: d.words,
+                  mcqs: d.mcqs || [],
+                  marks: d.marks || [],
                   dailyLog: d.dailyLog || {},
                   diary: d.diary || {},
                 });
-                showToast(`インポート完了(${d.words.length}語)`);
+                showToast(`インポート完了(${d.words.length}語 / ${(d.mcqs || []).length}問)`);
               } catch (e) {
                 showToast("JSONが不正です");
               }
@@ -481,14 +781,20 @@ function App() {
 }
 
 // ---------- Today ----------
-function TodayTab({ S, C, Ribbon, daysLeft, quota, log, dueN, newRemaining, totalN, learnedN, unlearnedN, examDate, buffer, onStart, words, onStartCustom }) {
+function TodayTab({ S, C, Ribbon, daysLeft, quota, log, dueN, newRemaining, totalN, learnedN, unlearnedN, examDate, buffer, onStart, words, onStartCustom, mode, setMode, mcqs, onStartMcq }) {
   const todayTotal = dueN + newRemaining;
   const [subj, setSubj] = useState("");
   const [chaps, setChaps] = useState([]);
   const [bands, setBands] = useState([]);
   const [count, setCount] = useState("20");
+  const [mSubj, setMSubj] = useState("");
+  const [mChaps, setMChaps] = useState([]);
+  const [mBands, setMBands] = useState([]);
+  const [mCount, setMCount] = useState("10");
   const subjects = [...new Set(words.map((w) => w.subject).filter(Boolean))].sort();
   const chTags = sortTags([...new Set(words.filter((w) => !subj || (w.subject || "") === subj).map((w) => w.tag).filter(Boolean))]);
+  const mcqSubjects = [...new Set(mcqs.map((q) => q.subject).filter(Boolean))].sort();
+  const mcqTags = sortTags([...new Set(mcqs.filter((q) => !mSubj || (q.subject || "") === mSubj).map((q) => q.tag).filter(Boolean))]);
   const toggle = (arr, setArr, v) => setArr(arr.includes(v) ? arr.filter((x) => x !== v) : [...arr, v]);
   let pool = words;
   if (subj) pool = pool.filter((w) => (w.subject || "") === subj);
@@ -496,10 +802,28 @@ function TodayTab({ S, C, Ribbon, daysLeft, quota, log, dueN, newRemaining, tota
   if (bands.length) pool = pool.filter((w) => (bands.includes("new") && w.srs.due === null) || bands.includes(w.srs.last));
   const poolN = pool.length;
   const drawN = count === "all" ? poolN : Math.min(poolN, Number(count));
+  let mPool = mcqs;
+  if (mSubj) mPool = mPool.filter((q) => (q.subject || "") === mSubj);
+  if (mChaps.length) mPool = mPool.filter((q) => mChaps.includes(q.tag));
+  if (mBands.length)
+    mPool = mPool.filter(
+      (q) => (mBands.includes("new") && !(q.stats && q.stats.attempts > 0)) || (q.stats && mBands.includes(q.stats.last))
+    );
+  const mPoolN = mPool.length;
+  const mDrawN = mCount === "all" ? mPoolN : Math.min(mPoolN, Number(mCount));
+  const answeredN = mcqs.filter((q) => q.stats && q.stats.attempts > 0).length;
+  const attemptsTotal = mcqs.reduce((a, q) => a + ((q.stats && q.stats.attempts) || 0), 0);
+  const correctTotal = mcqs.reduce((a, q) => a + ((q.stats && q.stats.correct) || 0), 0);
   const sel = { padding: "10px 8px", fontSize: 14, border: `1px solid ${C.line}`, borderRadius: 10, fontFamily: sans, background: "#fff", color: C.ink, width: "100%", boxSizing: "border-box" };
   const chip = (on) => ({ padding: "7px 12px", borderRadius: 999, fontSize: 13, fontWeight: 600, fontFamily: sans, cursor: "pointer", border: `1px solid ${on ? C.tape : C.line}`, background: on ? C.tapeSoft : "#fff", color: on ? C.tape : C.inkSoft });
+  const segBtn = (on) => ({ flex: 1, padding: "11px 0", borderRadius: 9, border: "none", fontFamily: sans, fontSize: 14, fontWeight: 700, cursor: "pointer", background: on ? C.ink : "transparent", color: on ? "#fff" : C.inkSoft, transition: "background .15s" });
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
+      <div style={{ display: "flex", background: C.card, border: `1px solid ${C.line}`, borderRadius: 12, padding: 4, gap: 4 }}>
+        <button onClick={() => setMode("vocab")} style={segBtn(mode === "vocab")}>単語学習</button>
+        <button onClick={() => setMode("mcq")} style={segBtn(mode === "mcq")}>問題演習</button>
+      </div>
+
       <div style={{ ...S.card, borderTop: `4px solid ${C.tape}` }}>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline" }}>
           <span style={{ fontSize: 13, color: C.inkSoft }}>試験日 {examDate}</span>
@@ -510,7 +834,71 @@ function TodayTab({ S, C, Ribbon, daysLeft, quota, log, dueN, newRemaining, tota
         </div>
       </div>
 
-      <div style={S.card}>
+      {mode === "mcq" ? (
+        <>
+          <div style={S.card}>
+            <div style={{ fontSize: 14, fontWeight: 700, marginBottom: 4 }}>問題演習</div>
+            <div style={{ fontSize: 12, color: C.inkSoft, marginBottom: 10 }}>
+              全{mcqs.length}問 / 着手{answeredN}問{attemptsTotal > 0 ? ` / 累計正答率 ${Math.round((correctTotal / attemptsTotal) * 100)}%` : ""}
+            </div>
+            {mcqs.length === 0 ? (
+              <div style={{ fontSize: 13, color: C.inkSoft }}>
+                まだ問題がありません。「追加」タブの「問題演習のインポート」からJSONを貼り付けてください。
+              </div>
+            ) : (
+              <>
+                <select value={mSubj} onChange={(e) => { setMSubj(e.target.value); setMChaps([]); }} style={{ ...sel, marginBottom: 10 }}>
+                  <option value="">科目: すべて</option>
+                  {mcqSubjects.map((s) => (
+                    <option key={s} value={s}>{s}</option>
+                  ))}
+                </select>
+                {mcqTags.length > 0 && (
+                  <div style={{ marginBottom: 10 }}>
+                    <div style={{ fontSize: 12, fontWeight: 700, color: C.inkSoft, marginBottom: 6 }}>章(複数タップ可)</div>
+                    <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
+                      {mcqTags.map((tg) => (
+                        <button key={tg} onClick={() => toggle(mChaps, setMChaps, tg)} style={chip(mChaps.includes(tg))}>
+                          {tg}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                )}
+                <div style={{ marginBottom: 10 }}>
+                  <div style={{ fontSize: 12, fontWeight: 700, color: C.inkSoft, marginBottom: 6 }}>状態(複数タップ可)</div>
+                  <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
+                    {[
+                      ["wrong", "間違えた問題"],
+                      ["new", "未回答"],
+                      ["right", "正解済み"],
+                    ].map(([v, lb]) => (
+                      <button key={v} onClick={() => toggle(mBands, setMBands, v)} style={chip(mBands.includes(v))}>
+                        {lb}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+                <div style={{ display: "flex", gap: 10 }}>
+                  <select value={mCount} onChange={(e) => setMCount(e.target.value)} style={{ ...sel, width: 110, flexShrink: 0 }}>
+                    <option value="5">5問</option>
+                    <option value="10">10問</option>
+                    <option value="20">20問</option>
+                    <option value="all">全部</option>
+                  </select>
+                  <button
+                    onClick={() => onStartMcq({ subject: mSubj, tags: mChaps, bands: mBands, count: mCount === "all" ? 0 : Number(mCount) })}
+                    disabled={mPoolN === 0}
+                    style={{ ...S.btn(mPoolN === 0 ? C.line : C.tape), opacity: mPoolN === 0 ? 0.7 : 1 }}>
+                    {mPoolN === 0 ? "該当なし" : `演習開始(${mDrawN}問 / 該当${mPoolN}問)`}
+                  </button>
+                </div>
+              </>
+            )}
+          </div>
+        </>
+      ) : (
+      <><div style={S.card}>
         <div style={{ fontSize: 14, fontWeight: 700, marginBottom: 10 }}>今日のメニュー</div>
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10, marginBottom: 12 }}>
           <div style={{ background: C.amberSoft, borderRadius: 10, padding: 12 }}>
@@ -601,17 +989,61 @@ function TodayTab({ S, C, Ribbon, daysLeft, quota, log, dueN, newRemaining, tota
           </div>
         )}
       </div>
+      </>
+      )}
     </div>
   );
 }
 
 // ---------- Add ----------
-function AddTab({ S, C, onAdd }) {
+function AddTab({ S, C, onAdd, onAddMcq }) {
   const [en, setEn] = useState("");
   const [ja, setJa] = useState("");
   const [bulk, setBulk] = useState("");
   const [subject, setSubject] = useState("");
+  const [mcqJson, setMcqJson] = useState("");
+  const [fileName, setFileName] = useState("tort_mcq.json");
+  const [loadingFile, setLoadingFile] = useState(false);
   const preview = parseBulk(bulk);
+  let mcqPreview = [];
+  let mcqError = "";
+  let mcqRepaired = false;
+  if (mcqJson.trim()) {
+    try {
+      mcqPreview = parseMcqJson(mcqJson);
+      if (mcqPreview.length === 0) mcqError = "有効な問題が見つかりません";
+    } catch (e) {
+      // 貼り付け切れの修復: 最後の完全なオブジェクトまで切り詰めて閉じる
+      const tryCuts = ["\n }", "},", "}"];
+      for (const marker of tryCuts) {
+        const cut = mcqJson.lastIndexOf(marker);
+        if (cut > 0) {
+          try {
+            mcqPreview = parseMcqJson(mcqJson.slice(0, cut + marker.replace(",", "").length) + "\n]");
+            if (mcqPreview.length > 0) {
+              mcqRepaired = true;
+              break;
+            }
+          } catch (e2) {}
+        }
+      }
+      if (!mcqRepaired) mcqError = `JSONの形式が不正です(貼り付け ${mcqJson.length.toLocaleString()} 文字 — 途中で切れている可能性)`;
+    }
+  }
+  const loadFromFile = async () => {
+    setLoadingFile(true);
+    try {
+      const res = await fetch(`./${fileName.trim()}`, { cache: "no-store" });
+      if (!res.ok) throw new Error("http " + res.status);
+      const txt = await res.text();
+      const list = parseMcqJson(txt);
+      if (!list.length) throw new Error("empty");
+      onAddMcq(list, subject.trim());
+    } catch (e) {
+      alert("読み込めませんでした。ファイルがGitHubにアップされていて名前が一致しているか確認してください(この機能はPWA版でのみ動作します)");
+    }
+    setLoadingFile(false);
+  };
 
   const input = { width: "100%", boxSizing: "border-box", padding: "12px", fontSize: 16, border: `1px solid ${C.line}`, borderRadius: 8, fontFamily: sans, background: "#fff" };
 
@@ -663,13 +1095,47 @@ function AddTab({ S, C, onAdd }) {
           {preview.length ? `${preview.length}語を一括追加` : "貼り付け待ち"}
         </button>
       </div>
+
+      <div style={S.card}>
+        <div style={{ fontSize: 14, fontWeight: 700, marginBottom: 4 }}>問題演習のインポート</div>
+        <div style={{ fontSize: 12, color: C.inkSoft, marginBottom: 10 }}>
+          おすすめ: JSONファイルをindex.htmlと同じ場所(GitHub)にアップし、ファイル名を指定して読み込み(PWA版のみ・貼り付け切れの心配なし)。上の科目欄が全問に適用され、同じqidは上書き更新(正誤記録は維持)
+        </div>
+        <div style={{ display: "flex", gap: 8, marginBottom: 14 }}>
+          <input value={fileName} onChange={(e) => setFileName(e.target.value)} placeholder="tort_mcq.json"
+            style={{ ...input, flex: 1, minWidth: 0, fontFamily: "monospace", fontSize: 13 }} />
+          <button onClick={loadFromFile} disabled={loadingFile || !fileName.trim()}
+            style={{ ...S.btn(loadingFile ? C.line : C.moss), width: "auto", padding: "12px 16px", fontSize: 14, whiteSpace: "nowrap" }}>
+            {loadingFile ? "読込中…" : "読み込み"}
+          </button>
+        </div>
+        <div style={{ fontSize: 12, color: C.inkSoft, marginBottom: 8 }}>または JSON を直接貼り付け:</div>
+        <textarea value={mcqJson} onChange={(e) => setMcqJson(e.target.value)} rows={5}
+          placeholder='[{"qid":"T-01","tag":"Ch.1","stem":"...","options":{"A":"...","B":"..."},"answer":"C","expl":"..."}]'
+          style={{ ...input, fontSize: 11, fontFamily: "monospace", resize: "vertical", marginBottom: 10 }} />
+        {mcqError && <div style={{ fontSize: 12, color: C.tape, marginBottom: 8 }}>{mcqError}</div>}
+        {mcqRepaired && (
+          <div style={{ fontSize: 12, color: C.amber, marginBottom: 8 }}>
+            貼り付けが途中で切れていたため、読み取れた {mcqPreview.length} 問のみインポートできます。残りは再度貼り付けてください
+          </div>
+        )}
+        <button
+          onClick={() => { if (mcqPreview.length) { onAddMcq(mcqPreview, subject.trim()); setMcqJson(""); } }}
+          disabled={mcqPreview.length === 0}
+          style={{ ...S.btn(mcqPreview.length ? C.moss : C.line) }}>
+          {mcqPreview.length ? `${mcqPreview.length}問をインポート` : "JSON待ち"}
+        </button>
+      </div>
     </div>
   );
 }
 
 // ---------- List ----------
-function ListTab({ S, C, words, onRemove, today }) {
+function ListTab({ S, C, words, onRemove, today, marks, mcqs, onRemoveMark }) {
   const [q, setQ] = useState("");
+  const [view, setView] = useState("words");
+  const [mFilter, setMFilter] = useState("");
+  const [openMark, setOpenMark] = useState(null);
   const filtered = words.filter(
     (w) =>
       w.en.toLowerCase().includes(q.toLowerCase()) ||
@@ -677,37 +1143,97 @@ function ListTab({ S, C, words, onRemove, today }) {
       (w.tag || "").toLowerCase().includes(q.toLowerCase()) ||
       (w.subject || "").toLowerCase().includes(q.toLowerCase())
   );
+  const markSubjects = [...new Set((marks || []).map((m) => m.subject).filter(Boolean))].sort();
+  const filteredMarks = [...(marks || [])]
+    .filter((m) => !mFilter || m.subject === mFilter)
+    .sort((a, b) => (a.at < b.at ? 1 : -1));
+  const segBtn = (on) => ({ flex: 1, padding: "10px 0", borderRadius: 9, border: "none", fontFamily: sans, fontSize: 14, fontWeight: 700, cursor: "pointer", background: on ? C.ink : "transparent", color: on ? "#fff" : C.inkSoft });
+  const chip = (on) => ({ padding: "6px 12px", borderRadius: 999, fontSize: 12, fontWeight: 600, fontFamily: sans, cursor: "pointer", border: `1px solid ${on ? C.tape : C.line}`, background: on ? C.tapeSoft : "#fff", color: on ? C.tape : C.inkSoft });
+
   return (
     <div>
-      <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="検索"
-        style={{ width: "100%", boxSizing: "border-box", padding: 12, fontSize: 16, border: `1px solid ${C.line}`, borderRadius: 8, marginBottom: 12, fontFamily: sans }} />
-      <div style={{ fontSize: 12, color: C.inkSoft, marginBottom: 8 }}>{filtered.length}語</div>
-      <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
-        {filtered.map((w) => {
-          const st = w.srs.due === null ? ["未着手", C.line, C.inkSoft]
-            : w.srs.due <= today ? ["再テスト待ち", C.amberSoft, C.amber]
-            : [`次回 ${w.srs.due}`, C.mossSoft, C.moss];
-          return (
-            <div key={w.id} style={{ ...S.card, padding: "12px 14px", display: "flex", alignItems: "center", gap: 10 }}>
-              <div style={{ flex: 1, minWidth: 0 }}>
-                <div style={{ fontFamily: serif, fontWeight: 600, fontSize: 16 }}>
-                  {w.en}
-                  {(w.subject || w.tag) && (
-                    <span style={{ ...S.tag(C.paper, C.inkSoft), marginLeft: 6, fontFamily: sans, fontWeight: 500, border: `1px solid ${C.line}` }}>
-                      {[w.subject, w.tag].filter(Boolean).join(" ")}
-                    </span>
+      <div style={{ display: "flex", background: C.card, border: `1px solid ${C.line}`, borderRadius: 12, padding: 4, gap: 4, marginBottom: 12 }}>
+        <button onClick={() => setView("words")} style={segBtn(view === "words")}>単語帳</button>
+        <button onClick={() => setView("marks")} style={segBtn(view === "marks")}>マーク集({(marks || []).length})</button>
+      </div>
+
+      {view === "words" ? (
+        <>
+          <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="検索"
+            style={{ width: "100%", boxSizing: "border-box", padding: 12, fontSize: 16, border: `1px solid ${C.line}`, borderRadius: 8, marginBottom: 12, fontFamily: sans }} />
+          <div style={{ fontSize: 12, color: C.inkSoft, marginBottom: 8 }}>{filtered.length}語</div>
+          <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+            {filtered.map((w) => {
+              const st = w.srs.due === null ? ["未着手", C.line, C.inkSoft]
+                : w.srs.due <= today ? ["再テスト待ち", C.amberSoft, C.amber]
+                : [`次回 ${w.srs.due}`, C.mossSoft, C.moss];
+              return (
+                <div key={w.id} style={{ ...S.card, padding: "12px 14px", display: "flex", alignItems: "center", gap: 10 }}>
+                  <div style={{ flex: 1, minWidth: 0 }}>
+                    <div style={{ fontFamily: serif, fontWeight: 600, fontSize: 16 }}>
+                      {w.en}
+                      {(w.subject || w.tag) && (
+                        <span style={{ ...S.tag(C.paper, C.inkSoft), marginLeft: 6, fontFamily: sans, fontWeight: 500, border: `1px solid ${C.line}` }}>
+                          {[w.subject, w.tag].filter(Boolean).join(" ")}
+                        </span>
+                      )}
+                    </div>
+                    <div style={{ fontSize: 13, color: C.inkSoft }}>{w.ja}</div>
+                  </div>
+                  <button onClick={() => speakEn(w.en)} style={{ background: "none", border: "none", fontSize: 17, cursor: "pointer", padding: 4 }}>🔊</button>
+                  <span style={S.tag(st[1], st[2])}>{st[0]}</span>
+                  <button onClick={() => onRemove(w.id)} style={{ background: "none", border: "none", color: C.inkSoft, fontSize: 18, cursor: "pointer", padding: 4 }}>×</button>
+                </div>
+              );
+            })}
+            {filtered.length === 0 && <div style={{ fontSize: 13, color: C.inkSoft, textAlign: "center", padding: 20 }}>該当なし</div>}
+          </div>
+        </>
+      ) : (
+        <>
+          {markSubjects.length > 0 && (
+            <div style={{ display: "flex", flexWrap: "wrap", gap: 6, marginBottom: 12 }}>
+              <button onClick={() => setMFilter("")} style={chip(mFilter === "")}>すべて</button>
+              {markSubjects.map((s) => (
+                <button key={s} onClick={() => setMFilter(s)} style={chip(mFilter === s)}>{s}</button>
+              ))}
+            </div>
+          )}
+          <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+            {filteredMarks.map((m) => {
+              const src = (mcqs || []).find((x) => x.qid === m.qid && (x.subject || "") === (m.subject || ""));
+              const open = openMark === m.id;
+              return (
+                <div key={m.id} style={{ ...S.card, padding: "12px 14px" }}>
+                  <div style={{ display: "flex", alignItems: "flex-start", gap: 8 }}>
+                    <div onClick={() => setOpenMark(open ? null : m.id)} style={{ flex: 1, minWidth: 0, cursor: "pointer" }}>
+                      <div style={{ fontSize: 14, lineHeight: 1.7 }}>
+                        <span style={{ background: "#FFE590", borderRadius: 3, padding: "1px 3px" }}>{m.text}</span>
+                      </div>
+                      <div style={{ fontSize: 11, color: C.inkSoft, marginTop: 6 }}>
+                        {[m.subject, m.tag, m.qid].filter(Boolean).join(" ")} ・ {m.at}{src ? "(タップで問題を表示)" : ""}
+                      </div>
+                    </div>
+                    <button onClick={() => onRemoveMark(m.id)} style={{ background: "none", border: "none", color: C.inkSoft, fontSize: 18, cursor: "pointer", padding: 2 }}>×</button>
+                  </div>
+                  {open && src && (
+                    <div style={{ marginTop: 10, borderTop: `1px dashed ${C.line}`, paddingTop: 10 }}>
+                      <div style={{ fontSize: 12.5, lineHeight: 1.6, color: C.inkSoft, marginBottom: 8 }}>{src.stem}</div>
+                      <div style={{ fontSize: 12, color: C.moss, fontWeight: 700, marginBottom: 4 }}>正解 {src.answer}</div>
+                      {src.expl && <div style={{ fontSize: 12.5, lineHeight: 1.65 }}>{src.expl}</div>}
+                    </div>
                   )}
                 </div>
-                <div style={{ fontSize: 13, color: C.inkSoft }}>{w.ja}</div>
+              );
+            })}
+            {filteredMarks.length === 0 && (
+              <div style={{ fontSize: 13, color: C.inkSoft, textAlign: "center", padding: 20 }}>
+                まだマークがありません。問題演習の解説でテキストを長押し選択→「🖍マーク」ボタンで追加できます。
               </div>
-              <button onClick={() => speakEn(w.en)} style={{ background: "none", border: "none", fontSize: 17, cursor: "pointer", padding: 4 }}>🔊</button>
-              <span style={S.tag(st[1], st[2])}>{st[0]}</span>
-              <button onClick={() => onRemove(w.id)} style={{ background: "none", border: "none", color: C.inkSoft, fontSize: 18, cursor: "pointer", padding: 4 }}>×</button>
-            </div>
-          );
-        })}
-        {filtered.length === 0 && <div style={{ fontSize: 13, color: C.inkSoft, textAlign: "center", padding: 20 }}>該当なし</div>}
-      </div>
+            )}
+          </div>
+        </>
+      )}
     </div>
   );
 }
@@ -748,9 +1274,10 @@ function RecordTab({ S, C, today, dailyLog, diary, onSave }) {
   const daySummary = (dateStr) => {
     const lg = dailyLog[dateStr] || {};
     const total = (lg.newN || 0) + (lg.revN || 0);
+    const mcqN = lg.mcqN || 0;
     const manual = getEntry(dateStr).items;
     const allItems = [...(lg.items || []), ...manual.filter((x) => !(lg.items || []).includes(x))];
-    if (total === 0 && allItems.length === 0) return null;
+    if (total === 0 && mcqN === 0 && allItems.length === 0) return null;
     const bySub = new Map();
     allItems.forEach((it) => {
       let sub = it;
@@ -771,7 +1298,7 @@ function RecordTab({ S, C, today, dailyLog, diary, onSave }) {
       const sorted = [...chs].sort((a, b) => (a === "巻" ? 1 : b === "巻" ? -1 : Number(a) - Number(b)));
       return `${abbrevSub(s)}${sorted.length ? " " + sorted.join("·") : ""}`;
     });
-    return { total, lines };
+    return { total, mcqN, lines };
   };
   const selLog = dailyLog[selDate] || { newN: 0, revN: 0, items: [] };
   const entry = getEntry(selDate);
@@ -836,9 +1363,9 @@ function RecordTab({ S, C, today, dailyLog, diary, onSave }) {
                     {sum.lines.length > 2 && (
                       <span style={{ fontSize: 8, lineHeight: 1.2, color: subColor }}>+{sum.lines.length - 2}</span>
                     )}
-                    {sum.total > 0 && (
+                    {(sum.total > 0 || sum.mcqN > 0) && (
                       <span style={{ fontSize: 8, lineHeight: 1.2, color: isSel ? "rgba(255,255,255,0.75)" : C.inkSoft }}>
-                        {sum.total}語
+                        {[sum.total > 0 ? `${sum.total}語` : "", sum.mcqN > 0 ? `${sum.mcqN}問` : ""].filter(Boolean).join(" ")}
                       </span>
                     )}
                   </>
@@ -852,7 +1379,7 @@ function RecordTab({ S, C, today, dailyLog, diary, onSave }) {
       <div style={{ ...S.card, borderTop: `4px solid ${C.tape}` }}>
         <div style={{ ...S.h, fontSize: 16, marginBottom: 8 }}>{selDate}</div>
         <div style={{ fontSize: 13, color: C.inkSoft, marginBottom: 8 }}>
-          実績: 新規 {selLog.newN || 0} 語 / 復習 {selLog.revN || 0} 語
+          実績: 新規 {selLog.newN || 0} 語 / 復習 {selLog.revN || 0} 語 / 演習 {selLog.mcqN || 0} 問{selLog.mcqN ? `(正解${selLog.mcqOK || 0})` : ""}
         </div>
         {(autoItems.length > 0 || entry.items.length > 0) && (
           <div style={{ display: "flex", flexWrap: "wrap", gap: 6, marginBottom: 10 }}>

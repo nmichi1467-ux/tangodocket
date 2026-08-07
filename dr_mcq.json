@@ -1,0 +1,1474 @@
+[
+ {
+  "qid": "DR-01",
+  "subject": "DR",
+  "tag": "Ch.1",
+  "stem": "A claimant sues a builder for £9,500 for defective work. The builder invites the claimant to mediate. The claimant's solicitor has advised that the claim is very strong, previous without prejudice negotiations collapsed when the builder denied all responsibility, and the likely cost of a full-day commercial mediation would be significant relative to the sum claimed. The claimant declines the invitation, recording these reasons in writing, and later wins at trial. Which of the following best describes the likely costs position?",
+  "options": {
+   "A": "The court is unlikely to penalise the claimant in costs, because the reasonableness of a refusal depends on factors such as the merits, the costs of the ADR relative to the claim, and whether ADR had a reasonable prospect of success after failed negotiations.",
+   "B": "The claimant will automatically be deprived of its costs, because a refusal to mediate is always unreasonable.",
+   "C": "The claimant is fully protected because it won at trial; a successful party can never be penalised in costs, since the general rule that the loser pays exists precisely to reward vindication at trial.",
+   "D": "The claimant will be penalised unless the builder's invitation was itself made without prejudice.",
+   "E": "The court cannot consider the refusal at all, because mediation discussions are privileged."
+  },
+  "answer": "A",
+  "expl": "正解A。拒否の合理性は多要素の総合判断——本問は「勝訴見込みが高い・交渉決裂済みで成功見込みが乏しい・費用が請求額に不均衡」と合理性側の要素が揃い、書面で理由も記録している。(講義ノートCh.1【ADR拒否の合理性】参照)",
+  "trans": "claimantが施工不良を理由にbuilder(建築業者)を£9,500で訴えている。builderはmediationを提案した。claimant側solicitorは請求が非常に強いと助言済みで、以前のwithout prejudice交渉はbuilderが全責任を否認して決裂しており、丸一日の商事mediationの費用見込みは請求額に比して相当大きい。claimantは招請を断り、その理由を書面に記録した上で、後にtrialで勝訴した。費用の帰趨として最も適切なものはどれか。",
+  "analysis": {
+   "B": "× 「拒否=常に不合理」は逆方向の過剰一般化。",
+   "C": "× 勝訴者でも不合理な拒否は費用で罰され得る(Ch.1の核心)。",
+   "D": "× invitationの形式は判断基準ではない。",
+   "E": "× 交渉内容は保護されても「ADRを拒否した事実」は費用の場面で考慮できる。",
+   "A": "○ 拒否の合理性は多要素の総合判断——本問は「勝訴見込みが高い・交渉決裂済みで成功見込みが乏しい・費用が請求額に不均衡」と合理性側の要素が揃い、書面で理由も記録している。"
+  }
+ },
+ {
+  "qid": "DR-02",
+  "subject": "DR",
+  "tag": "Ch.1",
+  "stem": "Two technology companies are in dispute over royalties under a licensing agreement. Both wish to preserve their commercial relationship, want the dispute resolved confidentially, and want the outcome decided by someone with specialist industry knowledge. Crucially, they want a decision that will be final and binding on them both, enforceable if necessary. Which dispute resolution process best meets the parties' stated requirements?",
+  "options": {
+   "A": "Mediation, because it is confidential and preserves commercial relationships, and any settlement the parties reach can afterwards be recorded in binding contractual form.",
+   "B": "Litigation in the High Court, with the case allocated to a specialist list.",
+   "C": "Arbitration, because it is confidential, allows the parties to choose a specialist decision-maker, and produces a final and binding award that can be enforced.",
+   "D": "Early neutral evaluation by a specialist, whose opinion will bind the parties.",
+   "E": "Negotiation between the parties' solicitors, recorded in a consent order."
+  },
+  "answer": "C",
+  "expl": "正解C。要求は①秘密性②専門家による判断③final and binding+執行可能——3つ揃えばarbitration。(講義ノートCh.1【ADR方式の選択助言】参照)",
+  "trans": "テクノロジー企業2社がライセンス契約のロイヤルティをめぐって争っている。両社とも取引関係の維持と紛争の秘密裏の解決を望み、業界の専門知識を持つ者に判断してほしいと考えている。決定的なのは、双方を拘束するfinal and bindingな判断で、必要なら執行できるものを求めている点である。当事者の要求に最も適う紛争解決手続はどれか。",
+  "analysis": {
+   "A": "× mediationは①を満たすが、合意に至らない限り拘束的な判断は出ない。",
+   "B": "× litigationは公開が原則で①が崩れる。",
+   "D": "× ENEの評価は拘束しない(和解を促す参考意見)。",
+   "E": "× negotiationは判断者不在——「決めてもらう」要求に応えない。",
+   "C": "○ 要求は①秘密性②専門家による判断③final and binding+執行可能——3つ揃えばarbitration。"
+  }
+ },
+ {
+  "qid": "DR-03",
+  "subject": "DR",
+  "tag": "Ch.1",
+  "stem": "A supply agreement between two companies contains a clause providing that 'any dispute arising under this agreement shall be referred to and finally resolved by arbitration'. A dispute arises and the customer, ignoring the clause, issues court proceedings. The supplier objects and applies to the court at the outset, before taking any step in the proceedings. Which of the following best describes how the court will respond?",
+  "options": {
+   "A": "The court will hear the claim, because access to the courts cannot be excluded by contract.",
+   "B": "The court will stay the proceedings so that the dispute can be arbitrated in accordance with the parties' agreement.",
+   "C": "The court will transfer the claim to a specialist court with arbitration experience.",
+   "D": "The court will strike out the claim and penalise the customer with indemnity costs automatically.",
+   "E": "The court will continue the claim but direct that an arbitrator sit as an assessor."
+  },
+  "answer": "B",
+  "expl": "正解B。有効な仲裁合意がある紛争が提訴されたら、相手方の申立てにより裁判所は手続をstayし、当事者を合意どおり仲裁へ送る——合意の尊重が原則。(講義ノートCh.1【仲裁条項と提訴】参照)",
+  "trans": "2社間の供給契約に「本契約から生じるあらゆる紛争は仲裁に付され、終局的に解決される」との条項がある。紛争が発生し、customerは条項を無視して提訴した。supplierは異議を述べ、手続上の応訴行為をとる前の冒頭で裁判所に申し立てた。裁判所の対応として最も適切なものはどれか。",
+  "analysis": {
+   "A": "× 仲裁合意は「排除」ではなく紛争解決方法の選択として尊重される。",
+   "C": "× そのような処理は存在しない。",
+   "E": "× そのような処理は存在しない。",
+   "D": "× stayが標準的な帰結で、strike out+自動的なindemnityではない。",
+   "B": "○ 有効な仲裁合意がある紛争が提訴されたら、相手方の申立てにより裁判所は手続をstayし、当事者を合意どおり仲裁へ送る——合意の尊重が原則。"
+  }
+ },
+ {
+  "qid": "DR-04",
+  "subject": "DR",
+  "tag": "Ch.2",
+  "stem": "A child was injured in a road traffic accident on 1 May 2018, when she was 14 years old. She turned 18 on 1 March 2022. No claim has yet been issued. Her parents ask when the limitation period for her personal injury claim will expire. Which of the following is correct?",
+  "options": {
+   "A": "1 May 2021, three years from the date of the accident.",
+   "B": "1 May 2024, six years from the date of the accident.",
+   "C": "1 March 2022, the date of her majority.",
+   "D": "1 March 2025, three years from her eighteenth birthday.",
+   "E": "There is no limitation period for claims by persons injured as children."
+  },
+  "answer": "D",
+  "expl": "正解D。子のPIは18歳到達から3年——事故日は起算点にならない(18歳まで時効は走らない)。18歳=2022年3月1日→満了は2025年3月1日。(講義ノートCh.2【子のPI時効起算】参照)",
+  "trans": "2018年5月1日、当時14歳の子が交通事故で負傷した。彼女は2022年3月1日に18歳になった。まだ提訴されていない。両親がPI請求の時効満了時期を尋ねている。正しいものはどれか。",
+  "analysis": {
+   "A": "× 成人の原則(事故・knowledgeから3年)を子に適用する罠。",
+   "B": "× PIに6年を使う誤り。人身傷害は3年(knowledge・未成年は18歳起算)——6年は契約・一般tortの数字。",
+   "C": "× 成人の日はスタートでありゴールではない。",
+   "E": "× 起算が繰り下がるだけで時効自体は存在する。",
+   "D": "○ 子のPIは18歳到達から3年——事故日は起算点にならない(18歳まで時効は走らない)。18歳=2022年3月1日→満了は2025年3月1日。"
+  }
+ },
+ {
+  "qid": "DR-05",
+  "subject": "DR",
+  "tag": "Ch.2",
+  "stem": "In 2012 an engineer negligently designed the foundations of a warehouse. Cracking caused by the defective design first occurred in 2015, but it was hidden and the owner could not reasonably have discovered it until a survey in January 2024 revealed both the damage and its cause. The owner wishes to sue the engineer in negligence for the cost of remedial works. Which of the following best describes the limitation position?",
+  "options": {
+   "A": "The claim is statute-barred, because more than six years have passed since the damage occurred in 2015, and in negligence time runs from the damage regardless of when the claimant discovered it.",
+   "B": "The claim is statute-barred, because more than six years have passed since the negligent design in 2012.",
+   "C": "The owner has six years from January 2024 in which to issue.",
+   "D": "The owner may issue at any time, because the damage was latent.",
+   "E": "The owner has three years from January 2024, subject to the longstop of fifteen years from the negligent act, so the claim must be issued by January 2027."
+  },
+  "answer": "E",
+  "expl": "正解E。latent damage(非PIのnegligence)は損害から6年 or knowledgeから3年の遅い方+行為から15年のlongstop。損害2015年→6年は2021年に満了済みだが、knowledge 2024年1月→3年ルートで2027年1月まで。longstop(2012+15=2027年)にも滑り込む。(講義ノートCh.2【latent damageの二重期間】参照)",
+  "trans": "2012年、engineerが倉庫の基礎を過失により設計した。欠陥設計による亀裂は2015年に最初に生じたが隠れており、所有者は2024年1月の調査で損害とその原因を初めて合理的に発見できた。所有者は修補費用についてnegligenceでengineerを訴えたい。時効の状況として最も適切なものはどれか。",
+  "analysis": {
+   "A": "× 二重期間の片方しか見ていない。",
+   "B": "× 二重期間の片方しか見ていない。",
+   "C": "× knowledgeルートは3年(6年ではない)。",
+   "D": "× latentでもlongstopが上限を画する。",
+   "E": "○ latent damage(非PIのnegligence)は損害から6年 or knowledgeから3年の遅い方+行為から15年のlongstop。損害2015年→6年は2021年に満了済みだが、knowledge 2024年1月→3年ルートで2027年1月まで。longstop(2012+15=2027年)にも滑り込む。"
+  }
+ },
+ {
+  "qid": "DR-06",
+  "subject": "DR",
+  "tag": "Ch.2",
+  "stem": "A solicitor is instructed in a substantial contract claim two weeks before the six-year limitation period expires. The pre-action protocol steps, including a letter of claim and a proper period for response, cannot possibly be completed in that time. Which of the following best describes what the solicitor should do?",
+  "options": {
+   "A": "Issue the claim form before the limitation period expires to protect the claim, and then invite the court to stay proceedings while the protocol steps are completed.",
+   "B": "Complete the protocol first, because the court will refuse to issue a claim where the protocol has not been followed.",
+   "C": "Write to the defendant asking it to agree that the limitation period will not apply.",
+   "D": "Issue the claim only after obtaining the court's advance permission to dispense with the protocol.",
+   "E": "Send the letter of claim and rely on it to stop the limitation clock, because time ceases to run once the defendant has formal notice of the claim and of the claimant's intention to issue."
+  },
+  "answer": "A",
+  "expl": "正解A。時効>プロトコル——満了が迫れば先にissueして請求を保全し(protective issue)、その後stayを求めてプロトコルを履践する。(講義ノートCh.2【protective issue】参照)",
+  "trans": "solicitorが、6年の時効満了の2週間前に相当規模の契約請求を受任した。letter of claimと応答期間を含むプロトコルの手順をこの期間内に完了することは不可能である。solicitorがとるべき行動として最も適切なものはどれか。",
+  "analysis": {
+   "B": "× プロトコル未了は提訴の障害にならない(裁判所はissueを拒めない)。",
+   "C": "× standstill合意は相手の同意次第で、2週間の状況で頼る戦略ではない(打診はあり得るが「best」ではない)。",
+   "D": "× プロトコルを免除する「事前許可」という制度は存在しない——不遵守の当否は後の費用の場面で評価されるだけで、提訴自体は妨げられない。",
+   "E": "× 時効を止めるのはissueのみ——letter of claimに停止効はない。",
+   "A": "○ 時効>プロトコル——満了が迫れば先にissueして請求を保全し(protective issue)、その後stayを求めてプロトコルを履践する。"
+  }
+ },
+ {
+  "qid": "DR-07",
+  "subject": "DR",
+  "tag": "Ch.2",
+  "stem": "A claimant issued proceedings without sending any letter of claim or engaging with the pre-action protocol at all, despite there being ample time to do so. The claimant went on to win at trial and was awarded damages and interest. Which of the following orders is the court most likely to consider in response to the protocol breach?",
+  "options": {
+   "A": "Setting aside the judgment, because compliance with the protocol is a condition of a valid claim.",
+   "B": "Depriving the claimant of interest for some or all of the pre-judgment period, or awarding interest at a reduced rate, and reflecting the breach when making orders for costs.",
+   "C": "Striking out the claim retrospectively.",
+   "D": "Ordering a new trial at which the protocol steps must first be performed.",
+   "E": "No order, because protocol breaches become irrelevant once judgment is given: the purpose of the protocols is to promote settlement before proceedings, and that purpose can no longer be served after trial."
+  },
+  "answer": "B",
+  "expl": "正解B。プロトコル違反の制裁は費用と利息で調整する——勝訴者でも利息の剥奪・減額、費用面での不利益(場合により相手はbase rate+10%上限の加重利息)があり得る。(講義ノートCh.2【プロトコル制裁の種類】参照)",
+  "trans": "claimantは、十分な時間があったにもかかわらずletter of claimも送らずプロトコルに一切関与しないまま提訴し、trialで勝訴して損害賠償と利息を認容された。プロトコル違反への対応として裁判所が最も検討しそうな命令はどれか。",
+  "analysis": {
+   "A": "× 遵守は請求の有効要件ではない——判決を巻き戻す装置ではない。",
+   "C": "× 遵守は請求の有効要件ではない——判決を巻き戻す装置ではない。",
+   "D": "× 「プロトコル履践後の再trial」という装置は存在しない——違反は判決の効力に触れず、費用・利息で清算される。",
+   "E": "× 違反は「行状」として判決後の費用段階でこそ効いてくる(Ch.10のCPR 44.4)。",
+   "B": "○ プロトコル違反の制裁は費用と利息で調整する——勝訴者でも利息の剥奪・減額、費用面での不利益(場合により相手はbase rate+10%上限の加重利息)があり得る。"
+  }
+ },
+ {
+  "qid": "DR-08",
+  "subject": "DR",
+  "tag": "Ch.2",
+  "stem": "A claimant sends a detailed letter of claim in a complex professional negligence dispute involving voluminous documents and several experts. The defendant acknowledges the letter promptly and states that a full response will take time to prepare. Under the Practice Direction on Pre-Action Conduct and Protocols, within what period should the defendant provide its full response?",
+  "options": {
+   "A": "14 days in every case, regardless of complexity.",
+   "B": "28 days, matching the period for filing a defence.",
+   "C": "A reasonable period: 14 days in a straightforward case, and up to 3 months in a very complex one.",
+   "D": "6 months, matching the period of validity of a claim form for service out of the jurisdiction.",
+   "E": "There is no expected period; the defendant may respond whenever it chooses."
+  },
+  "answer": "C",
+  "expl": "正解C。提訴前の応答はreasonable period——単純なら14日・きわめて複雑なら最大3ヶ月という幅で示されている。本問(専門過誤・大量文書・複数expert)は3ヶ月側。(講義ノートCh.2【複雑事件の応答期間】参照)",
+  "trans": "claimantが、大量の文書と複数のexpertが関わる複雑な専門家過誤紛争で詳細なletter of claimを送った。defendantは速やかに受領を確認し、完全な応答には時間を要すると述べた。提訴前行為に関するPractice Directionの下で、defendantはどの期間内に完全な応答をすべきか。",
+  "analysis": {
+   "A": "× 14日は単純事件の目安にすぎない。",
+   "B": "× defenceの期限(提訴後)との混同。",
+   "D": "× 6ヶ月は国外送達用のclaim form有効期間の数字——提訴前の応答期間として登場する場面はない。",
+   "E": "× 無応答・遅延はプロトコル違反として制裁の対象。",
+   "C": "○ 提訴前の応答はreasonable period——単純なら14日・きわめて複雑なら最大3ヶ月という幅で示されている。本問(専門過誤・大量文書・複数expert)は3ヶ月側。"
+  }
+ },
+ {
+  "qid": "DR-09",
+  "subject": "DR",
+  "tag": "Ch.2",
+  "stem": "In June 2018 a storage company breached its contract with a wine merchant by switching off temperature control in a warehouse. The wine stored there was gradually ruined, but measurable damage to the stock first occurred in February 2019. The merchant can plead its claim either in contract or in the tort of negligence. It is now March 2025 and no proceedings have been issued. Which of the following best describes the limitation position?",
+  "options": {
+   "A": "Both claims are statute-barred, because more than six years have passed since the breach.",
+   "B": "Both claims remain live, because time runs from the damage in both contract and tort.",
+   "C": "The contract claim remains live but the tort claim is statute-barred, because in contract time runs from the damage caused by the breach, which continued into 2019, whereas in tort time runs from the negligent act itself in June 2018.",
+   "D": "The contract claim is statute-barred, because time ran from the breach in June 2018; the tort claim remains live, because time runs from the damage in February 2019 and expires in February 2025 — but only if issued before that date; by March 2025 both are barred.",
+   "E": "Limitation has not started to run because the merchant has not yet obtained an expert report."
+  },
+  "answer": "D",
+  "expl": "正解D。起算点の対比が本問の全て:契約=breachの日(2018年6月→2024年6月満了)/tort=損害発生の日(2019年2月→2025年2月満了)。現在は2025年3月——どちらも満了済みだが、理由の構造(契約が先に死に、tortが1年弱長く生きた)を正確に追えるかを問う。(講義ノートCh.2【契約vs不法行為の起算点】参照)",
+  "trans": "2018年6月、倉庫会社がワイン商との契約に違反し、倉庫の温度管理を停止した。保管中のワインは徐々に劣化したが、在庫への測定可能な損害が最初に生じたのは2019年2月である。ワイン商は契約でもnegligenceでも構成できる。現在は2025年3月で、まだ提訴されていない。時効の状況として最も適切なものはどれか。",
+  "analysis": {
+   "A": "× tortの起算を breachに置く誤り。",
+   "B": "× 片方または両方の起算点の取り違え。",
+   "C": "× 片方または両方の起算点の取り違え。",
+   "E": "× knowledgeが問題になるのはlatentの場面——本問の損害は2019年から明白。",
+   "D": "○ 起算点の対比が本問の全て:契約=breachの日(2018年6月→2024年6月満了)/tort=損害発生の日(2019年2月→2025年2月満了)。現在は2025年3月——どちらも満了済みだが、理由の構造(契約が先に死に、tortが1年弱長く生きた)を正確に追えるかを問う。"
+  }
+ },
+ {
+  "qid": "DR-10",
+  "subject": "DR",
+  "tag": "Ch.3",
+  "stem": "A claimant intends to issue a claim for £95,000 in damages for breach of a commercial contract, together with contractual interest of £8,500 accrued to date and fixed commencement costs. The claimant's director would prefer the prestige of High Court proceedings. Which of the following best describes where the claim must be issued?",
+  "options": {
+   "A": "In the High Court, because the total sought including interest exceeds £100,000, and it is the amount for which the claimant will actually be seeking judgment that determines where the proceedings must be issued.",
+   "B": "In either court, because the claimant has a free choice where the value is close to the threshold.",
+   "C": "In the County Court, because the value of the claim for these purposes is £95,000, disregarding interest and costs, and a non-personal-injury claim for less than £100,000 must be issued in the County Court.",
+   "D": "In the High Court, because commercial contract claims belong in the Business and Property Courts.",
+   "E": "In the County Court, because all contract claims must start there regardless of value."
+  },
+  "answer": "C",
+  "expl": "正解C。裁判所選択の価額は利息・費用を除外して計算——£95,000County必須。(講義ノートCh.3【裁判所選択の価額計算】参照)",
+  "trans": "claimantが商事契約違反の損害£95,000に加え、既発生の契約利息£8,500と固定開始費用を請求して提訴しようとしている。claimantのdirectorはHigh Courtの威信を好んでいる。提訴すべき裁判所として最も適切なものはどれか。",
+  "analysis": {
+   "A": "× 利息込みで閾値を跨がせる定番の罠。",
+   "B": "× £100,000未満に選択の自由はない。",
+   "D": "× 事件類型の好みは強制管轄を覆さない。",
+   "E": "× £100,000以上ならHigh Courtも選べる——「常にCounty」ではない。",
+   "C": "○ 裁判所選択の価額は利息・費用を除外して計算——£95,000County必須。"
+  }
+ },
+ {
+  "qid": "DR-11",
+  "subject": "DR",
+  "tag": "Ch.3",
+  "stem": "A claim form is posted to the defendant by first class post on Thursday 6 March. The following Monday is an ordinary business day. On what day is the claim form deemed served?",
+  "options": {
+   "A": "Friday 7 March, the day after posting.",
+   "B": "Monday 10 March, the second business day after the step of posting was completed.",
+   "C": "Saturday 8 March, two calendar days after posting.",
+   "D": "Thursday 6 March, the day of posting.",
+   "E": "Whenever the defendant in fact receives and reads it, because service exists to bring proceedings to a defendant's attention and cannot be complete before that has actually happened."
+  },
+  "answer": "B",
+  "expl": "正解B。claim formのdeemed serviceは「必要なステップ完了後の第2営業日」——木曜投函なら金(1)→月(2)で月曜(土日は営業日でない)。(講義ノートCh.3【deemed service(claim form)】参照)",
+  "trans": "claim formが3月6日(木)にdefendantへ第一種郵便で投函された。翌週の月曜は通常の営業日である。claim formはいつdeemed servedとなるか。",
+  "analysis": {
+   "C": "× 暦日で数えた誤り。deemed serviceは営業日ベースで、土曜は営業日に含まれない。",
+   "E": "× deemed serviceは実際の受領と無関係の擬制——ここが制度の核心。",
+   "B": "○ claim formのdeemed serviceは「必要なステップ完了後の第2営業日」——木曜投函なら金(1)→月(2)で月曜(土日は営業日でない)。",
+   "A": "× 数字の創作。「翌日」というルールはclaim formのdeemed serviceに存在しない——第2営業日が正しい。",
+   "D": "× 投函日=送達日とする誤り。投函は「必要なステップ」の完了にすぎず、送達の擬制はその後の第2営業日に生じる。"
+  }
+ },
+ {
+  "qid": "DR-12",
+  "subject": "DR",
+  "tag": "Ch.3",
+  "stem": "Separately from the claim form, a defendant's solicitor personally delivers a defence to the claimant's solicitor's office at 4.45 p.m. on Friday 14 June. Monday 17 June is an ordinary business day. On what day is the defence deemed served?",
+  "options": {
+   "A": "Friday 14 June, because personal delivery takes effect immediately.",
+   "B": "Saturday 15 June.",
+   "C": "Sunday 16 June.",
+   "D": "Tuesday 18 June, the second business day after delivery, because the deemed service rules apply a uniform two-business-day period to every document, whatever the method of service used.",
+   "E": "Monday 17 June, because a document (other than a claim form) delivered after 4.30 p.m. on a business day is treated as served on the next business day."
+  },
+  "answer": "E",
+  "expl": "正解E。claim form以外の文書は別ルール:手交・fax等は当日扱いだが、営業日の4:30pmを過ぎれば翌営業日に繰り越し。金曜16:45→月曜。(講義ノートCh.3【deemed service(その他文書・4:30pm)】参照)",
+  "trans": "claim formとは別に、defendant側solicitorが6月14日(金)の午後4時45分にdefenceをclaimant側solicitorの事務所へ手交した。6月17日(月)は通常の営業日である。defenceはいつdeemed servedとなるか。",
+  "analysis": {
+   "A": "× 4:30pmの門限を見落とす罠。",
+   "D": "× 「第2営業日」はclaim form(と郵便)のルール——文書種別の取り違え。時刻の門限があるのは「その他文書」、時刻不問なのがclaim form、という対比で記憶。",
+   "E": "○ claim form以外の文書は別ルール:手交・fax等は当日扱いだが、営業日の4:30pmを過ぎれば翌営業日に繰り越し。金曜16:45→月曜。",
+   "B": "× 暦日で数えた誤り。deemed serviceの計算は営業日ベースで、土曜は営業日ではない。",
+   "C": "× 同じく暦日計算の誤り。日曜も営業日ではなく、擬制送達日にはなり得ない。"
+  }
+ },
+ {
+  "qid": "DR-13",
+  "subject": "DR",
+  "tag": "Ch.3",
+  "stem": "A claim form was issued on 1 February, shortly before the expiry of the limitation period, which has since passed. The claimant's solicitor overlooked the file and took no steps to serve. It is now mid-June and the claim form has not been served. Which of the following best describes the position?",
+  "options": {
+   "A": "The four-month period for service has expired; an application to extend made now will very likely fail because there is no good reason for the failure to serve, and a fresh claim would be statute-barred.",
+   "B": "The claim form remains valid for six months, so service can still be effected in time.",
+   "C": "The court will extend time automatically, because limitation has expired and the claimant would otherwise be prejudiced: the overriding objective requires claims to be decided on their merits rather than lost to procedural slips.",
+   "D": "The claimant may simply issue and serve a fresh claim form.",
+   "E": "Service can be effected at any time provided the defendant is not prejudiced."
+  },
+  "answer": "A",
+  "expl": "正解A。有効期間は国内送達で4ヶ月(2月1日issue→6月1日満了)。延長申請は原則期間内に行うべきで、徒過後は「裁判所の送達不奏功・あらゆる合理的努力」級の事情がないと通らない——放置(oversight)はその対極。時効も満了済みなので新訴もbarred——詰み筋を正確に描けるかを問う。(講義ノートCh.3【claim form有効期間の徒過】参照)",
+  "trans": "claim formが時効満了の直前である2月1日にissueされ、その後時効は経過した。claimant側solicitorはファイルを見落とし、送達の手段を何もとらなかった。現在は6月中旬で、claim formは未送達である。状況として最も適切なものはどれか。",
+  "analysis": {
+   "B": "× 6ヶ月の有効期間は国外送達の場合——国内送達は4ヶ月で、既に満了している。",
+   "C": "× 自動延長はない(むしろ時効経過後の延長は被告の時効利益を奪うため厳格)。",
+   "D": "× 時効満了で新訴は死んでいる。",
+   "A": "○ 有効期間は国内送達で4ヶ月(2月1日issue→6月1日満了)。延長申請は原則期間内に行うべきで、徒過後は「裁判所の送達不奏功・あらゆる合理的努力」級の事情がないと通らない——放置(oversight)はその対極。時効も満了済みなので新訴もbarred——詰み筋を正確に描けるかを問う。",
+   "E": "× 「不利益がなければいつでも送達できる」というルールはない——4ヶ月の有効期間は絶対的な枠で、相手方のprejudiceの有無で伸縮しない。"
+  }
+ },
+ {
+  "qid": "DR-14",
+  "subject": "DR",
+  "tag": "Ch.3",
+  "stem": "Proceedings for defective building work are underway against a main contractor. The limitation period has not yet expired. The claimant now wishes to add the project architect as a second defendant, believing the design also contributed to the losses. The architect does not consent. Which of the following best describes the position?",
+  "options": {
+   "A": "The architect cannot be added, because parties cannot be added once proceedings have been issued.",
+   "B": "The architect can be added without any application, because limitation has not expired.",
+   "C": "The architect can only be added if the claim against the contractor is discontinued.",
+   "D": "The claimant must apply for the court's permission, which may be granted if adding the architect is desirable so that the court can resolve all the matters in dispute.",
+   "E": "The claimant must issue separate proceedings against the architect; joinder is never possible after issue, because a defendant is entitled to know from the outset exactly who is claiming against it."
+  },
+  "answer": "D",
+  "expl": "正解D。時効内の追加・交替の基準はdesirable(争点全体の解決に望ましいか)——ただし裁判所の許可は常に必要(当事者の変更はCh.5のamendment③類型)。(講義ノートCh.3【時効内の当事者追加】参照)",
+  "trans": "施工不良をめぐる手続が元請業者に対して係属中で、時効はまだ満了していない。claimantは、設計も損失に寄与したと考え、プロジェクトのarchitectを第2被告として追加したい。architectは同意していない。状況として最も適切なものはどれか。",
+  "analysis": {
+   "B": "× 時効内でも無許可では追加できない——「時効内=自由」の罠。",
+   "A": "× 追加は可能(むしろ一回的解決のために推奨される場面)。",
+   "E": "× 追加は可能(むしろ一回的解決のために推奨される場面)。",
+   "C": "× 元請への請求の取下げは追加の条件ではない——両者を共同被告として一回で審理することこそ追加の狙い。",
+   "D": "○ 時効内の追加・交替の基準はdesirable(争点全体の解決に望ましいか)——ただし裁判所の許可は常に必要(当事者の変更はCh.5のamendment③類型)。"
+  }
+ },
+ {
+  "qid": "DR-15",
+  "subject": "DR",
+  "tag": "Ch.3",
+  "stem": "A claimant wishes to sue a manufacturer incorporated and based in Germany for breach of a contract governed by English law, with proceedings to be issued in England. Which of the following best describes the service position?",
+  "options": {
+   "A": "The claim form may be served in Germany as of right, because the contract is governed by English law and a defendant who agrees to an English governing law clause submits to service of English proceedings.",
+   "B": "Service abroad is impossible; the manufacturer must be sued in Germany.",
+   "C": "The claimant will generally need the court's permission to serve the claim form out of the jurisdiction, and the claim form will then be valid for service for six months.",
+   "D": "The claim form must be served within four months, the same period as for service within the jurisdiction.",
+   "E": "Permission is unnecessary provided the claim form is translated into German."
+  },
+  "answer": "C",
+  "expl": "正解C。国外送達は原則裁判所の許可を要し、claim formの有効期間は6ヶ月に伸びる(国内4ヶ月との対比)。(講義ノートCh.3【国外送達】参照)",
+  "trans": "claimantが、英国法準拠の契約違反を理由に、ドイツで設立されドイツに本拠を置くmanufacturerをイングランドで提訴したい。送達の状況として最も適切なものはどれか。",
+  "analysis": {
+   "A": "× 準拠法は許可審査の考慮要素になり得るが「as of right」にはしない。",
+   "D": "× 4ヶ月は国内送達の有効期間——国外送達の許可が出れば6ヶ月に伸びる。",
+   "E": "× 翻訳は送達方法の問題で許可を代替しない。",
+   "C": "○ 国外送達は原則裁判所の許可を要し、claim formの有効期間は6ヶ月に伸びる(国内4ヶ月との対比)。",
+   "B": "× 国外の被告も英国手続で訴えられる(だからこそ許可制度がある)。「ドイツで訴えるしかない」は管轄と送達の混同。"
+  }
+ },
+ {
+  "qid": "DR-16",
+  "subject": "DR",
+  "tag": "Ch.4",
+  "stem": "Particulars of claim are deemed served on the defendant on 3 March. On 10 March the defendant files an acknowledgment of service indicating an intention to defend. By when must the defence be filed?",
+  "options": {
+   "A": "17 March, 14 days after service of the particulars.",
+   "B": "24 March, 14 days after the acknowledgment of service.",
+   "C": "7 April, 28 days after the acknowledgment of service.",
+   "D": "10 April, 28 days after the defendant instructed solicitors.",
+   "E": "31 March, 28 days after service of the particulars of claim."
+  },
+  "answer": "E",
+  "expl": "正解E。AoSを出すとdefence期限は「particulars送達から28日」に伸びる——起点は送達日(3月3日)であってAoSの日ではない。3月3日+28日=3月31日。(講義ノートCh.4【AoS後の28日計算】参照)",
+  "trans": "particulars of claimが3月3日にdefendantへdeemed servedされた。3月10日、defendantは防御の意思を示すacknowledgment of serviceを提出した。defenceはいつまでに提出しなければならないか。",
+  "analysis": {
+   "B": "× 起点をAoSに置き換える最頻出の罠。",
+   "C": "× 起点をAoSに置き換える最頻出の罠。",
+   "A": "× AoSを出さなかった場合の第1期限。数字(14/28)より起点で切る問題。",
+   "E": "○ AoSを出すとdefence期限は「particulars送達から28日」に伸びる——起点は送達日(3月3日)であってAoSの日ではない。3月3日+28日=3月31日。",
+   "D": "× solicitor選任の日は手続上の起点として一切機能しない——完全な創作肢。"
+  }
+ },
+ {
+  "qid": "DR-17",
+  "subject": "DR",
+  "tag": "Ch.4",
+  "stem": "A defendant's defence is due on 31 March. The defendant's solicitor asks the claimant's solicitor to agree an extension because counsel needs time to advise on a complex limitation point. The claimant is content to agree a generous extension. Which of the following best describes what the parties can achieve by agreement alone?",
+  "options": {
+   "A": "Any extension of any length, provided both parties consent in writing, because the timetable for statements of case belongs to the parties until the court begins active case management.",
+   "B": "An extension of up to 28 further days, with the defendant notifying the court in writing of the agreed extension.",
+   "C": "An extension of up to 14 further days only.",
+   "D": "No extension at all; only the court can extend the time for a defence.",
+   "E": "An extension of up to 56 further days from the original deadline."
+  },
+  "answer": "B",
+  "expl": "正解B。当事者の合意で伸ばせるのはさらに最大28日(裁判所への書面通知が必要)——それを超える延長は裁判所の命令による。(講義ノートCh.4【合意延長の上限】参照)",
+  "trans": "defendantのdefence期限は3月31日である。defendant側solicitorは、counselが複雑な時効の論点について助言する時間を要するとして、claimant側solicitorに延長の合意を求めた。claimantは寛大な延長に応じる意向である。当事者の合意のみで達成できることとして最も適切なものはどれか。",
+  "analysis": {
+   "A": "× 「合意すれば無制限」は事件管理の統制(Ch.7)と矛盾。",
+   "E": "× 「最大56日」は送達日から見た総日数(28+28)——「さらに56日」と読ませる混同狙い。",
+   "B": "○ 当事者の合意で伸ばせるのはさらに最大28日(裁判所への書面通知が必要)——それを超える延長は裁判所の命令による。",
+   "C": "× 14日という上限は存在しない——合意延長の上限は28日。defenceの第1期限(14日)からの数字借用。",
+   "D": "× 当事者の合意による延長は明文で認められている(28日まで)——「裁判所のみ」は制度の否定。"
+  }
+ },
+ {
+  "qid": "DR-18",
+  "subject": "DR",
+  "tag": "Ch.4",
+  "stem": "A defendant filed an acknowledgment of service but the time for filing a defence has now expired without a defence being filed. Before the claimant requests default judgment, the defendant issues an application for summary judgment on the claim, which is pending. The claimant now applies for judgment in default. Which of the following best describes the position?",
+  "options": {
+   "A": "Default judgment cannot be entered while the defendant's summary judgment application is pending.",
+   "B": "Default judgment will be entered automatically by the court of its own motion, because the deadline has passed.",
+   "C": "Default judgment must be entered, because the defence deadline has expired and nothing else is relevant.",
+   "D": "Default judgment is unavailable because the defendant filed an acknowledgment of service.",
+   "E": "The claimant must first obtain the court's permission to request default judgment in every case."
+  },
+  "answer": "A",
+  "expl": "正解A。SJ・strike outの申立てが係属している間はdefault judgmentを入れられない——阻止事由の代表。(講義ノートCh.4【default judgmentの阻止事由】参照)",
+  "trans": "defendantはacknowledgment of serviceを提出したが、defence提出期限はdefenceのないまま経過した。claimantがdefault judgmentを申請する前に、defendantは請求に対するsummary judgmentの申立てをissueし、これが係属中である。claimantがdefault judgmentを求めた。状況として最も適切なものはどれか。",
+  "analysis": {
+   "B": "× defaultは職権では入らない(claimantのrequest/application)。",
+   "C": "× 期限徒過は必要条件で十分条件ではない。",
+   "D": "× AoSだけではdefenceの欠缺を治癒しない。",
+   "E": "× 金銭請求の定型はrequestで足り、常時許可制ではない。",
+   "A": "○ SJ・strike outの申立てが係属している間はdefault judgmentを入れられない——阻止事由の代表。"
+  }
+ },
+ {
+  "qid": "DR-19",
+  "subject": "DR",
+  "tag": "Ch.4",
+  "stem": "Particulars of claim were deemed served on 5 June. The defendant filed an acknowledgment of service on 12 June, extending the time for the defence to 3 July. The claimant's solicitor, miscalculating the deadline, requested and obtained default judgment on 25 June. Which of the following best describes the defendant's position on setting aside?",
+  "options": {
+   "A": "The court has a discretion to set the judgment aside if the defendant shows a real prospect of successfully defending.",
+   "B": "The judgment can only be set aside if the defendant acted promptly and offers to pay money into court.",
+   "C": "The court must set the judgment aside, because it was wrongly entered before the time for filing the defence had expired.",
+   "D": "The judgment stands, because the defendant should have filed its defence sooner.",
+   "E": "The defendant's only remedy is to appeal against the judgment."
+  },
+  "answer": "C",
+  "expl": "正解C。defence期限(7月3日)がまだ走っている6月25日の default judgmentはwrongly entered——裁判所はmustで取り消す(裁量の余地なし)。(講義ノートCh.4【set aside(mandatory)】参照)",
+  "trans": "particulars of claimが6月5日にdeemed servedされた。defendantは6月12日にacknowledgment of serviceを提出し、defence期限は7月3日に伸長された。claimant側solicitorは期限を計算違いし、6月25日にdefault judgmentを申請して取得した。set asideに関するdefendantの立場として最も適切なものはどれか。",
+  "analysis": {
+   "A": "× real prospect+promptnessはdiscretionaryルートの基準——正しく入った判決の場合。二本立ての選別(要件を満たさず入った=must/正しく入った=may)がこの論点の全て。",
+   "E": "× 救済はset asideの申立てで、上訴ではない。",
+   "C": "○ defence期限(7月3日)がまだ走っている6月25日の default judgmentはwrongly entered——裁判所はmustで取り消す(裁量の余地なし)。",
+   "B": "× promptness+納付という条件はdiscretionaryルートでも正確でない上、本問はそもそもmandatoryルート——裁量の条件を持ち込む時点で誤り。",
+   "D": "× 「もっと早く出すべきだった」は期限内の被告に向ける非難として成立しない——期限は7月3日までまだ走っている。"
+  }
+ },
+ {
+  "qid": "DR-20",
+  "subject": "DR",
+  "tag": "Ch.4",
+  "stem": "Default judgment was regularly entered against a defendant who had failed to respond because the claim form, properly served at his last known address, was not forwarded while he was working abroad. He learned of the judgment on 1 August. He has a strong defence on the documents, but he did not apply to set aside until mid-October, offering no explanation for the delay. Which of the following best describes how the court is likely to approach the application?",
+  "options": {
+   "A": "The judgment must be set aside, because the defendant never actually received the claim form.",
+   "B": "The application will succeed automatically because the defence has real merit: once a real prospect of successfully defending is shown, the court has no residual discretion to leave a regular default judgment standing.",
+   "C": "The application must fail, because delay is an absolute bar to setting aside.",
+   "D": "The court has a discretion: the defence has a real prospect of success, but the unexplained ten-week delay in applying counts significantly against the defendant and may defeat the application.",
+   "E": "The court will set aside the judgment only if the claimant consents."
+  },
+  "answer": "D",
+  "expl": "正解D。正しく入った判決(送達は適法)→discretionaryルート:real prospect+promptness。実体の強さがあっても10週間の無説明の遅delayが致命傷になり得る——「本案が強ければ救われる」を切る問題。(講義ノートCh.4【set aside(discretionary・promptness)】参照)",
+  "trans": "適法に送達されたclaim formが、defendantの海外勤務中に転送されなかったため、defendantは応答せず、default judgmentが正規に登録された。彼は8月1日に判決を知った。書証上は有力なdefenceがあるが、set asideの申立ては10月中旬までせず、遅延の説明もない。裁判所のアプローチとして最も適切なものはどれか。",
+  "analysis": {
+   "A": "× deemed serviceの世界では現実の不受領はwrongly enteredにしない。",
+   "C": "× 絶対的障害ではなく重要考慮要素。",
+   "D": "○ 正しく入った判決(送達は適法)→discretionaryルート:real prospect+promptness。実体の強さがあっても10週間の無説明の遅delayが致命傷になり得る——「本案が強ければ救われる」を切る問題。",
+   "B": "× real prospectの立証は認容を「自動」にしない——promptnessを含む裁量考慮が残る。本問はまさにそこで沈む事案。",
+   "E": "× set asideに相手方の同意は不要——裁判所の裁量判断であり、claimantが拒めば終わりという構造ではない。"
+  }
+ },
+ {
+  "qid": "DR-21",
+  "subject": "DR",
+  "tag": "Ch.4",
+  "stem": "A claimant sues for a specified debt of £20,000. Within the response period the defendant files an admission of £12,000, denying the balance, and offers to pay the admitted sum by monthly instalments. Which of the following best describes what happens next?",
+  "options": {
+   "A": "Judgment is entered automatically for £12,000 and the claim continues for the balance without any input from the claimant, because an admission takes effect as a judgment as soon as it is filed.",
+   "B": "The claim is stayed until the £12,000 is paid in full.",
+   "C": "The defendant's instalment offer binds the claimant once filed.",
+   "D": "The admission is ignored unless the claimant accepts it within 7 days.",
+   "E": "The claimant chooses whether to accept the part admission in satisfaction of the whole claim; if the claimant does not accept it, the proceedings continue as a defended claim."
+  },
+  "answer": "E",
+  "expl": "正解E。一部admissionはclaimantに選択権——全部の満足として受け入れるか(受ければ支払条件の判断へ)、拒んでdefended claimとして続行するか。(講義ノートCh.4【一部admissionの処理】参照)",
+  "trans": "claimantが£20,000の確定額債権を請求している。応答期間内にdefendantは£12,000のadmissionを提出し、残額を否認して、認めた額の月賦払いを提案した。次に起こることとして最も適切なものはどれか。",
+  "analysis": {
+   "A": "× claimantの応答を経ずに自動では進まない。",
+   "C": "× 分割提案の当否はclaimant(争えば裁判所)が判断する——提案が拘束するのではない。",
+   "E": "○ 一部admissionはclaimantに選択権——全部の満足として受け入れるか(受ければ支払条件の判断へ)、拒んでdefended claimとして続行するか。",
+   "B": "× 一部admissionに手続全体をstayする効果はない——争いのある残部は通常どおり進行する。",
+   "D": "× 「7日以内に受諾しなければ無視」というルールはない——claimantの選択に7日の期限は付されていない。"
+  }
+ },
+ {
+  "qid": "DR-22",
+  "subject": "DR",
+  "tag": "Ch.5",
+  "stem": "A pedestrian is preparing particulars of claim in negligence against a driver following a collision at a pelican crossing. Her solicitor drafts the parties' details and a chronology, then turns to the substantive allegations. Which sequence of substantive elements must the particulars plead for this claim?",
+  "options": {
+   "A": "The contract between the parties, its terms, the breach, and the loss.",
+   "B": "The duty of care owed to the claimant, the breach of that duty, causation linking the breach to the damage, the damage itself, and any claim for interest.",
+   "C": "The breach and damage only, since duty and causation are presumed in road cases where a collision between a driver and a pedestrian at a designated crossing speaks for itself.",
+   "D": "The damage and interest only, since liability is a matter for evidence at trial.",
+   "E": "The duty and breach only; causation need never be pleaded in tort claims."
+  },
+  "answer": "B",
+  "expl": "正解B。tort型の骨格=duty→breach→causation→damage→interest——実体法の成立要件が書面の目次になる。(講義ノートCh.5【tort型particularsの構成】参照)",
+  "trans": "歩行者が、pelican crossing(押ボタン式横断歩道)での衝突についてdriverに対するnegligenceのparticulars of claimを準備している。solicitorは当事者の詳細と時系列を起案し、実体的主張に取りかかる。この請求でparticularsが主張すべき実体的要素の並びはどれか。",
+  "analysis": {
+   "C": "× 交通事故でもdutyとcausationは主張事項(推定で省略しない)。",
+   "E": "× causationの記載を免れるのはstrict liabilityの不法行為だけ——negligenceは免れない。",
+   "A": "× 契約型の骨格(契約とterms・breach)との入れ替え——本問はnegligence請求で、契約の主張は登場しない。",
+   "B": "○ tort型の骨格=duty→breach→causation→damage→interest——実体法の成立要件が書面の目次になる。",
+   "D": "× 「損害と利息だけ書けばよい」はparticularsの機能(被告が番号ごとに応答できる形で主張を整列させる)の否定——責任の要素も主張事項。"
+  }
+ },
+ {
+  "qid": "DR-23",
+  "subject": "DR",
+  "tag": "Ch.5",
+  "stem": "A supplier sues for an unpaid invoice of £30,000. The supply contract provides: 'Overdue sums shall bear interest at 12% per annum from the due date until payment.' The solicitor is drafting the interest paragraph of the particulars of claim. Which of the following best describes how interest should be claimed?",
+  "options": {
+   "A": "Interest should be claimed at the contractual rate of 12%, with the accrued amount and daily rate set out, and claimed as continuing until judgment or sooner payment.",
+   "B": "Interest should be claimed at 8% per annum, the statutory rate, which always displaces contractual provisions.",
+   "C": "Interest should be left to the court's discretion, which cannot be fettered by contract, because the award of interest on a judgment is a matter of statutory power exercised by the court alone.",
+   "D": "Interest need not be pleaded, because it follows automatically on a specified debt.",
+   "E": "Interest should be claimed at 12% but only from the date of issue of the claim."
+  },
+  "answer": "A",
+  "expl": "正解A。率の階段は①契約の定め→②法定8%→③裁量——契約に12%があればそれが第一順位。日割と「判決まで日々加算」の請求もセット。(講義ノートCh.5【利息の階段(契約利率あり)】参照)",
+  "trans": "supplierが未払請求書£30,000を請求している。供給契約には「支払遅延額には支払期日から支払いまで年12%の利息を付す」との条項がある。solicitorがparticularsの利息の段落を起案している。利息の請求方法として最も適切なものはどれか。",
+  "analysis": {
+   "B": "× 8%は契約に定めがないときの受け皿。",
+   "D": "× 請求しなければ付かない(大原則)。",
+   "E": "× 契約利率はdue dateから走る——issueからに縮める理由はない。",
+   "A": "○ 率の階段は①契約の定め→②法定8%→③裁量——契約に12%があればそれが第一順位。日割と「判決まで日々加算」の請求もセット。",
+   "C": "× 契約利率の合意は有効で、裁量はその後の受け皿——「契約が裁量を拘束できない」は率の階段の順序を逆転させている。"
+  }
+ },
+ {
+  "qid": "DR-24",
+  "subject": "DR",
+  "tag": "Ch.5",
+  "stem": "A defence raises, for the first time, an allegation that the claimant's own modification of the equipment caused the failure. The claimant's solicitor considers whether a reply to the defence must be filed to deal with this new point. Which of the following is correct?",
+  "options": {
+   "A": "A reply must be filed within 14 days, or the new allegation is deemed admitted, because statements of case operate on the principle that silence in response to a pleaded allegation amounts to acceptance of it.",
+   "B": "A reply requires the court's permission in every case.",
+   "C": "A reply is mandatory whenever the defence includes a counterclaim.",
+   "D": "A reply is optional: the claimant may file one to respond to new matters raised in the defence, but is not obliged to do so.",
+   "E": "A reply is prohibited; the claimant must instead amend the particulars of claim."
+  },
+  "answer": "D",
+  "expl": "正解D。replyは完全に任意——defenceの新論点に応答したければ出せる、それだけ。出さなくても新論点を自白したことにはならない。(講義ノートCh.5【reply to defenceの性質】参照)",
+  "trans": "defenceが初めて、claimant自身の設備改造が故障の原因だという主張を持ち出した。claimant側solicitorは、この新論点に対処するためreply to defenceの提出が必要かを検討している。正しいものはどれか。",
+  "analysis": {
+   "A": "× 「14日・擬制自白」という制度はない(defence to counterclaimの14日との混同を誘う)。",
+   "C": "× counterclaimに必要なのはdefence to counterclaimで、replyとは別物。",
+   "D": "○ replyは完全に任意——defenceの新論点に応答したければ出せる、それだけ。出さなくても新論点を自白したことにはならない。",
+   "B": "× replyに許可は不要——任意の書面であり、出すか出さないかは claimantの自由。",
+   "E": "× replyは禁止されていない。amendmentは自分の書面の修正であり、相手の新論点への応答とは別の装置。"
+  }
+ },
+ {
+  "qid": "DR-25",
+  "subject": "DR",
+  "tag": "Ch.5",
+  "stem": "After the limitation period has expired, a claimant discovers that it sued 'Harbourview Hotels Ltd' when the operating company it had always dealt with, and intended to sue, is 'Harbourview Hotel (Brighton) Ltd' — a genuine mistake as to the correct name of the intended party. It applies to substitute the correct company. Which of the following best describes the court's approach?",
+  "options": {
+   "A": "Substitution is impossible once limitation has expired, in all circumstances.",
+   "B": "Substitution will be allowed if it is desirable to resolve all matters in dispute, because the court retains a general discretion over the addition and substitution of parties at every stage of the proceedings.",
+   "C": "Substitution is unnecessary; judgment against the named company will bind the intended company.",
+   "D": "Substitution requires only the consent of the incoming company.",
+   "E": "Substitution may be permitted even after limitation where the claim cannot properly be carried on without the change and the original naming was a genuine mistake as to the name of the party, not a choice of the wrong party."
+  },
+  "answer": "E",
+  "expl": "正解E。時効経過後の交替は限定事由——典型が「取り違え(名称の真正な誤り)」で、意図した相手は一貫して同じという場合。時効内の「desirable」基準(B)との対比が本問の狙い。(講義ノートCh.5【時効経過後の当事者交替】参照)",
+  "trans": "時効期間の経過後、claimantは「Harbourview Hotels Ltd」を訴えたが、一貫して取引し訴えるつもりだった運営会社は「Harbourview Hotel (Brighton) Ltd」だったこと——意図した当事者の名称についての真正な誤り——を発見した。正しい会社への交替を申し立てる。裁判所のアプローチとして最も適切なものはどれか。",
+  "analysis": {
+   "A": "× 全面禁止ではない——時効経過後でも「取り違え」等の限定事由に当たれば交替は可能。",
+   "D": "× 常に裁判所の許可が必要(同意ルートなし)。",
+   "E": "○ 時効経過後の交替は限定事由——典型が「取り違え(名称の真正な誤り)」で、意図した相手は一貫して同じという場合。時効内の「desirable」基準(B)との対比が本問の狙い。",
+   "C": "× 別法人への判決は意図した相手を拘束しない——法人格の独立の基本。だからこそ交替の制度が必要になる。",
+   "B": "× desirable(争点全体の解決に望ましい)は時効「内」の追加・交替の基準——時効経過後の本問では「取り違え」等の限定事由に切り替わる。基準の時期の取り違えを誘う肢。"
+  }
+ },
+ {
+  "qid": "DR-26",
+  "subject": "DR",
+  "tag": "Ch.5",
+  "stem": "In particulars of claim arising from a campaign of deliberate harassment by a commercial rival, the claimant wishes to seek (i) an award designed to punish the defendant's outrageous conduct and deter repetition, and (ii) an award reflecting the injury to the claimant's feelings and the mental distress caused. How should these two heads be pleaded?",
+  "options": {
+   "A": "(i) as aggravated damages and (ii) as exemplary damages, each with supporting grounds.",
+   "B": "Both as general damages, without special mention.",
+   "C": "(i) as exemplary damages and (ii) as aggravated damages, each specifically pleaded with the grounds relied on.",
+   "D": "Neither can be claimed in civil proceedings.",
+   "E": "Both may be raised for the first time at trial without being pleaded."
+  },
+  "answer": "C",
+  "expl": "正解C。exemplary=罰と抑止(punitive)/aggravated=精神的苦痛・感情の侵害への加重——ラベルの対応を入れ替えたAが本命の罠。どちらもparticularsで根拠とともに明示的に主張しなければならず(Eは×)、後出しはできない。(講義ノートCh.5【exemplary vs aggravated damages】参照)",
+  "trans": "商売敵による意図的な嫌がらせキャンペーンに関するparticulars of claimで、claimantは(i)defendantの悪質な行為を罰し再発を抑止するための賠償と、(ii)claimantの感情の侵害と精神的苦痛を反映した賠償を求めたい。この2つの損害項目はどのように主張すべきか。",
+  "analysis": {
+   "C": "○ exemplary=罰と抑止(punitive)/aggravated=精神的苦痛・感情の侵害への加重——ラベルの対応を入れ替えたAが本命の罠。どちらもparticularsで根拠とともに明示的に主張しなければならず(Eは×)、後出しはできない。",
+   "B": "× どちらも「特に主張と根拠の記載を要する」特別類型——一般損害としてまとめて流すことはできない。",
+   "D": "× 民事でも懲罰的(exemplary)・加重的(aggravated)賠償は限定的に存在する——「請求不可」は過剰。",
+   "A": "× ラベルの対応を入れ替えた本命の罠——罰と抑止(punitive)を担うのはexemplary、感情の侵害への加重がaggravated。",
+   "E": "× どちらも特別損害類型としてparticularsに根拠とともに明示的に主張しなければならない——trialでの後出しはできない。"
+  }
+ },
+ {
+  "qid": "DR-27",
+  "subject": "DR",
+  "tag": "Ch.6",
+  "stem": "A claimant applies for summary judgment on a debt claim. Having read the evidence, the judge concludes that the defendant's account of an oral agreement to postpone payment is 'improbable and likely to fail at trial, but not fanciful — there is documentary material lending it some support'. No other compelling reason for a trial is suggested. Which of the following best describes the likely outcome?",
+  "options": {
+   "A": "Judgment for the claimant, because a defence that is likely to fail has no real prospect of success: the two expressions describe the same threshold approached from different directions.",
+   "B": "The application will be dismissed, because a defence that is improbable but not fanciful still has a real prospect of success, and the claim will proceed.",
+   "C": "Judgment for the claimant, because oral agreements cannot defeat documentary debts.",
+   "D": "The claim will be struck out.",
+   "E": "The application will be adjourned until the judge can hear the witnesses in full."
+  },
+  "answer": "B",
+  "expl": "正解B。「real prospect」の敷居——unlikely・improbableでは足りず、fanciful(imaginary)に落ちて初めて①充足。文書の支えが少しでもあればfancifulではない。(講義ノートCh.6【SJ①imaginary水準】参照)",
+  "trans": "claimantが債権請求でsummary judgmentを申し立てた。証拠を読んだ裁判官は、支払猶予の口頭合意に関するdefendantの説明を「ありそうになく、trialで敗れる公算が高いが、fancifulではない——一定の裏付けとなる文書資料がある」と評価した。trialに進めるべき他のやむを得ない理由は示されていない。最も可能性の高い帰結はどれか。",
+  "analysis": {
+   "A": "× ①の基準を「勝ちそうにない」に緩める最頻出の罠。",
+   "E": "× 証人を全部聴くのはmini-trialの禁止に反する——SJは書面ベースの見極め。",
+   "B": "○ 「real prospect」の敷居——unlikely・improbableでは足りず、fanciful(imaginary)に落ちて初めて①充足。文書の支えが少しでもあればfancifulではない。",
+   "C": "× 「口頭合意は文書債権に勝てない」という証拠法則はない——SJ段階で証拠の優劣を確定させるのはmini-trialの禁止に反する。",
+   "D": "× strike outは主張書面が防御の体をなさない場合の装置——「improbableだが根拠あり」の防御には届かない。"
+  }
+ },
+ {
+  "qid": "DR-28",
+  "subject": "DR",
+  "tag": "Ch.6",
+  "stem": "A claimant issues a summary judgment application. The hearing is listed for 30 October. The defendant wishes to file evidence in response, and the claimant anticipates filing further evidence in reply. Which of the following correctly states the timetable?",
+  "options": {
+   "A": "The respondent's evidence must be filed and served at least 7 days before the hearing, and the applicant's further evidence in reply at least 3 days before the hearing; the respondent must have had at least 14 days' notice of the hearing.",
+   "B": "All evidence from both parties must be filed at least 14 days before the hearing, because the fourteen-day period fixed for notice of a summary judgment hearing governs every procedural step connected with it.",
+   "C": "The respondent's evidence is due 3 days before, and the applicant's reply evidence 7 days before, the hearing.",
+   "D": "There are no fixed periods; evidence may be filed at any time before the hearing begins.",
+   "E": "Evidence is exchanged simultaneously 10 weeks after the directions questionnaire."
+  },
+  "answer": "A",
+  "expl": "正解A。SJ・IPの三点セット=14(通知)-7(respondent証拠)-3(applicant追加証拠)。(講義ノートCh.6【SJの日程規律】参照)",
+  "trans": "claimantがsummary judgmentの申立てをissueした。hearingは10月30日に指定された。defendantは反論証拠の提出を望み、claimantは再反論の追加証拠の提出を見込んでいる。タイムテーブルとして正しいものはどれか。",
+  "analysis": {
+   "C": "× 7と3の役割の入替え——「後から出す側ほど期限が近い」(反論の反論が最後)と覚える。",
+   "E": "× 10週はfast標準タイムテーブルのwitness statements——文脈の借用ミス。",
+   "A": "○ SJ・IPの三点セット=14(通知)-7(respondent証拠)-3(applicant追加証拠)。",
+   "B": "× 14日は「hearingの通知」の期間——全証拠の統一期限ではない。14-7-3の役割分担を潰す肢。",
+   "D": "× SJ・IPには明文の日程規律(14-7-3)がある——「自由提出」は一般申立て(3日前)との混同ですらない創作。"
+  }
+ },
+ {
+  "qid": "DR-29",
+  "subject": "DR",
+  "tag": "Ch.6",
+  "stem": "On a claimant's summary judgment application, the judge concludes that the defence as pleaded is thin and may well fail, but that it is possible — though improbable — that it will succeed, and the judge suspects it is being advanced largely to buy time. Which order is the court most likely to make?",
+  "options": {
+   "A": "Judgment for the claimant on the whole claim, because a defence that the judge considers improbable and advanced largely to buy time cannot amount to a real prospect of success, and the court should not allow tactical defences to delay judgment.",
+   "B": "Dismissal of the claim.",
+   "C": "A conditional order — for example, requiring the defendant to pay a sum into court or to file a proper, fully particularised defence within 14 days, failing which judgment may be entered.",
+   "D": "An order transferring the claim to the multi-track without more.",
+   "E": "A wasted costs order against the defendant personally."
+  },
+  "answer": "C",
+  "expl": "正解C。「fancifulよりは上・だが疑わしい」の中間帯=conditional orderの典型場面(裁判所への納付・14日以内のproper defence等を条件に続行)。(講義ノートCh.6【conditional order】参照)",
+  "trans": "claimantのsummary judgment申立てで、裁判官は、主張されたdefenceは薄弱で敗れる公算が高いが、可能性としては——ありそうにないものの——成功し得ると判断し、時間稼ぎのために出されている疑いを持った。裁判所が最も出しそうな命令はどれか。",
+  "analysis": {
+   "A": "× ①をぎりぎり超えている以上、判決までは行けない。",
+   "E": "× wasted costsはlegal representativesへの制裁——「defendant personally」の時点で切れる。",
+   "C": "○ 「fancifulよりは上・だが疑わしい」の中間帯=conditional orderの典型場面(裁判所への納付・14日以内のproper defence等を条件に続行)。",
+   "B": "× claimの却下はdefendant側の申立てが成功した場合の命令——claimant申立ての本問で出る幕はない。",
+   "D": "× トラックの移動は配分の問題でSJの帰結ではない——2段階テストの評価と無関係。"
+  }
+ },
+ {
+  "qid": "DR-30",
+  "subject": "DR",
+  "tag": "Ch.6",
+  "stem": "A claimant in a hotly contested commercial claim applies for an interim payment. Liability is fully disputed, no judgment of any kind has been obtained, and the evidence on both sides is substantial and conflicting. The claimant's solicitor argues that the claim is 'very strong' and that the claimant 'would obviously win a substantial sum at trial'. Which of the following best describes the likely outcome?",
+  "options": {
+   "A": "The application will succeed, because the claimant genuinely believes in the strength of its case.",
+   "B": "The application will succeed if the claimant undertakes to repay the sum should it lose at trial.",
+   "C": "The application will succeed because interim payments exist precisely for disputed claims: if liability were admitted there would be no need for a court order at all, so a genuine dispute is the natural home of the jurisdiction.",
+   "D": "The application is likely to fail: where liability is disputed, the court must be satisfied that the claimant would obtain judgment for a substantial amount, a demanding threshold rarely met on conflicting evidence.",
+   "E": "The application will be granted automatically in a specified sum claim."
+  },
+  "answer": "D",
+  "expl": "正解D。ground③(実質的勝訴の確実性)は立証が極めて困難——証拠が対立する事件では「would obtain」の確信に届かない。認諾(①)・査定を残す判決(②)がない本問は失敗筋。(講義ノートCh.6【IP ground③の失敗筋】参照)",
+  "trans": "激しく争われている商事請求でclaimantがinterim paymentを申し立てた。責任は全面的に争われ、いかなる判決も得られておらず、双方の証拠は大量かつ対立している。claimant側solicitorは、請求は「非常に強く」claimantは「trialで明らかに相当額を勝ち取る」と主張している。最も可能性の高い帰結はどれか。",
+  "analysis": {
+   "C": "× IPの前提は「額が未確定」であって「責任が争われていてもよい」ではない——③の狭さが安全弁。",
+   "D": "○ ground③(実質的勝訴の確実性)は立証が極めて困難——証拠が対立する事件では「would obtain」の確信に届かない。認諾(①)・査定を残す判決(②)がない本問は失敗筋。",
+   "A": "× 申立人の主観的確信はground③の基準(裁判所がwould obtainと納得する)を満たさない——確信の強さは証拠の対立を解消しない。",
+   "B": "× 返還の約束(undertaking)はground不充足を治癒しない——要件を満たした後の条件設計の話。",
+   "E": "× specified claimでも自動認容はない——IPは常に3 groundのいずれかの立証を要する。"
+  }
+ },
+ {
+  "qid": "DR-31",
+  "subject": "DR",
+  "tag": "Ch.6",
+  "stem": "A claimant seeks an interim injunction to stop a well-capitalised competitor using an allegedly confidential pricing formula in a way that, on the evidence, would cause the claimant quantifiable lost profits of around £40,000 over the period to trial. The competitor is plainly able to pay any award. Applying the interim injunction guidelines, which of the following is the most likely outcome?",
+  "options": {
+   "A": "The injunction will be refused, because damages would be an adequate remedy for a readily quantifiable loss and the respondent can pay.",
+   "B": "The injunction will be granted, because confidential information cases always merit injunctive relief.",
+   "C": "The injunction will be granted if there is a serious issue to be tried, without more.",
+   "D": "The injunction will be refused because the claimant has not proved its case on the balance of probabilities.",
+   "E": "The injunction will be granted only on the claimant paying the £40,000 into court."
+  },
+  "answer": "A",
+  "expl": "正解A。4ガイドラインの第2関門——損害が数量化可能で相手に支払能力があれば、damagesで足り差止めは不要。(講義ノートCh.6【injunctionのdamages十分性】参照)",
+  "trans": "claimantが、資力の十分な競合他社による秘密の価格算定式の使用の差止めを求めている。証拠上、その使用がtrialまでにもたらす損失は約£40,000の逸失利益で、数量化可能である。競合他社に支払能力があることは明らかである。interim injunctionのガイドラインを適用した場合、最も可能性の高い帰結はどれか。",
+  "analysis": {
+   "C": "× serious issueは第1関門にすぎない(通過しても第2で止まる)。",
+   "D": "× 中間段階で本案の証明度は要求されない——「勝訴蓋然性の精査をしない」設計との整合で切る。",
+   "A": "○ 4ガイドラインの第2関門——損害が数量化可能で相手に支払能力があれば、damagesで足り差止めは不要。",
+   "B": "× 「秘密情報事件=常に差止め」という類型的優遇はない——4ガイドラインは事件類型を問わず適用される。",
+   "E": "× £40,000の納付という条件は制度に存在しない——cross-undertaking in damagesとの混同を誘う創作。"
+  }
+ },
+ {
+  "qid": "DR-32",
+  "subject": "DR",
+  "tag": "Ch.6",
+  "stem": "A claimant suing a former employee for misuse of client databases receives credible evidence that the employee, on learning of the claim, has begun deleting files and has told a colleague he will 'wipe everything before any lawyers get near it'. The material is stored on devices at his home. Which application best protects the claimant's position?",
+  "options": {
+   "A": "A with notice application for standard disclosure to be expedited.",
+   "B": "A without notice application for a search order, permitting entry to the premises to search for and copy the relevant evidence.",
+   "C": "A without notice application for a freezing injunction over the employee's bank accounts, because freezing relief is the standard urgent without notice remedy and will remove any incentive to destroy material.",
+   "D": "An application for specific disclosure of the deleted files.",
+   "E": "A witness summons requiring the employee to produce the devices at trial."
+  },
+  "answer": "B",
+  "expl": "正解B。消えようとしているのは証拠——資産ではない——のでsearch order(立入り・捜索・複写)。予告すれば消される場面なのでwithout notice。(講義ノートCh.6【search orderの選択】参照)",
+  "trans": "顧客データベースの不正利用で元従業員を訴えているclaimantが、元従業員が請求を知って以降ファイルを削除し始め、同僚に「弁護士が来る前に全部消す」と述べたという信頼できる証拠を得た。資料は自宅のデバイスに保存されている。claimantの立場を最もよく守る申立てはどれか。",
+  "analysis": {
+   "C": "× freezingは資産散逸への装置——対象の取り違え。",
+   "A": "× with noticeの開示手続では「wipe」に間に合わない。",
+   "D": "× with noticeの開示手続では「wipe」に間に合わない。",
+   "E": "× trialまで待つ選択肢は証拠保全にならない。",
+   "B": "○ 消えようとしているのは証拠——資産ではない——のでsearch order(立入り・捜索・複写)。予告すれば消される場面なのでwithout notice。"
+  }
+ },
+ {
+  "qid": "DR-33",
+  "subject": "DR",
+  "tag": "Ch.6",
+  "stem": "A claimant obtained a without notice freezing injunction. At the return date the defendant demonstrates that the claimant's witness statement omitted the fact that the 'undervalue' sale relied on had actually been negotiated at arm's length months before the dispute, on advice the claimant had itself received. The claimant's solicitor accepts the omission was deliberate, to strengthen the application. Which of the following best describes the likely consequence?",
+  "options": {
+   "A": "The order stands, because the omitted fact would not have changed the outcome; the duty of full and frank disclosure is concerned with materiality, and an omission that could not have affected the decision provides no basis for disturbing the injunction.",
+   "B": "The order stands, but the claimant is warned as to future conduct.",
+   "C": "The order is converted into a with notice order with no other consequence.",
+   "D": "The defendant's only remedy is in damages at trial.",
+   "E": "The order is likely to be set aside for breach of the duty of full and frank disclosure, with costs consequences against the claimant, regardless of whether the order might have been granted on full disclosure."
+  },
+  "answer": "E",
+  "expl": "正解E。without noticeの代償=full and frank——不利な事実の意図的な秘匿は、「開示していても発令されたはず」でもset aside+費用制裁に向かう(義務の実効性を守るため)。(講義ノートCh.6【full and frank違反の帰結】参照)",
+  "trans": "claimantがwithout noticeでfreezing injunctionを取得した。return dateでdefendantは、claimantが依拠した「安値売却」が実は紛争前の数ヶ月前にarm's length(独立当事者間)で交渉され、claimant自身も助言を受けていた事実を、claimantのwitness statementが省いていたことを立証した。claimant側solicitorは、申立てを強く見せるための意図的な省略だったと認めた。最も可能性の高い帰結はどれか。",
+  "analysis": {
+   "A": "× 結果無価値の抗弁を認めると義務が空洞化する——ここが出題の核心。",
+   "E": "○ without noticeの代償=full and frank——不利な事実の意図的な秘匿は、「開示していても発令されたはず」でもset aside+費用制裁に向かう(義務の実効性を守るため)。",
+   "B": "× 「警告で済ます」はfull and frank義務の実効性を空洞化する——意図的な秘匿への標準的応答はset aside。",
+   "C": "× with noticeへの転換という中間処理は救済として存在しない——命令の効力の問題に正面から答えていない。",
+   "D": "× trialまで待たせる必要はない——return dateでのset asideがまさにこの場面の救済。"
+  }
+ },
+ {
+  "qid": "DR-34",
+  "subject": "DR",
+  "tag": "Ch.7",
+  "stem": "A driver injured in a road traffic accident claims £4,200 for whiplash injuries and £2,300 for repairs to her car, a total of £6,500. Liability is disputed but the facts are simple and a half-day hearing would suffice. To which track is the claim most likely to be allocated?",
+  "options": {
+   "A": "The fast track, because the total value of the claim exceeds £5,000, which is the ceiling for any road traffic accident claim that includes a personal injury element.",
+   "B": "The fast track, because personal injury claims can never be small claims.",
+   "C": "The intermediate track, because both injury and property damage are claimed.",
+   "D": "The small claims track, because the total is within £10,000 and the damages for the road traffic accident injury do not exceed £5,000.",
+   "E": "The multi-track, because liability is disputed."
+  },
+  "answer": "D",
+  "expl": "正解D。small claimsのPI細目:総額£10,000以下+交通事故PI部分が£5,000以下——£6,500(PI £4,200)は両方クリア。(講義ノートCh.7【small claimsのPI細目】参照)",
+  "trans": "交通事故で負傷したdriverが、むち打ち傷害£4,200と車両修理£2,300の計£6,500を請求している。責任は争われているが事実は単純で、半日のhearingで足りる。最も配分されそうなトラックはどれか。",
+  "analysis": {
+   "A": "× £5,000はPI部分の閾値で総額ではない。",
+   "B": "× PIでもsmall claimsになり得る(細目の存在理由)。",
+   "E": "× 争いの有無・多寡はトラックを決めない——配分は価額・複雑性・審理時間等の総合考慮。",
+   "D": "○ small claimsのPI細目:総額£10,000以下+交通事故PI部分が£5,000以下——£6,500(PI £4,200)は両方クリア。",
+   "C": "× intermediateは£25,000超の価額帯——£6,500の請求で登場する余地がない。"
+  }
+ },
+ {
+  "qid": "DR-35",
+  "subject": "DR",
+  "tag": "Ch.7",
+  "stem": "A company claims £82,000 for breach of a distribution agreement. The realistic trial estimate is two days. Each party wishes to call two experts (a forensic accountant and a market analyst). The issues, while contested, are of a kind regularly tried in the County Court. To which track is the claim most likely to be allocated?",
+  "options": {
+   "A": "The multi-track, because more than one expert per party is involved and the combined length of the expert evidence will make the trial unsuitable for the streamlined procedures of the lower tracks.",
+   "B": "The intermediate track: the value is between £25,000 and £100,000, the trial will not exceed three days, and oral expert evidence will not exceed two experts per party.",
+   "C": "The fast track, with directions extending the one-day limit.",
+   "D": "The multi-track, because the value exceeds £50,000.",
+   "E": "The small claims track by consent of the parties."
+  },
+  "answer": "B",
+  "expl": "正解B。intermediateの3点セット=£25,000超£100,000以下+trial3日以内+口頭専門家2名以内/当事者——£82,000・2日・各2名はぴったり枠内。(講義ノートCh.7【intermediateの複合判定】参照)",
+  "trans": "会社が販売代理店契約違反で£82,000を請求している。現実的なtrial見積りは2日。各当事者はexpert2名(法廷会計士と市場分析専門家)を呼びたい。争点は争われているがCounty Courtで日常的に審理される種類のものである。最も配分されそうなトラックはどれか。",
+  "analysis": {
+   "A": "× 2名まではintermediateが受け止める。",
+   "D": "× £50,000はbudget提出期限の閾値(Ch.10)——トラックの境界ではない。",
+   "B": "○ intermediateの3点セット=£25,000超£100,000以下+trial3日以内+口頭専門家2名以内/当事者——£82,000・2日・各2名はぴったり枠内。",
+   "C": "× fastの枠(1日・1名×2分野)を「directionsで拡張」する運用はない——枠を超える事件は上のトラックへ。",
+   "E": "× 当事者の合意でsmall claimsに落とすことはできない——£82,000はsmall claimsの世界ではない。"
+  }
+ },
+ {
+  "qid": "DR-36",
+  "subject": "DR",
+  "tag": "Ch.7",
+  "stem": "A claim for £18,000 was allocated to the fast track with a one-day trial estimate. The defendant has now obtained permission to add a substantial counterclaim raising allegations of fraudulent misrepresentation; the parties agree the trial estimate is now four days with heavy documentation. Which of the following best describes the position on allocation?",
+  "options": {
+   "A": "The court may reallocate the claim to a different track, on application or of its own initiative, because there has been a material change of circumstances.",
+   "B": "The original allocation is final and cannot be revisited, because certainty about the applicable track and its fixed costs regime would be destroyed if allocation could change in the middle of proceedings.",
+   "C": "Reallocation is possible only if both parties consent.",
+   "D": "The claim must remain on the fast track but with an extended trial.",
+   "E": "The proceedings must be struck out and reissued on the correct track."
+  },
+  "answer": "A",
+  "expl": "正解A。配分は事情変更で見直せる——当事者の申立てでも職権でも。counterclaimの複雑化+4日のtrialはfastの枠(1日)を壊す典型。(講義ノートCh.7【再配分】参照)",
+  "trans": "£18,000の請求がtrial見積り1日でfast trackに配分された。defendantはその後、詐欺的不実表示の主張を含む相当規模のcounterclaimの追加許可を得た。当事者はtrial見積りが大量の文書を伴う4日になったことで一致している。配分の状況として最も適切なものはどれか。",
+  "analysis": {
+   "B": "× 配分の固定化はoverriding objective(比例的処理)に反する。",
+   "D": "× 配分の固定化はoverriding objective(比例的処理)に反する。",
+   "E": "× 再出発ではなく再配分で足りる。",
+   "A": "○ 配分は事情変更で見直せる——当事者の申立てでも職権でも。counterclaimの複雑化+4日のtrialはfastの枠(1日)を壊す典型。",
+   "C": "× 再配分に両当事者の同意は不要——裁判所は職権でも動ける。事件管理の主導権は裁判所にある。"
+  }
+ },
+ {
+  "qid": "DR-37",
+  "subject": "DR",
+  "tag": "Ch.7",
+  "stem": "An employers' liability disease claim for noise-induced hearing loss, valued at £45,000, is allocated to the intermediate track. It involves several years of employment with different noise exposures, disputed medical causation and multiple issues of fact. To which complexity band is the claim most likely to be assigned?",
+  "options": {
+   "A": "Band 1, because hearing loss claims are routine.",
+   "B": "Band 2, because both liability and quantum are in dispute, and band 2 is the standard assignment for personal injury claims in which more than one issue remains live between the parties.",
+   "C": "Band 3, which covers more complex claims with multiple issues such as noise-induced hearing loss and other employers' liability disease claims.",
+   "D": "Band 4 in every case, because medical evidence is involved.",
+   "E": "No band, because bands apply only to the fast track."
+  },
+  "answer": "C",
+  "expl": "正解C。NIHL・使用者責任疾病=バンド3の看板例(複数争点の複雑類型)。(講義ノートCh.7【複雑度バンドの当てはめ】参照)",
+  "trans": "騒音性難聴(NIHL)の使用者責任疾病請求(£45,000)がintermediate trackに配分された。異なる騒音曝露を伴う複数年の雇用、争いのある医学的因果関係、複数の事実上の争点を含む。最も割り当てられそうな複雑度バンドはどれか。",
+  "analysis": {
+   "B": "× 「責任+額の両方を争うPI事故=バンド2」は事故型の目安——疾病型はもう一段上。",
+   "D": "× バンド4は1〜3に適さない例外。",
+   "E": "× バンドはfastとintermediateの制度(FRCの座標)。",
+   "C": "○ NIHL・使用者責任疾病=バンド3の看板例(複数争点の複雑類型)。",
+   "A": "× 「routine=バンド1」ではない——バンド1は争点1つ・trial1日以内の型で、複数年の曝露・因果の争いを含むNIHLは対極。"
+  }
+ },
+ {
+  "qid": "DR-38",
+  "subject": "DR",
+  "tag": "Ch.7",
+  "stem": "A multi-track claim is listed for a case management conference on 20 September. By 10 September the parties have agreed most directions but remain in dispute about the scope of expert evidence. The claimant's solicitor suggests asking the court to postpone the CMC until full agreement is reached. Which of the following best describes the correct approach?",
+  "options": {
+   "A": "The CMC will be postponed automatically, because agreed directions are a precondition of the hearing and the court has no power to impose case management directions that the parties have not first attempted to settle between themselves.",
+   "B": "The parties should file their agreed directions and their rival proposals on the disputed point at least 7 days before the CMC; the CMC will proceed and the court will decide the disputed point at the hearing.",
+   "C": "The disputed point must be referred to arbitration before the CMC can take place.",
+   "D": "The claimant may unilaterally vacate the CMC by notice to the court.",
+   "E": "The CMC will be replaced by a pre-trial review."
+  },
+  "answer": "B",
+  "expl": "正解B。CMCの作法:案(合意分+対立点の各自案)を7日以上前に提出し、合意できない点があってもCMCは延期されない——裁判所がその場で決める。(講義ノートCh.7【CMCの運用】参照)",
+  "trans": "multi-trackの請求が9月20日のcase management conferenceに指定された。9月10日までに当事者は大半のdirectionsに合意したが、expert証拠の範囲について対立が残っている。claimant側solicitorは、完全合意までCMCの延期を裁判所に求めることを提案した。正しいアプローチとして最も適切なものはどれか。",
+  "analysis": {
+   "A": "× 延期・取下げの発想がoverriding objective(迅速・資源配分)に反する。",
+   "D": "× 延期・取下げの発想がoverriding objective(迅速・資源配分)に反する。",
+   "E": "× pre-trial reviewはtrial直前の別のhearing(Ch.11)。",
+   "B": "○ CMCの作法:案(合意分+対立点の各自案)を7日以上前に提出し、合意できない点があってもCMCは延期されない——裁判所がその場で決める。",
+   "C": "× directionsの対立点を仲裁に付すという制度はない——裁判所の事件管理権限の中で解決される。"
+  }
+ },
+ {
+  "qid": "DR-39",
+  "subject": "DR",
+  "tag": "Ch.7",
+  "stem": "An order provides: 'Unless the defendant serves its witness statements by 4pm on 10 May, the defendant may not rely on any witness evidence at trial.' The defendant serves nothing by that time and makes no application. Trial is months away. Which of the following best describes the position on 11 May?",
+  "options": {
+   "A": "Nothing happens until the claimant applies for the sanction to be imposed.",
+   "B": "The court will list a hearing to decide whether to activate the sanction.",
+   "C": "The defendant may serve the statements late without consequence, because the trial date is not imperilled.",
+   "D": "The sanction has taken effect automatically: the defendant cannot rely on witness evidence at trial unless it obtains relief from sanctions.",
+   "E": "The claim is automatically struck out."
+  },
+  "answer": "D",
+  "expl": "正解D。unless orderのsanctionは期限徒過で自動発効——活性化の申立ても追加hearingも要らない。救済は違反者側がrelief(CPR 3.9)で勝ち取る。(講義ノートCh.7【unless orderの効果】参照)",
+  "trans": "「defendantが5月10日午後4時までにwitness statementsを送達しない限り、defendantはtrialで証人証拠に依拠できない」との命令がある。defendantはその時までに何も送達せず、申立てもしない。trialは数ヶ月先である。5月11日の状況として最も適切なものはどれか。",
+  "analysis": {
+   "C": "× 「期日に影響なし」はreliefの第1段階で効く事情であって、発効自体は止めない。",
+   "E": "× 制裁の内容は命令の文言どおり(証拠排除)——strike outまで飛躍しない。",
+   "D": "○ unless orderのsanctionは期限徒過で自動発効——活性化の申立ても追加hearingも要らない。救済は違反者側がrelief(CPR 3.9)で勝ち取る。",
+   "A": "× sanctionの発効に相手方の申立ては不要——unless orderの条件成就で自動発効するのが制度の核心。",
+   "B": "× 活性化のためのhearingは開かれない——hearingが登場するとすればrelief申立ての審理として。"
+  }
+ },
+ {
+  "qid": "DR-40",
+  "subject": "DR",
+  "tag": "Ch.7",
+  "stem": "A claimant served its expert report three weeks late, causing the trial date to be vacated. The explanation offered is that the file 'was not treated as a priority'. The same claimant had previously breached two other directions in the same proceedings. Relief from sanctions is sought a month after the deadline passed. Applying the three-stage approach, which outcome is most likely?",
+  "options": {
+   "A": "Relief granted, because the breach caused no prejudice that costs cannot cure: the trial can be refixed, the defendant compensated in costs for any inconvenience, and refusing relief would punish the claimant for its solicitors' shortcomings.",
+   "B": "Relief granted automatically because a trial can be relisted.",
+   "C": "Relief granted, because refusing relief would be disproportionate to the fault of the legal representatives.",
+   "D": "Relief refused at stage one without considering the other stages, because any delay is serious.",
+   "E": "Relief likely refused: the breach is serious and significant (it caused loss of the trial date), there is no good reason, and all the circumstances — including the past breaches and the lack of promptness — weigh against relief."
+  },
+  "answer": "E",
+  "expl": "正解E。relief 3段階の拒否側の実戦形:①期日喪失=重大 ②「優先しなかった」はgood reasonの対極 ③累犯+1ヶ月遅れの申立て。3段階すべてが逆風なら救済は遠い——「45分の遅れ」型(認容)との対比で使う。(講義ノートCh.7【relief拒否型】参照)",
+  "trans": "claimantがexpert報告書を3週間遅れて送達し、trial期日が取り消された。示された説明は、ファイルが「優先扱いされていなかった」というものである。同じclaimantは同一手続で過去に2件のdirections違反をしていた。relief from sanctionsの申立ては期限経過の1ヶ月後にされた。3段階アプローチを適用した場合、最も可能性の高い帰結はどれか。",
+  "analysis": {
+   "D": "× ①で重大でも②③の検討はする(手順の誤り)。",
+   "E": "○ relief 3段階の拒否側の実戦形:①期日喪失=重大 ②「優先しなかった」はgood reasonの対極 ③累犯+1ヶ月遅れの申立て。3段階すべてが逆風なら救済は遠い——「45分の遅れ」型(認容)との対比で使う。",
+   "A": "× 「費用で治癒できる」はtrial期日を失わせた重大違反の評価を覆さない——①の重大性が費用補償で消えるわけではない。",
+   "B": "× 再指定が可能でも期日喪失は訴訟運営への重大な影響——「relistできるから自動認容」は①の骨抜き。",
+   "C": "× 「代理人の落ち度だから本人を救え」は独立のrelief事由ではない——救済の可否と別に、代理人にはwasted costsの筋がある。"
+  }
+ },
+ {
+  "qid": "DR-41",
+  "subject": "DR",
+  "tag": "Ch.8",
+  "stem": "A warehouse worker sues his employer in negligence after falling from a ladder. The employer denies breach and also alleges that the worker was contributorily negligent in failing to use the footing device provided. Which of the following correctly states who must prove what?",
+  "options": {
+   "A": "The employer must disprove negligence and the worker must disprove contributory negligence, both beyond reasonable doubt.",
+   "B": "The worker must prove the employer's negligence on the balance of probabilities; the employer must prove the allegation of contributory negligence on the balance of probabilities.",
+   "C": "The worker must prove both the employer's negligence and the absence of his own fault, because a claimant seeking full damages must establish that the loss is wholly attributable to the defendant.",
+   "D": "The employer bears the burden on all issues, because it is the party with the safety records.",
+   "E": "Neither party bears a burden; the judge investigates the facts of his own motion."
+  },
+  "answer": "B",
+  "expl": "正解B。burdenは主張ごとに主張者へ——本訴の過失はclaimant、contributory negligenceはそれを持ち出したdefendant。基準はどちらも balance of probabilities。(講義ノートCh.8【burdenの分配(contrib neg)】参照)",
+  "trans": "倉庫作業員が、はしごからの転落について雇用主をnegligenceで訴えている。雇用主はbreachを否認し、あわせて作業員が備え付けの足場固定具を使わなかった点でcontributorily negligentだったと主張している。誰が何を立証するかについて正しいものはどれか。",
+  "analysis": {
+   "C": "× 「自己の無過失の証明」までclaimantに負わせるのが典型の罠。",
+   "E": "× 職権探知の発想は英民訴にない。",
+   "B": "○ burdenは主張ごとに主張者へ——本訴の過失はclaimant、contributory negligenceはそれを持ち出したdefendant。基準はどちらも balance of probabilities。",
+   "A": "× 民事にbeyond reasonable doubtを持ち込む定番の誤り——基準は balance of probabilities。",
+   "D": "× 記録の保有はburdenを移転しない——立証の便宜と立証責任の所在は別問題。"
+  }
+ },
+ {
+  "qid": "DR-42",
+  "subject": "DR",
+  "tag": "Ch.8",
+  "stem": "In a claim arising from a supermarket slip, a customer's witness statement contains: (i) 'There was a wide patch of clear liquid on the tiles and my own shoe slid when I stepped near it'; and (ii) 'The store was being run in a thoroughly negligent way that afternoon.' Which of the following best describes the admissibility of the two passages?",
+  "options": {
+   "A": "Both passages are admissible because the witness was present throughout.",
+   "B": "Passage (i) is inadmissible opinion; passage (ii) is admissible as a summary of the witness's impressions, because a witness may always summarise the overall impression events made on her even where she cannot recall each underlying detail.",
+   "C": "Passage (i) is admissible as the witness's perception of facts she directly observed; passage (ii) is inadmissible, because whether the store was negligent is the very conclusion for the court.",
+   "D": "Both passages are inadmissible because lay witnesses may only produce documents.",
+   "E": "Both are admissible provided the statement carries a statement of truth."
+  },
+  "answer": "C",
+  "expl": "正解C。評価語検知:(i)液体の広がり・靴が滑った=直接知覚した事実→許容/(ii)「negligentに運営」=法的結論そのもの→不許容。(講義ノートCh.8【評価語検知】参照)",
+  "trans": "スーパーでの転倒事故の請求で、客のwitness statementに次の記載がある——(i)「タイルに透明な液体が広く広がっていて、近くに踏み込んだとき私自身の靴も滑った」、(ii)「その午後、店は徹底的にnegligentなやり方で運営されていた」。2つの記載の許容性として最も適切なものはどれか。",
+  "analysis": {
+   "E": "× truthは真実性の担保であってopinionの瑕疵を治癒しない——形式で実質を救う肢を切る。",
+   "C": "○ 評価語検知:(i)液体の広がり・靴が滑った=直接知覚した事実→許容/(ii)「negligentに運営」=法的結論そのもの→不許容。",
+   "A": "× 現場にいたこと(知覚の機会)は(ii)の法的結論を知覚に変えない——例外①は「知覚した事実」の表明に限られる。",
+   "B": "× (i)は知覚そのもので許容——「滑った」を意見扱いする逆転。(ii)を「印象の要約」として救う道もない。",
+   "D": "× 素人証人が口頭で証言できないというルールはない——文書限定は完全な創作。"
+  }
+ },
+ {
+  "qid": "DR-43",
+  "subject": "DR",
+  "tag": "Ch.8",
+  "stem": "A claimant wishes to rely on a paragraph in a witness statement in which the witness recounts what a colleague told him that a delivery driver had said about the condition of goods on arrival. Neither the colleague nor the driver will attend trial. Proper hearsay notices are served. Which of the following best describes how the court will treat this evidence?",
+  "options": {
+   "A": "It is admissible as multiple hearsay, but the court is likely to attach reduced weight to it, taking into account among other things that it involves more than one remove from the original speaker.",
+   "B": "It is inadmissible, because multiple hearsay is excluded in civil proceedings: while first-hand hearsay is admissible, each further remove destroys the safeguards on which admissibility depends.",
+   "C": "It is admissible and carries full weight, because notices were served.",
+   "D": "It is admissible only if the driver consents in writing.",
+   "E": "It is inadmissible unless the judge grants special permission before trial."
+  },
+  "answer": "A",
+  "expl": "正解A。多重伝聞も民事では許容——ただしweightの考慮要素に「multiple hearsayか」が明記されており、大きく割り引かれる方向。(講義ノートCh.8【multiple hearsayのweight】参照)",
+  "trans": "claimantが、witness statement中の、証人が同僚から聞いた話として、配達driverが到着時の商品の状態について述べたことを再現する段落に依拠したい。同僚もdriverもtrialに出廷しない。適式なhearsay noticesは送達済みである。裁判所のこの証拠の扱いとして最も適切なものはどれか。",
+  "analysis": {
+   "C": "× noticeは手続の適正を示すだけで「full weight」を保証しない。",
+   "B": "× 排除・特別許可という刑事的発想を切る。",
+   "E": "× 排除・特別許可という刑事的発想を切る。",
+   "A": "○ 多重伝聞も民事では許容——ただしweightの考慮要素に「multiple hearsayか」が明記されており、大きく割り引かれる方向。",
+   "D": "× 原供述者の書面同意という要件は存在しない——民事hearsayの許容に同意は不要で、統制はnoticeとweightで行う。"
+  }
+ },
+ {
+  "qid": "DR-44",
+  "subject": "DR",
+  "tag": "Ch.8",
+  "stem": "A store manager will give oral evidence at trial. One paragraph of her witness statement recounts what an (unavailable) former employee told her about cleaning practices — hearsay the claimant intends to rely on. The claimant's solicitor asks what procedural step is required in respect of that hearsay. Which of the following is correct?",
+  "options": {
+   "A": "A formal hearsay notice identifying the passage, stating reliance and explaining the maker's absence must be served.",
+   "B": "The passage must be deleted, because a live witness cannot give hearsay evidence.",
+   "C": "The court's permission must be obtained before trial.",
+   "D": "The former employee must be served with a witness summons.",
+   "E": "Serving the witness statement on the other parties is itself sufficient notice; no separate formal notice is required because the witness is being called."
+  },
+  "answer": "E",
+  "expl": "正解E。手続の分岐は「呼ぶか呼ばないか」——呼ぶなら、hearsayを含むWSの送達で足りる(それ自体がnotice)。正式noticeの3点セットが要るのは呼ばない場合。(講義ノートCh.8【呼ぶ場合のhearsay手続】参照)",
+  "trans": "店長がtrialで口頭証言する。彼女のwitness statementの一段落は、(出廷できない)元従業員が清掃業務について彼女に語った内容——claimantが依拠する予定のhearsay——を再現している。claimant側solicitorが、このhearsayについて必要な手続を尋ねている。正しいものはどれか。",
+  "analysis": {
+   "B": "× 出廷証人のWSにhearsayが混ざること自体は許容。",
+   "C": "× hearsayに事前許可制はない(許可制はexpert)。",
+   "E": "○ 手続の分岐は「呼ぶか呼ばないか」——呼ぶなら、hearsayを含むWSの送達で足りる(それ自体がnotice)。正式noticeの3点セットが要るのは呼ばない場合。",
+   "A": "× 正式notice3点セットは「呼ばない」場合の手続——出廷する証人のWSに求めるのは過剰。",
+   "D": "× summonsは「来ない証人を来させる」装置——unavailableな元従業員の伝聞処理とは別問題。"
+  }
+ },
+ {
+  "qid": "DR-45",
+  "subject": "DR",
+  "tag": "Ch.8",
+  "stem": "A party's expert engineer has produced a draft report. It sets out his qualifications, the material he reviewed, the substance of his instructions and his conclusions. On the central technical question he is aware that two schools of thought exist in the profession, but his draft simply states his own view. Which of the following best identifies the deficiency in the draft?",
+  "options": {
+   "A": "It should omit the substance of the instructions, which are privileged: communications between a party and the expert it retains attract litigation privilege, and summarising them in the report would amount to waiver.",
+   "B": "It should not state conclusions, which are for the court.",
+   "C": "It must exhibit every document the expert has ever considered in his career.",
+   "D": "Where there is a range of opinion on a matter dealt with in the report, the report must summarise that range and give the reasons for the expert's own opinion; the draft fails to do so.",
+   "E": "Nothing is missing; the content of an expert report is a matter for the expert's discretion."
+  },
+  "answer": "D",
+  "expl": "正解D。必須記載の頻出ポイント=range of opinionsの要約+自説の理由。学派の対立を知りながら自説だけ書くのは裁判所への義務(中立的な補助)違反の形。(講義ノートCh.8【expert報告書の必須記載】参照)",
+  "trans": "一方当事者のexpert engineerが報告書の草稿を作成した。資格、検討した資料、指示の要旨、結論は記載されている。中心的な技術的争点について、彼は業界に2つの学派があることを知っているが、草稿は自説のみを述べている。草稿の不備を最もよく特定しているものはどれか。",
+  "analysis": {
+   "A": "× 指示の要旨は記載事項(隠す側でなく開く側)。",
+   "B": "× 専門的意見の結論はexpertの職分(法的結論とは別)。",
+   "D": "○ 必須記載の頻出ポイント=range of opinionsの要約+自説の理由。学派の対立を知りながら自説だけ書くのは裁判所への義務(中立的な補助)違反の形。",
+   "C": "× 「これまで検討した全文書のexhibit化」は要求されていない——依拠した文献・資料の特定で足りる。",
+   "E": "× 報告書の記載事項はCPR・PDで所定されている——expertの裁量に委ねられた自由記載ではない。"
+  }
+ },
+ {
+  "qid": "DR-46",
+  "subject": "DR",
+  "tag": "Ch.9",
+  "stem": "In a £30,000 contract dispute, the defendant company holds around 400,000 archived emails spread across legacy systems. Restoring and reviewing the full archive would cost a disproportionate sum. Only two custodians and an eighteen-month window are realistically relevant to the issues. Which of the following best describes the defendant's duty of search?",
+  "options": {
+   "A": "The defendant must search every document it holds, whatever the cost, because standard disclosure obliges a party to disclose every document that adversely affects its case, and a limited search would allow damaging material to escape the list.",
+   "B": "The defendant may decline to search the archive at all, because electronic documents fall outside disclosure.",
+   "C": "The defendant must carry out a reasonable search; it may limit the search — for example to the relevant custodians and period — where the limitation is justified by factors such as the volume of documents, the nature of the proceedings and the ease and expense of retrieval, stating the limits in its disclosure statement.",
+   "D": "The defendant need only search documents it intends to rely on, because the burden of locating adverse material rests on the party who wishes to deploy it, through an application for specific disclosure if necessary.",
+   "E": "The scope of the search is entirely a matter for the claimant to dictate."
+  },
+  "answer": "C",
+  "expl": "正解C。searchの基準はreasonable(絶対網羅ではない)——考慮要素は文書の総量・手続の性質と複雑さ・文書の重要性・発見の容易さと費用。限定は正当化+disclosure statementでの明示が条件。(講義ノートCh.9【reasonable searchの範囲】参照)",
+  "trans": "£30,000の契約紛争で、defendant会社は旧システムに散在する約40万通のアーカイブメールを保有している。全アーカイブの復元・精査には不均衡な費用がかかる。争点に現実的に関連するのは2名のcustodian(保管者)と18ヶ月の期間だけである。defendantの調査義務として最も適切なものはどれか。",
+  "analysis": {
+   "D": "× 依拠文書だけの開示はmultiの代替命令の一つであってdefaultではない——standard disclosureは不利文書も要求する。",
+   "C": "○ searchの基準はreasonable(絶対網羅ではない)——考慮要素は文書の総量・手続の性質と複雑さ・文書の重要性・発見の容易さと費用。限定は正当化+disclosure statementでの明示が条件。",
+   "A": "× standard disclosureの範囲(何を開示するか)とsearchの範囲(どこまで探すか)は別の問い——後者はreasonableで画される。",
+   "B": "× 電子文書もdocumentの広い定義に当然含まれる——「紙だけ」の発想の裏返し。",
+   "E": "× search範囲は相手が指図するものではない——限定は開示側が正当化しstatementで明示する。"
+  }
+ },
+ {
+  "qid": "DR-47",
+  "subject": "DR",
+  "tag": "Ch.9",
+  "stem": "A claimant company's disclosure obligations are in issue. Relevant maintenance records are physically held by an outside contractor, but the claimant's service agreement gives it the right to inspect and take copies of all records the contractor keeps for it. Are the records within the claimant's control for disclosure purposes?",
+  "options": {
+   "A": "Yes: control includes documents which a party has a right to inspect or take copies of, even though they are not in its physical possession.",
+   "B": "No: control means current physical possession only.",
+   "C": "No: documents held by a third party can only be reached by a non-party disclosure order, because a party's own list can only ever include documents in its physical possession.",
+   "D": "Yes, but only if the contractor consents to disclosure.",
+   "E": "Yes, but only after the claimant first buys the records from the contractor."
+  },
+  "answer": "A",
+  "expl": "正解A。CPR 31.8のcontrol 3類型=物理的所持(現在・過去)/閲覧権/閲覧・複写権——契約上の閲覧・複写権があれば手元になくてもcontrol内。(講義ノートCh.9【controlの判定(閲覧権型)】参照)",
+  "trans": "claimant会社の開示義務が問題になっている。関連するメンテナンス記録は外部contractorが物理的に保有しているが、claimantのサービス契約は、contractorがclaimantのために保管する全記録の閲覧・複写権をclaimantに与えている。記録は開示目的上claimantのcontrol内か。",
+  "analysis": {
+   "C": "× non-party disclosureは誰のcontrolにもないとき(または当事者が持たないとき)の装置——contro内なら自分の開示義務で出す。",
+   "B": "× 「所持のみ」はcontrolの定義を1/3に縮める罠。",
+   "A": "○ CPR 31.8のcontrol 3類型=物理的所持(現在・過去)/閲覧権/閲覧・複写権——契約上の閲覧・複写権があれば手元になくてもcontrol内。",
+   "D": "× 第三者の同意はcontrolの要件ではない——閲覧・複写の権利があればその時点でcontrol内。",
+   "E": "× 買い取りの必要はない——権利の存在で足り、現実の取得は閲覧段階の実務にすぎない。"
+  }
+ },
+ {
+  "qid": "DR-48",
+  "subject": "DR",
+  "tag": "Ch.9",
+  "stem": "During a dispute, the defendant's director sends the claimant a letter headed 'WITHOUT PREJUDICE'. The letter contains no offer or concession of any kind; it consists of a denial of liability and a threat to 'bury you in costs' if proceedings are issued. At trial the claimant wishes to rely on the letter as evidence of the defendant's conduct. Which of the following best describes the position?",
+  "options": {
+   "A": "The letter cannot be used, because the without prejudice heading is conclusive: parties must be able to mark correspondence as protected and rely on that marking without fearing later scrutiny of its contents.",
+   "B": "The letter cannot be used, because all correspondence between disputing parties is privileged.",
+   "C": "The letter can be used only with the defendant's consent.",
+   "D": "The letter cannot be used unless the claimant first applies to strike out the heading.",
+   "E": "The letter can be relied on: without prejudice protection depends on substance, and a letter containing no genuine attempt to settle is not protected merely because of its heading."
+  },
+  "answer": "E",
+  "expl": "正解E。WPは実質基準の双方向——表示がなくてもgenuineなofferなら保護され(Ch.9本文)、表示があっても実質がなければ保護されない(本問)。denial+費用の脅しはoffer to settleではない。(講義ノートCh.9【WP実質基準(マークあり非genuine型)】参照)",
+  "trans": "紛争の過程で、defendantのdirectorが「WITHOUT PREJUDICE」と表題を付した書簡をclaimantに送った。書簡にはofferも譲歩も一切なく、責任の否認と、提訴すれば「費用で貴社を潰す」との脅しだけが書かれている。trialでclaimantはこの書簡をdefendantの行状の証拠として使いたい。状況として最も適切なものはどれか。",
+  "analysis": {
+   "A": "× 「ラベルが結論を決める」を切るのが本問の学習点。",
+   "E": "○ WPは実質基準の双方向——表示がなくてもgenuineなofferなら保護され(Ch.9本文)、表示があっても実質がなければ保護されない(本問)。denial+費用の脅しはoffer to settleではない。",
+   "B": "× 紛争当事者間の書簡が全部privilegedになる制度はない——保護は類型(LAP・litigation・WP)の要件を満たすものだけ。",
+   "C": "× 相手の同意は不要——WPの保護が及ばない書簡は証拠として通常どおり使える。",
+   "D": "× 「見出しのstrike out」という手続は存在しない——実質判断で足りる。"
+  }
+ },
+ {
+  "qid": "DR-49",
+  "subject": "DR",
+  "tag": "Ch.9",
+  "stem": "A claimant holds a pre-action report from its own consultant, listed in Part 2 of its N265 as privileged. The report is in fact favourable, and the claimant now considers that showing it to the defendant would strengthen its negotiating position. How can the claimant deploy the report?",
+  "options": {
+   "A": "It cannot: privilege, once claimed in a list, is irrevocable, because the list of documents is verified by a disclosure statement and cannot afterwards be contradicted by the party who served it.",
+   "B": "It may waive privilege by writing to the defendant indicating that it does not rely on the privilege and inviting inspection of the report.",
+   "C": "It must apply to the court for an order permitting waiver.",
+   "D": "It must re-serve an amended claim form exhibiting the report.",
+   "E": "It may show the report to the defendant only at trial, through cross-examination."
+  },
+  "answer": "B",
+  "expl": "正解B。privilegeは保持者の利益のための保護——放棄は自由で、方法は相手方への書面(依拠しない旨)+閲覧の招待だけ。裁判所の許可(C)は不要。(講義ノートCh.9【privilegeのwaive】参照)",
+  "trans": "claimantが、自社consultantの提訴前報告書をN265のPart 2にprivilegedとして記載している。報告書は実は有利な内容で、claimantはdefendantに見せれば交渉上の立場が強まると考えるに至った。報告書をどう活用できるか。",
+  "analysis": {
+   "A": "× リスト記載は放棄を封じない。戦術的な開放(有利な文書を見せる)はwaiveの典型的な使い方。",
+   "B": "○ privilegeは保持者の利益のための保護——放棄は自由で、方法は相手方への書面(依拠しない旨)+閲覧の招待だけ。裁判所の許可(C)は不要。",
+   "D": "× claim formの再送達はprivilegeの放棄と無関係——書面の種類の取り違え。",
+   "E": "× trialまで待つ必要はない——waiveは交渉段階でこそ戦術的に使う装置。",
+   "C": "× 裁判所の許可は不要——waiveは保持者の一方的な処分で、相手方への書面+閲覧の招待だけで完結する。"
+  }
+ },
+ {
+  "qid": "DR-50",
+  "subject": "DR",
+  "tag": "Ch.9",
+  "stem": "Before issuing proceedings, a prospective claimant in a product liability dispute believes the manufacturer holds internal test results that would show whether the product line was defective. The manufacturer has refused voluntary disclosure, and without the results the claimant cannot sensibly decide whether to litigate or settle. Which of the following best describes what the claimant must show on an application for pre-action disclosure?",
+  "options": {
+   "A": "Only that the documents would be helpful to its investigation, since the purpose of pre-action disclosure is to allow prospective claimants to investigate possible claims before committing themselves to proceedings, and helpfulness is assessed generously at this early stage.",
+   "B": "That proceedings have been issued and standard disclosure is overdue.",
+   "C": "That the documents are held by a person who will not be a party to any proceedings, because disclosure before issue is designed to reach material that ordinary disclosure between the parties could never touch.",
+   "D": "That both applicant and respondent are likely to be parties to anticipated proceedings, that the documents would fall within the respondent's standard disclosure if proceedings were started, and that pre-action disclosure is desirable to dispose fairly of the anticipated proceedings, assist resolution without proceedings, or save costs.",
+   "E": "That the limitation period is about to expire."
+  },
+  "answer": "D",
+  "expl": "正解D。pre-actionの4点セット:双方が見込み当事者+文書の特定+提訴されればstandard disclosureの対象+公正な処理・提訴なしの解決・費用節約に望ましい。「訴えずに済む判断材料」という制度趣旨が要件に織り込まれている。(講義ノートCh.9【pre-action disclosureの要件】参照)",
+  "trans": "提訴前、製造物責任紛争の見込みclaimantは、製品ラインの欠陥の有無を示す社内試験結果をmanufacturerが保有していると考えている。manufacturerは任意開示を拒み、結果なしにはclaimantは訴訟か和解かを適切に判断できない。pre-action disclosureの申立てでclaimantが示すべきこととして最も適切なものはどれか。",
+  "analysis": {
+   "C": "× 第三者が持つ場合はnon-party(しかも提訴後)——装置の取り違え。",
+   "D": "○ pre-actionの4点セット:双方が見込み当事者+文書の特定+提訴されればstandard disclosureの対象+公正な処理・提訴なしの解決・費用節約に望ましい。「訴えずに済む判断材料」という制度趣旨が要件に織り込まれている。",
+   "A": "× 「調査に役立つ」だけでは足りない——標準開示該当性+desirability(公正処理・提訴なし解決・費用節約)まで要る。",
+   "B": "× pre-actionは提訴「前」の装置——提訴後の開示遅滞はspecific disclosureの世界。",
+   "E": "× 時効の切迫は要件ではない——時効対応はprotective issue(Ch.2)の仕事。"
+  }
+ },
+ {
+  "qid": "DR-51",
+  "subject": "DR",
+  "tag": "Ch.9",
+  "stem": "In a multi-track commercial claim, both parties hold very large volumes of electronic documents. The first case management conference is approaching and the parties have not yet discussed how electronic disclosure will be handled. Which of the following best describes what the parties should do?",
+  "options": {
+   "A": "Seek to agree the limits of the search for electronic documents — such as keyword searches, categories of document and the manner of inspection — so that the court can deal with e-disclosure at the CMC or, if necessary, at a separate hearing.",
+   "B": "Print all electronic documents and exchange them in hard copy.",
+   "C": "Leave electronic documents out of disclosure, as only originals need be listed.",
+   "D": "Each party may unilaterally decide its own keywords without reference to the other, because each party alone knows its own systems and custodians, and the adequacy of its choices can be tested later through specific disclosure if necessary.",
+   "E": "Postpone all consideration of electronic documents until trial."
+  },
+  "answer": "A",
+  "expl": "正解A。e-disclosureはCPRが当事者に限定方法の合意(keywords・カテゴリ・閲覧方法)を求める領域——multiの商事事件で典型・CMCで扱う(必要なら別hearing)。(講義ノートCh.9【e-disclosure】参照)",
+  "trans": "multi-trackの商事請求で、両当事者とも極めて大量の電子文書を保有している。第1回case management conferenceが近づいているが、当事者は電子開示の扱いをまだ協議していない。当事者がすべきこととして最も適切なものはどれか。",
+  "analysis": {
+   "D": "× 一方的なkeyword設定は合意要請に反し、後で追加調査命令(specific disclosure)の火種になる。",
+   "A": "○ e-disclosureはCPRが当事者に限定方法の合意(keywords・カテゴリ・閲覧方法)を求める領域——multiの商事事件で典型・CMCで扱う(必要なら別hearing)。",
+   "B": "× 全部印刷は電子開示の統制(比例性)の正反対——費用爆発の典型。",
+   "C": "× 電子文書もdocumentに含まれ、開示から外せない。",
+   "E": "× trialまで先送りすれば開示のタイムテーブル全体が崩れる——CMCで扱うべき事項。"
+  }
+ },
+ {
+  "qid": "DR-52",
+  "subject": "DR",
+  "tag": "Ch.10",
+  "stem": "A patient issues a clinical negligence claim against an NHS trust in 2025, valued at £60,000. The trust denies both breach of duty and causation in full. The patient's solicitor asks whether the fixed recoverable costs regime will govern costs recovery if the claim succeeds. Which of the following is correct?",
+  "options": {
+   "A": "Yes: all claims up to £100,000 issued after 1 October 2023 fall within the FRC regime without exception, because the extension of fixed costs was designed to be comprehensive across the fast and intermediate tracks.",
+   "B": "Yes, because the claim will be allocated to the intermediate track.",
+   "C": "No, because clinical negligence claims are always allocated to the multi-track.",
+   "D": "Yes, provided the trust is publicly funded.",
+   "E": "No: clinical negligence claims are excluded from the FRC regime unless both breach of duty and causation have been admitted — and here both are denied."
+  },
+  "answer": "E",
+  "expl": "正解E。FRCの適用除外リストの頻出項目——臨床過誤は「breachとcausationの双方が認められた場合」を除き除外。全部否認の本問は除外側。(講義ノートCh.10【FRC適用除外】参照)",
+  "trans": "患者が2025年にNHS trustに対し£60,000の臨床過誤請求をissueした。trustはbreach of dutyもcausationも全面否認している。患者側solicitorは、請求が認容された場合の費用回収がfixed recoverable costs制度に服するかを尋ねている。正しいものはどれか。",
+  "analysis": {
+   "A": "× 「例外なし」で除外リスト(住宅・中皮腫・児童等への危害・陪審・対警察)を消しにくる肢。除外の帰結は通常の費用評価(assessment)の世界に戻ること。",
+   "E": "○ FRCの適用除外リストの頻出項目——臨床過誤は「breachとcausationの双方が認められた場合」を除き除外。全部否認の本問は除外側。",
+   "B": "× トラック配分はFRC適用の必要条件であって十分条件ではない——除外リストが先に効く。",
+   "C": "× 「臨床過誤=常にmulti」という自動配分はない——除外の根拠はFRC規定の明文リスト。",
+   "D": "× 被告の資金源はFRCの適用と無関係。"
+  }
+ },
+ {
+  "qid": "DR-53",
+  "subject": "DR",
+  "tag": "Ch.10",
+  "stem": "In a multi-track claim, the court hears a half-day interim application and orders the losing party to pay the costs of the application. Both parties filed statements of costs the day before the hearing. How will the costs of the application ordinarily be quantified?",
+  "options": {
+   "A": "By detailed assessment after the conclusion of the whole claim, because the claim is on the multi-track.",
+   "B": "By reference to the fixed recoverable costs tables.",
+   "C": "By summary assessment at the conclusion of the hearing, on the basis of the statements of costs filed at least 24 hours in advance.",
+   "D": "By the parties' own agreement only; the court has no power to quantify.",
+   "E": "By provisional assessment on paper within three months."
+  },
+  "answer": "C",
+  "expl": "正解C。summary assessmentの守備範囲はfast track trialの終結時+1日以内で終わるhearingの終結時——multiの事件でも中間申立ての費用はその場で即決が原則。24時間前のstatementが伏線。(講義ノートCh.10【summary vs detailedの選別】参照)",
+  "trans": "multi-trackの請求で、裁判所が半日の中間申立てを審理し、敗れた側に申立費用の負担を命じた。両当事者はhearing前日にstatements of costsを提出していた。申立費用は通常どのように量定されるか。",
+  "analysis": {
+   "A": "× 「multi=常にdetailed」は本体費用の話——申立て単位の費用と混同させる罠。",
+   "E": "× provisionalはdetailed内の£75,000未満の書面処理。",
+   "C": "○ summary assessmentの守備範囲はfast track trialの終結時+1日以内で終わるhearingの終結時——multiの事件でも中間申立ての費用はその場で即決が原則。24時間前のstatementが伏線。",
+   "B": "× FRC表はfast・intermediateのFRC事件の装置——multiの中間申立て費用の量定方法ではない。",
+   "D": "× 裁判所には量定権限がある——当事者の合意は常に可能だが「合意のみ」ではない。"
+  }
+ },
+ {
+  "qid": "DR-54",
+  "subject": "DR",
+  "tag": "Ch.10",
+  "stem": "Judgment with costs was given for a claimant in a multi-track claim on 10 January. The claimant served notice of commencement of detailed assessment with its bill on 20 February. The defendant has done nothing since. It is now early April. Which of the following best describes the claimant's position?",
+  "options": {
+   "A": "The claimant must wait for the defendant's points of dispute indefinitely.",
+   "B": "The defendant's 21 days for serving points of dispute have expired, so the claimant may apply for a default costs certificate for the full amount of the bill together with fixed costs and court fees.",
+   "C": "The claimant must apply for an interim costs certificate for the undisputed part of the bill.",
+   "D": "The claimant's notice was served out of time, because it was not served within 21 days of judgment, and a receiving party who misses that deadline loses the right to commence detailed assessment without the court's permission.",
+   "E": "The bill must now be assessed provisionally on paper regardless of its size."
+  },
+  "answer": "B",
+  "expl": "正解B。リレーの実戦:notice(判決から3ヶ月以内——2月20日は余裕でセーフ)→points of dispute21日——無応答ならdefault costs certificate(bill全額+固定費用+手数料)。(講義ノートCh.10【detailed期限リレー】参照)",
+  "trans": "multi-trackの請求で、1月10日にclaimant勝訴・費用付きの判決が出た。claimantは2月20日にbillとともにdetailed assessmentのnotice of commencementを送達した。defendantはそれ以来何もしていない。現在は4月初旬である。claimantの立場として最も適切なものはどれか。",
+  "analysis": {
+   "D": "× noticeの期限は3ヶ月(21日はpoints of dispute側)——数字の入れ替え。",
+   "C": "× interim certificateは「軽微な争いだけある」場合の装置。",
+   "B": "○ リレーの実戦:notice(判決から3ヶ月以内——2月20日は余裕でセーフ)→points of dispute21日——無応答ならdefault costs certificate(bill全額+固定費用+手数料)。",
+   "A": "× 無期限に待つ必要はない——21日の徒過はdefault costs certificateという明確な出口につながる。",
+   "E": "× provisional assessmentは£75,000未満のbillが「争われて」assessmentに進む場合の書面処理——無応答の本問はcertificateで終わる。"
+  }
+ },
+ {
+  "qid": "DR-55",
+  "subject": "DR",
+  "tag": "Ch.10",
+  "stem": "A claim for £45,000 in damages, raising complex allegations against three defendants, is allocated to the multi-track. The court orders costs management. The claimant's solicitor asks when the costs budget must be filed and exchanged. Which of the following is correct?",
+  "options": {
+   "A": "At least 21 days before the first case management conference, because the claim is on the multi-track.",
+   "B": "With the particulars of claim.",
+   "C": "Costs budgets are not required, because the claim is worth less than £50,000.",
+   "D": "With the directions questionnaire, because where the claim is valued at less than £50,000 the budget must be filed with the DQ.",
+   "E": "Within 7 days of the first CMC."
+  },
+  "answer": "D",
+  "expl": "正解D。budget期限の分岐は請求額£50,000——未満=DQと同時/超=第1回CMCの21日以上前。multiで£45,000という組合せ(価額はトラックでなく提出期限を決める)を正確に切れるか。(講義ノートCh.10【budgetの提出期限分岐】参照)",
+  "trans": "3名のdefendantに対する複雑な主張を含む£45,000の損害賠償請求がmulti-trackに配分され、裁判所がcosts managementを命じた。claimant側solicitorが、costs budgetの提出・交換の期限を尋ねている。正しいものはどれか。",
+  "analysis": {
+   "C": "× £50,000はbudget「不要」の線ではなく「いつ出すか」の線。",
+   "D": "○ budget期限の分岐は請求額£50,000——未満=DQと同時/超=第1回CMCの21日以上前。multiで£45,000という組合せ(価額はトラックでなく提出期限を決める)を正確に切れるか。",
+   "A": "× 21日前ルートは£50,000「超」の側——価額の分岐を逆に適用している。",
+   "B": "× particularsとの同時提出という期限はない——起点はDQかCMC。",
+   "E": "× 「CMC後7日」という期限は存在しない——7日はCMCへのdirections案(事前)の数字。"
+  }
+ },
+ {
+  "qid": "DR-56",
+  "subject": "DR",
+  "tag": "Ch.10",
+  "stem": "After judgment for a successful claimant in a multi-track claim, the court assesses costs on the standard basis. The evidence shows that the claimant refused, without any recorded reason, two proportionate offers of mediation made by the defendant at an early stage. Which of the following best describes how this affects the assessment?",
+  "options": {
+   "A": "The conduct of the parties, including efforts made to resolve the dispute and conduct before proceedings, is a factor the court takes into account and may lead to a reduction in the costs the claimant recovers.",
+   "B": "It is irrelevant: only conduct during the trial itself can affect costs, because pre-action behaviour is regulated exclusively by the protocols and any complaint about it should have been raised at the allocation stage.",
+   "C": "It automatically deprives the claimant of all costs.",
+   "D": "It converts the assessment to the indemnity basis in the claimant's favour.",
+   "E": "It transfers liability for costs to the claimant's solicitors."
+  },
+  "answer": "A",
+  "expl": "正解A。CPR 44.4の考慮要素の筆頭=当事者の行状(提訴前を含む・解決努力の有無)——Ch.1のADR拒否がここに流れ込み、勝訴者の回収を削る。(講義ノートCh.10【CPR 44.4の行状】参照)",
+  "trans": "multi-trackで勝訴したclaimantの費用をstandard basisで評価する場面で、defendantが早期に行った2回の比例的なmediationの申出を、claimantが理由の記録もなく拒否していたことが証拠上明らかになった。これが評価に与える影響として最も適切なものはどれか。",
+  "analysis": {
+   "C": "× 自動全額剥奪ではなく裁量的な減額。",
+   "D": "× indemnityは制裁・Part 36の文脈——拒否した側に有利に働くはずがない。",
+   "A": "○ CPR 44.4の考慮要素の筆頭=当事者の行状(提訴前を含む・解決努力の有無)——Ch.1のADR拒否がここに流れ込み、勝訴者の回収を削る。",
+   "B": "× 44.4は「提訴前を含む」行状を明文で考慮する——trial中の行状に限定する読みは条文の切り捨て。",
+   "E": "× 当事者の交渉判断の責任を代理人に転嫁する装置ではない——wasted costsは代理人自身の不適切追行の場面。"
+  }
+ },
+ {
+  "qid": "DR-57",
+  "subject": "DR",
+  "tag": "Ch.10",
+  "stem": "A claimant makes a valid Part 36 offer to settle its £80,000 claim for £65,000, with a relevant period expiring on 1 May. The defendant does not respond. On 20 June, shortly before trial, the defendant serves notice of acceptance. Which of the following best describes the costs consequences of acceptance?",
+  "options": {
+   "A": "The defendant pays the claimant's costs to 1 May; the claimant pays the defendant's costs from 1 May to 20 June, because acceptance after the relevant period always splits the costs at the date of expiry, whoever made the offer.",
+   "B": "Each side bears its own costs, because acceptance came after the relevant period.",
+   "C": "The defendant pays the claimant's costs, assessed on the standard basis, up to the date on which notice of acceptance was served — the position is the same whether a claimant's offer is accepted within or after the relevant period.",
+   "D": "The defendant pays the claimant's costs on the indemnity basis together with a 10% additional sum.",
+   "E": "The court must give judgment for £80,000, because late acceptance forfeits the discount."
+  },
+  "answer": "C",
+  "expl": "正解C。帰結マップの盲点—claimantのofferの受諾はRP内外で同じ:defendantが受諾通知の日までのclaimantの費用をstandardで負担。(講義ノートCh.10【Part 36:Cのoffer遅延受諾】参照)",
+  "trans": "claimantが£80,000の請求を£65,000で解決する有効なPart 36 offerをし、relevant periodは5月1日に満了した。defendantは応答しなかった。trial直前の6月20日、defendantがnotice of acceptanceを送達した。受諾の費用帰結として最も適切なものはどれか。",
+  "analysis": {
+   "A": "× split処理はdefendantのofferの遅延受諾専用——offerの主を入れ替えて誤答させる本命の罠。",
+   "D": "× 10%+indemnityはtrialでbeatしたときのペナルティ(受諾で決着すれば発動しない)。",
+   "C": "○ 帰結マップの盲点—claimantのofferの受諾はRP内外で同じ:defendantが受諾通知の日までのclaimantの費用をstandardで負担。",
+   "B": "× 「各自負担」はPart 36の受諾の帰結として登場しない——受諾には明文の費用ルールがある。",
+   "E": "× 受諾はofferの額での解決——遅れても「満額判決」に化けることはない(そもそも判決ではなくstay+支払い)。"
+  }
+ },
+ {
+  "qid": "DR-58",
+  "subject": "DR",
+  "tag": "Ch.10",
+  "stem": "In a claim for £100,000, the defendant made a Part 36 offer of £40,000 and the claimant later made a Part 36 offer to accept £70,000. Neither offer was accepted and both relevant periods expired long before trial. At trial the claimant is awarded £55,000. Which of the following best describes the Part 36 consequences?",
+  "options": {
+   "A": "The claimant obtains the enhanced consequences of its own offer, including an additional sum.",
+   "B": "The defendant obtains the consequences of its offer, so the claimant pays the defendant's costs from the expiry of the defendant's relevant period.",
+   "C": "Both offers take effect, and the enhancements cancel each other out.",
+   "D": "The judgment is set aside and the parties are ordered to mediate.",
+   "E": "Neither offer produces Part 36 consequences: the claimant beat the defendant's £40,000 offer but failed to match its own £70,000 offer, so costs follow the usual rules."
+  },
+  "answer": "E",
+  "expl": "正解E。双方offer型の3分岐——認容£55,000はDのoffer(£40,000)超・Cのoffer(£70,000)未満の中間=どちらも効かない(通常ルール:D敗訴でC費用負担・standard)。(講義ノートCh.10【双方offerの中間勝訴】参照)",
+  "trans": "£100,000の請求で、defendantが£40,000のPart 36 offerをし、claimantは後に£70,000で受け入れるPart 36 offerをした。どちらも受諾されず、両方のrelevant periodはtrialのはるか前に満了した。trialでclaimantは£55,000を認容された。Part 36の帰結として最も適切なものはどれか。",
+  "analysis": {
+   "A": "× Cのofferが効くのは自分のofferをbeatしたとき。",
+   "B": "× Dのofferが効くのはbeatされなかったとき——£55,000>£40,000でDのofferは死んでいる。",
+   "E": "○ 双方offer型の3分岐——認容£55,000はDのoffer(£40,000)超・Cのoffer(£70,000)未満の中間=どちらも効かない(通常ルール:D敗訴でC費用負担・standard)。",
+   "C": "× 「双方発動して相殺」という処理はない——発動条件をそれぞれ判定し、本問はどちらも不成立。",
+   "D": "× 判決の取消し・調停命令はPart 36の帰結として存在しない。"
+  }
+ },
+ {
+  "qid": "DR-59",
+  "subject": "DR",
+  "tag": "Ch.10",
+  "stem": "A claimant made a valid Part 36 offer of £280,000, which the defendant did not accept. At trial the claimant is awarded £300,000 in damages. The court is minded to apply the Part 36 enhancements in full. What is the maximum additional sum the court may award on the damages?",
+  "options": {
+   "A": "£75,000, the statutory maximum in every case.",
+   "B": "£15,000, being 5% of the damages.",
+   "C": "£45,000, being 15% of the damages.",
+   "D": "£30,000, being 10% of the first £500,000 of the amount awarded.",
+   "E": "No additional sum, because the claimant recovered more than its own offer."
+  },
+  "answer": "D",
+  "expl": "正解D。加算金の料率:£500,000まで10%・超過分5%・上限£75,000——£300,000は全額が10%帯で£30,000。(講義ノートCh.10【加算金の計算】参照)",
+  "trans": "claimantが£280,000の有効なPart 36 offerをし、defendantは受諾しなかった。trialでclaimantは£300,000の損害賠償を認容された。裁判所はPart 36の加重効果を全面適用する意向である。裁判所が損害賠償に付し得る加算金の最大額はいくらか。",
+  "analysis": {
+   "A": "× £75,000は上限であって定額ではない。",
+   "E": "× 自分のofferを上回るのはequal or beatそのもの——ペナルティ発動の条件を「発動しない理由」に反転させた罠。",
+   "D": "○ 加算金の料率:£500,000まで10%・超過分5%・上限£75,000——£300,000は全額が10%帯で£30,000。",
+   "B": "× 5%は£500,000「超過分」の料率——全額が£500,000以下の本問で登場しない。",
+   "C": "× 15%という料率は制度に存在しない——10%と5%の合算という誤った発想。"
+  }
+ },
+ {
+  "qid": "DR-60",
+  "subject": "DR",
+  "tag": "Ch.10",
+  "stem": "An intermediate track claim within the fixed recoverable costs regime proceeds to trial. The claimant had made a Part 36 offer which the defendant rejected; the relevant period expired at the end of stage 4 of the proceedings. At trial the claimant is awarded more than its offer. Which of the following best describes the effect on the claimant's recoverable costs?",
+  "options": {
+   "A": "The claimant escapes the FRC regime entirely and recovers costs on the indemnity basis, assessed by the hour, because the indemnity costs consequence of Part 36 is incompatible with fixed costs and therefore displaces them.",
+   "B": "The claimant recovers its fixed costs with no adjustment, because FRC amounts cannot be altered.",
+   "C": "The claimant recovers double the fixed costs for the whole proceedings.",
+   "D": "The claimant's fixed costs are reduced by 50% for unreasonable behaviour.",
+   "E": "The claimant recovers an amount equivalent to the fixed costs applicable to the stages from the expiry of the relevant period onwards uplifted by 35%, in place of the ordinary indemnity costs consequence."
+  },
+  "answer": "E",
+  "expl": "正解E。FRC事件のPart 36はindemnityの代わりに「RP満了以降の段階のFRC+35%」——制度の接続点を正面から。(講義ノートCh.10【FRC×Part 36】参照)",
+  "trans": "fixed recoverable costs制度内のintermediate track請求がtrialに進んだ。claimantはPart 36 offerをしていたがdefendantは拒否し、relevant periodは手続の第4段階の終わりに満了した。trialでclaimantはofferを上回る額を認容された。claimantの回収費用への効果として最も適切なものはどれか。",
+  "analysis": {
+   "A": "× FRCからの離脱はCPR 45.9の例外的事情の別問題。",
+   "D": "× ±50%は不合理な行動(CPR 45.13)への装置——beatの帰結ではない。",
+   "E": "○ FRC事件のPart 36はindemnityの代わりに「RP満了以降の段階のFRC+35%」——制度の接続点を正面から。",
+   "B": "× FRC額は不変ではない——Part 36(+35%)・不合理行動(±50%)・例外的事情(45.9)という明文の調整装置がある。",
+   "C": "× 「全段階2倍」という帰結はない——加算は+35%かつRP満了以降の段階に限られる。"
+  }
+ },
+ {
+  "qid": "DR-61",
+  "subject": "DR",
+  "tag": "Ch.11",
+  "stem": "A multi-track commercial claim is listed for a seven-day trial beginning in twelve weeks' time. The parties have complied with directions and filed their pre-trial checklists. Which of the following best describes the hearing the court is likely to hold at around ten weeks before trial, and its purpose?",
+  "options": {
+   "A": "A case management conference, to review the progress of the claim, since the rules require a further CMC whenever a trial is estimated to exceed five days so that the directions can be revisited before the parties incur trial costs.",
+   "B": "A pre-trial review, to check compliance with directions, give directions for the preparation of the trial bundle, and set a trial timetable allocating time for each party's submissions and evidence.",
+   "C": "A disposal hearing, to assess damages summarily.",
+   "D": "A provisional assessment, to fix the costs of the trial in advance.",
+   "E": "An allocation hearing, because multi-day trials require reallocation."
+  },
+  "answer": "B",
+  "expl": "正解B。複数日のmulti trialの約10週前=pre-trial review——①遵守確認②bundleの指示③trial timetable(持ち時間表)の設定の3点。(講義ノートCh.11【pre-trial reviewの機能】参照)",
+  "trans": "multi-trackの商事請求が12週間後開始の7日間trialに指定された。当事者はdirectionsを遵守し、pre-trial checklistsを提出済みである。trialの約10週間前に裁判所が開きそうなhearingとその目的として最も適切なものはどれか。",
+  "analysis": {
+   "A": "× CMCは配分直後の入口のhearing——trial直前のreviewと時期・機能が対になる。",
+   "C": "× disposal hearingは額の査定を残すadmission処理(Ch.4)の世界。",
+   "B": "○ 複数日のmulti trialの約10週前=pre-trial review——①遵守確認②bundleの指示③trial timetable(持ち時間表)の設定の3点。",
+   "D": "× provisional assessmentは費用のdetailed assessment内の書面処理——trial前に費用を先決めする装置ではない。",
+   "E": "× 複数日trial=再配分という規則はない——multiのまま準備のhearing(review)を重ねるだけ。"
+  }
+ },
+ {
+  "qid": "DR-62",
+  "subject": "DR",
+  "tag": "Ch.11",
+  "stem": "At trial, counsel for the claimant calls the claimant's site manager. After the witness confirms his statement, counsel asks: 'The scaffolding had been leaning dangerously for at least a week before the collapse, hadn't it?' Counsel for the defendant objects. Which of the following best describes the position?",
+  "options": {
+   "A": "The question is proper, because counsel may lead any witness on disputed matters.",
+   "B": "The question is improper, because no questions at all may be asked of a witness whose statement stands as evidence-in-chief: the purpose of exchanging statements is to eliminate oral examination-in-chief entirely.",
+   "C": "The question is proper in chief but would be improper in cross-examination.",
+   "D": "The question is an improper leading question in examination-in-chief; questions to a party's own witness must be open and non-leading, whereas leading questions are permitted in cross-examination by the opposing party.",
+   "E": "The propriety of the question depends on whether the witness agrees with it."
+  },
+  "answer": "D",
+  "expl": "正解D。誘導の規律:主尋問=open・non-leadingのみ/cross=leading可——答えを埋め込んだ付加疑問(hadn't it?)は主尋問では不適切。(講義ノートCh.11【尋問の誘導可否】参照)",
+  "trans": "trialで、claimant側counselがclaimantの現場責任者を証人として呼んだ。証人が陳述書を確認した後、counselは尋ねた——「足場は崩落の少なくとも1週間前から危険な状態で傾いていたのですよね?」。defendant側counselが異議を述べた。状況として最も適切なものはどれか。",
+  "analysis": {
+   "B": "× WS=evidence-in-chiefでも補足の質問自体は裁判所の許可の範囲であり得る——「一切禁止」は行き過ぎ。",
+   "C": "× 許否の向きを逆転させた罠——誘導が許されるのはcross-examinationの側で、主尋問では不可。",
+   "D": "○ 誘導の規律:主尋問=open・non-leadingのみ/cross=leading可——答えを埋め込んだ付加疑問(hadn't it?)は主尋問では不適切。",
+   "A": "× 主尋問での誘導は争点事項について許されない——「どの証人にもlead可」はcrossの規律の誤転用。",
+   "E": "× 証人が同意するかどうかは質問の適否を決めない——形式(答えの埋め込み)で判断される。"
+  }
+ },
+ {
+  "qid": "DR-63",
+  "subject": "DR",
+  "tag": "Ch.11",
+  "stem": "A Master in the High Court makes a final order striking out a substantial part of a claim. The claimant, contending the Master erred in law, wishes to appeal. Which of the following correctly states the destination and time limit for seeking permission to appeal?",
+  "options": {
+   "A": "To a High Court Judge, applying within 21 days of the decision.",
+   "B": "To the Court of Appeal, applying within 28 days of the decision.",
+   "C": "To a Circuit Judge in the County Court, within 21 days.",
+   "D": "To the Supreme Court, with no time limit.",
+   "E": "To another Master of equivalent seniority, within 14 days."
+  },
+  "answer": "A",
+  "expl": "正解A。宛先表の4行のうちMaster(High Court)→High Court Judge——「同じHigh Courtの中で判事のレベルが上がる」型。期限は原審がHigh Courtなので21日。(講義ノートCh.11【上訴の宛先(Master型)】参照)",
+  "trans": "High CourtのMasterが、請求の相当部分をstrike outする終局的命令をした。claimantはMasterが法の適用を誤ったと主張して上訴したい。上訴許可を求める宛先と期限として正しいものはどれか。",
+  "analysis": {
+   "B": "× CAへ行くのはHigh Court Judgeの決定/28日はCAの決定への期限——2つの取り違えを同時に仕込んだ肢。",
+   "A": "○ 宛先表の4行のうちMaster(High Court)→High Court Judge——「同じHigh Courtの中で判事のレベルが上がる」型。期限は原審がHigh Courtなので21日。",
+   "C": "× County CourtのCircuit Judgeは「County DJの決定」の上訴先——High CourtのMasterの決定とは無関係の行。",
+   "D": "× Supreme Courtは最上級審への例外的な飛越えの世界——Masterの決定の通常の宛先ではなく「無期限」も誤り。",
+   "E": "× 同格のMasterへの上訴という制度はない——宛先は常に一段上の裁判官レベル。"
+  }
+ },
+ {
+  "qid": "DR-64",
+  "subject": "DR",
+  "tag": "Ch.11",
+  "stem": "A judgment creditor applies for a charging order over the debtor's freehold commercial unit. A court officer makes an interim charging order without a hearing. The order and supporting documents are served on the debtor within 21 days. The debtor does nothing at all in response. Which of the following best describes what happens next?",
+  "options": {
+   "A": "The interim order lapses automatically after 14 days of inaction.",
+   "B": "A judge must hold a hearing before any final order can be made, whether or not the debtor objects, because an order that secures a judgment debt against a person's property is too serious to be made on paper alone.",
+   "C": "If the debtor files no response within 14 days of service, the interim order will become final without a hearing, securing the judgment debt against the property.",
+   "D": "The creditor must immediately apply for an order for sale, which is granted automatically.",
+   "E": "The charging order is unavailable because the debtor did not consent."
+  },
+  "answer": "C",
+  "expl": "正解C。3段階の急所:interim(hearingなし・court officer)→21日以内に送達→debtorが14日で無応答なら自動的にfinal。異議があるときだけ28日の理由書→判事のhearingへ。(講義ノートCh.11【charging orderの3段階】参照)",
+  "trans": "判決債権者が、債務者のfreehold商業物件へのcharging orderを申し立てた。court officerがhearingなしでinterim charging orderを発した。命令と添付書類は21日以内に債務者へ送達された。債務者は一切応答しない。次に起こることとして最も適切なものはどれか。",
+  "analysis": {
+   "D": "× order for saleはさらに別の申立てで自動ではない——chargingは「登記して待つ」執行。",
+   "E": "× 執行に債務者の同意は不要——charging orderは判決債務を担保化する強制手続そのもの。",
+   "C": "○ 3段階の急所:interim(hearingなし・court officer)→21日以内に送達→debtorが14日で無応答なら自動的にfinal。異議があるときだけ28日の理由書→判事のhearingへ。",
+   "A": "× interim orderは放置で失効しない——逆で、無応答なら14日でfinalに固まる。",
+   "B": "× 異議がなければhearingなしでfinalになる——「常にhearing」はcourt officer処理の設計を否定している。"
+  }
+ }
+]

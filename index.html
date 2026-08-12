@@ -157,6 +157,7 @@ const parseMcqJson = (text) => {
       expl: q.expl || q.explanation || q.kaisetsu || "",
       trans: q.trans || q.translation || "",
       analysis: q.analysis || {},
+      kind: q.kind === "quiz" ? "quiz" : "mcq",
     };
     if (item.stem && item.answer && Object.keys(options).length >= 2) out.push(item);
   });
@@ -314,7 +315,8 @@ function App() {
   const mcqs = data.mcqs || [];
 
   const startMcq = (opt) => {
-    let pool = mcqs;
+    const kind = opt.kind || "mcq";
+    let pool = mcqs.filter((q) => (q.kind || "mcq") === kind);
     if (opt.subject) pool = pool.filter((q) => (q.subject || "") === opt.subject);
     if (opt.tags && opt.tags.length) pool = pool.filter((q) => opt.tags.includes(q.tag));
     if (opt.bands && opt.bands.length)
@@ -356,8 +358,13 @@ function App() {
       };
     }
     const nextLog = { ...(data.dailyLog[t] || { newN: 0, revN: 0 }) };
-    nextLog.mcqN = (nextLog.mcqN || 0) + 1;
-    nextLog.mcqOK = (nextLog.mcqOK || 0) + (isCorrect ? 1 : 0);
+    if ((cur.kind || "mcq") === "quiz") {
+      nextLog.quizN = (nextLog.quizN || 0) + 1;
+      nextLog.quizOK = (nextLog.quizOK || 0) + (isCorrect ? 1 : 0);
+    } else {
+      nextLog.mcqN = (nextLog.mcqN || 0) + 1;
+      nextLog.mcqOK = (nextLog.mcqOK || 0) + (isCorrect ? 1 : 0);
+    }
     const lbl = [cur.subject, cur.tag].filter(Boolean).join(" ");
     if (lbl) {
       const items = nextLog.qItems ? [...nextLog.qItems] : [];
@@ -793,8 +800,10 @@ function TodayTab({ S, C, Ribbon, daysLeft, quota, log, dueN, newRemaining, tota
   const [mCount, setMCount] = useState("10");
   const subjects = [...new Set(words.map((w) => w.subject).filter(Boolean))].sort();
   const chTags = sortTags([...new Set(words.filter((w) => !subj || (w.subject || "") === subj).map((w) => w.tag).filter(Boolean))]);
-  const mcqSubjects = [...new Set(mcqs.map((q) => q.subject).filter(Boolean))].sort();
-  const mcqTags = sortTags([...new Set(mcqs.filter((q) => !mSubj || (q.subject || "") === mSubj).map((q) => q.tag).filter(Boolean))]);
+  const drillKind = mode === "quiz" ? "quiz" : "mcq";
+  const bank = mcqs.filter((q) => (q.kind || "mcq") === drillKind);
+  const mcqSubjects = [...new Set(bank.map((q) => q.subject).filter(Boolean))].sort();
+  const mcqTags = sortTags([...new Set(bank.filter((q) => !mSubj || (q.subject || "") === mSubj).map((q) => q.tag).filter(Boolean))]);
   const toggle = (arr, setArr, v) => setArr(arr.includes(v) ? arr.filter((x) => x !== v) : [...arr, v]);
   let pool = words;
   if (subj) pool = pool.filter((w) => (w.subject || "") === subj);
@@ -802,7 +811,7 @@ function TodayTab({ S, C, Ribbon, daysLeft, quota, log, dueN, newRemaining, tota
   if (bands.length) pool = pool.filter((w) => (bands.includes("new") && w.srs.due === null) || bands.includes(w.srs.last));
   const poolN = pool.length;
   const drawN = count === "all" ? poolN : Math.min(poolN, Number(count));
-  let mPool = mcqs;
+  let mPool = bank;
   if (mSubj) mPool = mPool.filter((q) => (q.subject || "") === mSubj);
   if (mChaps.length) mPool = mPool.filter((q) => mChaps.includes(q.tag));
   if (mBands.length)
@@ -811,17 +820,18 @@ function TodayTab({ S, C, Ribbon, daysLeft, quota, log, dueN, newRemaining, tota
     );
   const mPoolN = mPool.length;
   const mDrawN = mCount === "all" ? mPoolN : Math.min(mPoolN, Number(mCount));
-  const answeredN = mcqs.filter((q) => q.stats && q.stats.attempts > 0).length;
-  const attemptsTotal = mcqs.reduce((a, q) => a + ((q.stats && q.stats.attempts) || 0), 0);
-  const correctTotal = mcqs.reduce((a, q) => a + ((q.stats && q.stats.correct) || 0), 0);
+  const answeredN = bank.filter((q) => q.stats && q.stats.attempts > 0).length;
+  const attemptsTotal = bank.reduce((a, q) => a + ((q.stats && q.stats.attempts) || 0), 0);
+  const correctTotal = bank.reduce((a, q) => a + ((q.stats && q.stats.correct) || 0), 0);
   const sel = { padding: "10px 8px", fontSize: 14, border: `1px solid ${C.line}`, borderRadius: 10, fontFamily: sans, background: "#fff", color: C.ink, width: "100%", boxSizing: "border-box" };
   const chip = (on) => ({ padding: "7px 12px", borderRadius: 999, fontSize: 13, fontWeight: 600, fontFamily: sans, cursor: "pointer", border: `1px solid ${on ? C.tape : C.line}`, background: on ? C.tapeSoft : "#fff", color: on ? C.tape : C.inkSoft });
   const segBtn = (on) => ({ flex: 1, padding: "11px 0", borderRadius: 9, border: "none", fontFamily: sans, fontSize: 14, fontWeight: 700, cursor: "pointer", background: on ? C.ink : "transparent", color: on ? "#fff" : C.inkSoft, transition: "background .15s" });
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
       <div style={{ display: "flex", background: C.card, border: `1px solid ${C.line}`, borderRadius: 12, padding: 4, gap: 4 }}>
-        <button onClick={() => setMode("vocab")} style={segBtn(mode === "vocab")}>単語学習</button>
-        <button onClick={() => setMode("mcq")} style={segBtn(mode === "mcq")}>問題演習</button>
+        <button onClick={() => setMode("vocab")} style={segBtn(mode === "vocab")}>単語</button>
+        <button onClick={() => { setMode("mcq"); setMSubj(""); setMChaps([]); setMBands([]); }} style={segBtn(mode === "mcq")}>問題演習</button>
+        <button onClick={() => { setMode("quiz"); setMSubj(""); setMChaps([]); setMBands([]); }} style={segBtn(mode === "quiz")}>暗記クイズ</button>
       </div>
 
       <div style={{ ...S.card, borderTop: `4px solid ${C.tape}` }}>
@@ -834,16 +844,18 @@ function TodayTab({ S, C, Ribbon, daysLeft, quota, log, dueN, newRemaining, tota
         </div>
       </div>
 
-      {mode === "mcq" ? (
+      {mode !== "vocab" ? (
         <>
           <div style={S.card}>
-            <div style={{ fontSize: 14, fontWeight: 700, marginBottom: 4 }}>問題演習</div>
+            <div style={{ fontSize: 14, fontWeight: 700, marginBottom: 4 }}>{mode === "quiz" ? "暗記クイズ" : "問題演習"}</div>
             <div style={{ fontSize: 12, color: C.inkSoft, marginBottom: 10 }}>
-              全{mcqs.length}問 / 着手{answeredN}問{attemptsTotal > 0 ? ` / 累計正答率 ${Math.round((correctTotal / attemptsTotal) * 100)}%` : ""}
+              全{bank.length}問 / 着手{answeredN}問{attemptsTotal > 0 ? ` / 累計正答率 ${Math.round((correctTotal / attemptsTotal) * 100)}%` : ""}
             </div>
-            {mcqs.length === 0 ? (
+            {bank.length === 0 ? (
               <div style={{ fontSize: 13, color: C.inkSoft }}>
-                まだ問題がありません。「追加」タブの「問題演習のインポート」からJSONを貼り付けてください。
+                {mode === "quiz"
+                  ? 'まだクイズがありません。「追加」タブのインポートで kind:"quiz" のJSONを読み込んでください(期間・費用など数値暗記用の4択形式)。'
+                  : "まだ問題がありません。「追加」タブの「問題演習のインポート」からJSONを読み込んでください。"}
               </div>
             ) : (
               <>
@@ -887,10 +899,10 @@ function TodayTab({ S, C, Ribbon, daysLeft, quota, log, dueN, newRemaining, tota
                     <option value="all">全部</option>
                   </select>
                   <button
-                    onClick={() => onStartMcq({ subject: mSubj, tags: mChaps, bands: mBands, count: mCount === "all" ? 0 : Number(mCount) })}
+                    onClick={() => onStartMcq({ kind: drillKind, subject: mSubj, tags: mChaps, bands: mBands, count: mCount === "all" ? 0 : Number(mCount) })}
                     disabled={mPoolN === 0}
                     style={{ ...S.btn(mPoolN === 0 ? C.line : C.tape), opacity: mPoolN === 0 ? 0.7 : 1 }}>
-                    {mPoolN === 0 ? "該当なし" : `演習開始(${mDrawN}問 / 該当${mPoolN}問)`}
+                    {mPoolN === 0 ? "該当なし" : `${mode === "quiz" ? "クイズ開始" : "演習開始"}(${mDrawN}問 / 該当${mPoolN}問)`}
                   </button>
                 </div>
               </>
@@ -1297,11 +1309,12 @@ function RecordTab({ S, C, today, dailyLog, diary, onSave }) {
     const lg = dailyLog[dateStr] || {};
     const total = (lg.newN || 0) + (lg.revN || 0);
     const mcqN = lg.mcqN || 0;
+    const quizN = lg.quizN || 0;
     const lec = linesFrom(getEntry(dateStr).items);
     const voc = linesFrom([...(lg.vItems || []), ...(lg.items || [])]);
     const drill = linesFrom(lg.qItems || []);
-    if (total === 0 && mcqN === 0 && lec.length === 0 && voc.length === 0 && drill.length === 0) return null;
-    return { total, mcqN, lec, voc, drill };
+    if (total === 0 && mcqN === 0 && quizN === 0 && lec.length === 0 && voc.length === 0 && drill.length === 0) return null;
+    return { total, mcqN, quizN, lec, voc, drill };
   };
   const selLog = dailyLog[selDate] || { newN: 0, revN: 0, items: [] };
   const entry = getEntry(selDate);
@@ -1371,9 +1384,9 @@ function RecordTab({ S, C, today, dailyLog, diary, onSave }) {
                         </span>
                       ) : null
                     )}
-                    {(sum.total > 0 || sum.mcqN > 0) && (
+                    {(sum.total > 0 || sum.mcqN > 0 || sum.quizN > 0) && (
                       <span style={{ fontSize: 8, lineHeight: 1.2, color: isSel ? "rgba(255,255,255,0.75)" : C.inkSoft }}>
-                        {[sum.total > 0 ? `${sum.total}語` : "", sum.mcqN > 0 ? `${sum.mcqN}問` : ""].filter(Boolean).join(" ")}
+                        {[sum.total > 0 ? `${sum.total}語` : "", sum.mcqN > 0 ? `${sum.mcqN}問` : "", sum.quizN > 0 ? `暗${sum.quizN}` : ""].filter(Boolean).join(" ")}
                       </span>
                     )}
                   </>
@@ -1451,9 +1464,9 @@ function RecordTab({ S, C, today, dailyLog, diary, onSave }) {
         <div style={{ marginBottom: 14 }}>
           <div style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 8 }}>
             <span style={{ width: 4, height: 15, background: C.amber, borderRadius: 2 }} />
-            <span style={{ fontSize: 13, fontWeight: 700 }}>問題演習</span>
+            <span style={{ fontSize: 13, fontWeight: 700 }}>問題演習・暗記</span>
             <span style={{ fontSize: 12, color: C.inkSoft }}>
-              {selLog.mcqN || 0} 問{selLog.mcqN ? ` ・ 正解 ${selLog.mcqOK || 0}(${Math.round(((selLog.mcqOK || 0) / selLog.mcqN) * 100)}%)` : ""}
+              演習 {selLog.mcqN || 0} 問{selLog.mcqN ? `(正解${selLog.mcqOK || 0})` : ""} ・ 暗記 {selLog.quizN || 0} 問{selLog.quizN ? `(正解${selLog.quizOK || 0})` : ""}
             </span>
           </div>
           {drillItems.length > 0 ? (

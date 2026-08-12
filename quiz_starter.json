@@ -1,0 +1,317 @@
+[
+ {
+  "qid": "NQ-T01",
+  "subject": "Tort",
+  "tag": "Ch.3",
+  "kind": "quiz",
+  "stem": "寄与過失の定型: シートベルト非着用で、着用していれば負傷を完全に防げた場合の減額割合は?(Froom v Butcher)",
+  "options": {
+   "A": "15%",
+   "B": "20%",
+   "C": "25%",
+   "D": "50%"
+  },
+  "answer": "C",
+  "expl": "防げた=25% / 軽減できたにとどまる=15% / 無関係=0% の三段。"
+ },
+ {
+  "qid": "NQ-T02",
+  "subject": "Tort",
+  "tag": "Ch.3",
+  "kind": "quiz",
+  "stem": "シートベルト非着用で、着用していれば負傷を軽減できたにとどまる場合の減額割合は?",
+  "options": {
+   "A": "10%",
+   "B": "15%",
+   "C": "25%",
+   "D": "33%"
+  },
+  "answer": "B",
+  "expl": "Froomの定型: 25% / 15% / 0%。"
+ },
+ {
+  "qid": "NQ-T03",
+  "subject": "Tort",
+  "tag": "Ch.1",
+  "kind": "quiz",
+  "stem": "民事訴訟の証明度(standard of proof)は?",
+  "options": {
+   "A": "合理的な疑いを超える証明",
+   "B": "証拠の優越(50%超)",
+   "C": "明白かつ説得的な証明",
+   "D": "75%以上の蓋然性"
+  },
+  "answer": "B",
+  "expl": "on the balance of probabilities=50%超。刑事のbeyond reasonable doubtと区別。"
+ },
+ {
+  "qid": "NQ-T04",
+  "subject": "Tort",
+  "tag": "Ch.7",
+  "kind": "quiz",
+  "stem": "CPA 1987の財産損害の請求下限額は?",
+  "options": {
+   "A": "£100",
+   "B": "£275",
+   "C": "£500",
+   "D": "£1,000"
+  },
+  "answer": "B",
+  "expl": "£275以下の財産損害は対象外。人身損害には下限なし。"
+ },
+ {
+  "qid": "NQ-T05",
+  "subject": "Tort",
+  "tag": "Ch.7",
+  "kind": "quiz",
+  "stem": "CPA 1987のロングストップ(絶対的期間制限)は供給から何年?",
+  "options": {
+   "A": "3年",
+   "B": "6年",
+   "C": "10年",
+   "D": "15年"
+  },
+  "answer": "C",
+  "expl": "供給から10年で請求権消滅。"
+ },
+ {
+  "qid": "NQ-T06",
+  "subject": "Tort",
+  "tag": "Ch.7",
+  "kind": "quiz",
+  "stem": "CPA 1987で人身損害の請求下限額は?",
+  "options": {
+   "A": "下限なし",
+   "B": "£275",
+   "C": "£500",
+   "D": "£1,000"
+  },
+  "answer": "A",
+  "expl": "£275の下限は財産損害のみ。人身は下限なし。"
+ },
+ {
+  "qid": "NQ-T07",
+  "subject": "Tort",
+  "tag": "Ch.10",
+  "kind": "quiz",
+  "stem": "private nuisanceのprescription(時効取得)に必要な年数は?",
+  "options": {
+   "A": "10年",
+   "B": "12年",
+   "C": "20年",
+   "D": "30年"
+  },
+  "answer": "C",
+  "expl": "20年。起算は原告への干渉開始から(Sturges v Bridgman)。"
+ },
+ {
+  "qid": "NQ-T08",
+  "subject": "Tort",
+  "tag": "Ch.3",
+  "kind": "quiz",
+  "stem": "勾留中の自殺事案(Reeves)で認められた寄与過失の減額割合は?",
+  "options": {
+   "A": "25%",
+   "B": "33%",
+   "C": "50%",
+   "D": "75%"
+  },
+  "answer": "C",
+  "expl": "volenti・NAIは否定しつつ寄与過失50%。"
+ },
+ {
+  "qid": "NQ-C01",
+  "subject": "Contract",
+  "tag": "Ch.3",
+  "kind": "quiz",
+  "stem": "契約法上のminor(未成年者)とは何歳未満?",
+  "options": {
+   "A": "16歳",
+   "B": "18歳",
+   "C": "20歳",
+   "D": "21歳"
+  },
+  "answer": "B",
+  "expl": "18歳未満。necessariesと有益な役務契約は例外的に拘束。"
+ },
+ {
+  "qid": "NQ-C02",
+  "subject": "Contract",
+  "tag": "Ch.3",
+  "kind": "quiz",
+  "stem": "第三者の権利法 C(RTP)A の制定年は?",
+  "options": {
+   "A": "1996年",
+   "B": "1999年",
+   "C": "2002年",
+   "D": "2015年"
+  },
+  "answer": "B",
+  "expl": "Contracts (Rights of Third Parties) Act 1999。"
+ },
+ {
+  "qid": "NQ-C03",
+  "subject": "Contract",
+  "tag": "Ch.5",
+  "kind": "quiz",
+  "stem": "B2Bの物品売買に黙示条項を入れる制定法は?",
+  "options": {
+   "A": "SGA 1979",
+   "B": "CRA 2015",
+   "C": "UCTA 1977",
+   "D": "SGSA 1982"
+  },
+  "answer": "A",
+  "expl": "B2B=SGA 1979。B2C=CRA 2015と対で記憶。"
+ },
+ {
+  "qid": "NQ-C04",
+  "subject": "Contract",
+  "tag": "Ch.5",
+  "kind": "quiz",
+  "stem": "B2C(消費者契約)の黙示条項・救済を定める制定法は?",
+  "options": {
+   "A": "SGA 1979",
+   "B": "CRA 2015",
+   "C": "UCTA 1977",
+   "D": "MA 1967"
+  },
+  "answer": "B",
+  "expl": "Consumer Rights Act 2015。"
+ },
+ {
+  "qid": "NQ-C05",
+  "subject": "Contract",
+  "tag": "Ch.6",
+  "kind": "quiz",
+  "stem": "B2Bの免責条項を規制する制定法は?",
+  "options": {
+   "A": "UCTA 1977",
+   "B": "CRA 2015",
+   "C": "SGA 1979",
+   "D": "LR(FC)A 1943"
+  },
+  "answer": "A",
+  "expl": "Unfair Contract Terms Act 1977(事業間)。消費者はCRA 2015 Part 2。"
+ },
+ {
+  "qid": "NQ-C06",
+  "subject": "Contract",
+  "tag": "Ch.7",
+  "kind": "quiz",
+  "stem": "不実表示に関する制定法(s.2(1)の立証責任転換)は?",
+  "options": {
+   "A": "MA 1967",
+   "B": "UCTA 1977",
+   "C": "CRA 2015",
+   "D": "C(RTP)A 1999"
+  },
+  "answer": "A",
+  "expl": "Misrepresentation Act 1967。s.2(1)は表意者側が合理的根拠を立証。"
+ },
+ {
+  "qid": "NQ-C07",
+  "subject": "Contract",
+  "tag": "Ch.10",
+  "kind": "quiz",
+  "stem": "フラストレーション清算法 LR(FC)A の制定年は?",
+  "options": {
+   "A": "1925年",
+   "B": "1943年",
+   "C": "1945年",
+   "D": "1979年"
+  },
+  "answer": "B",
+  "expl": "Law Reform (Frustrated Contracts) Act 1943。force majeure条項が優先。"
+ },
+ {
+  "qid": "NQ-C08",
+  "subject": "Contract",
+  "tag": "Ch.2",
+  "kind": "quiz",
+  "stem": "寄与過失の減額を定める Law Reform (Contributory Negligence) Act の制定年は?",
+  "options": {
+   "A": "1935年",
+   "B": "1943年",
+   "C": "1945年",
+   "D": "1957年"
+  },
+  "answer": "C",
+  "expl": "1945年法。just and equitableな割合で減額。"
+ },
+ {
+  "qid": "NQ-C09",
+  "subject": "Contract",
+  "tag": "Ch.9",
+  "kind": "quiz",
+  "stem": "自動車の同乗者にvolenti主張を禁じる条文は?",
+  "options": {
+   "A": "RTA 1988 s.39",
+   "B": "RTA 1988 s.143",
+   "C": "RTA 1988 s.149",
+   "D": "RTA 1988 s.170"
+  },
+  "answer": "C",
+  "expl": "Road Traffic Act 1988 s.149。同乗者には寄与過失で処理。"
+ },
+ {
+  "qid": "NQ-E01",
+  "subject": "Ethics",
+  "tag": "Ch.3",
+  "kind": "quiz",
+  "stem": "苦情への事務所の一次対応を待つべき期間(LeOに行く前)は?",
+  "options": {
+   "A": "4週間",
+   "B": "8週間",
+   "C": "3ヶ月",
+   "D": "6ヶ月"
+  },
+  "answer": "B",
+  "expl": "8週間。「8週間/1年/6ヶ月/£50,000」の記憶フォーマットの第1要素。"
+ },
+ {
+  "qid": "NQ-E02",
+  "subject": "Ethics",
+  "tag": "Ch.3",
+  "kind": "quiz",
+  "stem": "事務所の最終回答からLeOへ申し立てる期限は?",
+  "options": {
+   "A": "8週間",
+   "B": "6ヶ月",
+   "C": "1年",
+   "D": "3年"
+  },
+  "answer": "B",
+  "expl": "最終回答から6ヶ月。"
+ },
+ {
+  "qid": "NQ-E03",
+  "subject": "Ethics",
+  "tag": "Ch.3",
+  "kind": "quiz",
+  "stem": "問題の行為(または認識)からのLeO申立期限は?",
+  "options": {
+   "A": "6ヶ月",
+   "B": "1年",
+   "C": "3年",
+   "D": "6年"
+  },
+  "answer": "B",
+  "expl": "1年。記憶フォーマット「8週間/1年/6ヶ月/£50,000」。"
+ },
+ {
+  "qid": "NQ-E04",
+  "subject": "Ethics",
+  "tag": "Ch.3",
+  "kind": "quiz",
+  "stem": "LeOが命じることのできる賠償の上限額は?",
+  "options": {
+   "A": "£10,000",
+   "B": "£25,000",
+   "C": "£50,000",
+   "D": "£100,000"
+  },
+  "answer": "C",
+  "expl": "£50,000。記憶フォーマットの最終要素。"
+ }
+]

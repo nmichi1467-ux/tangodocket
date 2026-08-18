@@ -482,23 +482,41 @@ function App() {
 
   // ---- add ----
   const addWords = (list) => {
-    const keyOf = (sub, en) => `${String(sub || "").trim().toLowerCase()}|${String(en || "").trim().toLowerCase()}`;
-    const idxMap = new Map(words.map((w, i) => [keyOf(w.subject, w.en), i]));
+    const norm = (s) => String(s || "").trim().toLowerCase();
+    const keyOf = (sub, en) => `${norm(sub)}|${norm(en)}`;
     const nextWords = [...words];
+    const exactMap = new Map(nextWords.map((w, i) => [keyOf(w.subject, w.en), i]));
+    const enMap = new Map();
+    nextWords.forEach((w, i) => {
+      const k = norm(w.en);
+      if (!enMap.has(k)) enMap.set(k, []);
+      enMap.get(k).push(i);
+    });
     let added = 0;
     let updated = 0;
     list.forEach((x) => {
-      const i = idxMap.get(keyOf(x.subject, x.en));
+      let i = exactMap.get(keyOf(x.subject, x.en));
+      if (i === undefined) {
+        // 科目違いの取りこぼし救済: 科目なしの既存カードに合流 / 取込側が科目なしなら一意な既存カードへ合流
+        const cands = enMap.get(norm(x.en)) || [];
+        if (norm(x.subject)) i = cands.find((j) => !norm(nextWords[j].subject));
+        else if (cands.length === 1) i = cands[0];
+      }
       if (i !== undefined) {
         const w = nextWords[i];
         const newTag = x.tag || w.tag || "";
-        const newSub = x.subject || w.subject || "";
+        const newSub = (x.subject || w.subject || "").trim();
         if (newTag !== (w.tag || "") || newSub !== (w.subject || "") || x.ja !== w.ja) {
           nextWords[i] = { ...w, ja: x.ja, tag: newTag, subject: newSub };
           updated += 1;
         }
       } else {
-        nextWords.push({ id: uid(), en: x.en, ja: x.ja, tag: x.tag || "", subject: x.subject || "", addedAt: t, srs: newSrs() });
+        const nw = { id: uid(), en: x.en, ja: x.ja, tag: x.tag || "", subject: (x.subject || "").trim(), addedAt: t, srs: newSrs() };
+        exactMap.set(keyOf(nw.subject, nw.en), nextWords.length);
+        const k = norm(nw.en);
+        if (!enMap.has(k)) enMap.set(k, []);
+        enMap.get(k).push(nextWords.length);
+        nextWords.push(nw);
         added += 1;
       }
     });
@@ -511,6 +529,12 @@ function App() {
   };
 
   const removeWord = (id) => persist({ ...data, words: words.filter((w) => w.id !== id) });
+
+  const removeWordsBulk = (ids) => {
+    const set = new Set(ids);
+    persist({ ...data, words: words.filter((w) => !set.has(w.id)) });
+    showToast(`${ids.length}語を削除しました`);
+  };
 
   // ---------- UI pieces ----------
   const S = {
@@ -741,7 +765,7 @@ function App() {
         )}
         {tab === "add" && <AddTab S={S} C={C} onAdd={addWords} onAddMcq={addMcqs} />}
         {tab === "list" && (
-          <ListTab S={S} C={C} words={words} onRemove={removeWord} today={t}
+          <ListTab S={S} C={C} words={words} onRemove={removeWord} onRemoveBulk={removeWordsBulk} today={t}
             marks={marks} mcqs={mcqs} onRemoveMark={removeMark} />
         )}
         {tab === "record" && (
@@ -1157,11 +1181,14 @@ function AddTab({ S, C, onAdd, onAddMcq }) {
 }
 
 // ---------- List ----------
-function ListTab({ S, C, words, onRemove, today, marks, mcqs, onRemoveMark }) {
+function ListTab({ S, C, words, onRemove, onRemoveBulk, today, marks, mcqs, onRemoveMark }) {
   const [q, setQ] = useState("");
   const [view, setView] = useState("words");
   const [mFilter, setMFilter] = useState("");
   const [openMark, setOpenMark] = useState(null);
+  const [bulkOpen, setBulkOpen] = useState(false);
+  const [bSubj, setBSubj] = useState(null); // null=未選択 / "__all__" / "__none__" / 科目名
+  const [bTag, setBTag] = useState("__all__"); // "__all__" / "__none__" / タグ名
   const filtered = words.filter(
     (w) =>
       w.en.toLowerCase().includes(q.toLowerCase()) ||
@@ -1187,6 +1214,59 @@ function ListTab({ S, C, words, onRemove, today, marks, mcqs, onRemoveMark }) {
         <>
           <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="検索"
             style={{ width: "100%", boxSizing: "border-box", padding: 12, fontSize: 16, border: `1px solid ${C.line}`, borderRadius: 8, marginBottom: 12, fontFamily: sans }} />
+          {(() => {
+            const wSubjects = [...new Set(words.map((w) => (w.subject || "").trim()))].sort((a, b) => a.localeCompare(b));
+            const hasNoneSubj = wSubjects.includes("");
+            const namedSubjects = wSubjects.filter(Boolean);
+            const subjPool = bSubj === null ? [] : words.filter((w) => bSubj === "__all__" ? true : bSubj === "__none__" ? !(w.subject || "").trim() : (w.subject || "").trim() === bSubj);
+            const poolTags = sortTags([...new Set(subjPool.map((w) => (w.tag || "").trim()).filter(Boolean))]);
+            const hasNoneTag = subjPool.some((w) => !(w.tag || "").trim());
+            const targets = subjPool.filter((w) => bTag === "__all__" ? true : bTag === "__none__" ? !(w.tag || "").trim() : (w.tag || "").trim() === bTag);
+            return (
+              <div style={{ ...S.card, padding: "12px 14px", marginBottom: 12 }}>
+                <div onClick={() => setBulkOpen(!bulkOpen)} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", cursor: "pointer" }}>
+                  <span style={{ fontSize: 14, fontWeight: 700 }}>一括削除</span>
+                  <span style={{ fontSize: 12, color: C.inkSoft }}>{bulkOpen ? "閉じる ▲" : "開く ▼"}</span>
+                </div>
+                {bulkOpen && (
+                  <div style={{ marginTop: 10 }}>
+                    <div style={{ fontSize: 12, color: C.inkSoft, marginBottom: 6 }}>科目で選ぶ</div>
+                    <div style={{ display: "flex", flexWrap: "wrap", gap: 6, marginBottom: 10 }}>
+                      <button onClick={() => { setBSubj("__all__"); setBTag("__all__"); }} style={chip(bSubj === "__all__")}>すべて</button>
+                      {namedSubjects.map((s) => (
+                        <button key={s} onClick={() => { setBSubj(s); setBTag("__all__"); }} style={chip(bSubj === s)}>{s}</button>
+                      ))}
+                      {hasNoneSubj && <button onClick={() => { setBSubj("__none__"); setBTag("__all__"); }} style={chip(bSubj === "__none__")}>科目なし</button>}
+                    </div>
+                    {bSubj !== null && (poolTags.length > 0 || hasNoneTag) && (
+                      <>
+                        <div style={{ fontSize: 12, color: C.inkSoft, marginBottom: 6 }}>章で絞る(任意)</div>
+                        <div style={{ display: "flex", flexWrap: "wrap", gap: 6, marginBottom: 10 }}>
+                          <button onClick={() => setBTag("__all__")} style={chip(bTag === "__all__")}>すべて</button>
+                          {poolTags.map((tg) => (
+                            <button key={tg} onClick={() => setBTag(tg)} style={chip(bTag === tg)}>{tg}</button>
+                          ))}
+                          {hasNoneTag && <button onClick={() => setBTag("__none__")} style={chip(bTag === "__none__")}>章なし</button>}
+                        </div>
+                      </>
+                    )}
+                    <button
+                      disabled={bSubj === null || targets.length === 0}
+                      onClick={() => {
+                        if (bSubj === null || targets.length === 0) return;
+                        if (window.confirm(`${targets.length}語を削除します。学習履歴も消えます。よろしいですか?`)) {
+                          onRemoveBulk(targets.map((w) => w.id));
+                          setBSubj(null); setBTag("__all__");
+                        }
+                      }}
+                      style={{ ...S.btn(bSubj !== null && targets.length ? "#B4544B" : C.line), width: "100%" }}>
+                      {bSubj === null ? "科目を選択してください" : `${targets.length}語を一括削除`}
+                    </button>
+                  </div>
+                )}
+              </div>
+            );
+          })()}
           <div style={{ fontSize: 12, color: C.inkSoft, marginBottom: 8 }}>{filtered.length}語</div>
           <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
             {filtered.map((w) => {

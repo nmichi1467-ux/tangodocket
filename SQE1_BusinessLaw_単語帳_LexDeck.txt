@@ -1,0 +1,498 @@
+sole trader	個人事業主——設立手続不要・無限責任・事業と個人が法的に一体	BL-Ch01	ドクトリン
+unincorporated business	非法人型事業(個人事業・パートナーシップ)——法人格なし	BL-Ch01	ドクトリン
+incorporated business	法人型事業(会社・LLP)——登録により法人格を取得	BL-Ch01	ドクトリン
+partnership	パートナーシップ——2人以上が共同で利益目的の事業を営むと自動成立	BL-Ch01	ドクトリン
+limited liability partnership (LLP)	有限責任パートナーシップ——法人格+内部運営の柔軟性の混合体	BL-Ch01	ドクトリン
+private limited company (Ltd)	非公開有限責任会社——株式の公募禁止・最も一般的な器	BL-Ch01	ドクトリン
+public limited company (plc)	公開会社——公募可・最低株式資本と取引開始証明が必要	BL-Ch01	ドクトリン
+unlimited liability	無限責任——事業の債務に個人資産まで無限に責任を負う	BL-Ch01	ドクトリン
+limited liability	有限責任——株主の責任は株式の未払込額を上限とする	BL-Ch01	ドクトリン
+separate legal personality	独立の法人格——会社は構成員と別個の権利義務主体	BL-Ch01	ドクトリン
+veil of incorporation	法人格の帳(とばり)——構成員を会社の債務から遮断する仕切り	BL-Ch01	ドクトリン
+piercing the corporate veil	法人格否認——例外的に帳を破り構成員に責任を及ぼす法理	BL-Ch01	ドクトリン
+perpetual succession	永続性——構成員の死亡・交代でも法人は存続する	BL-Ch01	ドクトリン
+member / shareholder	社員/株主——会社の所有者。経営者(取締役)と概念上分離	BL-Ch01	ドクトリン
+carrying on a business in common with a view of profit	共同で・利益目的で事業を営む|PA 1890 s 1|パートナーシップの自動成立要件——「契約書がない」は成立を妨げない	BL-Ch01	トリガー
+company limited by shares	株式有限責任会社|CA 2006(登録による設立)|株主の責任は未払込額まで——会社債務への個人責任と混同させる罠	BL-Ch01	トリガー
+prohibition of public offers	非公開会社の公募禁止|CA 2006 s 755|Ltdは株式・社債を公衆に募集できない——plcとの決定的な違い	BL-Ch01	トリガー
+minimum share capital / trading certificate	最低株式資本と取引開始証明|CA 2006(plc要件)|plcは£50,000の引受済資本+証明がないと取引開始できない	BL-Ch01	トリガー
+LLP incorporation	LLPの設立登録|LLPA 2000|登録で法人格取得——課税はパートナーシップ型(透明)という混合	BL-Ch01	トリガー
+body corporate	法人|CA 2006/LLPA 2000|会社・LLPは法人、パートナーシップは(スコットランドを除き)法人でない	BL-Ch01	トリガー
+set up a business	事業を立ち上げる	BL-Ch01	シーン
+run a business	事業を営む	BL-Ch01	シーン
+premises	事業用物件・店舗	BL-Ch01	シーン
+goodwill	のれん・営業上の信用	BL-Ch01	シーン
+turnover	売上高	BL-Ch01	シーン
+overheads	間接費・諸経費	BL-Ch01	シーン
+start-up costs	創業費用	BL-Ch01	シーン
+formalities	手続・方式	BL-Ch01	シーン
+paperwork	書類事務	BL-Ch01	シーン
+disclosure	開示	BL-Ch01	シーン
+compliance	法令遵守	BL-Ch01	シーン
+venture	事業・ベンチャー	BL-Ch01	シーン
+partnership agreement	パートナーシップ契約——default provisionsを外すための書面合意	BL-Ch02	ドクトリン
+partnership at will	任意継続パートナーシップ——期間の定めなく、通知でいつでも解散可	BL-Ch02	ドクトリン
+default provisions	補充規定——合意がない場合に自動適用されるPA 1890の内部ルール	BL-Ch02	ドクトリン
+fixed-term partnership	期間付パートナーシップ——満了後も継続すれば at will に転化	BL-Ch02	ドクトリン
+actual authority	実際の権限——明示・黙示に与えられた代理権	BL-Ch02	ドクトリン
+apparent / ostensible authority	外観上の権限——通常業務の範囲で firm を拘束する外観	BL-Ch02	ドクトリン
+holding out	名乗り出し——パートナーと表示・黙認された者が信頼した第三者に負う責任	BL-Ch02	ドクトリン
+incoming partner	新規加入パートナー——加入前の債務には無責任が原則	BL-Ch02	ドクトリン
+outgoing / retiring partner	脱退パートナー——脱退時の既存債務には責任が残る	BL-Ch02	ドクトリン
+joint liability	連帯責任——firmの債務につき各パートナーが全額の責任を負う	BL-Ch02	ドクトリン
+indemnity	補償——firmのために負担した支出をfirmが填補する	BL-Ch02	ドクトリン
+expulsion	除名——明示の合意条項がない限り多数決では除名できない	BL-Ch02	ドクトリン
+dissolution	解散——通知・期間満了・死亡・破産等で生じる組合関係の終了	BL-Ch02	ドクトリン
+technical dissolution	技術的解散——構成員変動のたびに旧組合が終了し新組合が続く現象	BL-Ch02	ドクトリン
+utmost good faith	最大善意——パートナー間の信認関係(誠実開示・競業避止等)	BL-Ch02	ドクトリン
+winding up of a partnership	組合の清算——資産換価→債務→出資→残余の分配順	BL-Ch02	ドクトリン
+no requirement of intention or formality	意図・方式は不要|PA 1890 s 1|「契約書がないから成立していない」は誤り——実態で自動成立	BL-Ch02	トリガー
+equal share of capital and profits	資本・利益の均等分配|PA 1890 s 24(1)|出資額が違っても合意がなければ均等——日本的な出資比例の感覚は誤答	BL-Ch02	トリガー
+no entitlement to remuneration	報酬請求権なし|PA 1890 s 24(6)|働いた分の給与を当然に取れるとする肢は誤り	BL-Ch02	トリガー
+ordinary matters by majority / change of nature unanimous	通常事項=過半数/事業の性質変更=全員一致|PA 1890 s 24(8)|何が「性質変更」かの当てはめで出る	BL-Ch02	トリガー
+new partner admitted only with unanimous consent	新パートナー加入は全員一致|PA 1890 s 24(7)|多数決で加入させる肢は誤り	BL-Ch02	トリガー
+every partner is an agent of the firm	各パートナーはfirmの代理人|PA 1890 s 5|通常業務の外観権限——相手方が権限欠缺を知っていれば拘束されない	BL-Ch02	トリガー
+liability of the firm for wrongs	不法行為へのfirmの責任|PA 1890 s 10|通常業務の過程での不法行為はfirmも連帯責任	BL-Ch02	トリガー
+incoming partner not liable for prior debts	加入前債務に無責任|PA 1890 s 17(1)|「加入したら過去の債務も引き継ぐ」は誤り(別途引受合意は可)	BL-Ch02	トリガー
+retiring partner remains liable for existing debts	脱退しても既存債務に責任|PA 1890 s 17(2)|脱退=免責ではない——免れるには債権者とのnovation(更改)が必要	BL-Ch02	トリガー
+notice to existing customers + Gazette advertisement	既存取引先への通知+官報公告|PA 1890 s 36|脱退後の将来債務を遮断する2本柱——片方だけでは既存取引先に対抗不可	BL-Ch02	トリガー
+persons holding out as partners	パートナーとしての名乗り出し責任|PA 1890 s 14|レターヘッドに名前が残った退職者への請求、の型で出る	BL-Ch02	トリガー
+dissolution by death or bankruptcy	死亡・破産による解散|PA 1890 s 33|合意で排除できるdefault——排除条項の有無を読み取る	BL-Ch02	トリガー
+firm	ファーム・組合	BL-Ch02	シーン
+the firm name	組合の商号	BL-Ch02	シーン
+deed	捺印証書	BL-Ch02	シーン
+retire from	〜から脱退する	BL-Ch02	シーン
+admit	加入させる	BL-Ch02	シーン
+carry on	(事業を)続ける	BL-Ch02	シーン
+the London Gazette	ロンドン官報	BL-Ch02	シーン
+letterhead	レターヘッド・社用便箋	BL-Ch02	シーン
+apportion	按分する	BL-Ch02	シーン
+share equally	均等に分ける	BL-Ch02	シーン
+bind	拘束する	BL-Ch02	シーン
+on behalf of	〜を代理して	BL-Ch02	シーン
+certificate of incorporation	設立証明書——登記官の発行により会社が成立する	BL-Ch03	ドクトリン
+memorandum of association	基本定款——設立意思の確認書面(現行法では形式的)	BL-Ch03	ドクトリン
+articles of association	附属定款——会社の内部ルールを定める中核的憲章文書	BL-Ch03	ドクトリン
+model articles (MAs)	モデル定款——採択・修正しなければ自動適用される標準定款	BL-Ch03	ドクトリン
+shelf company	シェルフカンパニー——設立済みの会社を買って転用する方法	BL-Ch03	ドクトリン
+registered office	登録事務所——公式書類の送達先となる登録上の住所	BL-Ch03	ドクトリン
+statutory books / registers	法定帳簿——社員名簿・PSC登録簿・議事録等の備置義務	BL-Ch03	ドクトリン
+person with significant control (PSC)	重要支配者——25%超の株式/議決権等を持つ者の登録制度	BL-Ch03	ドクトリン
+board meeting	取締役会——日常経営の意思決定機関。多数決・定足数2	BL-Ch03	ドクトリン
+board resolution	取締役会決議——経営権限の行使形式	BL-Ch03	ドクトリン
+general meeting (GM)	株主総会——株主が決議で関与する場	BL-Ch03	ドクトリン
+annual general meeting (AGM)	定時総会——plcは開催義務、私会社は原則不要	BL-Ch03	ドクトリン
+quorum	定足数——総会は原則2名(一人会社は1名)	BL-Ch03	ドクトリン
+ordinary resolution (OR)	普通決議——投票の50%超(simple majority)で可決	BL-Ch03	ドクトリン
+special resolution (SR)	特別決議——投票の75%以上で可決。定款変更等に必要	BL-Ch03	ドクトリン
+written resolution	書面決議——私会社限定。総会なしで可決(解任決議には使用不可)	BL-Ch03	ドクトリン
+show of hands	挙手投票——1人1票。総会のdefaultの投票方法	BL-Ch03	ドクトリン
+poll vote	株数投票——1株1票。要求により挙手に代わる	BL-Ch03	ドクトリン
+proxy	議決権代理人——株主に代わって出席・投票する者	BL-Ch03	ドクトリン
+casting vote	決裁票——可否同数のとき議長が持つ追加の1票(取締役会)	BL-Ch03	ドクトリン
+minutes	議事録——10年間の保存義務	BL-Ch03	ドクトリン
+confirmation statement	確認書——年1回、登録情報の確認をCompanies Houseへ提出	BL-Ch03	ドクトリン
+annual accounts	年次計算書類——作成・提出義務。小会社は簡易化	BL-Ch03	ドクトリン
+small companies regime	小会社制度——規模基準を満たすと監査免除等の緩和	BL-Ch03	ドクトリン
+articles bind the company and its members	定款の契約的効力|CA 2006 s 33|定款は会社・株主間の契約として拘束する	BL-Ch03	トリガー
+amendment of articles by special resolution	定款変更は特別決議|CA 2006 s 21|OR(50%超)で変更できるとする肢は誤り	BL-Ch03	トリガー
+ordinary resolution = simple majority (>50%)	普通決議=50%超|CA 2006 s 282|「50%ちょうど」では否決——過半数の意味を数字で問う	BL-Ch03	トリガー
+special resolution = 75% or more	特別決議=75%以上|CA 2006 s 283|日本の3分の2の感覚が誤答肢に化ける最頻出地点	BL-Ch03	トリガー
+14 clear days' notice of GM	総会招集は14 clear days|CA 2006 s 307(1)+s 360|発送日・総会当日は不算入——実質16日の逆算計算で出る	BL-Ch03	トリガー
+short notice: majority in number + 90% of shares	短縮招集=頭数の過半数+持株90%以上|CA 2006(私会社・定款で95%まで引上げ可)|「90%の株だけでよい」(頭数要件落とし)が定番の罠	BL-Ch03	トリガー
+written resolution procedure	書面決議手続|CA 2006 ss 288–300|私会社のみ・OR/SRとも可・ただし取締役解任と監査人解任は不可	BL-Ch03	トリガー
+filing of special resolutions within 15 days	特別決議の登記官への提出15日|CA 2006 ss 29–30|決議後の届出(4問フレームの④)を問う	BL-Ch03	トリガー
+directors' general authority	取締役の包括的経営権限|MA 3|経営は board、株主は留保事項のみ——「株主が日常経営を決める」は誤り	BL-Ch03	トリガー
+members' reserve power by special resolution	株主の指図はSRで|MA 4|株主がboardに指図するには特別決議が必要	BL-Ch03	トリガー
+board quorum of two / chair's casting vote	取締役会定足数2・議長の決裁票|MA 11・MA 13|一人取締役会社では casting vote の出番なし、等の当てはめ	BL-Ch03	トリガー
+GM quorum of two (one for single member)	総会定足数2(一人会社は1)|CA 2006 s 318|定足数を欠く総会の決議は無効	BL-Ch03	トリガー
+register of members / PSC register	社員名簿・PSC登録簿|CA 2006(法定帳簿)|備置場所と閲覧、PSCの25%閾値	BL-Ch03	トリガー
+confirmation statement at least annually	確認書は少なくとも年1回|CA 2006 s 853A|年次accounts提出と混同させる罠	BL-Ch03	トリガー
+company name and trading disclosures	商号と表示義務|CA 2006+ECCTA改革|不適切商号の規制・登録事務所の実在性など近時強化	BL-Ch03	トリガー
+incorporate	設立する	BL-Ch03	シーン
+the Registrar	登記官	BL-Ch03	シーン
+Companies House	英国会社登録局	BL-Ch03	シーン
+file / lodge	提出する	BL-Ch03	シーン
+convene	招集する	BL-Ch03	シーン
+adjourn	延会・休会する	BL-Ch03	シーン
+agenda	議題	BL-Ch03	シーン
+chairperson	議長	BL-Ch03	シーン
+circulate	回付する	BL-Ch03	シーン
+tabled	上程された	BL-Ch03	シーン
+off the shelf	既製の	BL-Ch03	シーン
+tailor-made	特注の	BL-Ch03	シーン
+executive director	業務執行取締役——雇用契約(service contract)を持ち日常経営を担う	BL-Ch04	ドクトリン
+non-executive director	非業務執行取締役——経営を監督する社外的な取締役	BL-Ch04	ドクトリン
+de facto director	事実上の取締役——選任手続なしに取締役として行動する者	BL-Ch04	ドクトリン
+shadow director	影の取締役——boardが指示に従う習わしのある背後の者	BL-Ch04	ドクトリン
+company secretary	会社秘書役——私会社は任意・plcは必置の管理事務責任者	BL-Ch04	ドクトリン
+service contract	取締役の勤務契約——2年超の保証期間には株主承認が必要	BL-Ch04	ドクトリン
+general duties of directors	取締役の一般義務——CA 2006 ss 171–177の法典化された義務群	BL-Ch04	ドクトリン
+duty to promote the success of the company	会社の成功促進義務——株主全体の利益のため誠実に行動	BL-Ch04	ドクトリン
+duty of reasonable care, skill and diligence	善管注意義務——客観・主観の二重基準で判定	BL-Ch04	ドクトリン
+duty to avoid conflicts of interest	利益相反回避義務——承認なき利益衝突状況の禁止	BL-Ch04	ドクトリン
+declaration of interest	利害関係の申告——提案取引への利害を事前にboardへ申告	BL-Ch04	ドクトリン
+substantial property transaction (SPT)	実質的財産取引——会社と取締役等の間の重要資産取引	BL-Ch04	ドクトリン
+person connected with a director	取締役の関係者——家族・支配法人等。SPT等で同視される	BL-Ch04	ドクトリン
+loans to directors	取締役への貸付——原則として株主のORが必要	BL-Ch04	ドクトリン
+removal of a director	取締役の解任——株主の普通決議による(書面決議不可)	BL-Ch04	ドクトリン
+special notice	特別通知——解任決議には総会の28日前までの通知が必要	BL-Ch04	ドクトリン
+Bushell v Faith clause	加重議決権条項——解任決議で対象取締役の票を割増しする定款条項	BL-Ch04	ドクトリン
+disqualification	取締役資格剥奪——不適格行為に2〜15年の欠格命令	BL-Ch04	ドクトリン
+wrongful trading	不当取引——破綻回避の見込みなしと知るべき後の取引継続責任	BL-Ch04	ドクトリン
+fraudulent trading	詐欺的取引——債権者詐害の意図をもった事業継続	BL-Ch04	ドクトリン
+misfeasance	背任的義務違反——清算時に義務違反の填補を求める手続	BL-Ch04	ドクトリン
+derivative claim	派生訴訟——株主が会社のために取締役の義務違反を追及	BL-Ch04	ドクトリン
+unfair prejudice petition	不公正侵害の申立て——少数株主の救済(持株買取命令が典型)	BL-Ch04	ドクトリン
+just and equitable winding up	公正衡平清算——最後の手段としての会社解散命令	BL-Ch04	ドクトリン
+majority / minority shareholder	多数株主/少数株主——支配と保護の緊張関係	BL-Ch04	ドクトリン
+members' rights to requisition	株主の招集請求権——5%で総会招集・書面決議の回付を請求	BL-Ch04	ドクトリン
+minimum of one director (private company)	私会社は取締役1名以上|CA 2006 s 154|自然人1名の要件——法人取締役規制の強化にも注意	BL-Ch04	トリガー
+duty to act within powers	権限内行使義務|CA 2006 s 171|定款の目的外・不当目的の権限行使	BL-Ch04	トリガー
+duty to promote success	成功促進義務|CA 2006 s 172|従業員・取引先等への考慮はあくまで株主利益の枠内	BL-Ch04	トリガー
+duty to exercise independent judgment	独立判断義務|CA 2006 s 173|他人の指図に盲従しない	BL-Ch04	トリガー
+duty of care, skill and diligence	善管注意義務|CA 2006 s 174|客観基準(その職務に合理的に期待される水準)+主観基準(本人の実際の知識・経験)の高い方	BL-Ch04	トリガー
+duty to avoid conflicts	利益相反回避義務|CA 2006 s 175|会社の財産・情報・機会の利用——board承認で解除可	BL-Ch04	トリガー
+duty not to accept benefits from third parties	第三者利益受領禁止|CA 2006 s 176|board承認では解除できない点がs 175との違い	BL-Ch04	トリガー
+duty to declare interest in proposed transaction	提案取引への利害申告義務|CA 2006 s 177|申告先はboard——株主でない。既存取引はs 182	BL-Ch04	トリガー
+long-term service contracts (2+ years)	2年超の勤務契約|CA 2006 s 188|保証期間2年超には株主OR——違反部分は無効	BL-Ch04	トリガー
+substantial property transaction approval	SPTの株主承認|CA 2006 s 190|£5,000超かつ£100,000超または純資産10%超——数字の当てはめ問題	BL-Ch04	トリガー
+loans to directors require OR	貸付への株主OR|CA 2006 s 197|小額・グループ内等の例外との切り分け	BL-Ch04	トリガー
+removal by ordinary resolution with special notice	OR+特別通知28日で解任|CA 2006 s 168+s 312|書面決議は不可・対象取締役には意見陳述権(s 169)	BL-Ch04	トリガー
+power to require directors to call GM (5%)	5%の株主による総会招集請求|CA 2006 s 303|board懈怠時は自ら招集し費用求償可	BL-Ch04	トリガー
+derivative claim procedure	派生訴訟の手続|CA 2006 s 260|裁判所の許可制——会社の請求を株主が追行	BL-Ch04	トリガー
+unfair prejudice	不公正侵害|CA 2006 s 994|準組合型会社の締出し(給与停止+配当なし)が典型例	BL-Ch04	トリガー
+disqualification of directors	資格剥奪|CDDA 1986|2〜15年——不適格性の程度で幅	BL-Ch04	トリガー
+appoint	選任する	BL-Ch04	シーン
+resign	辞任する	BL-Ch04	シーン
+remuneration	報酬	BL-Ch04	シーン
+board pack	取締役会資料	BL-Ch04	シーン
+oversee	監督する	BL-Ch04	シーン
+delegate	委任する	BL-Ch04	シーン
+ratify	追認する	BL-Ch04	シーン
+breach	違反(する)	BL-Ch04	シーン
+deadlock	膠着状態	BL-Ch04	シーン
+oust	追い出す	BL-Ch04	シーン
+aggrieved	不服のある	BL-Ch04	シーン
+entrench	(条項を)固定化する	BL-Ch04	シーン
+equity finance	エクイティ・ファイナンス——新株発行の対価として資金等を得る	BL-Ch05	ドクトリン
+debt finance	デット・ファイナンス——借入・社債による資金調達	BL-Ch05	ドクトリン
+allotment / issue of shares	新株の割当て・発行——既存株式のtransferと区別	BL-Ch05	ドクトリン
+pre-emption rights	新株引受権——現金対価の新株はまず既存株主に持株比例で提示	BL-Ch05	ドクトリン
+share premium	株式プレミアム——額面超過額。プレミアム勘定に計上	BL-Ch05	ドクトリン
+share transfer	株式譲渡——stock transfer form+株券で名義書換	BL-Ch05	ドクトリン
+share transmission	株式の移転(承継)——死亡・破産による法律上の当然移転	BL-Ch05	ドクトリン
+stamp duty	印紙税——£1,000超の譲渡対価に0.5%(切上げ)	BL-Ch05	ドクトリン
+dividend	配当——分配可能利益からのみ。finalとinterimの二種	BL-Ch05	ドクトリン
+distributable profits	分配可能利益——累積実現利益−累積実現損失	BL-Ch05	ドクトリン
+capital maintenance	資本維持原則——株主への資本の払い戻しを原則禁止	BL-Ch05	ドクトリン
+buyback of shares	自己株式買戻し——利益からが原則・資本からは私会社の例外手続	BL-Ch05	ドクトリン
+off-market purchase	市場外買戻し——契約を株主決議で承認して行う	BL-Ch05	ドクトリン
+overdraft	当座貸越——随時返済型の短期与信	BL-Ch05	ドクトリン
+term loan	タームローン——期間・返済予定を定めた借入	BL-Ch05	ドクトリン
+revolving credit facility	リボルビング与信枠——借入・返済を繰り返せる枠	BL-Ch05	ドクトリン
+debenture	社債・担保付債務証書——貸付+担保パッケージの書面	BL-Ch05	ドクトリン
+security	担保——債務不履行時に優先弁済を受ける権利	BL-Ch05	ドクトリン
+mortgage	譲渡抵当——所有権移転型の最強担保	BL-Ch05	ドクトリン
+fixed charge	固定担保——特定資産に付着し、処分には同意が必要	BL-Ch05	ドクトリン
+floating charge	浮動担保——変動資産群の上を漂い、結晶化で固定する	BL-Ch05	ドクトリン
+crystallisation	結晶化——浮動担保が固定担保に転化する瞬間	BL-Ch05	ドクトリン
+negative pledge clause	ネガティブ・プレッジ条項——後順位の同順位担保設定を禁止	BL-Ch05	ドクトリン
+registration of charges	担保登録——設定から21日以内にCompanies Houseへ	BL-Ch05	ドクトリン
+book debts	売掛債権——固定/浮動の性質決定が争われる典型資産	BL-Ch05	ドクトリン
+guarantee	保証——第三者(取締役等)による人的担保	BL-Ch05	ドクトリン
+profit and loss account	損益計算書——期間の収益と費用の対応表	BL-Ch05	ドクトリン
+balance sheet	貸借対照表——一時点の資産・負債・資本のスナップショット	BL-Ch05	ドクトリン
+assets / liabilities	資産/負債——流動・固定(current/non-current)に区分	BL-Ch05	ドクトリン
+depreciation	減価償却——固定資産の価値減少の費用配分	BL-Ch05	ドクトリン
+accruals	未払費用——発生済み・未払いの費用の計上	BL-Ch05	ドクトリン
+prepayments	前払費用——支払済み・未経過の費用の繰延べ	BL-Ch05	ドクトリン
+bad and doubtful debts	貸倒れ・貸倒懸念債権——回収不能(見込)の処理	BL-Ch05	ドクトリン
+drawings	事業主引出金——非法人事業のオーナーの引き出し	BL-Ch05	ドクトリン
+appropriation account	利益処分勘定——パートナーシップの利益配分計算	BL-Ch05	ドクトリン
+capital / current account	資本勘定/経常勘定——パートナー持分の二層管理	BL-Ch05	ドクトリン
+directors' authority to allot	割当権限|CA 2006 ss 549–551|私会社・単一種類株はs 550で自動授権/それ以外は授権(s 551)が必要	BL-Ch05	トリガー
+statutory pre-emption on cash issues	法定新株引受権|CA 2006 s 561|現金対価のequity証券のみ——非現金対価なら適用外	BL-Ch05	トリガー
+disapplication of pre-emption	引受権の排除|CA 2006 ss 569–571|特別決議(SR)による——ORで排除できるとする肢は誤り	BL-Ch05	トリガー
+share premium account	プレミアム勘定|CA 2006 s 610|資本と同様に拘束——配当原資にできない	BL-Ch05	トリガー
+distributions only out of profits	分配は利益からのみ|CA 2006 s 830|分配可能利益なき配当は違法配当——受領株主の返還義務も	BL-Ch05	トリガー
+final dividend recommended by board, declared by OR	期末配当=board勧告+株主OR|MA 30|boardの勧告額を株主は増額できない/interimはboardのみで可	BL-Ch05	トリガー
+buyback must be fully paid + procedure	買戻しの手続|CA 2006 ss 691, 694|市場外は契約をORで承認・当該株主は利害関係で投票制限	BL-Ch05	トリガー
+buyback out of capital (private)	資本からの買戻し|CA 2006 Part 18 Ch 5|取締役の支払能力表明+監査人報告+SR+公告——最後の手段	BL-Ch05	トリガー
+contract available for inspection	買戻契約の備置・閲覧|CA 2006 ss 696, 702|決議前15日間の備置を落とす肢	BL-Ch05	トリガー
+registration of charges within 21 days	担保登録21日|CA 2006 s 859A|徒過すると清算人・他債権者に対抗不可(void)——貸付債務自体は有効で即時弁済期	BL-Ch05	トリガー
+priority: fixed before floating	優先順位=固定が浮動に優先|登録制度+設定順|同種間は設定順・ネガティブプレッジの通知で変動	BL-Ch05	トリガー
+stamp duty 0.5% (consideration over £1,000)	印紙税0.5%|印紙税制度|£1,000以下は非課税・端数切上げの計算問題	BL-Ch05	トリガー
+borrow / lend	借りる/貸す	BL-Ch05	シーン
+repayment	返済	BL-Ch05	シーン
+principal	元本	BL-Ch05	シーン
+interest rate	利率	BL-Ch05	シーン
+instalment	分割払い	BL-Ch05	シーン
+collateral	担保物	BL-Ch05	シーン
+ledger	元帳	BL-Ch05	シーン
+invoice	請求書	BL-Ch05	シーン
+audit	監査	BL-Ch05	シーン
+solvent	支払能力のある	BL-Ch05	シーン
+stock / inventory	棚卸資産	BL-Ch05	シーン
+work in progress	仕掛品	BL-Ch05	シーン
+net worth	純資産	BL-Ch05	シーン
+write off	償却する	BL-Ch05	シーン
+insolvency	支払不能——cash flowテストまたはbalance sheetテストで判定	BL-Ch06	ドクトリン
+cash flow test	キャッシュフロー基準——弁済期の債務を支払えない状態	BL-Ch06	ドクトリン
+balance sheet test	貸借対照表基準——負債(偶発・将来含む)が資産を上回る状態	BL-Ch06	ドクトリン
+statutory demand	法定支払催告——3週間不履行で支払不能の証拠となる書式請求	BL-Ch06	ドクトリン
+bankruptcy	破産(個人)——裁判所の命令による個人倒産手続	BL-Ch06	ドクトリン
+trustee in bankruptcy	破産管財人——破産財団を換価し債権者へ分配する	BL-Ch06	ドクトリン
+bankruptcy estate	破産財団——生活必需品等を除く破産者の全資産	BL-Ch06	ドクトリン
+discharge	免責——原則1年で破産から解放される	BL-Ch06	ドクトリン
+bankruptcy restrictions order / undertaking	破産制限命令/誓約——不誠実な破産者への最長15年の制限	BL-Ch06	ドクトリン
+individual voluntary arrangement (IVA)	個人任意整理——nominee経由・債権者の75%(価額)承認で全員拘束	BL-Ch06	ドクトリン
+debt relief order (DRO)	債務救済命令——少額債務・低資産者向けの簡易免責ルート	BL-Ch06	ドクトリン
+debt respite scheme (breathing space)	返済猶予制度——一定期間の取立て停止(モラトリアム)	BL-Ch06	ドクトリン
+onerous property	負担付財産——管財人が放棄(disclaim)できる不利益資産	BL-Ch06	ドクトリン
+transaction at an undervalue	過小対価取引——無償・著しい不均衡での資産流出の否認対象	BL-Ch06	ドクトリン
+preference	偏頗行為——特定債権者を有利にする意図的な優遇の否認対象	BL-Ch06	ドクトリン
+associate / connected person	近親者・関係者——否認の遡及期間が延び、意図が推定される	BL-Ch06	ドクトリン
+transaction defrauding creditors	債権者詐害行為——期間制限なしの否認類型	BL-Ch06	ドクトリン
+extortionate credit transaction	暴利的与信取引——著しく過酷な与信の見直し	BL-Ch06	ドクトリン
+liquidation / winding up	清算——会社資産を換価・分配して会社を消滅させる終局手続	BL-Ch06	ドクトリン
+compulsory liquidation	強制清算——債権者等の申立てによる裁判所命令型	BL-Ch06	ドクトリン
+creditors' voluntary liquidation (CVL)	債権者任意清算——支払不能会社の自主的清算	BL-Ch06	ドクトリン
+members' voluntary liquidation (MVL)	社員任意清算——支払能力宣言を伴う solvent 清算	BL-Ch06	ドクトリン
+declaration of solvency	支払能力宣言——MVLの前提となる取締役の宣言	BL-Ch06	ドクトリン
+liquidator	清算人——資産の換価・否認権行使・分配を担う	BL-Ch06	ドクトリン
+administration	管理手続——事業継続を図る再建型手続。モラトリアム付き	BL-Ch06	ドクトリン
+administrator	管理人——救済目的の階層に従って会社を運営する	BL-Ch06	ドクトリン
+qualifying floating charge holder (QFCH)	適格浮動担保権者——裁判外で管理人を任命できる債権者	BL-Ch06	ドクトリン
+pre-pack administration	プレパック——任命と同時に事前合意済みの事業譲渡を実行	BL-Ch06	ドクトリン
+company voluntary arrangement (CVA)	会社任意整理——債権者75%(価額)承認の再建計画	BL-Ch06	ドクトリン
+moratorium	モラトリアム——手続中の個別的権利行使の停止	BL-Ch06	ドクトリン
+preferential debts	優先債権——従業員の賃金・休暇手当等(+HMRCの二次優先)	BL-Ch06	ドクトリン
+prescribed part	留保部分——浮動担保財産から無担保債権者へ取り分ける基金	BL-Ch06	ドクトリン
+order of priority / waterfall	配当順位——固定担保→費用→優先債権→(留保部分)→浮動担保→無担保→株主	BL-Ch06	ドクトリン
+bankruptcy petition threshold	破産申立ての債務額基準£5,000以上|IA 1986 s 267|liquidated(確定額)かつ無担保の債務であること	BL-Ch06	トリガー
+corporate inability to pay debts	法人の支払不能の推定£750|IA 1986 ss 122–123|statutory demand 3週間不履行・執行不奏効・二テスト	BL-Ch06	トリガー
+individual TUV look-back 5 years	個人の過小対価取引=遡及5年|IA 1986 s 339|2〜5年前は支払不能だったことが要件(関係者には推定)	BL-Ch06	トリガー
+individual preference 6 months / 2 years	個人の偏頗行為=6ヶ月(associateは2年)|IA 1986 s 340|優遇の意図(desire)が要件——associateには推定	BL-Ch06	トリガー
+corporate TUV look-back 2 years	法人の過小対価取引=遡及2年|IA 1986 s 238|善意・事業目的・会社に利益の抗弁あり	BL-Ch06	トリガー
+corporate preference 6 months / 2 years	法人の偏頗行為=6ヶ月(connectedは2年)|IA 1986 s 239|支払不能であったこと+desire要件	BL-Ch06	トリガー
+avoidance of floating charges	無対価の浮動担保の無効=12ヶ月(connected 2年)|IA 1986 s 245|新規貸付の対価がある部分は有効	BL-Ch06	トリガー
+transactions defrauding creditors	債権者詐害行為——期間制限なし|IA 1986 s 423|目的(purpose)の立証が必要な代わりに無期限	BL-Ch06	トリガー
+disclaimer of onerous property	負担付財産の放棄|IA 1986 s 315|不利な賃借権等を管財人が切り捨てる	BL-Ch06	トリガー
+wrongful trading claims	不当取引の填補請求|IA 1986 s 214|「破綻回避の合理的見込みなし」と知るべき時点以降の増加損	BL-Ch06	トリガー
+administration purpose hierarchy	管理手続の目的階層|IA 1986 Sch B1|①事業救済→②清算より良い結果→③担保・優先債権者への分配	BL-Ch06	トリガー
+CVA approval 75% in value	CVA承認=価額75%|IA 1986 Part I|無担保債権者を拘束・担保/優先債権者は同意なしに害せない	BL-Ch06	トリガー
+petition	申立て(する)	BL-Ch06	シーン
+realise	換価する	BL-Ch06	シーン
+distribute	分配する	BL-Ch06	シーン
+shortfall	不足額	BL-Ch06	シーン
+pro rata	按分で	BL-Ch06	シーン
+pari passu	同順位で	BL-Ch06	シーン
+going concern	継続企業(価値)	BL-Ch06	シーン
+clawback	取戻し・否認	BL-Ch06	シーン
+repossess	(担保物を)回収する	BL-Ch06	シーン
+evict	立ち退かせる	BL-Ch06	シーン
+shortfall creditor	不足額債権者	BL-Ch06	シーン
+dividend (insolvency)	(倒産)配当	BL-Ch06	シーン
+trading profits	事業利益——chargeable receipts−deductible expenses−capital allowances	BL-Ch07	ドクトリン
+chargeable receipts	課税収入——income性(取引の性質上の収入)であること	BL-Ch07	ドクトリン
+income vs capital nature	収益的支出と資本的支出の区別——控除可否の第一関門	BL-Ch07	ドクトリン
+deductible expenses	控除可能経費——事業のためwholly and exclusivelyに支出	BL-Ch07	ドクトリン
+capital allowances	資本控除——資本的支出を税務上費用化する制度	BL-Ch07	ドクトリン
+plant and machinery	設備・機械——資本控除の中心カテゴリ	BL-Ch07	ドクトリン
+writing down allowance (WDA)	定率償却控除——年18%の逓減残高方式	BL-Ch07	ドクトリン
+pooling	プーリング——資産をまとめて残高管理する仕組み	BL-Ch07	ドクトリン
+annual investment allowance (AIA)	年次投資控除——年£1millionまで100%即時控除	BL-Ch07	ドクトリン
+full expensing (FE)	フル・エクスペンシング——会社限定・新品設備の100%即時控除	BL-Ch07	ドクトリン
+start-up / early trade losses relief	開業初期損失の救済——開業4年内の損失を前3年の所得へ繰戻し	BL-Ch07	ドクトリン
+carry-across / carry-back relief	当期・前期への損失控除——総所得への相殺	BL-Ch07	ドクトリン
+carry-forward relief	繰越控除——同一事業の将来利益へ無期限繰越し	BL-Ch07	ドクトリン
+terminal loss relief	廃業時損失の救済——最終12ヶ月の損失を前3年へ繰戻し	BL-Ch07	ドクトリン
+relief on incorporation	法人成り時の繰越——事業を会社へ譲渡した後の株式所得へ充当	BL-Ch07	ドクトリン
+value added tax (VAT)	付加価値税——事業者が課税供給に上乗せして徴収する税	BL-Ch07	ドクトリン
+taxable supply	課税供給——免税(exempt)以外の物品・役務の供給	BL-Ch07	ドクトリン
+taxable person	課税事業者——登録義務者または任意登録者	BL-Ch07	ドクトリン
+output tax	売上税額——顧客から徴収するVAT	BL-Ch07	ドクトリン
+input tax	仕入税額——仕入れ時に支払い、控除・還付できるVAT	BL-Ch07	ドクトリン
+standard / zero-rated / exempt	標準税率・ゼロ税率・免税——ゼロ税率は課税供給(仕入控除可)である点に注意	BL-Ch07	ドクトリン
+VAT invoice	VAT請求書——登録事業者間の供給で交付義務	BL-Ch07	ドクトリン
+VAT return	VAT申告——原則四半期ごとに申告・納付	BL-Ch07	ドクトリン
+wholly and exclusively for the trade	事業のための専一的支出|ITTOIA 2005|二重目的の支出は原則控除不可——按分可能な場合の切り分け	BL-Ch07	トリガー
+standard rate 20%	標準税率20%|VATA 1994|計算問題はVAT込み/抜きの読み分けから	BL-Ch07	トリガー
+registration threshold £90,000	登録閾値£90,000|VATA 1994|過去12ヶ月の課税売上——暦年でなくローリング12ヶ月	BL-Ch07	トリガー
+AIA cap £1 million	AIA上限£1m|資本控除制度|超過分はWDA 18%へ——併用の計算順序	BL-Ch07	トリガー
+WDA 18% reducing balance	WDA=18%逓減残高|資本控除制度|定額法でなく残高に対する18%	BL-Ch07	トリガー
+full expensing for companies only	FEは会社のみ・新品限定|資本控除制度|個人事業・中古資産には適用なしの罠	BL-Ch07	トリガー
+early trade losses: first 4 tax years, carry back 3	開業損失=当初4課税年度・3年繰戻し|所得税損失制度|古い年度から順に充当(FIFO)	BL-Ch07	トリガー
+terminal loss: final 12 months, carry back 3	廃業損失=最終12ヶ月・3年繰戻し|所得税損失制度|新しい年度から遡る順序に注意	BL-Ch07	トリガー
+carry-forward against same trade	繰越は同一事業の利益のみ|所得税損失制度|「どの所得にも使える」とする肢は誤り	BL-Ch07	トリガー
+zero-rated vs exempt supplies	ゼロ税率と免税の違い|VATA 1994|ゼロ税率=課税供給(仕入税額控除可)/免税=控除不可	BL-Ch07	トリガー
+levy	課す	BL-Ch07	シーン
+charge to tax	課税する	BL-Ch07	シーン
+threshold	閾値	BL-Ch07	シーン
+exceed	超える	BL-Ch07	シーン
+quarterly	四半期の	BL-Ch07	シーン
+refund / rebate	還付	BL-Ch07	シーン
+accounting period	会計期間	BL-Ch07	シーン
+year end	期末	BL-Ch07	シーン
+receipts	収入	BL-Ch07	シーン
+outgoings	支出	BL-Ch07	シーン
+net of VAT	VAT抜きで	BL-Ch07	シーン
+inclusive of VAT	VAT込みで	BL-Ch07	シーン
+chargeable person	課税対象者——個人・パートナー(会社は法人税)	BL-Ch08	ドクトリン
+income tax year	課税年度——4月6日から翌年4月5日まで	BL-Ch08	ドクトリン
+total income	総所得——全所得源からの収入の合計(計算の出発点)	BL-Ch08	ドクトリン
+allowable reliefs	控除可能項目——適格ローン利息等。総所得から控除	BL-Ch08	ドクトリン
+net income	純所得——総所得−allowable reliefs	BL-Ch08	ドクトリン
+personal allowance (PA)	人的控除£12,570——£100,000超で£2につき£1逓減	BL-Ch08	ドクトリン
+taxable income	課税所得——純所得−人的控除	BL-Ch08	ドクトリン
+NSNDI	非貯蓄・非配当所得——給与・事業・不動産所得等。最初に課税	BL-Ch08	ドクトリン
+savings income	貯蓄所得——利子等。NSNDIの次に積み上げ	BL-Ch08	ドクトリン
+dividend income	配当所得——最後に積み上げ・固有の税率表	BL-Ch08	ドクトリン
+personal savings allowance (PSA)	貯蓄控除枠——£1,000/£500/£0(納税者区分による)	BL-Ch08	ドクトリン
+dividend allowance (DA)	配当控除枠——£500は0%(ただし帯域は消費する)	BL-Ch08	ドクトリン
+basic / higher / additional rate taxpayer	基本・高率・追加税率納税者——帯域で決まる区分	BL-Ch08	ドクトリン
+marriage allowance	婚姻控除——配偶者へのPA一部移転(基本税率者間)	BL-Ch08	ドクトリン
+self-assessment	自己申告——申告期限と納付の枠組み	BL-Ch08	ドクトリン
+payments on account	予定納付——1月31日・7月31日の前払い2回	BL-Ch08	ドクトリン
+PAYE	源泉徴収——給与からの天引き徴収制度	BL-Ch08	ドクトリン
+tax avoidance	租税回避——合法だが立法趣旨に反し得る節税	BL-Ch08	ドクトリン
+tax evasion	脱税——違法な租税逋脱(刑事罰の対象)	BL-Ch08	ドクトリン
+general anti-abuse rule (GAAR)	一般的濫用防止規定——濫用的アレンジメントを否認	BL-Ch08	ドクトリン
+double reasonableness test	二重合理性テスト——「合理的とは到底いえない」かの判定基準	BL-Ch08	ドクトリン
+tax year 6 April to 5 April	課税年度=4/6〜4/5|ITA 2007|会社のfinancial year(4/1起算)と混同させる罠	BL-Ch08	トリガー
+personal allowance £12,570	人的控除£12,570|ITA 2007|£100,000超は£2につき£1逓減→£125,140でゼロ	BL-Ch08	トリガー
+basic rate band £0–£37,700 (20%)	基本税率帯20%|ITA 2007|課税所得ベースの帯域——総所得でなく控除後で判定	BL-Ch08	トリガー
+higher rate 40% / additional rate 45%	高率40%・追加率45%|ITA 2007|£125,140超で追加税率	BL-Ch08	トリガー
+PSA £1,000 / £500 / £0	貯蓄控除枠は納税者区分で変動|ITA 2007|追加税率納税者はゼロ	BL-Ch08	トリガー
+dividend rates 8.75% / 33.75% / 39.35%	配当税率の三段|ITA 2007|DA £500は0%だが帯域は消費する——「帯域も消えない」は誤り	BL-Ch08	トリガー
+order: NSNDI → savings → dividends	課税の積み上げ順序|所得税計算構造|順序を崩すと税率適用を誤る——計算問題の背骨	BL-Ch08	トリガー
+qualifying loan interest	適格ローン利息の控除|ITA 2007|パートナーシップ出資・持分取得のための借入利息が典型	BL-Ch08	トリガー
+partners taxed individually on profit share	パートナーは利益持分に個人課税|ITTOIA 2005|firm自体は納税主体でない(透明課税)	BL-Ch08	トリガー
+payments on account 31 Jan / 31 Jul	予定納付の期日|自己申告制度|前年税額の各50%+翌1/31に精算	BL-Ch08	トリガー
+salary / wages	給与/賃金	BL-Ch08	シーン
+employer	使用者	BL-Ch08	シーン
+HMRC	英国歳入関税庁	BL-Ch08	シーン
+file a return	申告する	BL-Ch08	シーン
+deadline	期限	BL-Ch08	シーン
+penalty	加算金・罰金	BL-Ch08	シーン
+gross	総額の	BL-Ch08	シーン
+net	控除後の・手取りの	BL-Ch08	シーン
+band	帯域	BL-Ch08	シーン
+taper	逓減(する)	BL-Ch08	シーン
+allowance	控除枠	BL-Ch08	シーン
+liability	納税義務・税額	BL-Ch08	シーン
+capital gains tax (CGT)	譲渡益税——資産処分による利益への課税(個人・パートナー)	BL-Ch09	ドクトリン
+chargeable asset	課税資産——原則すべての資産(自動車・本拠住宅等の免除あり)	BL-Ch09	ドクトリン
+chargeable disposal	課税処分——売却のほか贈与も処分(死亡は処分でない)	BL-Ch09	ドクトリン
+disposal value	処分価額——独立当事者間は対価/関係者・贈与は市場価格	BL-Ch09	ドクトリン
+allowable expenditure	控除可能支出——取得費・改良費・取得処分の付随費用	BL-Ch09	ドクトリン
+basic gain	基本利得——処分価額−控除可能支出	BL-Ch09	ドクトリン
+annual exemption	年間免税枠£3,000——利得から最後に控除	BL-Ch09	ドクトリン
+connected person	関係者——市場価格ルール+損失の相殺制限	BL-Ch09	ドクトリン
+no gain no loss (spouses)	配偶者間の譲渡——利得も損失も生じない引継ぎ	BL-Ch09	ドクトリン
+business asset disposal relief (BADR)	事業資産処分リリーフ——適格処分に軽減税率・生涯£1m限度	BL-Ch09	ドクトリン
+qualifying business disposal	適格事業処分——事業全部/一部・廃業後資産・適格株式	BL-Ch09	ドクトリン
+personal company (5% test)	5%テスト——議決権等5%以上+役員/従業員で株式が適格に	BL-Ch09	ドクトリン
+investors' relief	投資家リリーフ——非上場事業会社の外部投資家向け軽減	BL-Ch09	ドクトリン
+hold-over relief	ホールドオーバー(贈与繰延)——事業資産の贈与時、受贈者へ利得を繰延べ	BL-Ch09	ドクトリン
+roll-over relief	ロールオーバー(買替繰延)——適格資産の買替えで利得を新資産へ繰延べ	BL-Ch09	ドクトリン
+incorporation relief	法人成りリリーフ——事業を株式対価で会社へ移す際の自動繰延べ	BL-Ch09	ドクトリン
+EIS deferral relief	EIS繰延リリーフ——適格投資への再投資による利得繰延べ	BL-Ch09	ドクトリン
+capital losses	譲渡損失——当年の利得と相殺・残余は繰越し	BL-Ch09	ドクトリン
+inheritance tax (IHT)	相続税——死亡・一定の生前移転への課税(本章はBPRに限定)	BL-Ch09	ドクトリン
+business property relief (BPR)	事業財産リリーフ——事業用財産の課税価額を100%/50%減額	BL-Ch09	ドクトリン
+relevant business property	対象事業財産——非上場株式・事業(持分)・支配下の土地建物等	BL-Ch09	ドクトリン
+two-year ownership requirement	2年保有要件——BPR適用の原則的な保有期間	BL-Ch09	ドクトリン
+annual exemption £3,000	年間免税枠£3,000|TCGA 1992|控除の順番は最後——リリーフ適用後に引く	BL-Ch09	トリガー
+standard rates 18% / 24%	標準税率18%/24%|TCGA 1992|所得の残余基本税率帯に収まる部分だけ18%	BL-Ch09	トリガー
+BADR rate 14% (18% from 6 April 2026)	BADR税率14%(2026年4月から18%)|BADR制度|生涯限度£1m——超過分は標準税率	BL-Ch09	トリガー
+BADR share conditions: 5% + officer/employee + 2 years	株式の適格要件|BADR制度|5%(議決権+経済的権利)+役員/従業員+処分前2年間	BL-Ch09	トリガー
+hold-over: joint claim, donee takes reduced base cost	ホールドオーバーは共同選択|hold-over制度|受贈者の取得費が利得分だけ下がる——課税の消滅ではない	BL-Ch09	トリガー
+roll-over window: 1 year before – 3 years after	買替期間=処分前1年〜後3年|roll-over制度|適格資産(土地建物・固定設備等)間の買替え	BL-Ch09	トリガー
+incorporation relief automatic: all assets for shares	法人成りは自動適用|incorporation relief|全資産(現金除く)を株式対価で——一部現金対価なら按分	BL-Ch09	トリガー
+market value rule for connected persons	関係者間は市場価格|TCGA 1992 s 286等|実際の対価を無視して計算する	BL-Ch09	トリガー
+BPR 100%: unquoted shares / business	BPR 100%=非上場株式・事業(持分)|IHTA 1984|保有割合を問わず100%(2026年4月から£1m超は50%へ)	BL-Ch09	トリガー
+BPR 50%: controlling quoted shares / land used by company	BPR 50%=支配的上場株式・会社等に使わせる土地建物|IHTA 1984|「使わせている地主」は50%どまり——支配(議決権過半)要件に注意	BL-Ch09	トリガー
+two years' ownership	2年保有|IHTA 1984|配偶者からの承継等の例外との組合せ	BL-Ch09	トリガー
+investors' relief conditions	投資家リリーフ——新規発行・非上場・3年保有・非役員/従業員|investors' relief制度|BADRの5%要件を満たさない外部投資家の受け皿	BL-Ch09	トリガー
+proceeds	処分対価	BL-Ch09	シーン
+acquisition cost	取得費	BL-Ch09	シーン
+enhancement	改良(費)	BL-Ch09	シーン
+incidental costs	付随費用	BL-Ch09	シーン
+gift	贈与(する)	BL-Ch09	シーン
+donor / donee	贈与者/受贈者	BL-Ch09	シーン
+quoted / unquoted	上場の/非上場の	BL-Ch09	シーン
+estate	遺産	BL-Ch09	シーン
+lifetime limit	生涯限度額	BL-Ch09	シーン
+cessation	廃業	BL-Ch09	シーン
+corporation tax (CT)	法人税——会社の所得利益+譲渡利得への課税	BL-Ch10	ドクトリン
+financial year	財政年度——4月1日から翌年3月31日(税率設定の単位)	BL-Ch10	ドクトリン
+accounting period	会計期間——課税計算の単位となる会社の期間(最長12ヶ月)	BL-Ch10	ドクトリン
+taxable total profits (TTP)	課税総利益——income profits+chargeable gains	BL-Ch10	ドクトリン
+income profits	所得利益——事業利益等(計算は7章の型を流用)	BL-Ch10	ドクトリン
+chargeable gains	譲渡利得——会社の資産処分益。個人のCGT計算を修正して適用	BL-Ch10	ドクトリン
+indexation allowance	物価調整控除——2017年12月で凍結された取得費の物価スライド	BL-Ch10	ドクトリン
+small profits rate	小規模利益税率19%——利益£50,000以下	BL-Ch10	ドクトリン
+main rate	主税率25%——利益£250,000超	BL-Ch10	ドクトリン
+marginal relief	限界控除——£50,000〜£250,000の間の段階的調整	BL-Ch10	ドクトリン
+roll-over relief (companies)	会社の買替繰延——適格事業資産の交換で利得繰延べ	BL-Ch10	ドクトリン
+trading loss reliefs (CT)	会社の損失控除——当期相殺・12ヶ月繰戻し・繰越し・廃業3年繰戻し	BL-Ch10	ドクトリン
+distribution	分配——配当等。支払会社の損金にならない	BL-Ch10	ドクトリン
+close company	閉鎖会社——5人以下のparticipator(または取締役参加者)が支配	BL-Ch10	ドクトリン
+participator	出資参加者——株式・議決権等の持分を有する者	BL-Ch10	ドクトリン
+loans to participators	参加者への貸付——閉鎖会社に33.75%の預け金課税(返済で還付)	BL-Ch10	ドクトリン
+group companies (75%)	グループ会社——75%子会社関係で損失授受等が可能	BL-Ch10	ドクトリン
+group relief	グループ・リリーフ——損失をグループ内で他社へ引き渡す(surrender)	BL-Ch10	ドクトリン
+no gain no loss group transfers	グループ内資産移転——利得も損失も生じない引継ぎ	BL-Ch10	ドクトリン
+self-assessment and payment	申告納付——期末後9ヶ月+1日(大会社は四半期分割)	BL-Ch10	ドクトリン
+rates: 19% / 25% + marginal relief	税率19%/25%+限界控除|CTA 2010|閾値£50,000/£250,000——関連会社数で閾値が按分される点も	BL-Ch10	トリガー
+financial year from 1 April	財政年度=4月1日起算|CT制度|所得税の4月6日と混同させる罠	BL-Ch10	トリガー
+payment: 9 months + 1 day	納付=期末後9ヶ月+1日|CT制度|申告期限(12ヶ月)より納付が先に来る	BL-Ch10	トリガー
+large companies pay by instalments	大会社は四半期分割納付|CT制度|利益£1.5m超の目安——期中から前払いが始まる	BL-Ch10	トリガー
+dividends are not deductible	配当は損金不算入|CT制度|「配当を払えば税が減る」とする肢は誤り	BL-Ch10	トリガー
+loans to participators: 33.75% charge	参加者貸付への33.75%課税|CTA 2010 s 455|返済・免除で還付される預け金型——恒久的な税でない	BL-Ch10	トリガー
+close company definition	閉鎖会社の定義|CTA 2010|5人以下のparticipator/取締役participatorによる支配	BL-Ch10	トリガー
+75% group for group relief	グループ・リリーフの75%要件|CTA 2010|直接・間接の75%保有——損失のsurrenderは当期対応分	BL-Ch10	トリガー
+intra-group transfers no gain no loss	グループ内移転は損益不発生|TCGA 1992|6年内にグループ離脱するとdegrouping chargeの入口	BL-Ch10	トリガー
+indexation frozen at December 2017	物価調整は2017年12月で凍結|CT制度|それ以降の取得資産には付かない	BL-Ch10	トリガー
+subsidiary	子会社	BL-Ch10	シーン
+parent company	親会社	BL-Ch10	シーン
+surrender	(損失を)引き渡す	BL-Ch10	シーン
+retained profits	内部留保	BL-Ch10	シーン
+due date	納期限	BL-Ch10	シーン
+augmented profits	加算後利益	BL-Ch10	シーン
+fiscal	会計・財政の	BL-Ch10	シーン
+banding	税率区分	BL-Ch10	シーン
+wholly-owned	完全保有の	BL-Ch10	シーン
+associated company	関連会社	BL-Ch10	シーン
+Which of the following best describes ...?	次のうち〜を最もよく説明するのはどれか——単一最良解の定番リード	BL-試験表現	表現
+Which of the following best reflects the position?	法状態を最もよく反映するのはどれか	BL-試験表現	表現
+What is the most appropriate advice ...?	最も適切な助言はどれか——実務家視点の問い	BL-試験表現	表現
+is most likely / least likely to ...	最も〜しそうだ/最も〜しそうでない	BL-試験表現	表現
+must / may / should	義務(must)・裁量(may)・当為(should)——助動詞で正誤が割れる	BL-試験表現	表現
+is required to ...	〜することが要求される(義務)	BL-試験表現	表現
+is entitled to ...	〜する権利がある	BL-試験表現	表現
+is liable for / liable to ...	〜について責任を負う/〜される立場にある	BL-試験表現	表現
+provided that ... / subject to ...	〜を条件として/〜に服して	BL-試験表現	表現
+unless ...	〜でない限り	BL-試験表現	表現
+notwithstanding ...	〜にかかわらず	BL-試験表現	表現
+for the purposes of ...	〜の適用上	BL-試験表現	表現
+in respect of / in relation to ...	〜に関して	BL-試験表現	表現
+on the grounds that ...	〜という理由で	BL-試験表現	表現
+without more	それ以上の事情なしには——「それだけでは足りない」の合図	BL-試験表現	表現
+deemed to be ...	〜とみなされる	BL-試験表現	表現
+presumed ... (rebuttable)	〜と推定される(反証可能)	BL-試験表現	表現
+void / voidable / unenforceable	無効/取消可能/強制不能——効果の三段階	BL-試験表現	表現
+bona fide / in good faith	善意で・誠実に	BL-試験表現	表現
+arm's length	独立当事者間の(取引条件)	BL-試験表現	表現
+prima facie	一応の・反証がなければ	BL-試験表現	表現
+inter alia	とりわけ・〜など	BL-試験表現	表現
+duly convened and quorate	適法に招集され定足数を満たした(総会・取締役会)	BL-試験表現	表現
+the company has adopted the Model Articles unamended	会社は無修正のモデル定款を採択している——BLP頻出の前提文	BL-試験表現	表現
+the resolution is passed / defeated	決議は可決/否決された	BL-試験表現	表現
+You act for ...	あなたは〜の代理人(solicitor)である——視点の指定	BL-試験表現	表現
+Assume that ...	〜と仮定せよ——争点を絞る指示	BL-試験表現	表現
+holds 40% of the voting rights	議決権の40%を保有する——決議の可否計算の素材	BL-試験表現	表現
+net assets / net asset value	純資産(額)——SPT等の閾値計算で登場	BL-試験表現	表現
+to the nearest £	£単位で四捨五入(切上げ)——税計算の指示	BL-試験表現	表現

@@ -97,6 +97,13 @@ const gradeCard = (srs, grade) => {
 const newSrs = () => ({ reps: 0, interval: 0, ease: 2.5, lapses: 0, due: null });
 
 // ---------- bulk parse ----------
+// 章タグの正規化: "BL-Ch01"→"Ch.1" / "Ch3"→"Ch.3" / "BL-試験表現"→"試験表現" / "巻末"はそのまま
+const normTag = (s) => {
+  const t = String(s || "").trim().replace(/^[A-Za-z]{1,4}[-_]/, "");
+  const cm = t.match(/^Ch\.?\s*0*(\d+)$/i);
+  return cm ? `Ch.${cm[1]}` : t;
+};
+
 const parseBulk = (text) => {
   const out = [];
   let curTag = "";
@@ -110,12 +117,18 @@ const parseBulk = (text) => {
       return;
     }
     let m = l.split("\t");
+    let colTag = "";
+    if (m.length >= 3) {
+      // タブ区切りの3列目=章タグ(例: BL-Ch01 / Ch.3 / 試験表現)。4列目以降(種別等)は取り込まない
+      colTag = normTag(m[2]);
+      m = [m[0], m[1]];
+    }
     if (m.length < 2) m = l.split(/[：:]/);
     if (m.length < 2) m = l.split(/,|、/);
     if (m.length >= 2) {
       const en = m[0].trim();
       const ja = m.slice(1).join(" ").trim();
-      if (en && ja) out.push({ en, ja, tag: curTag });
+      if (en && ja) out.push({ en, ja, tag: colTag || curTag });
     }
   });
   return out;
@@ -469,12 +482,13 @@ function App() {
 
   // ---- add ----
   const addWords = (list) => {
-    const idxMap = new Map(words.map((w, i) => [w.en.toLowerCase(), i]));
+    const keyOf = (sub, en) => `${String(sub || "").trim().toLowerCase()}|${String(en || "").trim().toLowerCase()}`;
+    const idxMap = new Map(words.map((w, i) => [keyOf(w.subject, w.en), i]));
     const nextWords = [...words];
     let added = 0;
     let updated = 0;
     list.forEach((x) => {
-      const i = idxMap.get(x.en.toLowerCase());
+      const i = idxMap.get(keyOf(x.subject, x.en));
       if (i !== undefined) {
         const w = nextWords[i];
         const newTag = x.tag || w.tag || "";
@@ -1097,7 +1111,7 @@ function AddTab({ S, C, onAdd, onAddMcq }) {
         <div style={{ fontSize: 12, color: C.inkSoft, marginBottom: 10 }}>
           1行1語。「英語(タブ / : / ,)日本語」の形式。例:<br />
           <code>estoppel: 禁反言</code><br />
-          「# Ch1 …」の見出し行を入れると、それ以降の語に章タグが付きます。登録済みの語は再貼り付けで科目・章・訳だけ更新され、学習履歴は維持されます
+          タブ区切りで3列目があれば章タグとして読みます(例: <code>term⇥意味⇥BL-Ch01</code> → Ch.1。4列目の種別は無視)。「# Ch1 …」の見出し行でも章タグを付けられます。登録済みの語(同じ科目+英語)は再貼り付けで科目・章・訳だけ更新され、学習履歴は維持されます
         </div>
         <textarea value={bulk} onChange={(e) => setBulk(e.target.value)} rows={7} placeholder={"consideration: 約因\nbreach of contract: 契約違反"} style={{ ...input, resize: "vertical", marginBottom: 10 }} />
         <button

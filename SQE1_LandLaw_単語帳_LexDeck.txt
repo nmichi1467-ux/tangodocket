@@ -1,0 +1,420 @@
+land	土地(法的定義は地表だけでなく鉱物・建物・無体の権利まで含む)	Ch.01
+corporeal hereditament	有体世襲財産(相続可能な土地の物理的・有形の構成部分。樹木・岩石など)	Ch.01
+incorporeal hereditament	無体世襲財産(相続可能な無形の財産権。easementやprofitなど)	Ch.01
+flying freehold	空中フリーホールド(地面に接しない建物部分も土地の定義に含まれる)	Ch.01
+airspace	空域(土地所有者の権利は通常の利用・享受に必要な高さまでに限定)	Ch.01
+fixture	定着物(土地の一部となった物。売買で当然に買主へ移転)	Ch.01
+chattel	動産(個人財産としての性質を保つ物。売主が持ち去れる)	Ch.01
+degree of annexation	付着の程度(定着物判定の第1テスト。推定を生むにとどまる)	Ch.01
+purpose of annexation	付着の目的(定着物判定の第2テストで決定的。土地の恒久的改善か物自体の享受か)	Ch.01
+architectural design	建築上の一体設計(取外し容易でも全体設計の一部なら定着物とされ得る)	Ch.01
+estate in land	土地のエステート(土地を享受・占有・処分し収益を得る権利。時間の長さで観念される)	Ch.01
+interest in land	土地のインタレスト(他人の土地に対する権利。通行権など)	Ch.01
+tenure	保有形態(すべての土地は国王から保有するという封建的観念の名残)	Ch.01
+fee simple absolute in possession	単純封土権(freeholdの正式名称。無条件・現在占有の相続可能なエステート)	Ch.01
+freehold	フリーホールド(事実上永続する自由土地保有権)	Ch.01
+term of years absolute	確定期間の不動産賃借権(leaseholdの正式名称。1年未満や期間断片も含む)	Ch.01
+leasehold	リースホールド(一定期間に限定されたエステート)	Ch.01
+commonhold	コモンホールド(区分所有型フリーホールド。2002年法創設だが普及せず)	Ch.01
+reversion	復帰権(リース終了後に占有が戻る、貸主に残るエステート)	Ch.01
+perpetual	永続的な(rentchargeが法的たり得る要件のひとつ)	Ch.01
+legal estate	法律上のエステート(s 1(1) LPA 1925の2種=freeholdとleaseholdのみ)	Ch.01
+legal interest	法律上のインタレスト(s 1(2) LPA 1925に限定列挙された権利のみなり得る)	Ch.01
+equitable interest	衡平法上の権利(s 1(1)(2)に載らない権利はすべて衡平法上でのみ存在=s 1(3))	Ch.01
+easement	地役権(自己の土地の便益のため他人の土地を利用する権利)	Ch.01
+profit a prendre	採取権(他人の土地から自然に存する物を採取する権利。漁猟・放牧など)	Ch.01
+rentcharge	レントチャージ(土地に課される定期金の支払を受ける権利。現在は稀)	Ch.01
+charge by way of legal mortgage	法定モーゲージによる担保権(s 1(2)(c)。mortgageとchargeは互換的に使われる)	Ch.01
+right of entry	立入権(賃料不払等でのリース解除権・レントチャージの土地取戻権)	Ch.01
+restrictive covenant	制限的コヴェナント(他の土地所有者への「しない」約束。常に衡平法上の権利)	Ch.01
+estate contract	エステート契約(法律上のエステートの移転・設定を目的とする契約。交換後の買主の衡平法上の権利)	Ch.01
+option	オプション(固定期間内=最長21年に売渡しを請求できる権利。estate contractの一種)	Ch.01
+right of pre-emption	先買権(売主が売却を決めた時点で先に申し出を受ける権利)	Ch.01
+resulting trust	復帰信託(購入時に代金の一部を出捐した非名義人が、出捐割合に応じた持分を取得)	Ch.01
+constructive trust	擬制信託(購入時の直接出捐以外の貢献=ローン返済・大規模改良等から生じる信託)	Ch.01
+home rights	ホームライツ(FLA 1996 s 30。非名義配偶者の婚姻住居占有権。土地の権利ではない法定権利)	Ch.01
+matrimonial home	婚姻住居(home rightsの対象。現に・過去に・予定として婚姻住居であること)	Ch.01
+licence	ライセンス(土地利用の人的許可。土地の権利を創設せず承継人を拘束しない)	Ch.01
+licensor	ライセンス付与者	Ch.01
+licensee	ライセンス保有者(いつでも撤回されうる地位)	Ch.01
+deed	捺印証書(法律上のエステート・権利の設定移転に必要=s 52(1) LPA 1925)	Ch.01
+formalities	方式要件(deed/書面契約/署名書面の3層。例外とセットで覚える)	Ch.01
+in writing	書面で(deedの要件のひとつ)	Ch.01
+witnessed	証人立会いの(deedは1名の証人による署名立会いが必要)	Ch.01
+delivered	交付された(deedの効力発生要件)	Ch.01
+parol lease	口頭リース(3年以下・即時占有・最良賃料・プレミアムなしで方式不要=s 54(2))	Ch.01
+best rent	最良賃料(市場賃料の意。parol leaseの要件)	Ch.01
+fine / premium	一時金・プレミアム(リース設定時の一括金。parol leaseでは禁止)	Ch.01
+take effect in possession	即時占有で効力を生じる(parol leaseの要件。将来開始は不可)	Ch.01
+specific performance	特定履行(衡平法上の救済。契約を衡平法上のリース等として承認する前提)	Ch.01
+clean hands	クリーンハンズ(衡平を求める者は自ら公正であれ。契約違反者は衡平法の介入を受けられない)	Ch.01
+successor in title	権原承継人(土地を後から取得した者)	Ch.01
+bind	拘束する(権利が買主に対しても効力を持つこと)	Ch.01
+convey / conveyance	譲渡する/譲渡証書(未登録地の土地移転文書)	Ch.01
+disposition	処分(売却・贈与・設定など権利を動かす行為の総称)	Ch.01
+rebuttable presumption	反証可能な推定(付着の程度テストが生む推定など)	Ch.01
+onus of proof	立証責任(動産でなくなったと主張する側が負う)	Ch.01
+intangible	無形の(incorporeal hereditamentの説明語)	Ch.01
+co-ownership	共同所有(複数人が同時に=concurrentlyに土地を所有すること)	Ch.02
+concurrent	同時の(共同所有の本質。時間的に並存する所有)	Ch.02
+trust of land	土地信託(共同所有には常にTLATA 1996 s 1により信託が発生)	Ch.02
+trustee	受託者(法律上の所有者。役割は管理的で、居住や賃料収受の権限はない)	Ch.02
+beneficiary	受益者(衡平法上の所有者。占有し賃料を受け取れる、価値の実質的帰属者)	Ch.02
+legal owner	法律上の所有者(=trustee)	Ch.02
+equitable owner	衡平法上の所有者(=beneficiary)	Ch.02
+express trust	明示信託(書面+署名の方式=s 53(1) LPA 1925)	Ch.02
+implied trust	黙示信託(resulting/constructiveの総称。方式不要=s 53(2))	Ch.02
+declaration of trust	信託宣言(持分の明示的取決め。あれば原則それが決定的)	Ch.02
+joint tenancy	合有(全員が全体を持分なく一体的に所有。法律上のエステートは常にこれ)	Ch.02
+tenancy in common	共有(各人が観念的な区別された持分=undivided shareを持つ)	Ch.02
+survivorship	生存者取得権(合有者の死亡で持分は遺言・無遺言相続によらず自動的に生存者へ)	Ch.02
+undivided share	不分割持分(共有者の観念的持分。土地は物理的に分割されない)	Ch.02
+four unities	四つの一体性(占有・利益・権原・時期。全部そろえば合有の指標)	Ch.02
+unity of possession	占有の一体性(全員が全体を占有する権利。合有・共有の双方に必要)	Ch.02
+unity of interest	利益の一体性(全員の権利が同一。合有の徴表)	Ch.02
+unity of title	権原の一体性(同一文書から取得)	Ch.02
+unity of time	時期の一体性(同時に取得)	Ch.02
+severance	分離(衡平法上の合有を共有に転換する行為。法律上のエステートは分離不可)	Ch.02
+written notice	書面通知(s 36(2) LPA 1925による正式な分離方法。即時の意思が必要)	Ch.02
+immediacy	即時性(将来の売却希望では分離にならない。「今」分離する意思)	Ch.02
+last known place of abode	最後に知られた住居(通知は到達擬制され得る=s 196)	Ch.02
+deemed	みなされる(擬制の基本動詞)	Ch.02
+acts operating on a share	持分への処分行為(売却・贈与・リース・モーゲージ等の一方的分離)	Ch.02
+mutual agreement	相互合意(口頭でも足り、履行不要。分離の意思の表明で十分)	Ch.02
+course of dealing	取引の経過(合意に至らずとも、区別された持分と扱う共通認識を示す行動)	Ch.02
+severance by bankruptcy	破産による分離(持分が破産管財人へ非自発的に移転)	Ch.02
+trustee in bankruptcy	破産管財人	Ch.02
+severance by homicide	殺害による分離(加害者が生存者取得で犯罪から利益を得ないための公序ルール)	Ch.02
+post-acquisition money management	取得後の金銭管理(共同名義の家庭で共通意思の変化が持分を変え得る)	Ch.02
+ambulatory constructive trust	変動型擬制信託(当事者の共通意思が時とともに変化し持分も動く)	Ch.02
+equity follows the law	衡平は法に従う(共同名義なら衡平法上も合有という出発点の推定)	Ch.02
+holistic approach	全体的アプローチ(全経過を考慮して公平な持分を定める現代判例の姿勢)	Ch.02
+detrimental reliance	不利益を伴う信頼(合意型擬制信託の第2要件。改良費負担・無償労働など)	Ch.02
+direct financial contribution	直接の金銭的出捐(合意なき場合の擬制信託にはこれが必要)	Ch.02
+common intention	共通の意思(持分を分かち合う当事者の意思。行動から客観的に推認)	Ch.02
+minor	未成年者(受託者になれない。未成年への譲渡は信託宣言として作用)	Ch.02
+maximum of four trustees	受託者は最大4名(5人以上への譲渡では最初の成人4名)	Ch.02
+duty to consult	受益者への協議義務(s 11 TLATA。実行可能な範囲で)	Ch.02
+interest in possession	現在の利益(協議義務の対象受益者の要件)	Ch.02
+proceeds of sale	売却代金(受益者の権利が最終的に向かう先)	Ch.02
+s 14 TLATA application	s 14申立て(受託者または利害関係人が売却等について裁判所へ)	Ch.02
+s 15 factors	s 15考慮要素(信託の目的・物件保有の目的・未成年の福祉・担保権者の利益)	Ch.02
+settled intention	確定した意思	Ch.02
+servient tenement	承役地(負担を受ける土地)	Ch.03
+dominant tenement	要役地(便益を受ける土地)	Ch.03
+servient owner	承役地所有者	Ch.03
+dominant owner	要役地所有者	Ch.03
+grant	設定(売主が買主のために地役権を創設)	Ch.03
+reservation	留保(売主が自分の土地のために地役権を残す)	Ch.03
+in gross	要役地なしで(easementは不可・profitは可)	Ch.03
+appurtenant	付随する(easementは要役地に付着して存在)	Ch.03
+accommodate	便益を与える(要役地の通常の享受と結びつくこと。土地自体への便益)	Ch.03
+marketability	市場性(便益判定の指標。土地の売りやすさを高めるか)	Ch.03
+principle of diversity	所有・占有の分離原則(要役地と承役地が同一人の所有・占有では地役権不成立)	Ch.03
+quasi-easement	準地役権(自分の土地への権利行使。分離以外の特徴を備えたもの)	Ch.03
+subject matter of the grant	設定の対象適格(deedで設定可能な明確性が必要)	Ch.03
+capable grantor / grantee	設定能力ある付与者/受領者(村民全体のような不特定集団は不可)	Ch.03
+reasonably exact definition	合理的に明確な定義(「空気の一般的流れ」は漠然として不可)	Ch.03
+expenditure by the servient owner	承役地所有者の支出(積極的義務を伴う権利は地役権たり得ない)	Ch.03
+joint possession	共同占有(承役地の占有を奪うほど広範な権利は不可=排他性の問題)	Ch.03
+negative easement	消極的地役権(新類型の承認には裁判所は極めて慎重)	Ch.03
+right to light	採光権(一般的な権利はなく、windowなど画定された開口部経由に限る)	Ch.03
+defined aperture	画定された開口部(採光権の必須要素)	Ch.03
+right to a view	眺望権(地役権として認められない)	Ch.03
+recreational easement	レクリエーション地役権(ゴルフ場・プール等も現代では認められ得る)	Ch.03
+express grant	明示的設定(deedによる設定。transferに明記)	Ch.03
+implied by necessity	必要性による黙示(袋地=他に一切のアクセスがない場合に限る極めて狭い法理)	Ch.03
+land-locked	袋地の(公道への出入り手段が全くない土地)	Ch.03
+alternative means of access	代替アクセス(存在すれば必要性による黙示は否定される。危険でも同じ)	Ch.03
+implied by common intention	共通目的による黙示(両者が知る特定目的の実現に不可欠な権利を黙示)	Ch.03
+the rule in Wheeldon v Burrows	ウィールドン対バローズの法理(土地の一部売却で準地役権が買主のための地役権に転化。名前ごと出題され得る)	Ch.03
+continuous and apparent	継続的かつ外観上明らか(検分で見える排水路・小道のような恒常的特徴)	Ch.03
+necessary to the reasonable enjoyment	合理的享受に必要(necessityより緩い基準。代替路が危険なら認容も)	Ch.03
+in use at the time of the sale	売却時に使用中(Wheeldonの第4要件)	Ch.03
+s 62 LPA 1925	62条(字数節約規定。譲渡証書に既存の権利・特権を自動的に載せ、licenceを地役権へ格上げし得る。名前ごと出題され得る)	Ch.03
+word-saving provision	字数節約規定(s 62の本来の性格)	Ch.03
+conveyance (instrument)	譲渡証書(s 62の要件。法律上のエステートを創設・移転する書面。売買契約は除外)	Ch.03
+diversity of occupation	占有の分離(s 62の原則的要件。継続的かつ明白な権利なら不要)	Ch.03
+existing privilege	既存の特権(譲渡時に存在するlicence等。将来の権利は対象外)	Ch.03
+uplift	格上げする(s 62がlicenceを完全な法定地役権に転化する作用)	Ch.03
+prescription	時効取得(長期の権利行使による地役権の取得)	Ch.03
+as of right	権利として(force・secrecy・permissionなしの行使)	Ch.03
+nec vi	力によらず(妨害物の除去や抗議の無視は「力」にあたる)	Ch.03
+nec clam	秘密によらず(注意深い承役地所有者が発見できる公然性)	Ch.03
+nec precario	許可によらず(書面・口頭の許可や対価の支払は致命的。単なる黙認は妨げない)	Ch.03
+time immemorial	記憶を超えた昔(1189年。コモンロー時効の基準点)	Ch.03
+unity of seisin	保有の一体性(要役地・承役地が同一所有に帰した事実。コモンロー時効の反証・covenant消滅原因)	Ch.03
+doctrine of lost modern grant	失われた近代的設定の法理(20年の行使から設定証書の存在を擬制)	Ch.03
+Prescription Act 1832	1832年時効法(easement20年・profit30年。訴訟直前まで継続する期間で計算)	Ch.03
+interruption	中断(1年以上の中断で期間はリセット)	Ch.03
+extinguishment	消滅(地役権の終了)	Ch.03
+express release	明示的放棄(deedによる)	Ch.03
+abandonment	放棄(不使用+放棄意思の徴表。窓を塞いだ壁の再建など)	Ch.03
+covenant	コヴェナント(作為・不作為の約束。土地の価値・快適さの維持が通常の目的)	Ch.04
+covenantor	約束者(負担=burdenを負う側)	Ch.04
+covenantee	受約者(便益=benefitを持つ側)	Ch.04
+burdened land	負担地(=servient land。covenantorの土地)	Ch.04
+benefited land	受益地(=dominant land。covenanteeの土地)	Ch.04
+positive covenant	積極的コヴェナント(履行に労力・支出を要する約束)	Ch.04
+substance not form	実質基準(文言でなく実質で積極/制限を判定。「荒廃させない」は実質積極)	Ch.04
+privity of contract	契約の相互関係(原約束者は土地売却後も永続的に拘束される)	Ch.04
+run with the land	土地とともに移転する(承継人への効力の比喩)	Ch.04
+burden cannot run at common law	負担はコモンローでは承継されない(積極・制限を問わない大原則)	Ch.04
+Tulk v Moxhay	タルク対モクスヘイ(制限的コヴェナントの負担が衡平法上承継される法理)	Ch.04
+touch and concern	土地に関わり影響する(承継の中核要件。性質・品質・利用・価値への影響+非人的)	Ch.04
+intent to burden	負担させる意思(明示または s 79 LPA 1925で黙示)	Ch.04
+notice requirement	通知・登録要件(承役地所有者を拘束するには保護手段の具備が必要→Ch.7〜9)	Ch.04
+annexation	付従化(便益を受益地に恒久的に付着させ、承継人が自動的に享受)	Ch.04
+express annexation	明示的付従化(特定の土地の便益のためと明記。人の便益では不可)	Ch.04
+each and every part	各部分ごとに(受益地分割後も各部分に便益を及ぼす定型文言)	Ch.04
+implied annexation	黙示的付従化(明白な意図がある場合の救済的法理。今は statutory が優先)	Ch.04
+statutory annexation	制定法上の付従化(s 78 LPA 1925により1925年後のcovenantを自動付従化)	Ch.04
+identifiable from the transfer	譲渡書面から特定可能(受益地が記述・図面等で特定できること)	Ch.04
+exclude s 78	78条の排除(当事者は明示で自動付従化を外せる)	Ch.04
+assignment of the benefit	便益の譲渡(土地移転と同時・書面・署名+負担者への書面通知=s 136)	Ch.04
+building scheme	建築スキーム(共通売主・区画割・相互拘束意図の分譲地。現代では稀)	Ch.04
+indemnity covenant	填補コヴェナント(承継人が原約束者に負担を填補する約束)	Ch.04
+chain of indemnity	填補の連鎖(各譲渡で填補を取り付け積極的コヴェナントを間接執行)	Ch.04
+mutual benefit and burden	相互利益負担の法理(便益を選ぶ者は関連する負担も受け入れる)	Ch.04
+clear correlation	明確な相関(便益と負担の結びつき。第1前提条件)	Ch.04
+opportunity to elect	選択の機会(便益を放棄して負担を免れる余地。第2前提条件)	Ch.04
+damages	損害賠償(積極的コヴェナント違反の通常の救済)	Ch.04
+injunction	差止命令(制限的コヴェナントの原則的救済。裁量的)	Ch.04
+Shelfer criteria	シェルファー基準(損害が小さく金銭評価可能で填補十分+差止が過酷なら賠償で代替)	Ch.04
+oppressive	過酷な(建築完了・入居済み等では差止が過酷とされ得る)	Ch.04
+discharge	消滅(covenantの解消)	Ch.04
+modification	修正(covenantの内容変更)	Ch.04
+s 84 LPA 1925	84条(制限的コヴェナントの消滅・修正を Lands Chamber に申立て)	Ch.04
+Lands Chamber of the Upper Tribunal	上級審判所土地部(s 84申立ての管轄)	Ch.04
+obsolete	時代遅れの(消滅事由(a))	Ch.04
+impede reasonable use	合理的利用の妨害(消滅事由(aa)。実益なし又は公益違反+金銭填補で足りる場合)	Ch.04
+common ownership	共通所有への帰一(受益地・負担地が同一人に帰しcovenant消滅=unity of seisin)	Ch.04
+insurance	権原保険(制限的コヴェナント執行リスクを一時払保険で移転)	Ch.04
+mortgage	モーゲージ(借主が貸主に与える貸金担保の権利)	Ch.05
+charge	チャージ(mortgageと互換的に使われる語)	Ch.05
+mortgagor	モーゲージ設定者(=借主。エステートを保持したまま担保を与える)	Ch.05
+mortgagee	モーゲージ権者(=貸主。担保の便益を持ち実行できる)	Ch.05
+security	担保(貸金の引当て)	Ch.05
+redemption	受戻し(弁済によりモーゲージを消滅させること)	Ch.05
+legal date for redemption	法定受戻期日(通常はモーゲージ開始1か月後。徒過で諸権限の起点に)	Ch.05
+equity of redemption	衡平法上の受戻権(借主に残る実質的価値。foreclosureで消滅)	Ch.05
+possession	占有取得(貸主の当然の権利。「インクが乾く前」からとされる)	Ch.05
+pre-action protocol	訴訟前プロトコル(住宅では占有訴訟前に対話・返済再編を促す)	Ch.05
+dwelling-house	住居(占有には裁判所命令必須+AJA 1970の保護)	Ch.05
+s 36 AJA 1970	1970年司法運営法36条(住宅につき延期・執行停止の裁量。合理的期間内の弁済見込みが条件)	Ch.05
+adjourn	延期する(手続を先送りする)	Ch.05
+suspend	停止する(命令の執行を止める)	Ch.05
+reasonable period	合理的期間(残存返済期間全体まで含み得る)	Ch.05
+arrears	延滞額(滞納した支払)	Ch.05
+instalment	分割払(住宅ローンの通常形態)	Ch.05
+strict duty to account	厳格な計算義務(占有中の収益管理につき貸主が負う。receiver選好の理由)	Ch.05
+power of sale	売却権限(exists→has arisen→exercisableの3段判定)	Ch.05
+exists	存在する(deedによるモーゲージにs 101 LPA 1925で黙示)	Ch.05
+has arisen	発生した(モーゲージ金銭の弁済期到来=法定受戻期日の経過)	Ch.05
+exercisable	行使可能(s 103:3か月の催告不履行/利息2か月延滞/他の条項違反のいずれか)	Ch.05
+notice to repay	返済催告(全額の返済を求める通知。3か月経過で行使可能に)	Ch.05
+true market value	真の市場価値(売却時に合理的注意を尽くして取得すべき価格)	Ch.05
+timing of the sale	売却時期(貸主の裁量。市況回復を待つ義務はない)	Ch.05
+proceeds of sale (s 105)	売却代金の充当(先順位の弁済→売却費用→自己の債権→残額は受戻権者へ)	Ch.05
+prior mortgage	先順位モーゲージ	Ch.05
+negative equity	債務超過(物件価値が債務を下回る状態)	Ch.05
+debt action	債務訴訟(支払コヴェナントに基づく回収。利息6年・元本12年の時効)	Ch.05
+shortfall	不足額(売却後の残債。債務訴訟で追及可能)	Ch.05
+receiver	財産管理人(収益物件で選任。書面で選任し収入を受領)	Ch.05
+agent of the borrower	借主の代理人(receiverの擬制的地位=s 109(2)。貸主は行為責任を免れる)	Ch.05
+s 109(8) order of application	収入の充当順序(公課→先順位利息→保険・修繕・報酬→当該利息→元本→残額借主)	Ch.05
+reasonable competence	合理的な能力(receiverの義務。物件の性質に応じた水準)	Ch.05
+foreclosure	フォークロージャ(受戻権を消滅させ権原を貸主に帰属させる劇的救済)	Ch.05
+foreclosure nisi	仮フォークロージャ(計算書作成+通常6か月の支払猶予)	Ch.05
+foreclosure absolute	確定フォークロージャ(権原帰属・受戻権消滅)	Ch.05
+re-open	再開する(例外的事情では確定後も裁判所が手続を再開し得る)	Ch.05
+judicial sale (s 91(2))	裁判上の売却(受戻権を保全する代替。受戻権の利害関係人が申立て可)	Ch.05
+draconian	苛烈な(foreclosureの形容)	Ch.05
+head lease	ヘッドリース(freeholdから直接設定された上位のリース)	Ch.06
+sublease / underlease	サブリース(リースから切り出される、より短い下位のリース)	Ch.06
+sub-tenant	サブテナント(サブリースの賃借人)	Ch.06
+carve out	切り出す(上位エステートからより小さいエステートを創設)	Ch.06
+concurrent legal estates	並存する法定エステート(同一土地にfreeholdとリースが併存=s 1(5))	Ch.06
+equitable lease	衡平法上のリース(有効な契約+特定履行可能性で承認。Walsh v Lonsdaleの法理)	Ch.06
+Walsh v Lonsdale	ウォルシュ対ロンズデール(なされるべきことはなされたとみなす衡平の法理)	Ch.06
+exclusive possession	排他的占有(貸主も含め全員を排除できる支配。リースの本質)	Ch.06
+lease vs licence	リースとライセンスの区別(実質基準。ラベルは決定的でない)	Ch.06
+fixed ascertainable period	確定した認識可能な期間(始期と終期が画定されていること)	Ch.06
+certain duration	期間の確定性(「戦争の間」「道路拡張まで」は無効)	Ch.06
+lease for life	終身リース(90年の期間に転換され死亡で終了=s 149(6))	Ch.06
+fixed-term lease	定期リース(最長期間が確定していれば1日でも999年でも可)	Ch.06
+periodic tenancy	期間更新型リース(週・月・年単位で自動更新。通知で終了)	Ch.06
+break clause	中途解約条項(定期リースを約定日に早期終了させる契約上の権利)	Ch.06
+quiet enjoyment	平穏享受(貸主による実質的妨害の禁止。騒音の不存在ではない)	Ch.06
+Protection from Eviction Act 1977	1977年立退保護法(住居の賃借人の占有剥奪・嫌がらせを犯罪化)	Ch.06
+s 11 LTA 1985	1985年法11条(住居の構造・外部と給排水・暖房等の修繕義務を貸主に)	Ch.06
+notified disrepair	通知された不修繕(貸主の責任は通知後に生じる)	Ch.06
+alienation	譲渡処分(assignment・sublease・charge・占有の引渡しの総称)	Ch.06
+assignment	譲渡(残存する全利益を新テナントへ移転。新リースは生じない)	Ch.06
+assignee	譲受人(旧テナントの地位をそのまま引き継ぐ)	Ch.06
+open contract position	無条項状態(譲渡制限条項がなければテナントは自由に処分できる)	Ch.06
+absolute prohibition	絶対的禁止(一切の処分を禁じるコヴェナント。制定法でも緩和されない)	Ch.06
+qualified covenant	同意条件型コヴェナント(貸主の同意を要する型)	Ch.06
+fully qualified covenant	完全同意条件型(同意を不合理に拒めない型。s 19 LTA 1927が自動転換)	Ch.06
+unreasonably withheld	不合理に拒否された(同意拒絶の制限文言)	Ch.06
+LTA 1988 duties	1988年法上の義務(書面申請に対し同意・条件・拒絶理由を書面で遅滞なく)	Ch.06
+s 19(1A) LTA 1927	19条(1A)(商業リースで同意の条件・事情を事前合意可。合理性審査に服さない)	Ch.06
+authorised guarantee agreement (AGA)	譲渡人保証契約(退去テナントが直近譲受人の履行を保証。主たる債務)	Ch.06
+old lease	旧リース(1996年1月1日より前に設定。privity二本立ての世界)	Ch.06
+new lease	新リース(1996年以後に設定。LT(C)A 1995の世界)	Ch.06
+privity of estate	エステートの相互関係(現在の貸主と現在のテナントの間に常に存在)	Ch.06
+real covenant	物的コヴェナント(土地に関わり影響するコヴェナント。譲受人を拘束)	Ch.06
+purely personal obligation	純然たる人的義務(毎月バラ一輪のような約束は承継されない)	Ch.06
+automatic release (s 5)	自動免責(新リースでは譲渡により退去テナントは当然に免責)	Ch.06
+landlord release (ss 6 and 8)	貸主の免責手続(復帰権譲渡では自動免責されず所定手続が必要)	Ch.06
+Avonridge clause	エイヴォンリッジ条項(復帰権処分後は責任を負わない旨をリースで限定)	Ch.06
+s 17 default notice	17条催告通知(元テナント追及の前提。弁済期から6暦月以内に送達)	Ch.06
+fixed charge	固定チャージ(賃料等の定額債権。s 17の対象)	Ch.06
+six calendar months	6暦月(s 17通知の期間制限。累積延滞の回収を制限)	Ch.06
+s 18 variation	18条(原リースが予定しない変更部分につき元テナントを免責)	Ch.06
+overriding lease	オーバーライディングリース(s 17全額弁済した元テナントが請求できる、原リースより3日短い中間リース)	Ch.06
+Moule v Garrett	モール対ギャレット(他人の債務を弁済した者の現テナントへの求償)	Ch.06
+implied indemnity	黙示の填補(旧リースでは有償譲渡ごとに填補が黙示される)	Ch.06
+commercial rent arrears recovery (CRAR)	商業賃料延滞回収(執行官による動産統制。7日前通知。商業物件のみ)	Ch.06
+enforcement agent	執行官(旧bailiff。CRARの実施者)	Ch.06
+forfeiture	フォーフィチャ(貸主が占有を回復しリースを早期終了させる権利)	Ch.06
+right of re-entry	再立入権(forfeitureの別名=s 1(2)(e)。明示の留保が必要)	Ch.06
+forfeiture clause	解除条項(21日不払で再立入可などの明示条項)	Ch.06
+formal demand	正式な賃料請求(日の出から日没の間に現地で。条項で免除が通例)	Ch.06
+waiver	権利放棄(リース存続を認める明確な行為=賃料受領等で解除権を失う)	Ch.06
+peaceable re-entry	平穏な再立入(暴力は犯罪=s 6 CLA 1977。住居では裁判所命令必須)	Ch.06
+relief against forfeiture	フォーフィチャからの救済(弁済等を条件にリースを復活させる裁判所の裁量)	Ch.06
+s 146 notice	146条通知(賃料以外の違反での解除前提。違反の特定+相当期間+賠償請求)	Ch.06
+capable of remedy	是正可能な(是正可能な違反には相当期間を与える)	Ch.06
+once and for all breach	一回的違反(無断譲渡等。是正不能だが救済の余地はある)	Ch.06
+sub-tenant relief (s 146(4))	サブテナントの救済(ヘッドリース解除でも裁判所がヘッドリースを帰属させ得る)	Ch.06
+Jervis v Harris clause	ジャーヴィス対ハリス条項(貸主が自ら修繕し費用を債権として回収する自力救済)	Ch.06
+set off	相殺(修繕費と賃料の相殺。商業リースでは排除が通例)	Ch.06
+determination	終了(リースの消滅の総称)	Ch.06
+effluxion of time	期間満了(定期リースの当然終了)	Ch.06
+notice to quit	解約通知(期間更新型を終了。原則1期間分・住居は4週間以上)	Ch.06
+surrender	合意解除(テナントのエステートを貸主に引き渡し復帰権に併合。deed必要)	Ch.06
+disclaimer	否認(破産管財人・清算人による負担的契約の放棄)	Ch.06
+frustration	フラストレーション(原理的には適用可能だが認容例のない終了原因)	Ch.06
+repudiatory breach	履行拒絶的違反(契約法理による終了。限定的な判例)	Ch.06
+merger	混同(テナントが復帰権を取得しリースが吸収消滅)	Ch.06
+unregistered land	未登録地(登録制度以前の権原体系。約12%が現存)	Ch.07
+title deeds	権原証書(未登録地の所有を証明する証書類)	Ch.07
+epitome of title	権原摘要(証書一覧+写しの束。15年の途切れない権原を示す)	Ch.07
+root of title	権原の根(全権利の所有+土地の記述+疑義なし+15年以上前の文書)	Ch.07
+good root	良好な権原の根(通常はconveyance。贈与・assentは調査を経ておらず不適)	Ch.07
+assent	遺産承継証書(人格代表者が受遺者へ土地を移転する文書)	Ch.07
+investigate title	権原調査(交換前に買主が行う)	Ch.07
+inspect the land	現地検分(第三者の権利の徴表を探す買主の義務)	Ch.07
+pre-root document	根より前の文書(摘要が言及すれば買主は写しを請求できる)	Ch.07
+third party right	第三者の権利(買主を拘束し得る法定・衡平法上の権利)	Ch.07
+purchaser	購入者(s 205。テナント・貸主も含む広い定義。有償で権利を取得する者)	Ch.07
+legal rights bind the world	法定権利は世界を拘束する(知・不知を問わず全買主を拘束)	Ch.07
+puisne mortgage	ピューニモーゲージ(証書の預託で保護されない法定モーゲージ=通常は第2順位。法定権利で唯一Land Charge登録が必要)	Ch.07
+deposit of deeds	証書の預託(第1貸主の典型的な担保保全)	Ch.07
+Land Charge	ランドチャージ(未登録地の衡平法上の権利等の登録による保護)	Ch.07
+LCA 1972	1972年ランドチャージ法(登録可能な権利をs 2に限定列挙)	Ch.07
+Class C(i)	クラスC(i)(puisne mortgage)	Ch.07
+Class C(iv)	クラスC(iv)(estate contract。equitable leaseやoptionもここ)	Ch.07
+Class D(ii)	クラスD(ii)(制限的コヴェナント)	Ch.07
+Class D(iii)	クラスD(iii)(衡平法上の地役権)	Ch.07
+Class F	クラスF(home rights)	Ch.07
+registered against the name	名前に対して登録(土地でなく証書上の名義人の氏名表記に対して登録)	Ch.07
+estate owner	エステート所有者(Land Charge登録の相手方となる名義人)	Ch.07
+s 198 actual notice	198条の現実の通知擬制(登録は登録日から全員への現実の通知とみなされる)	Ch.07
+void for non-registration	不登録による無効(s 4(6):完了前に未登録なら金銭等の対価の買主に対抗不能)	Ch.07
+money or money's worth	金銭またはその価値(名目的対価でも足りる。娘への£500の譲渡でも保護された)	Ch.07
+search certificate	検索証明書(s 10。適切に検索した買主に対し確定的)	Ch.07
+statutory compensation	法定補償(摘要から発見不能なLand Chargeに拘束された買主の救済)	Ch.07
+doctrine of notice	通知の法理(1926年前の衡平法上の権利+信託受益権の唯一の保護手段)	Ch.07
+Equity's Darling	衡平の寵児(善意有償の法定エステート取得者で通知なき者。信託受益権に拘束されない)	Ch.07
+bona fide	善意の(誠実で詐欺的意図がないこと)	Ch.07
+purchaser for value	有償取得者(贈与の受領者は含まれない。対価は名目的でも可)	Ch.07
+actual notice	現実の通知(権利の存在を現に知っていること。噂は含まない)	Ch.07
+constructive notice	擬制的通知(合理的な買主がすべき検分・調査・質問を怠れば知っていたと擬制)	Ch.07
+imputed notice	代理人経由の通知(代理人の知・擬制知は本人に帰属)	Ch.07
+occupier enquiry	占有者への質問(占有者に権利の有無を尋ねなければ擬制的通知)	Ch.07
+where the equities are equal the first in time prevails	衡平が等しければ先の者が勝つ(衡平法上の権利同士の優劣)	Ch.07
+overreaching	オーバーリーチング(2名以上の受託者への代金支払で信託受益権が代金上へ移る仕組み)	Ch.07
+two trustees	2名の受託者(overreachingの絶対条件)	Ch.07
+capital monies	元本金銭(購入代金・ローン実行金)	Ch.07
+lift and shift	浮上して移転する(受益権が土地から売却代金へ移る比喩)	Ch.07
+registered land	登録地(Land Registryの電子登録簿で権原を証明する体系)	Ch.08
+Land Registry	土地登記所(登録簿を管理する国家機関)	Ch.08
+LRA 2002	2002年土地登録法(現行法。2003年10月13日施行)	Ch.08
+official copy	公式謄本(誰でも手数料で取得できる登録簿の写し)	Ch.08
+title number	権原番号(各権原に固有)	Ch.08
+mirror principle	鏡の原則(登録簿は権原の完全な反映を目指す)	Ch.08
+insurance principle	保険の原則(登録簿の正確性を国家が保証)	Ch.08
+indemnity principle	填補の原則(更正で害された者は補償を請求できる)	Ch.08
+property register	物件登録部(土地の記述・title plan・権原の種類・受益する権利)	Ch.08
+proprietorship register	所有権登録部(権原の等級・登録名義人・restriction)	Ch.08
+charges register	負担登録部(covenant・easement・mortgage等のnotice・リースの記載)	Ch.08
+class of title	権原の等級(absoluteが最良。possessory・qualifiedもある)	Ch.08
+absolute title	絶対権原(最良かつ最も一般的な等級)	Ch.08
+registered proprietor	登録名義人	Ch.08
+first registration	初回登録(未登録権原を登録権原へ転換する手続)	Ch.08
+trigger event	登録契機事由(s 4(1):売却・贈与・裁判所命令・assent・第1モーゲージ等)	Ch.08
+qualifying estate	適格エステート(未登録freehold+残存7年超の未登録リース)	Ch.08
+seven years	7年(リース登録の分水嶺。7年超の設定は登録必須)	Ch.08
+caution against first registration	初回登録に対する警告登録(利害関係人が申請を察知する仕組み)	Ch.08
+voluntary registration	任意登録(いつでも可能。手数料割引の誘因)	Ch.08
+two months	2か月(初回登録申請の期限。徒過で法定エステートは移転者に復帰)	Ch.08
+registrable disposition	登録必要処分(s 27。登録して初めて法的効力=移転・7年超リース・legal charge・明示的地役権)	Ch.08
+legal charge	法定チャージ(登録簿への記入で初めて法定モーゲージとなる)	Ch.08
+priority by order on the register	登録簿上の順序による優先(s 48。設定日でなく記入順)	Ch.08
+interest affecting a registered estate (IARE)	登録エステートに影響する権利(実体登録も登録必要処分もoverridingでもない第三者の権利)	Ch.08
+notice (s 32)	ノーティス(charges registerへの記入。名義人の同意不要。信託は不可=s 33)	Ch.08
+restriction (s 40)	リストリクション(proprietorship registerへの記入。信託受益権の保護手段。処分の条件を課す)	Ch.08
+take free (s 29)	負担なく取得する(有償の買主は保護されないIAREに拘束されない)	Ch.08
+valuable consideration	有償の対価(s 29保護の要件)	Ch.08
+interests which override	オーバーライディングインタレスト(登録簿に現れず買主を拘束する権利。Sch 3)	Ch.08
+Sch 3 para 1	附則3第1項(7年以下の法定リース=grantedは自動的にoverriding。parol lease含む)	Ch.08
+Sch 3 para 3	附則3第3項(黙示・時効の法定地役権。現実の知/合理的検分で明白/1年内の行使のいずれかで保護)	Ch.08
+Sch 3 para 2	附則3第2項(現実の占有者の権利。物権+現実の占有が必要)	Ch.08
+proprietary interest	物権的権利(para 2の第1要件。契約上のlicenceは不可)	Ch.08
+actual occupation	現実の占有(平明な英語として解釈。物理的存在+永続性と継続性)	Ch.08
+physical presence	物理的存在(actualの強調点)	Ch.08
+permanence and continuity	永続性と継続性(一時的な立寄りを排除する基準)	Ch.08
+temporary absence	一時的不在(占有の痕跡+復帰意思があれば占有は継続)	Ch.08
+intention to return	復帰の意思(入院・介護等での不在に占有を認める要素)	Ch.08
+visible evidence of occupation	占有の可視的証拠(家具・所持品など)	Ch.08
+caretaker	管理人(本人でなく代理人による占有も可)	Ch.08
+obvious on a reasonably careful inspection	合理的に注意深い検分で明白(占有の可視的徴表が基準)	Ch.08
+actual knowledge	現実の知(占有が明白でなくても買主が知っていれば保護)	Ch.08
+failure to disclose upon inquiry	質問への不開示(合理的に開示を期待できたのに黙秘するとoverriding喪失)	Ch.08
+home rights excluded	ホームライツの除外(s 31(10)(b) FLA 1996。占有していてもoverriding不可)	Ch.08
+mere user	単なる利用(easementの行使は占有にあたらない)	Ch.08
+schedule of leases	リース一覧(貸主の権原のcharges registerに記載)	Ch.08
+priority	優先関係(どの権利が買主・貸主に対抗できるかの序列)	Ch.09
+sole legal owner	単独名義人(名義は1人・受益権は複数の隠れた信託の典型場面)	Ch.09
+joint legal owners	共同名義人(2名以上の受託者=overreachingが機能し得る)	Ch.09
+appoint a second trustee	第2受託者の選任(完了前ならoverreachingを可能にする実務的助言)	Ch.09
+non-owning spouse	非名義配偶者(home rightsの主体)	Ch.09
+protect by registration	登録による保護(登録地=notice/restriction・未登録地=Land Charge)	Ch.09
+notice in the charges register	負担登録部へのノーティス(登録地でのhome rights等の保護方法)	Ch.09
+tenant as purchaser	購入者としてのテナント(リースの設定を受ける者も「購入者」)	Ch.09
+mortgagee as purchaser	購入者としての貸主(モーゲージの設定を受ける者も「購入者」)	Ch.09
+loan advance	ローン実行金(貸主の払う金銭。2名の受託者へ払えばoverreaching)	Ch.09
+subsist	存続する(権利が生きて存在していること)	Ch.09
+enforceability	対抗可能性(第三者の権利が買主を拘束するかの総合判定)	Ch.09
+Which of the following best describes...?	「次のうち最もよく説明するものはどれか」(SBAの定番の問い)	Ch.00
+Which of the following answers best reflects the legal position?	「法的立場を最もよく反映する選択肢はどれか」	Ch.00
+best explains	最もよく説明する(SBA比較最上級の定型)	Ch.00
+is most likely to	最も〜しそうである(確率的判断を求めるSBA定型)	Ch.00
+on the facts	本問の事実関係では(あてはめを示す定型句)	Ch.00
+There is nothing in the facts to suggest...	事実関係に〜をうかがわせるものはない(消去の根拠)	Ch.00
+take free of	〜の負担なく取得する(優先関係問題の核心表現)	Ch.00
+be bound by	〜に拘束される(対抗される側の表現)	Ch.00
+subject to	〜の負担付きで(拘束される状態の前置詞句)	Ch.00
+prima facie	一応は(推定的な結論を示すラテン語)	Ch.00
+by deed	捺印証書により(方式の合否を判定させる頻出句)	Ch.00
+duly executed	適式に作成された(方式が守られたことの表現)	Ch.00
+for valuable consideration	有償の対価で(保護要件を仕込む定型)	Ch.00
+successor in title	権原承継人(当事者の入替わりを示す試験の常套語)	Ch.00
+predecessor in title	前主(承継人の対義語)	Ch.00
+vest in	〜に帰属する(権利・権原の帰属を表す動詞)	Ch.00
+enure / inure for the benefit of	〜の利益のために効力を持つ(制定法の文語)	Ch.00
+without more	それ以上の事情なしに(単独では効果が生じないことの表現)	Ch.00
+save for	〜を除いて(exceptの法文語)	Ch.00
+notwithstanding	〜にかかわらず(法文の頻出接続語)	Ch.00

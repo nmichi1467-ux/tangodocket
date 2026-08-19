@@ -1,0 +1,1502 @@
+[
+ {
+  "kind": "quiz",
+  "qid": "BLQ-001",
+  "subject": "Business Law",
+  "tag": "Ch.1",
+  "stem": "Sole traderとして事業を開始するために必要な法的手続は?",
+  "options": {
+   "A": "官報への公告",
+   "B": "HMRCへの事前許可",
+   "C": "特段の手続なし(直ちに開始できる)",
+   "D": "Companies Houseへの登録"
+  },
+  "answer": "C",
+  "expl": "sole traderは登録・公告なしで開始できる(納税上の届出は別)。手続ゼロと無限責任が表裏。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-002",
+  "subject": "Business Law",
+  "tag": "Ch.1",
+  "stem": "一般partnershipが成立するための形式要件は?",
+  "options": {
+   "A": "公正証書の作成",
+   "B": "形式不要——利益目的の共同事業の実態で自動成立",
+   "C": "Companies Houseへの登録",
+   "D": "書面のpartnership契約"
+  },
+  "answer": "B",
+  "expl": "PA 1890のpartnershipは意図や書面を問わず実態で成立する(Ch.2のLeo事件の伏線)。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-003",
+  "subject": "Business Law",
+  "tag": "Ch.1",
+  "stem": "会社の株主の責任の限度は?",
+  "options": {
+   "A": "会社債務の全額",
+   "B": "取締役と連帯",
+   "C": "出資額の2倍",
+   "D": "保有株式の未払込額"
+  },
+  "answer": "D",
+  "expl": "有限責任=株式の未払込額まで。全額払込済みなら追加負担なし。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-004",
+  "subject": "Business Law",
+  "tag": "Ch.1",
+  "stem": "LLPの課税上の扱いは?",
+  "options": {
+   "A": "免税",
+   "B": "構成員に透明課税(所得税)",
+   "C": "配当課税のみ",
+   "D": "法人税が課される"
+  },
+  "answer": "B",
+  "expl": "LLPは別人格だが課税は透明——構成員が持分に所得税を払う(partnershipと同じ)。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-005",
+  "subject": "Business Law",
+  "tag": "Ch.1",
+  "stem": "会社が株主・取締役から独立した権利義務の主体となる原則は?",
+  "options": {
+   "A": "信託の原則",
+   "B": "別法人格(separate legal personality)",
+   "C": "衡平法上の原則",
+   "D": "代理の原則"
+  },
+  "answer": "B",
+  "expl": "会社は設立により別人格となり、自ら契約し財産を持ち訴訟当事者になる。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-006",
+  "subject": "Business Law",
+  "tag": "Ch.1",
+  "stem": "limited partnership(LP)のlimited partnerが有限責任を保つ条件は?",
+  "options": {
+   "A": "出資を2年据え置くこと",
+   "B": "毎年登記を更新すること",
+   "C": "経営(management)に参加しないこと",
+   "D": "全パートナーの同意を得ること"
+  },
+  "answer": "C",
+  "expl": "LPの有限責任パートナーは経営参加すると有限責任を失う。GPは常に無限責任。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-007",
+  "subject": "Business Law",
+  "tag": "Ch.1",
+  "stem": "public company(plc)の最低割当資本は?",
+  "options": {
+   "A": "£12,500",
+   "B": "£50,000",
+   "C": "£100,000",
+   "D": "制限なし"
+  },
+  "answer": "B",
+  "expl": "plcはallotted share capital £50,000以上(最低4分の1払込)が必要。私会社に最低資本はない。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-008",
+  "subject": "Business Law",
+  "tag": "Ch.1",
+  "stem": "partnershipの利益分配の合意がない場合のdefaultは?",
+  "options": {
+   "A": "出資比率で分配",
+   "B": "労働時間比で分配",
+   "C": "均等に分配",
+   "D": "年長者が決定"
+  },
+  "answer": "C",
+  "expl": "PA 1890のdefaultは均等分配——出資額が違っても合意がなければ等分(Ch.2)。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-009",
+  "subject": "Business Law",
+  "tag": "Ch.1",
+  "stem": "事業形態のうち、財務情報の公開義務を負うのはどれか?",
+  "options": {
+   "A": "いずれも公開不要",
+   "B": "sole trader",
+   "C": "一般partnership",
+   "D": "会社(およびLLP)"
+  },
+  "answer": "D",
+  "expl": "会社・LLPはCompanies Houseへaccounts等を提出し公開される。sole trader・partnershipに公開義務はない。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-010",
+  "subject": "Business Law",
+  "tag": "Ch.1",
+  "stem": "事業上の債務に対するsole traderの責任は?",
+  "options": {
+   "A": "£50,000まで",
+   "B": "保険加入で免責",
+   "C": "無限責任(個人資産に及ぶ)",
+   "D": "事業用資産の範囲に限定"
+  },
+  "answer": "C",
+  "expl": "sole trader・一般パートナーは無限責任——自宅等の個人資産まで引当てになる。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-011",
+  "subject": "Business Law",
+  "tag": "Ch.2",
+  "stem": "書面の定めがない場合、partnershipの通常事項の意思決定は?",
+  "options": {
+   "A": "出資比率の多数決",
+   "B": "パートナーの過半数",
+   "C": "シニアパートナーの専決",
+   "D": "全員一致"
+  },
+  "answer": "B",
+  "expl": "通常事項=過半数。ただし事業の性質の変更・新パートナーの加入は全員一致(default)。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-012",
+  "subject": "Business Law",
+  "tag": "Ch.2",
+  "stem": "defaultルールで全員一致が必要な事項は?",
+  "options": {
+   "A": "従業員の採用",
+   "B": "銀行口座の開設",
+   "C": "事業の性質の変更・新パートナーの加入",
+   "D": "新規取引先との契約"
+  },
+  "answer": "C",
+  "expl": "性質変更と新規加入は全員一致——それ以外の通常事項は過半数。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-013",
+  "subject": "Business Law",
+  "tag": "Ch.2",
+  "stem": "期間の定めのないpartnershipからの脱退(通知)の効果は?",
+  "options": {
+   "A": "6ヶ月の猶予後に脱退",
+   "B": "脱退者だけが抜けて存続",
+   "C": "裁判所の許可が必要",
+   "D": "partnership全体の解散(dissolution)"
+  },
+  "answer": "D",
+  "expl": "defaultでは1人の通知でpartnership自体が解散する——存続条項を契約で入れるのが実務。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-014",
+  "subject": "Business Law",
+  "tag": "Ch.2",
+  "stem": "パートナーの1人が通常の事業の範囲内で結んだ契約の効果は?",
+  "options": {
+   "A": "firm(全パートナー)を拘束",
+   "B": "本人のみを拘束",
+   "C": "書面がなければ無効",
+   "D": "事後承認が必要"
+  },
+  "answer": "A",
+  "expl": "各パートナーはfirmの代理人——通常業務の範囲内の行為はfirmを拘束する(s 5型のauthority)。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-015",
+  "subject": "Business Law",
+  "tag": "Ch.2",
+  "stem": "脱退したパートナーが「脱退後」の債務への責任を免れるための対応は?",
+  "options": {
+   "A": "既存取引先への個別通知+官報(Gazette)公告",
+   "B": "HMRCへの届出",
+   "C": "何もしなくても免責",
+   "D": "新パートナーの保証"
+  },
+  "answer": "A",
+  "expl": "actual notice(既存取引先)+Gazette(新規・将来の取引先)で将来債務の責任を切る。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-016",
+  "subject": "Business Law",
+  "tag": "Ch.2",
+  "stem": "退任後も「パートナーであるかのように振る舞わせた」者が負う責任の法理は?",
+  "options": {
+   "A": "novation",
+   "B": "holding out(表見パートナー)",
+   "C": "estoppel by deed",
+   "D": "subrogation"
+  },
+  "answer": "B",
+  "expl": "自己をパートナーと表示し(させ)、それを信頼した者に対してはパートナーとしての責任を負う。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-017",
+  "subject": "Business Law",
+  "tag": "Ch.2",
+  "stem": "利益分配を受けている事実のpartnership成立における意味は?",
+  "options": {
+   "A": "成立のprima facie(一応の)証拠",
+   "B": "成立の決定的証拠",
+   "C": "無関係",
+   "D": "反証を許さない推定"
+  },
+  "answer": "A",
+  "expl": "利益分配はpartnershipの一応の証拠——貸金の利息等の反証で覆り得る。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-018",
+  "subject": "Business Law",
+  "tag": "Ch.2",
+  "stem": "partnership債務に対する各パートナーの責任は?",
+  "options": {
+   "A": "無限責任",
+   "B": "出資額まで",
+   "C": "firm資産の範囲まで",
+   "D": "£10,000まで"
+  },
+  "answer": "A",
+  "expl": "各パートナーは無限責任——firm資産で足りなければ個人資産に及ぶ。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-019",
+  "subject": "Business Law",
+  "tag": "Ch.2",
+  "stem": "合意がない場合の新パートナー加入の要件は?",
+  "options": {
+   "A": "既存パートナー全員の同意",
+   "B": "出資比率3分の2",
+   "C": "過半数の同意",
+   "D": "要件なし"
+  },
+  "answer": "A",
+  "expl": "加入は全員一致(default)——「誰と組むか」は各自の人格的利害に関わるため。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-020",
+  "subject": "Business Law",
+  "tag": "Ch.2",
+  "stem": "パートナーの死亡・破産のdefaultの効果は?",
+  "options": {
+   "A": "6ヶ月の営業停止",
+   "B": "partnershipの解散",
+   "C": "持分の自動相続",
+   "D": "残存者への無償帰属"
+  },
+  "answer": "B",
+  "expl": "死亡・破産も(defaultでは)解散事由——契約の存続条項・買取条項で回避するのが定石(Ch.9のBPRにも接続)。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-021",
+  "subject": "Business Law",
+  "tag": "Ch.3",
+  "stem": "ordinary resolution(OR)とspecial resolution(SR)の可決要件は?",
+  "options": {
+   "A": "OR=50%以上/SR=75%超",
+   "B": "OR=3分の2/SR=4分の3",
+   "C": "OR=50%超/SR=75%以上",
+   "D": "OR=過半数/SR=全員一致"
+  },
+  "answer": "C",
+  "expl": "ORは50%「超」(50%ちょうどは否決)・SRは75%「以上」(75%ちょうどは可決)。超/以上の非対称が急所。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-022",
+  "subject": "Business Law",
+  "tag": "Ch.3",
+  "stem": "GM招集の原則の通知期間は?",
+  "options": {
+   "A": "7 clear days",
+   "B": "14 clear days(郵送・メールは+2日)",
+   "C": "21日",
+   "D": "28日"
+  },
+  "answer": "B",
+  "expl": "14 clear days=送達日と当日を除くので実質16日、郵送・メール送達なら+2日。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-023",
+  "subject": "Business Law",
+  "tag": "Ch.3",
+  "stem": "short noticeでGMを短縮開催する要件は?",
+  "options": {
+   "A": "頭数の過半数+議決権株式90%以上の両方",
+   "B": "取締役会の決議",
+   "C": "頭数の過半数の同意のみ",
+   "D": "議決権90%以上の株主の同意のみ"
+  },
+  "answer": "A",
+  "expl": "二条件の同時充足が必要(定款で95%まで引上げ可)。片方だけの肢は全部誤り。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-024",
+  "subject": "Business Law",
+  "tag": "Ch.3",
+  "stem": "SRを可決した後のCompanies Houseへの届出期限は?",
+  "options": {
+   "A": "15日以内",
+   "B": "届出不要",
+   "C": "7日以内",
+   "D": "21日以内"
+  },
+  "answer": "A",
+  "expl": "SRは常に15日以内に届出。BRは不要・ORも原則不要(例外=株式発行の授権)。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-025",
+  "subject": "Business Law",
+  "tag": "Ch.3",
+  "stem": "取締役会(BM)の定足数(無修正MAs)は?",
+  "options": {
+   "A": "2名",
+   "B": "取締役の過半数",
+   "C": "1名",
+   "D": "3名"
+  },
+  "answer": "A",
+  "expl": "MA11(2)により定足数2。決議は単純多数決・可否同数は議長のcasting vote(MA13)。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-026",
+  "subject": "Business Law",
+  "tag": "Ch.3",
+  "stem": "書面決議(written resolution)が使えない決議は?",
+  "options": {
+   "A": "定款変更",
+   "B": "取締役の解任(と監査人の解任)",
+   "C": "社名変更",
+   "D": "配当の宣言"
+  },
+  "answer": "B",
+  "expl": "解任は対象取締役の意見陳述権を保障するため書面決議不可——数少ない絶対的例外。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-027",
+  "subject": "Business Law",
+  "tag": "Ch.3",
+  "stem": "COI(設立証明書)発行前に「会社のために」締結された契約の帰属は?",
+  "options": {
+   "A": "無効",
+   "B": "会社に帰属",
+   "C": "株主全員に帰属",
+   "D": "署名した本人に帰属"
+  },
+  "answer": "D",
+  "expl": "COI前の会社は存在せず契約主体になれない——署名者個人が契約当事者として拘束される。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-028",
+  "subject": "Business Law",
+  "tag": "Ch.3",
+  "stem": "PSC(重要支配者)として登録が必要になる基準は?",
+  "options": {
+   "A": "株式50%超",
+   "B": "株式10%超",
+   "C": "株式・議決権25%超(または取締役の過半数の選解任権)",
+   "D": "取締役全員"
+  },
+  "answer": "C",
+  "expl": "25%超の株式/議決権、または取締役の過半数を選解任できる者がPSC。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-029",
+  "subject": "Business Law",
+  "tag": "Ch.3",
+  "stem": "confirmation statement(CS01)の提出期限は?",
+  "options": {
+   "A": "期末から9ヶ月・毎年",
+   "B": "四半期ごと",
+   "C": "変更時のみ",
+   "D": "設立応当日から14日以内・毎年"
+  },
+  "answer": "D",
+  "expl": "毎年、設立応当日から14日以内。accountsは私会社で期末から9ヶ月以内(別物)。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-030",
+  "subject": "Business Law",
+  "tag": "Ch.3",
+  "stem": "5%以上の株主によるGM招集請求を受けたboardの義務は?",
+  "options": {
+   "A": "30日以内に回答",
+   "B": "21日以内に招集し、招集から28日以内に開催",
+   "C": "7日以内に開催",
+   "D": "無視できる"
+  },
+  "answer": "B",
+  "expl": "5%→21日以内に招集・28日以内に開催。怠れば株主が自ら招集し費用を求償できる。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-031",
+  "subject": "Business Law",
+  "tag": "Ch.4",
+  "stem": "取締役の解任(s 168)の決議と事前手続は?",
+  "options": {
+   "A": "OR+会社へのspecial notice 28日",
+   "B": "BRのみ",
+   "C": "全員一致",
+   "D": "SR+14日通知"
+  },
+  "answer": "A",
+  "expl": "解任はOR(SRではない)+会社への28日前のspecial notice。GM自体の通知14 clear daysとは別の期間。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-032",
+  "subject": "Business Law",
+  "tag": "Ch.4",
+  "stem": "SPT(実質的財産取引)として株主ORが必要になる金額基準は?",
+  "options": {
+   "A": "£50,000超で常に",
+   "B": "純資産の5%超",
+   "C": "£5,000超で常に",
+   "D": "£100,000超は常に・£5,000超〜£100,000以下は純資産の10%超のとき"
+  },
+  "answer": "D",
+  "expl": "三段構造:£5,000以下=絶対に非該当/£100,000超=常に該当/中間=純資産10%テスト。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-033",
+  "subject": "Business Law",
+  "tag": "Ch.4",
+  "stem": "connected person(会社法)に含まれないのは?",
+  "options": {
+   "A": "配偶者",
+   "B": "子",
+   "C": "親",
+   "D": "兄弟姉妹"
+  },
+  "answer": "D",
+  "expl": "兄弟姉妹・祖父母・甥姪はconnectedに含まれない(倒産のassociateとは逆——Ch.6と対比)。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-034",
+  "subject": "Business Law",
+  "tag": "Ch.4",
+  "stem": "取締役への貸付に株主ORが必要になる基準額は?",
+  "options": {
+   "A": "£50,000超",
+   "B": "£5,000超",
+   "C": "£15,000超",
+   "D": "£10,000超(総額)"
+  },
+  "answer": "D",
+  "expl": "貸付は総額£10,000超でOR。退任慰労金は£200超でOR。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-035",
+  "subject": "Business Law",
+  "tag": "Ch.4",
+  "stem": "service contractの保証期間について株主承認が必要になるのは?",
+  "options": {
+   "A": "5年超",
+   "B": "3年超",
+   "C": "2年超",
+   "D": "1年超"
+  },
+  "answer": "C",
+  "expl": "保証期間2年超の部分だけが承認対象。不承認でも契約全体は無効にならず合理的予告で解約可能な契約になる。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-036",
+  "subject": "Business Law",
+  "tag": "Ch.4",
+  "stem": "s 174(善管注意義務)の基準は?",
+  "options": {
+   "A": "客観基準を底に、本人の実際の知識・技能・経験で引き上げ",
+   "B": "結果責任",
+   "C": "純粋に主観的",
+   "D": "純粋に客観的"
+  },
+  "answer": "A",
+  "expl": "客観+主観の二重基準——会計士等の資格・経験は要求水準を上げる操作子として働く。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-037",
+  "subject": "Business Law",
+  "tag": "Ch.4",
+  "stem": "wrongful tradingの抗弁は?",
+  "options": {
+   "A": "取締役を辞任したこと",
+   "B": "会社が最終的に再建されたこと",
+   "C": "債権者の損失最小化のため取るべきあらゆる措置を取ったこと",
+   "D": "支払不能を知らなかったこと"
+  },
+  "answer": "C",
+  "expl": "『合理的見込みなし』と知る/知るべき後は、every stepの抗弁(助言・経費削減・日次資金管理等)が生命線。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-038",
+  "subject": "Business Law",
+  "tag": "Ch.4",
+  "stem": "少数株主が『自分への不利益かつ不公正な運営』を争う手段は?",
+  "options": {
+   "A": "s 994の不公正侵害の申立て(典型的救済=買取命令)",
+   "B": "公正衡平清算のみ",
+   "C": "派生訴訟",
+   "D": "取締役の解任"
+  },
+  "answer": "A",
+  "expl": "自分への侵害=994(買取命令が最多)/会社への侵害=派生訴訟/機能不全=公正衡平清算、の仕分け。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-039",
+  "subject": "Business Law",
+  "tag": "Ch.4",
+  "stem": "取締役の選任後の届出(AP01)の期限は?",
+  "options": {
+   "A": "1ヶ月以内",
+   "B": "14日以内",
+   "C": "21日以内",
+   "D": "7日以内"
+  },
+  "answer": "B",
+  "expl": "AP01は14日以内。解任・退任のTM01も14日以内。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-040",
+  "subject": "Business Law",
+  "tag": "Ch.4",
+  "stem": "CDDAによる取締役の資格剥奪期間は?",
+  "options": {
+   "A": "2〜15年",
+   "B": "5〜10年",
+   "C": "無期限のみ",
+   "D": "1〜5年"
+  },
+  "answer": "A",
+  "expl": "欠格は2〜15年。最重要事由は支払不能会社の不適格取締役(unfit director)。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-041",
+  "subject": "Business Law",
+  "tag": "Ch.5",
+  "stem": "無修正MAs・発行前後とも株式が一種類の私会社の新株発行に必要な決議は?",
+  "options": {
+   "A": "BRのみ(s 550の授権)",
+   "B": "決議不要",
+   "C": "株主のSR",
+   "D": "株主のOR"
+  },
+  "answer": "A",
+  "expl": "一種類+無修正MAsならboardがBRだけで発行できる。それ以外はOR授権(15日届出)。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-042",
+  "subject": "Business Law",
+  "tag": "Ch.5",
+  "stem": "法定pre-emption(先買権)が適用される発行と、その排除方法は?",
+  "options": {
+   "A": "非現金対価の発行・ORで排除",
+   "B": "全ての発行・BRで排除",
+   "C": "上場会社のみ・自動適用",
+   "D": "全額現金の発行・SRで排除(または全員waiver)"
+  },
+  "answer": "D",
+  "expl": "pre-emptionは全額現金の発行に適用。排除はSR(75%以上)か全株主の辞退。非現金なら不適用(ただしSPTの影を確認)。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-043",
+  "subject": "Business Law",
+  "tag": "Ch.5",
+  "stem": "新株発行後のSH01の提出期限と株券の交付期限は?",
+  "options": {
+   "A": "SH01=15日・株券=1ヶ月",
+   "B": "いずれも14日",
+   "C": "SH01=21日・株券=3ヶ月",
+   "D": "SH01=1ヶ月・株券=2ヶ月"
+  },
+  "answer": "D",
+  "expl": "SH01は発行から1ヶ月以内・株券は2ヶ月以内。OR/SRの写しは15日。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-044",
+  "subject": "Business Law",
+  "tag": "Ch.5",
+  "stem": "株式譲渡の印紙税の税率は?",
+  "options": {
+   "A": "対価の0.5%(£5単位に切上げ)",
+   "B": "対価の5%",
+   "C": "定額£50",
+   "D": "対価の1%"
+  },
+  "answer": "A",
+  "expl": "印紙税0.5%・£5単位切上げ。登録まで譲渡人は譲受人のtrusteeになる。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-045",
+  "subject": "Business Law",
+  "tag": "Ch.5",
+  "stem": "配当の財源規制(s 830)の基準は?",
+  "options": {
+   "A": "当期利益",
+   "B": "純資産の10%",
+   "C": "累積実現利益−累積実現損失",
+   "D": "取締役の裁量"
+  },
+  "answer": "C",
+  "expl": "累積ベース——当期赤字でも累積黒字なら配当可(逆も真)。finalはboard勧告+OR(増額不可)。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-046",
+  "subject": "Business Law",
+  "tag": "Ch.5",
+  "stem": "分配可能利益が十分あるとき、私会社は資本から株式を買い戻せるか?",
+  "options": {
+   "A": "自由に選べる",
+   "B": "裁判所の許可があれば可",
+   "C": "不可——profitsからの買戻しが強制される(profits優先の強行原則)",
+   "D": "SRがあれば可能"
+  },
+  "answer": "C",
+  "expl": "capitalルートはprofitsが尽きた範囲でのみ。利益があるのに資本からは選べない。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-047",
+  "subject": "Business Law",
+  "tag": "Ch.5",
+  "stem": "capital(資本)からの買戻しに必要な決議は?",
+  "options": {
+   "A": "ORのみ",
+   "B": "契約承認のOR+資本使用のSRの二本立て",
+   "C": "BRのみ",
+   "D": "SRのみ"
+  },
+  "answer": "B",
+  "expl": "OR(売主は議決排除)+SR+SOS(支払能力表明)+監査人報告+公告・債権者の5週間の異議期間。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-048",
+  "subject": "Business Law",
+  "tag": "Ch.5",
+  "stem": "担保(charge)のCompanies House登録期限と懈怠の効果は?",
+  "options": {
+   "A": "21日・担保が清算人・管理人・債権者に対してvoid(債務は無担保で即時弁済期)",
+   "B": "28日・担保の順位が劣後",
+   "C": "3ヶ月・効果なし",
+   "D": "14日・罰金のみ"
+  },
+  "answer": "A",
+  "expl": "MR01を設定から21日以内。未登録は担保だけが死に、貸付債務は無担保のまま即時弁済期になる。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-049",
+  "subject": "Business Law",
+  "tag": "Ch.5",
+  "stem": "後発のfixed chargeが先行のfloating chargeに劣後する例外は?",
+  "options": {
+   "A": "登録が遅れたとき",
+   "B": "同一銀行のとき",
+   "C": "常に劣後する",
+   "D": "floating側にnegative pledgeがあり、後発fixed権者が設定時にそれを知っていたとき"
+  },
+  "answer": "D",
+  "expl": "原則は後発でもfixedが勝つ——negative pledge+noticeの組合せだけが例外。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-050",
+  "subject": "Business Law",
+  "tag": "Ch.5",
+  "stem": "crystallisation前のfloating charge目的物(在庫等)の処分は?",
+  "options": {
+   "A": "処分不可",
+   "B": "貸手の同意が必要",
+   "C": "自由に処分できる",
+   "D": "裁判所の許可が必要"
+  },
+  "answer": "C",
+  "expl": "floatingはcrystallisation(倒産・不払い等)まで自由処分がウリ。fixedは処分に貸手の同意が要る。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-051",
+  "subject": "Business Law",
+  "tag": "Ch.6",
+  "stem": "個人・法人のstatutory demandの基準は?",
+  "options": {
+   "A": "両方£5,000+21日",
+   "B": "個人£750+21日/法人£5,000+3週間",
+   "C": "両方£750+3週間",
+   "D": "個人£5,000+3週間/法人£750+21日"
+  },
+  "answer": "D",
+  "expl": "個人=£5,000以上・3週間/法人=£750以上・21日。入替え肢が定番。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-052",
+  "subject": "Business Law",
+  "tag": "Ch.6",
+  "stem": "balance sheet上は資産超過の会社でも清算申立てが可能になるのは?",
+  "options": {
+   "A": "株主の過半数が望んだとき",
+   "B": "不可能",
+   "C": "statutory demand(£750以上)を21日放置したとき(みなし支払不能)",
+   "D": "銀行が要請したとき"
+  },
+  "answer": "C",
+  "expl": "demandの放置は『みなし』装置——資産超過でも法的には支払不能となり申立ての土俵に乗る。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-053",
+  "subject": "Business Law",
+  "tag": "Ch.6",
+  "stem": "過小対価取引(undervalue)の遡及期間は?",
+  "options": {
+   "A": "両方3年",
+   "B": "両方無期限",
+   "C": "個人5年/法人2年",
+   "D": "個人2年/法人5年"
+  },
+  "answer": "C",
+  "expl": "個人5年(直近2年内は支払不能の立証も不要)/法人2年。偏頗は6ヶ月(関係者2年)。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-054",
+  "subject": "Business Law",
+  "tag": "Ch.6",
+  "stem": "倒産法のassociateに含まれ、会社法のconnected personに含まれないのは?",
+  "options": {
+   "A": "子",
+   "B": "配偶者",
+   "C": "親",
+   "D": "兄弟姉妹"
+  },
+  "answer": "D",
+  "expl": "兄弟は——SPT(Ch.4)では非connected/否認権ではassociate。章で答えが反転する最大級の対比トラップ。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-055",
+  "subject": "Business Law",
+  "tag": "Ch.6",
+  "stem": "優先債権(preferential debts)の一次分の内容は?",
+  "options": {
+   "A": "倒産前4ヶ月の賃金(£800上限)+未払休暇手当",
+   "B": "退職金全額",
+   "C": "役員報酬",
+   "D": "全ての未払給与"
+  },
+  "answer": "A",
+  "expl": "4ヶ月・£800上限+休暇手当。二次=HMRCのPAYE・VAT。『未払給与は全額優先』は誤り。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-056",
+  "subject": "Business Law",
+  "tag": "Ch.6",
+  "stem": "留保部分(ring fencing/prescribed part)の計算は?",
+  "options": {
+   "A": "一律£600,000",
+   "B": "最初の£50,000の50%",
+   "C": "最初の£10,000の50%+残額の20%(上限£800,000)",
+   "D": "floating充当原資の10%"
+  },
+  "answer": "C",
+  "expl": "floating charge原資から無担保債権者のために取り分ける基金。上限は2020年4月6日以降の担保で£800,000。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-057",
+  "subject": "Business Law",
+  "tag": "Ch.6",
+  "stem": "IVAの可決要件は?",
+  "options": {
+   "A": "全員一致",
+   "B": "頭数の75%",
+   "C": "価額75%以上+賛成中の非associateが50%以上",
+   "D": "価額の過半数"
+  },
+  "answer": "C",
+  "expl": "二重閾値。CVAは価額75%+非connected 50%——associate/connectedの言葉の対応も混線ポイント。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-058",
+  "subject": "Business Law",
+  "tag": "Ch.6",
+  "stem": "MVL(社員任意清算)の前提条件は?",
+  "options": {
+   "A": "solventであること+取締役の支払能力の法定宣言",
+   "B": "支払不能であること",
+   "C": "裁判所の命令",
+   "D": "債権者の同意"
+  },
+  "answer": "A",
+  "expl": "MVLはsolvent限定。支払不能の自主清算はCVL(いずれも決議はSR)。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-059",
+  "subject": "Business Law",
+  "tag": "Ch.6",
+  "stem": "administratorは誰の利益のために行動するか?",
+  "options": {
+   "A": "株主",
+   "B": "取締役",
+   "C": "全債権者",
+   "D": "任命した銀行"
+  },
+  "answer": "C",
+  "expl": "administrator=全債権者のため(清算よりよい結果)。receiver=任命した担保権者のため——decisive difference。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-060",
+  "subject": "Business Law",
+  "tag": "Ch.6",
+  "stem": "administrative receiverを任命できる浮動担保の条件は?",
+  "options": {
+   "A": "いつ設定されたものでも可",
+   "B": "QFCであれば可",
+   "C": "2003年9月15日より前に設定されたもののみ",
+   "D": "登録済みであれば可"
+  },
+  "answer": "C",
+  "expl": "2003年9月15日前の担保限定——現代の担保ではQFC holderのadministration任命に置き換わった。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-061",
+  "subject": "Business Law",
+  "tag": "Ch.7",
+  "stem": "控除可能経費の三要件は?",
+  "options": {
+   "A": "法定禁止でない・収益的性質・事業のためwholly and exclusively",
+   "B": "会計基準への準拠のみ",
+   "C": "反復性・少額・現金払い",
+   "D": "書面・領収書・銀行記録"
+  },
+  "answer": "A",
+  "expl": "接待費は法定禁止の代表・資本的性質(不動産・機械・車)は経費不可・二重目的は原則不可(按分の余地)。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-062",
+  "subject": "Business Law",
+  "tag": "Ch.7",
+  "stem": "AIA(annual investment allowance)の内容は?",
+  "options": {
+   "A": "年£500,000上限・新品のみ",
+   "B": "年£1m上限・中古可・非法人も会社も使える即時全額控除",
+   "C": "会社のみ・新品のみ・上限なし",
+   "D": "プール残高の18%"
+  },
+  "answer": "B",
+  "expl": "AIA=£1m・中古可・誰でも。FE=会社のみ・新品のみ・上限なし。WDA=プール残高18%逓減。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-063",
+  "subject": "Business Law",
+  "tag": "Ch.7",
+  "stem": "WDA(writing down allowance)の計算方式は?",
+  "options": {
+   "A": "取得価額の25%",
+   "B": "一括償却",
+   "C": "プール残高×18%の逓減残高方式",
+   "D": "定額法"
+  },
+  "answer": "C",
+  "expl": "18%を引いた残りが翌年のWDV。個別売却は代金をプールから控除・超過分は課税収入に加算。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-064",
+  "subject": "Business Law",
+  "tag": "Ch.7",
+  "stem": "terminal loss relief(TLR)の充当先と順序は?",
+  "options": {
+   "A": "あらゆる所得・古い年度から",
+   "B": "賃料収入にも可・cap£50,000",
+   "C": "将来の利益のみ",
+   "D": "同一事業の最終年+前3年の利益・新しい年度から遡る・capなし"
+  },
+  "answer": "D",
+  "expl": "廃業の最終12ヶ月の損失→同一事業の利益に新しい年度から遡る。SULR・CFは古い年度から——方向が逆。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-065",
+  "subject": "Business Law",
+  "tag": "Ch.7",
+  "stem": "SULRとCA/CBに付く控除上限(cap)は?",
+  "options": {
+   "A": "£25,000",
+   "B": "上限なし",
+   "C": "£50,000または他の所得の25%のいずれか大きい方",
+   "D": "£100,000"
+  },
+  "answer": "C",
+  "expl": "『あらゆる所得に使える柔軟なreliefほど上限が付く』——CF・TLR・CFIBにcapはない。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-066",
+  "subject": "Business Law",
+  "tag": "Ch.7",
+  "stem": "VATの登録義務が生じる基準は?",
+  "options": {
+   "A": "利益が£90,000超",
+   "B": "従業員10人以上",
+   "C": "資産が£90,000超",
+   "D": "課税供給の価額(売上)が直近1年で£90,000超"
+  },
+  "answer": "D",
+  "expl": "閾値は売上で測る(利益ではない)。直近1年のローリングで常時監視。免税供給のみの者は登録不可。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-067",
+  "subject": "Business Law",
+  "tag": "Ch.7",
+  "stem": "ゼロ税率(zero-rated)と免税(exempt)の決定的な違いは?",
+  "options": {
+   "A": "免税の方が有利",
+   "B": "税率の高さのみ",
+   "C": "違いはない",
+   "D": "ゼロ税率=課税供給(登録可・input全額回収可)/免税=登録不可・input回収不可"
+  },
+  "answer": "D",
+  "expl": "書籍・食品(catering以外)=ゼロ税率で還付ポジションになり得る。教育・医療・保険=免税で仕入VATが自腹。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-068",
+  "subject": "Business Law",
+  "tag": "Ch.7",
+  "stem": "VATの申告・納付の期限は?",
+  "options": {
+   "A": "毎月末",
+   "B": "年1回・翌1月31日",
+   "C": "半年ごと",
+   "D": "四半期の末日から1ヶ月以内"
+  },
+  "answer": "D",
+  "expl": "四半期+1ヶ月。input控除の証憑はVAT invoice。申告遅延常習はdefault surcharge。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-069",
+  "subject": "Business Law",
+  "tag": "Ch.7",
+  "stem": "FE(full expensing)を使える主体と対象は?",
+  "options": {
+   "A": "パートナーのみ",
+   "B": "個人事業主のみ",
+   "C": "会社のみ・新品のみ(上限なし)",
+   "D": "誰でも・中古も可"
+  },
+  "answer": "C",
+  "expl": "FEの三軸=上限なし・会社のみ・新品のみ。『個人事業主がFE』『中古をFE』は定番の誤り肢。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-070",
+  "subject": "Business Law",
+  "tag": "Ch.7",
+  "stem": "carry-forward relief(CF・非法人)の充当先は?",
+  "options": {
+   "A": "同一事業の将来の利益のみ(無期限)",
+   "B": "あらゆる所得",
+   "C": "譲渡益のみ",
+   "D": "賃料収入"
+  },
+  "answer": "A",
+  "expl": "CFは同一事業限定・古い年度から・無期限(4年内にHMRC通知)。『CFを賃料に』は誤り。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-071",
+  "subject": "Business Law",
+  "tag": "Ch.8",
+  "stem": "所得税の課税順序は?",
+  "options": {
+   "A": "NSNDI→貯蓄利息→配当",
+   "B": "貯蓄→配当→NSNDI",
+   "C": "納税者が選べる",
+   "D": "配当→貯蓄→NSNDI"
+  },
+  "answer": "A",
+  "expl": "積み上げ順序は固定——NSNDIを底に、利息、配当の順。有利な並べ替えはできない。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-072",
+  "subject": "Business Law",
+  "tag": "Ch.8",
+  "stem": "人的控除(PA)の逓減の仕組みは?",
+  "options": {
+   "A": "£125,140超で£2につき£1減",
+   "B": "逓減しない",
+   "C": "£150,000超で一律半減",
+   "D": "£100,000超で£2につき£1減・£125,140でゼロ"
+  },
+  "answer": "D",
+  "expl": "net income £100,000の崖。£125,140で消滅——この帯は実効60%の世界になる。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-073",
+  "subject": "Business Law",
+  "tag": "Ch.8",
+  "stem": "2025/26のbasic rate帯の上限(taxable income)は?",
+  "options": {
+   "A": "£12,570",
+   "B": "£37,700",
+   "C": "£50,270",
+   "D": "£125,140"
+  },
+  "answer": "B",
+  "expl": "taxableで£37,700まで20%・£125,140まで40%・超は45%。£50,270は給与ベースの通称。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-074",
+  "subject": "Business Law",
+  "tag": "Ch.8",
+  "stem": "PSA(personal savings allowance)の額は?",
+  "options": {
+   "A": "全員£500",
+   "B": "BRT£1,000/HRT£500/ART£0",
+   "C": "BRT£500/HRT£1,000",
+   "D": "全員£1,000"
+  },
+  "answer": "B",
+  "expl": "ARTはゼロ。判定はtaxable income全体がどの帯域に達するかで行う。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-075",
+  "subject": "Business Law",
+  "tag": "Ch.8",
+  "stem": "配当の税率(2025/26)は?",
+  "options": {
+   "A": "一律8.75%",
+   "B": "8.75/33.75/39.35%",
+   "C": "10/32.5/38.1%",
+   "D": "20/40/45%"
+  },
+  "answer": "B",
+  "expl": "配当は専用税率。その前にDA £500が0%(帯域は消費する)。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-076",
+  "subject": "Business Law",
+  "tag": "Ch.8",
+  "stem": "貯蓄のstarting rate(0%)が使える条件は?",
+  "options": {
+   "A": "貯蓄が£10,000超のとき",
+   "B": "taxable NSNDIが£5,000未満のとき、£5,000までの残枠",
+   "C": "誰でも£5,000まで",
+   "D": "HRT以上のみ"
+  },
+  "answer": "B",
+  "expl": "残枠制——NSNDI £4,000なら残£1,000が0%。PSAと併用できる。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-077",
+  "subject": "Business Law",
+  "tag": "Ch.8",
+  "stem": "予定納付(payments on account)の期日は?",
+  "options": {
+   "A": "12月31日一括",
+   "B": "課税年度内の1月31日と年度末後の7月31日(各前年税額の半分)",
+   "C": "毎四半期",
+   "D": "4月5日と10月5日"
+  },
+  "answer": "B",
+  "expl": "精算(balancing payment)は翌1月31日=申告期限と同日。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-078",
+  "subject": "Business Law",
+  "tag": "Ch.8",
+  "stem": "partnershipの利益への課税方法は?",
+  "options": {
+   "A": "法人税19%",
+   "B": "firmが納税し手取りを分配",
+   "C": "分配時まで非課税",
+   "D": "各パートナーが自分の持分を自分の帯域で納税(透明課税)"
+  },
+  "answer": "D",
+  "expl": "同じ持分額でも他の所得次第で税率が変わる。課税は利益の発生年度(drawingsの時期ではない)。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-079",
+  "subject": "Business Law",
+  "tag": "Ch.8",
+  "stem": "tax evasionとtax avoidanceの区別は?",
+  "options": {
+   "A": "evasion=違法な脱税(刑事罰)/avoidance=適法な軽減",
+   "B": "evasionの方が軽い",
+   "C": "どちらも刑事罰",
+   "D": "同義"
+  },
+  "answer": "A",
+  "expl": "隠蔽・虚偽=evasion。適法側の人工的スキームはGAAR(ATAA)の調整+制裁金の射程。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-080",
+  "subject": "Business Law",
+  "tag": "Ch.8",
+  "stem": "GAARの手続の骨格は?",
+  "options": {
+   "A": "匿名の資産凍結",
+   "B": "納税者への通知+意見の機会+税額の調整(counteraction)の請求(制裁金あり)",
+   "C": "自動的な税務調査",
+   "D": "即時の刑事訴追"
+  },
+  "answer": "B",
+  "expl": "GAAR=ATAAを掴む一般否認規定。『GAAR違反=自動的に刑事』ではない。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-081",
+  "subject": "Business Law",
+  "tag": "Ch.9",
+  "stem": "CGTのchargeable disposalに含まれないのは?",
+  "options": {
+   "A": "死亡による移転",
+   "B": "connected personへの廉価売却",
+   "C": "家族への生前贈与",
+   "D": "市場での売却"
+  },
+  "answer": "A",
+  "expl": "死亡は処分ではない——PRは市場価額で取得(base uplift)し、IHTの世界へ。贈与は市場価額処分として課税。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-082",
+  "subject": "Business Law",
+  "tag": "Ch.9",
+  "stem": "annual exemption(AE)の額(2025/26)は?",
+  "options": {
+   "A": "£12,300",
+   "B": "£3,000",
+   "C": "£1,000",
+   "D": "£6,000"
+  },
+  "answer": "B",
+  "expl": "AE=£3,000。繰越不可・繰延べreliefとの併用不可・税を払う場面でだけ使える。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-083",
+  "subject": "Business Law",
+  "tag": "Ch.9",
+  "stem": "CGTの通常税率(2025/26)は?",
+  "options": {
+   "A": "20%/28%",
+   "B": "一律20%",
+   "C": "10%/20%",
+   "D": "18%(basic帯の残り)/24%(超過・HRT)"
+  },
+  "answer": "D",
+  "expl": "basic帯(£37,700)の残り枠で18/24が切り替わる二層構造。BADR/IR適用益は一律14%。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-084",
+  "subject": "Business Law",
+  "tag": "Ch.9",
+  "stem": "BADRの株式類型(QBD③)の要件は?",
+  "options": {
+   "A": "trading companyの普通株5%以上+役員または被用者+処分前2年間の充足",
+   "B": "10%以上+3年保有",
+   "C": "上場会社の株式",
+   "D": "5%以上の保有のみ"
+  },
+  "answer": "A",
+  "expl": "三点セット——解任済み(役員でも被用者でもない)は2年要件を欠き不適用。生涯£1m・14%(2026年4月から18%)。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-085",
+  "subject": "Business Law",
+  "tag": "Ch.9",
+  "stem": "investors' relief(IR)の要件は?",
+  "options": {
+   "A": "5%以上の保有",
+   "B": "非上場trading companyの新株を引き受け3年以上保有+役員・被用者でないこと",
+   "C": "役員として5年勤務",
+   "D": "上場株を10年保有"
+  },
+  "answer": "B",
+  "expl": "IRはBADRの裏返し——経営者はBADR・純投資家はIR。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-086",
+  "subject": "Business Law",
+  "tag": "Ch.9",
+  "stem": "ROR(買換え繰延べ)の再投資の期限は?",
+  "options": {
+   "A": "売却の前1年〜後3年",
+   "B": "売却後1年以内",
+   "C": "期限なし",
+   "D": "売却後6ヶ月以内"
+  },
+  "answer": "A",
+  "expl": "前1年〜後3年の窓。gainは新資産の取得費から控除して繰延べ——AE・BADRは併用不可。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-087",
+  "subject": "Business Law",
+  "tag": "Ch.9",
+  "stem": "HOR(hold-over relief)に必要な手続は?",
+  "options": {
+   "A": "贈与者の単独選択",
+   "B": "HMRCの事前承認",
+   "C": "贈与者と受贈者の共同選択",
+   "D": "裁判所の許可"
+  },
+  "answer": "C",
+  "expl": "共同選択でgainを受贈者へ——受贈者の取得費は市場価額−繰延gain(実質、贈与者の取得費の承継)。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-088",
+  "subject": "Business Law",
+  "tag": "Ch.9",
+  "stem": "英国居住用不動産のCGTの申告・納付期限は?",
+  "options": {
+   "A": "翌1月31日",
+   "B": "完了から90日以内",
+   "C": "完了から30日以内",
+   "D": "完了から60日以内"
+  },
+  "answer": "D",
+  "expl": "居住用不動産は60日ルール(申告+納付)。それ以外は自己申告で翌1月31日。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-089",
+  "subject": "Business Law",
+  "tag": "Ch.9",
+  "stem": "BPRで100%の減免を受けるのは?",
+  "options": {
+   "A": "会社に貸している個人所有の土地",
+   "B": "全ての事業資産",
+   "C": "支配的な上場会社株式",
+   "D": "非法人事業の持分・非上場trading companyの株式"
+  },
+  "answer": "D",
+  "expl": "100%=非法人事業持分・非上場trading co株(持分の大小不問)。50%=支配的(50%超・配偶者合算)上場株・使用させる土地建物機械。保有2年。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-090",
+  "subject": "Business Law",
+  "tag": "Ch.9",
+  "stem": "partnership契約に『死亡時に持分を売却する義務』を定めた場合のBPRへの影響は?",
+  "options": {
+   "A": "2年間停止",
+   "B": "BPRを失う(拘束的売買契約)——買取りオプションなら維持",
+   "C": "影響なし",
+   "D": "BPRが50%に半減"
+  },
+  "answer": "B",
+  "expl": "拘束的売買契約=持分が『売却代金への権利』に化けて失権。オプション形式で書くのがドラフティングの正解。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-091",
+  "subject": "Business Law",
+  "tag": "Ch.10",
+  "stem": "法人税の税率構造(2025/26)は?",
+  "options": {
+   "A": "一律19%",
+   "B": "£100,000で区切る二段階",
+   "C": "£50,000以下19%/£250,000超25%(全体)/中間帯=最初の£50,000に19%+残りに26.5%",
+   "D": "一律25%"
+  },
+  "answer": "C",
+  "expl": "中間帯は単一税率ではない——19%+26.5%の二段計算。帯の判定はincome+gains合算後の利益で。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-092",
+  "subject": "Business Law",
+  "tag": "Ch.10",
+  "stem": "会社の譲渡益の計算でCGTと違う点は?",
+  "options": {
+   "A": "違いはない",
+   "B": "AEがなく、indexation allowance(2017年12月凍結)がある",
+   "C": "AE £3,000が使える",
+   "D": "一律18%で課税"
+  },
+  "answer": "B",
+  "expl": "会社にAEはない。indexationは1982年3月〜2017年12月のインフレ調整——取得費・取得付随費・資本的改良に適用(処分費用には不適用)。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-093",
+  "subject": "Business Law",
+  "tag": "Ch.10",
+  "stem": "法人税の損金にならないのは?",
+  "options": {
+   "A": "役員報酬",
+   "B": "株主への配当",
+   "C": "従業員の賃金",
+   "D": "社債(debenture)の利息"
+  },
+  "answer": "B",
+  "expl": "配当は利益処分であって費用ではない。利息・給与は損金——分配設計の軸になる仕分け。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-094",
+  "subject": "Business Law",
+  "tag": "Ch.10",
+  "stem": "会社のtrading lossの使用順序は?",
+  "options": {
+   "A": "carry-across(同期のtotal profits)→carry-back(前12ヶ月)→carry-forward",
+   "B": "carry-backが最優先",
+   "C": "carry-forwardのみ",
+   "D": "自由に選べる"
+  },
+  "answer": "A",
+  "expl": "acrossを先に使うのがbackの条件。充当先はtotal profits(個人のCF『同一事業のみ』と対比)。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-095",
+  "subject": "Business Law",
+  "tag": "Ch.10",
+  "stem": "terminal carry-back(法人)の内容は?",
+  "options": {
+   "A": "前5年へ・古い年度から",
+   "B": "前1年のみ",
+   "C": "使えない",
+   "D": "最終12ヶ月の損失を前3年のtotal profitsへ・新しい年度から遡る"
+  },
+  "answer": "D",
+  "expl": "廃業時は繰戻しが3年に拡張。方向(新しい年度から)は個人のTLRと同じ。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-096",
+  "subject": "Business Law",
+  "tag": "Ch.10",
+  "stem": "close companyの定義は?",
+  "options": {
+   "A": "非上場会社すべて",
+   "B": "家族経営の会社",
+   "C": "株主が10人以下",
+   "D": "5人以下のparticipator(または取締役たるparticipator)に支配される会社"
+  },
+  "answer": "D",
+  "expl": "英国の私会社の大半が該当。participator=株主等の出資参加者。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-097",
+  "subject": "Business Law",
+  "tag": "Ch.10",
+  "stem": "close companyがparticipatorに貸付をした場合の課税は?",
+  "options": {
+   "A": "課税なし",
+   "B": "貸付が無効になる",
+   "C": "会社が貸付額の33.75%をHMRCに預託(返済で還付・免除なら受け手に配当課税)",
+   "D": "借り手が33.75%を納付"
+  },
+  "answer": "C",
+  "expl": "払うのは会社。免除(write-off)は預託が還付される一方、受け手が配当を受けたものとして所得税。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-098",
+  "subject": "Business Law",
+  "tag": "Ch.10",
+  "stem": "貸付課徴金を免れる例外の三要件は?",
+  "options": {
+   "A": "取締役でないことのみ",
+   "B": "£50,000以下のみ",
+   "C": "書面契約があること",
+   "D": "£15,000以下・フルタイム勤務・持株5%以下の同時充足"
+  },
+  "answer": "D",
+  "expl": "三要件は全部同時に満たす必要——一つでも欠ければ33.75%の預託。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-099",
+  "subject": "Business Law",
+  "tag": "Ch.10",
+  "stem": "法人税の納付期限(通常の会社)は?",
+  "options": {
+   "A": "期末から12ヶ月",
+   "B": "期末から2ヶ月",
+   "C": "期末から9ヶ月+1日",
+   "D": "四半期ごと(全社)"
+  },
+  "answer": "C",
+  "expl": "納付9ヶ月+1日・申告12ヶ月——納付が申告より先。課税利益£1.5m以上の大会社は四半期分割。"
+ },
+ {
+  "kind": "quiz",
+  "qid": "BLQ-100",
+  "subject": "Business Law",
+  "tag": "Ch.10",
+  "stem": "capital loss(法人)の充当先は?",
+  "options": {
+   "A": "total profits",
+   "B": "同期・将来の譲渡益(chargeable gains)のみ",
+   "C": "income profitsからも控除可",
+   "D": "前3年の利益"
+  },
+  "answer": "B",
+  "expl": "capital lossは譲渡益専用——trading lossの4ルート(total profits充当)には乗らない。"
+ }
+]
